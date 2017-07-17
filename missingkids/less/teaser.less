@@ -1,0 +1,92 @@
+.teaser{
+    margin-top: @panel-body-padding;
+    .panel {
+        margin-bottom: @line-height-computed;
+        background-color: transparent;
+        border: 0;
+        border-radius: 10px 10px 0 0;
+    }
+    .panel-body {
+        padding: @panel-body-padding;
+        background: @headings-color;
+        border-radius: 0 0 10px 10px;
+        &:extend(.clearfix all);
+        h5 {
+            padding-top: 0;
+        }
+        button {
+            font-size: @font-size-small;
+            padding-top: 5px;
+            padding-bottom: 5px; 
+        }
+    }
+    .panel-heading {
+        position: relative;
+        background-color: @panel-bg;
+        padding: @panel-heading-padding;
+        border-bottom: 0;
+        .border-top-radius(@panel-border-radius);
+        text-align: center;
+        > .dropdown .dropdown-toggle {
+            color: inherit;
+        }
+        &.no-pad {
+            padding: 0;
+        }
+        &.no-pad-LR {
+            padding: 16px 0;
+        }
+        > h5 {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            line-height: 19px;
+            font-weight: normal;
+        }
+    }
+}
+
+// Custom Panel Styles
+
+.ncmec-irs-forms {
+  li {
+    line-height: 16px;
+    padding-bottom: 10px;
+  }
+}
+
+.daf-direct {
+   > .daf-direct-logo {
+        .pull-left();
+        padding-right: 16px;
+    }
+}
+
+.select-state {
+    padding: 16px 0 0;
+    select {
+        border: 0;
+        color: @blue-darker;
+    }
+}
+
+.missing-person-lists {
+    list-style: none;
+    padding: 0;
+    li {
+        color: @gray-lighter;
+        img {
+            .pull-left();
+            margin-right: 16px;
+        }
+        h5 {
+            margin-bottom: 10px;
+        }
+        small {
+            font-size: 11px;
+        }
+        .missing-person-link {
+            padding-top: 10px;
+        }
+    }
+}

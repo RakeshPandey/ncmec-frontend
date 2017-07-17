@@ -1,0 +1,29 @@
+Sprint 1 - version 1.0.0 - 13/07/2014
+==========================================================================
+
+Set up style guide page
+Three column Template
+Two column Template
+One column Template/Base Page Template
+Publication Template
+Breadcrumb Component
+
+Sprint 1 - version 1.0.1 - 14/07/2014
+==========================================================================
+Download File
+Text and Image
+Teaser Component
+Video component
+Title component
+
+Sprint 1 - version 1.0.2 - 17/07/2014
+==========================================================================
+Accordion - If Design Available
+Expandables Components
+Section Listing
+
+Sprint 1 - version 1.0.3 - 18/07/2014
+==========================================================================
+Custom RTE - If Design Available
+Publication Component - If Design Available
+Partner Listing Component - If Design Available
