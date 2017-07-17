@@ -1,0 +1,40 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+.breadcrumbs {
+  background-color: @breadcrumb-bg;
+  .breadcrumb {
+  //  padding: @breadcrumb-padding-vertical @breadcrumb-padding-horizontal;
+    padding: @breadcrumb-padding-vertical 0;
+    margin-bottom: 0;
+    list-style: none;
+    min-height: 30px;
+    > li {
+      display: inline-block;
+
+      + li:before {
+        font-family: "Glyphicons Halflings";
+        font-size: 9px;
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\e250"; // Unicode space added since inline-block means non-collapsing white-space
+        padding: 0 16px;
+        color: @breadcrumb-color;
+      }
+
+      a {
+        color: @breadcrumb-color;
+      }
+    }
+
+    > .active {
+      color: @breadcrumb-active-color;
+    }
+  }
+}

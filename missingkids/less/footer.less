@@ -1,0 +1,41 @@
+.footer-container {
+    background: #404041;
+    text-align: center;
+    p {
+        color: @gray-lighter;
+    }
+}
+.subscribe-form {
+    form {
+        text-align: center;
+        .input-subscribe {
+            border: 1px solid yellow;
+            border-radius: 10px 0 0 10px;
+            .pull-left();
+        }
+        .btn-subscribe {
+            background: yellow;
+            border: 0;
+            border-radius: 0 10px 10px 0;            
+            color: @gray-dark;
+            .pull-left();
+        }
+    }    
+}
+.footer-nav {
+    margin-bottom: 16px;
+    text-align: center;
+    ul {
+        border-top: 1px solid @gray-lighter;
+        list-style: none;
+        padding: 16px 0;
+        margin: 0;
+        li {
+            float: left;
+            margin: 0 32px;
+            a {
+                color: @gray-lighter;
+            }
+        }
+    }
+}

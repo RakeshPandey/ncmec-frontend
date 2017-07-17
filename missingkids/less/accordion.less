@@ -1,0 +1,35 @@
+#accordion {
+    &.panel-group .panel {
+        border: 0;
+        background-color: transparent;
+    }
+    .panel-heading {
+        background-color: transparent;
+        border: 0;
+        border-radius: 10px;
+        padding: 16px 0 0;
+    }
+    .panel-title {
+        > a {
+            background-color: #939597;
+            border-radius: 10px 10px 0 0;
+            color: @white;
+            display: block;            
+            padding: 16px;
+        }
+        > a.collapsed {
+            border-radius: 10px;
+        }
+    }
+    .panel-body {
+        border: 1px solid #939597;
+        border-top: 0;
+        border-radius: 0 0 10px 10px; 
+    }
+    .more-less {
+        float: right;
+        color: @white;
+        font-size: 16px;
+        margin-right: 16px;
+    }
+}
