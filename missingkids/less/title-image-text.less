@@ -1,0 +1,21 @@
+.alert-text-image-component {
+    .clearfix();
+    padding: 16px 0;
+    img {
+        .pull-left();
+        margin-right: 16px;
+    }
+    p {
+        display: block;
+    }
+}
+.read-more-wrapper {    
+    &[data-readmore] {
+        transition: height 500ms;
+        overflow: hidden;
+    }
+}
+
+.fa-arrow-circle-down:before, .fa-arrow-circle-up:before  {
+    color: @headings-color;
+}
