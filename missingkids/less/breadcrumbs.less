@@ -5,10 +5,11 @@
   background-color: @breadcrumb-bg;
   .breadcrumb {
   //  padding: @breadcrumb-padding-vertical @breadcrumb-padding-horizontal;
-    padding: @breadcrumb-padding-vertical 0;
+    padding: @breadcrumb-padding-vertical 16px;
     margin-bottom: 0;
     list-style: none;
     min-height: 30px;
+    .pull-left();
     > li {
       display: inline-block;
 
@@ -37,4 +38,17 @@
       color: @breadcrumb-active-color;
     }
   }
+}
+
+.social-share {
+  .pull-right();
+}
+
+@media (max-width: 767px) { 
+    .breadcrumbs {
+        min-height: 30px;
+    }
+    .social-share {
+      .pull-left();
+    }
 }
