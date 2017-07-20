@@ -5310,6 +5310,9 @@ a.thumbnail.active {
 }
 .media {
   margin-top: 15px;
+  padding: 16px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 .media:first-child {
   margin-top: 0;
@@ -5324,6 +5327,7 @@ a.thumbnail.active {
 }
 .media-object {
   display: block;
+  border-radius: 10px 0 0 10px;
 }
 .media-object.img-thumbnail {
   max-width: none;

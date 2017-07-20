@@ -38,3 +38,5 @@ Sprint 1 - version 1.0.5 - 19/07/2014
 ==========================================================================
 Change in text-image-title.html for expandable component.
 change login in expandable.js
+Added SectionListing Component Variation.
+Change in section-listing-component.html and media.less
