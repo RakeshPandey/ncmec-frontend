@@ -28,7 +28,13 @@ Custom RTE - If Design Available
 Publication Component - If Design Available
 Partner Listing Component - If Design Available
 
-Sprint 1 - version 1.0.3 - 19/07/2014
+Sprint 1 - version 1.0.4 - 19/07/2014
 ==========================================================================
 Added images for partner listing
 Added Less file for Partner listing to create 5 column component.
+
+
+Sprint 1 - version 1.0.5 - 19/07/2014
+==========================================================================
+Change in text-image-title.html for expandable component.
+change login in expandable.js
