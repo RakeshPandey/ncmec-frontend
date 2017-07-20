@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -31,7 +31,7 @@
   </head>
 
   <body>
-    
+
     <div class="wrapper">
       <header class="header-container">
         <nav class="navbar navbar-default">
@@ -49,7 +49,7 @@
                 <div class="right-section pull-right"><button type="button" class="btn btn-lg btn-primary">Donate</button></div>
             </div>
         </nav>
-      </header> 
+      </header>
       <div class="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb">
@@ -74,7 +74,16 @@
                 <div class="inner-wrapper">
                   <h2 class="main-title">Project ALERT</h2>
                   <div class="alert-text-image-component">
-                    <img src="missingkids/images/MK-2A6A-project_alert.png" alt="Project Alert" />
+                    <picture>
+                       <!-- tablet landscape -->
+                       <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/MK-2A6A-project_alert_TL_M.png">
+                       <!-- mobile devices -->
+                       <source media="(max-width:767px)" srcset="missingkids/images/MK-2A6A-project_alert_M.png">
+                       <!-- tablet portrait -->
+                       <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/MK-2A6A-project_alert_TP.png">
+                       <!-- desktop -->
+                       <img src="missingkids/images/MK-2A6A-project_alert.png" alt="Project Alert" />
+                     </picture>
                     <p>Project ALERT® is a team of approximately 170 retired local, state and federal law enforcement professionals who donate their time and experience to the law enforcement community. Members are no longer sworn investigators, but they all share their abilities, knowledge and experience through the Project ALERT program.</p>
                   </div>
                   <h2>H2 - Gray Title Component</h2>
@@ -86,17 +95,17 @@
                   <h6>H6 - Gray Title Component</h6>
 
                   <h4 class="title-4">Expandable Component</h4>
-                  <p>In August 2014, NCMEC was contacted by officers with Washington law enforcement seeking 
+                  <p>In August 2014, NCMEC was contacted by officers with Washington law enforcement seeking
                     assistance in locating a missing 17-year-old girl. The teenager had not been seen since leaving her family home in July, but she had phoned her home once to tell her family that she had married an “adult homeless male” and that the two had hitchhiked to Montana and were possibly going to the Dakotas.
                   </p>
                   <div class="js-read-more-wrapper hide">
-                    <p>1. In August 2014, NCMEC was contacted by officers with Washington law enforcement seeking 
+                    <p>1. In August 2014, NCMEC was contacted by officers with Washington law enforcement seeking
                     assistance in locating a missing 17-year-old girl. The teenager had not been seen since leaving her family home in July, but she had phoned her home once to tell her family that she had married an “adult homeless male” and that the two had hitchhiked to Montana and were possibly going to the Dakotas.
                     </p>
-                    <p>2. In August 2014, NCMEC was contacted by officers with Washington law enforcement seeking 
+                    <p>2. In August 2014, NCMEC was contacted by officers with Washington law enforcement seeking
                     assistance in locating a missing 17-year-old girl. The teenager had not been seen since leaving her family home in July, but she had phoned her home once to tell her family that she had married an “adult homeless male” and that the two had hitchhiked to Montana and were possibly going to the Dakotas.
                     </p>
-                    <p>3. In August 2014, NCMEC was contacted by officers with Washington law enforcement seeking 
+                    <p>3. In August 2014, NCMEC was contacted by officers with Washington law enforcement seeking
                     assistance in locating a missing 17-year-old girl. The teenager had not been seen since leaving her family home in July, but she had phoned her home once to tell her family that she had married an “adult homeless male” and that the two had hitchhiked to Montana and were possibly going to the Dakotas.
                     </p>
                   </div>
@@ -105,20 +114,38 @@
                 </div>
               </div>
               <div class="col-md-4 hidden-sm hidden-xs">
-                <div class="teaser">                  
+                <div class="teaser">
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <img src="missingkids/images/heroes-circle.png" class="" alt="Heros Circle"> 
+                      <picture>
+                          <!-- tablet landscape -->
+                          <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/heroes-circle_TL_M_4C.png">
+                          <!-- mobile devices -->
+                          <source media="(max-width:767px)" srcset="missingkids/images/heroes-circle_M_4C.png">
+                          <!-- tablet portrait -->
+                          <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/heroes-circle_TP_4C.png">
+                          <!-- desktop -->
+                          <img src="missingkids/images/heroes-circle.png" alt="Heros Circle" />
+                      </picture>
                     </div>
                     <div class="panel-body">
                       <h5 class="title-5">Give Monthly or Quarterly</h5>
                       <p class="para-1">Join the Heroes’ Circle and become a hero in the fight against child abduction and sexual exploitation by donating automatically on a monthly or quarterly basis.</p>
                       <div><button type="button" class="btn btn-lg btn-block btn-default">Join the Heroes’ Circle</button></div>
                     </div>
-                  </div>                  
+                  </div>
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <img src="missingkids/images/graph.png" class="" alt="Heros Circle"> 
+                      <picture>
+                          <!-- tablet landscape -->
+                          <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/graph_TL_M.png">
+                          <!-- mobile devices -->
+                          <source media="(max-width:767px)" srcset="missingkids/images/graph_M.png">
+                          <!-- tablet portrait -->
+                          <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/graph_TP.png">
+                          <!-- desktop -->
+                          <img src="missingkids/images/graph.png" class="" alt="Heros Circle">
+                      </picture>
                     </div>
                     <div class="panel-body">
                       <h5 class="title-5">Proud of Our Commitment</h5>
@@ -127,8 +154,15 @@
                   </div>
                   <div class="panel panel-default">
                     <div class="panel-heading no-pad">
-                      <img src="missingkids/images/image_01.png" class="img-full-width" alt="Heros Circle">
-                      <h5 class="title-5">Every child deserves<br> a Safe childhood</h5> 
+                      <picture>
+                          <!-- mobile devices -->
+                          <source media="(max-width: 767px)" srcset="missingkids/images/image_01_M.png">
+                          <!-- tablet portrait -->
+                          <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/image_01_TP.png">
+                          <!-- desktop -->
+                          <img src="missingkids/images/image_01.png" class="img-full-width" alt="Heros Circle">
+                      </picture>
+                      <h5 class="title-5">Every child deserves<br> a Safe childhood</h5>
                     </div>
                     <div class="panel-body">
                       <h5 class="title-5">Form 990</h5>
@@ -147,7 +181,7 @@
             </div>
 
         </div>
-      </article> 
+      </article>
 
       <footer class="footer-container">
         <div class="container">

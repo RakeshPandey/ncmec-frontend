@@ -1,17 +1,22 @@
+picture, img{
+  max-width: 100%;
+  height: auto;
+}
+
 .inner-wrapper {
     background: @white;
     padding: 0 8px 15px;
     .clearfix();
     h1, h2, h3, h4, h5, h6, p {
         padding-left: 8px;
-        padding-right: 8px; 
+        padding-right: 8px;
     }
 }
 .base-template {
     .inner-wrapper {
         h1, h2, h3, h4, h5, h6, p {
             padding-left: 8px;
-            padding-right: 8px; 
+            padding-right: 8px;
         }
     }
 }
@@ -41,7 +46,7 @@ hr {
        .container {
             padding-left: 0;
             padding-right: 0;
-        } 
+        }
     }
     .video-image-component {
         .offsetLR-md-1 {
@@ -65,6 +70,12 @@ hr {
             margin-right: 0;
         }
     }
+
+    .sponsored-links {
+        li {
+            margin-bottom: 16px;
+        }
+      }
 }
 
 @media (min-width: 992px) and (orientation:landscape) {

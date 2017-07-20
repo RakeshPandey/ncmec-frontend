@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    
+
     <div class="wrapper">
       <header class="header-container">
         <nav class="navbar navbar-default">
@@ -48,7 +48,7 @@
                 <div class="right-section pull-right"><button type="button" class="btn btn-lg btn-primary">Donate</button></div>
             </div>
         </nav>
-      </header> 
+      </header>
       <div class="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb">
@@ -75,7 +75,12 @@
                   <div class="row video-image-component">
                     <div class="col-md-10 offsetLR-md-1">
                         <div class="row image-area">
-                          <img src="missingkids/images/lost-kids-banner.png" alt="Lost Kids">
+                          <picture>
+                              <!-- tablet portrait -->
+                              <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/lost-kids-banner_TP.png">
+                              <!-- desktop , mobile devices, tablet landscape-->
+                              <img src="missingkids/images/lost-kids-banner.png" alt="Lost Kids" />
+                          </picture>
                         </div>
                     </div>
                   </div>
@@ -110,29 +115,47 @@
                   <h5>Give With Confidence.</h5>
                   <p>NCMEC meets all standards of the Better Business Bureau Wise Giving Alliance.</p>
                   <ul class="row sponsored-links">
-                    <li class="col-md-3"><a href="#" title="Sponsored Link 01"><img src="missingkids/images/sponsored-logo-02.png" alt="ponsored Image 01" /></a></li>
-                    <li class="col-md-3"><a href="#" title="Sponsored Link 02"><img src="missingkids/images/sponsored-logo-03.png" alt="ponsored Image 02" /></a></li>
-                    <li class="col-md-3"><a href="#" title="Sponsored Link 03"><img src="missingkids/images/sponsored-logo-04.png" alt="ponsored Image 03" /></a></li>
-                    <li class="col-md-3"><a href="#" title="Sponsored Link 04"><img src="missingkids/images/sponsored-logo-01.png" alt="ponsored Image 04" /></a></li>
+                    <li class="col-xs-6 col-sm-3 col-md-3"><a href="#" title="Sponsored Link 01"><img src="missingkids/images/sponsored-logo-02.png" alt="ponsored Image 01"></a></li>
+                    <li class="col-xs-6 col-sm-3 col-md-3"><a href="#" title="Sponsored Link 02"><img src="missingkids/images/sponsored-logo-03.png" alt="ponsored Image 02"></a></li>
+                    <li class="col-xs-6 col-sm-3 col-md-3"><a href="#" title="Sponsored Link 03"><img src="missingkids/images/sponsored-logo-04.png" alt="ponsored Image 03"></a></li>
+                    <li class="col-xs-6 col-sm-3 col-md-3"><a href="#" title="Sponsored Link 04"><img src="missingkids/images/sponsored-logo-01.png" alt="ponsored Image 04"></a></li>
                   </ul>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
               </div>
               <div class="col-md-4 hidden-sm hidden-xs">
-                <div class="teaser">                  
+                <div class="teaser">
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <img src="missingkids/images/heroes-circle.png" class="" alt="Heros Circle"> 
+                      <picture>
+                          <!-- tablet landscape -->
+                          <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/heroes-circle_TL_M_4C.png">
+                          <!-- mobile devices -->
+                          <source media="(max-width:767px)" srcset="missingkids/images/heroes-circle_M_4C.png">
+                          <!-- tablet portrait -->
+                          <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/heroes-circle_TP_4C.png">
+                          <!-- desktop -->
+                          <img src="missingkids/images/heroes-circle.png" alt="Heros Circle" />
+                      </picture>
                     </div>
                     <div class="panel-body">
                       <h5 class="title-5">Give Monthly or Quarterly</h5>
                       <p class="para-1">Join the Heroes’ Circle and become a hero in the fight against child abduction and sexual exploitation by donating automatically on a monthly or quarterly basis.</p>
                       <div><button type="button" class="btn btn-lg btn-block btn-default">Join the Heroes’ Circle</button></div>
                     </div>
-                  </div>                  
+                  </div>
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <img src="missingkids/images/graph.png" class="" alt="Heros Circle"> 
+                      <picture>
+                          <!-- tablet landscape -->
+                          <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/graph_TL_M.png">
+                          <!-- mobile devices -->
+                          <source media="(max-width:767px)" srcset="missingkids/images/graph_M.png">
+                          <!-- tablet portrait -->
+                          <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/graph_TP.png">
+                          <!-- desktop -->
+                          <img src="missingkids/images/graph.png" class="" alt="Heros Circle">
+                      </picture>
                     </div>
                     <div class="panel-body">
                       <h5 class="title-5">Proud of Our Commitment</h5>
@@ -141,8 +164,15 @@
                   </div>
                   <div class="panel panel-default">
                     <div class="panel-heading no-pad">
-                      <img src="missingkids/images/image_01.png" class="img-full-width" alt="Heros Circle">
-                      <h5 class="title-5">Every child deserves<br> a Safe childhood</h5> 
+                      <picture>
+                          <!-- mobile devices -->
+                          <source media="(max-width: 767px)" srcset="missingkids/images/image_01_M.png">
+                          <!-- tablet portrait -->
+                          <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/image_01_TP.png">
+                          <!-- desktop -->
+                          <img src="missingkids/images/image_01.png" class="img-full-width" alt="Heros Circle">
+                      </picture>
+                      <h5 class="title-5">Every child deserves<br> a Safe childhood</h5>
                     </div>
                     <div class="panel-body">
                       <h5 class="title-5">Form 990</h5>
@@ -161,7 +191,7 @@
             </div>
 
         </div>
-      </article> 
+      </article>
 
       <footer class="footer-container">
         <div class="container">

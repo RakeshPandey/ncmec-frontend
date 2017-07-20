@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    
+
     <div class="wrapper">
 
       <header class="header-container">
@@ -49,7 +49,7 @@
                 <div class="right-section pull-right"><button type="button" class="btn btn-lg btn-primary">Donate</button></div>
             </div>
         </nav>
-      </header> 
+      </header>
 
       <div class="breadcrumbs">
         <div class="container">
@@ -60,7 +60,7 @@
             </ol>
         </div>
       </div>
-      
+
       <article class="content-wrapper">
         <div class="container">
 
@@ -76,7 +76,7 @@
               <div class="col-md-10 col-sm-8">
                 <div class="inner-wrapper">
                   <h2 class="main-title">Disaster Response</h2>
-                  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+                  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
                     Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
                   </p>
                   <div class="row video-image-component">
@@ -87,33 +87,40 @@
                       <p class="text-center"><a href="#" title="">Order a free copy of this video for educational purposes.</a></p>
                     </div>
                   </div>
-                  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+                  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
                       Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
                       Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac.
                     </p>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
                     Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
                     </p>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
                       Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
                     </p>
                     <div class="row video-image-component">
                       <div class="col-md-10 offsetLR-md-1">
                           <div class="row image-area">
-                            <img src="missingkids/images/lost-kids-banner.png" alt="Lost Kids">
+                            <picture>
+                              <!-- mobile devices -->
+                              <source media="(max-width: 767px)" srcset="missingkids/images/lost-kids-banner-response_M.png">
+                              <!-- tablet portrait -->
+                              <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/lost-kids-banner-response_TP.png">
+                              <!-- desktop -->
+                              <img src="missingkids/images/lost-kids-banner-response.png" alt="Lost Kids">
+                            </picture>
                           </div>
                       </div>
                     </div>
                     <p class="text-center">A meeting location at a shelter for children displaced by Hurricane Katrina</p>
                     <p class="text-center"><a href="#" title="">Is your family prepared? Click here to learn more.</a></p>
                     <h5>The Unaccompainled Minors Registy</h5>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
                       Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
                       Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac.
                     </p>
                     <p class="text-center offsetLR-md-1"><button type="button" class="btn btn-lg btn-block btn-default-dark">Join the Heros' Circle</button></p>
                     <p>Donec sed odio dui. Etiam porta</p>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
                       Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
                       Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac.
                     </p>
@@ -122,7 +129,7 @@
             </div>
 
         </div>
-      </article> 
+      </article>
 
       <footer class="footer-container">
         <div class="container">

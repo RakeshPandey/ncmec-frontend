@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    
+
     <div class="wrapper">
       <header class="header-container">
         <nav class="navbar navbar-default">
@@ -48,7 +48,7 @@
                 <div class="right-section"><button type="button" class="btn btn-lg btn-primary">Donate</button></div>
             </div>
         </nav>
-      </header> 
+      </header>
       <div class="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb hidden-xs">
@@ -74,7 +74,12 @@
                 <div class="inner-wrapper clearfix">
                   <h4 class="title-4">Picture Them Home</h4>
                   <div class="pub-content">
-                    <img class="" src="missingkids/images/MK-XA3-picturethemhome.png" alt="Donec sed odio dui" >
+                    <picture>
+                      <!-- tablet portrait -->
+                      <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/MK-XA3-picturethemhome_TP.png">
+                      <!-- desktop -->
+                      <img src="missingkids/images/MK-XA3-picturethemhome.png" alt="Donec sed odio dui">
+                    </picture>
                     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
                     <p><a class="btn btn-link download-pdf" href="#" title="View details">View details »</a></p>
                     <p><a class="btn btn-link pull-right download-pdf" href="#" title="View details">View details »</a></p>
@@ -93,7 +98,7 @@
             </div>
 
         </div>
-      </article> 
+      </article>
 
       <footer class="footer-container">
         <div class="container">
