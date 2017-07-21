@@ -1633,7 +1633,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1156px;
+    width: 944px;
   }
 }
 .container-fluid {
@@ -5311,7 +5311,6 @@ a.thumbnail.active {
 .media {
   margin-top: 15px;
   padding: 16px 0;
-  border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
 .media:first-child {
@@ -5359,6 +5358,10 @@ a.thumbnail.active {
 .media-list {
   padding-left: 0;
   list-style: none;
+}
+.section-listing-item .media-left {
+  display: inline;
+  float: left;
 }
 .list-group {
   margin-bottom: 20px;
@@ -6736,6 +6739,30 @@ button.close {
 .download-word {
   background: url("../../images/pdf-icon-small.png") no-repeat 0 0;
   padding: 16px 0 25px 60px !important;
+}
+.headline {
+  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #404041;
+}
+.section-text {
+  font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #626366;
+}
+.column-heading {
+  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #92D6E3;
+}
+.right-column-text {
+  font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #F1F1F2;
 }
 @-ms-viewport {
   width: device-width;
