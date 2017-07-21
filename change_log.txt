@@ -34,9 +34,14 @@ Added images for partner listing
 Added Less file for Partner listing to create 5 column component.
 
 
-Sprint 1 - version 1.0.5 - 19/07/2014
+Sprint 1 - version 1.0.5 - 20/07/2014
 ==========================================================================
 Change in text-image-title.html for expandable component.
 change login in expandable.js
 Added SectionListing Component Variation.
 Change in section-listing-component.html and media.less
+
+Sprint 1 - version 1.0.5 - 20/07/2014
+==========================================================================
+Added Images Variations
+Added RTE Classes
