@@ -26,10 +26,48 @@
         border-top: 0;
         border-radius: 0 0 10px 10px; 
     }
-    .more-less {
-        float: right;
-        color: @white;
-        font-size: 16px;
-        margin-right: 16px;
+}
+
+.more-less {
+    float: right;
+    color: @white;
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+#form-accordion {
+    .panel {
+        margin-bottom: 0;
+        padding: 0;
+        .panel-heading {
+            padding: 0;
+            text-align: left;
+            .panel-title {
+                a {
+                    background: @gray-dark;
+                    border-radius: 10px 10px 0 0;
+                    color: @white;
+                    display: block;
+                    font-size: 13px;
+                    padding: 10px 10px 10px 16px;
+                }
+                > a.collapsed {
+                    border-radius: 10px;
+                }
+                .more-less {
+                    margin-right: 0;
+                }
+            }
+        }
+        .panel-collapse {
+            .panel-body {
+                background: transparent;
+                border: 1px solid @gray-dark;
+                border-top: 0;
+            }
+        }
+    }
+    .panel + .panel {
+        margin-top: 16px; 
     }
 }
