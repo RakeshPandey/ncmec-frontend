@@ -11,12 +11,17 @@
   > .btn {
     position: relative;
     float: left;
+    font-size: 13px;
+    padding: 6px 15px;
     // Bring the "active" button to the front
     &:hover,
     &:focus,
     &:active,
     &.active {
       z-index: 2;
+      background: @white;
+      box-shadow: none;
+      color: @gray-dark;
     }
   }
 }
