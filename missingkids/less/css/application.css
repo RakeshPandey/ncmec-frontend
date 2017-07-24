@@ -2312,7 +2312,9 @@ th {
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #ddd;
+  background: #939597;
+  border-bottom: 0;
+  color: #fff;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -2337,7 +2339,7 @@ th {
   padding: 5px;
 }
 .table-bordered {
-  border: 1px solid #ddd;
+  border: 0;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -2346,13 +2348,22 @@ th {
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
   border: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
-  border-bottom-width: 2px;
+  border-bottom-width: 0;
+}
+.table-bordered > thead > tr > thead > tr:first-child > th {
+  border-radius: 10px 0 0 0;
+}
+.table-bordered > tbody {
+  border: 1px solid #ddd;
+  border-top: 0;
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #f9f9f9;
+  background-color: #939597;
 }
 .table-hover > tbody > tr:hover {
   background-color: #f5f5f5;
@@ -3035,6 +3046,25 @@ select[multiple].input-lg {
     padding-top: 6px;
     font-size: 16px;
   }
+}
+.ncmec-form {
+  background: #939597;
+  border-radius: 10px 10px 0 0;
+  padding: 16px;
+}
+.ncmec-form legend {
+  font-size: 16px;
+  border-bottom: 0;
+}
+.ncmec-form label {
+  color: #fff;
+}
+.ncmec-form .btn-default {
+  padding: 5px 0;
+  font-size: 16px;
+  box-shadow: none;
+  color: #F1F1F2;
+  border: 1px solid #F1F1F2;
 }
 .btn {
   display: inline-block;
@@ -3758,6 +3788,8 @@ tbody.collapse.in {
 .btn-group-vertical > .btn {
   position: relative;
   float: left;
+  font-size: 13px;
+  padding: 6px 15px;
 }
 .btn-group > .btn:hover,
 .btn-group-vertical > .btn:hover,
@@ -3768,6 +3800,9 @@ tbody.collapse.in {
 .btn-group > .btn.active,
 .btn-group-vertical > .btn.active {
   z-index: 2;
+  background: #fff;
+  box-shadow: none;
+  color: #939597;
 }
 .btn-group .btn + .btn,
 .btn-group .btn + .btn-group,
@@ -7476,6 +7511,18 @@ button.close {
 .teaser {
   margin-top: 16px;
 }
+.teaser.teaser-form .panel-heading {
+  background: #939597;
+}
+.teaser.teaser-form .panel-heading h5 {
+  position: static;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+.teaser.teaser-form .panel-heading .control-label {
+  color: #fff;
+}
 .teaser .panel {
   margin-bottom: 15px;
   background-color: transparent;
@@ -7589,13 +7636,13 @@ img {
 .inner-wrapper:after {
   clear: both;
 }
-.inner-wrapper h1,
-.inner-wrapper h2,
-.inner-wrapper h3,
-.inner-wrapper h4,
-.inner-wrapper h5,
-.inner-wrapper h6,
-.inner-wrapper p {
+.inner-wrapper > h1,
+.inner-wrapper > h2,
+.inner-wrapper > h3,
+.inner-wrapper > h4,
+.inner-wrapper > h5,
+.inner-wrapper > h6,
+.inner-wrapper > p {
   padding-left: 8px;
   padding-right: 8px;
 }
