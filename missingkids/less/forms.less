@@ -34,6 +34,7 @@ label {
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: 5px;
   font-weight: bold;
+  color: @gray-darker
 }
 
 
@@ -123,7 +124,7 @@ output {
   color: @input-color;
   background-color: @input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 0;
+  border: 1px solid @gray-darker;
   border-radius: 0; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
   .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
   .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
@@ -614,23 +615,20 @@ input[type="checkbox"] {
   }
 }
 
-
 .ncmec-form {
-  background: @gray-dark;
-  border-radius: 10px 10px 0 0;
-  padding: 16px;
-  legend {
-            font-size: 16px;
-            border-bottom: 0;
-  }
-  label {
-      color: @white;
-  }
-  .btn-default {
-      padding: 5px 0;
-      font-size: 16px;
-      box-shadow: none;
-      color: @gray-lighter;
-      border: 1px solid @gray-lighter;
-  }
+    background: transparent;
+    border: 1px solid @gray-dark;
+    border-radius: 10px 10px 0 0;
+    padding: 16px;
+    legend {
+        font-size: 16px;
+        border-bottom: 0;
+    }
+    .btn-default {
+        padding: 5px 0;
+        font-size: 16px;
+        box-shadow: none;
+        color: @gray-darker;
+        border: 1px solid @gray-darker;
+    }
 }
