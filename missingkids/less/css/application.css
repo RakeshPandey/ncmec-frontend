@@ -2572,6 +2572,7 @@ label {
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold;
+  color: #626366;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -2620,7 +2621,7 @@ output {
   color: #555555;
   background-color: #fff;
   background-image: none;
-  border: 0;
+  border: 1px solid #626366;
   border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -3065,7 +3066,8 @@ select[multiple].input-lg {
   }
 }
 .ncmec-form {
-  background: #939597;
+  background: transparent;
+  border: 1px solid #939597;
   border-radius: 10px 10px 0 0;
   padding: 16px;
 }
@@ -3073,15 +3075,12 @@ select[multiple].input-lg {
   font-size: 16px;
   border-bottom: 0;
 }
-.ncmec-form label {
-  color: #fff;
-}
 .ncmec-form .btn-default {
   padding: 5px 0;
   font-size: 16px;
   box-shadow: none;
-  color: #F1F1F2;
-  border: 1px solid #F1F1F2;
+  color: #626366;
+  border: 1px solid #626366;
 }
 .btn {
   display: inline-block;
@@ -3803,10 +3802,18 @@ tbody.collapse.in {
 }
 .btn-group > .btn,
 .btn-group-vertical > .btn {
+  color: #000;
   position: relative;
   float: left;
   font-size: 13px;
-  padding: 6px 15px;
+  padding: 4px 15px;
+  border-color: none;
+  border: 1px solid #939597;
+  border-right: 0;
+}
+.btn-group > .btn:last-child,
+.btn-group-vertical > .btn:last-child {
+  border-right: 1px solid #939597;
 }
 .btn-group > .btn:hover,
 .btn-group-vertical > .btn:hover,
@@ -3817,9 +3824,9 @@ tbody.collapse.in {
 .btn-group > .btn.active,
 .btn-group-vertical > .btn.active {
   z-index: 2;
-  background: #fff;
+  background: #939597;
   box-shadow: none;
-  color: #939597;
+  color: #fff;
 }
 .btn-group .btn + .btn,
 .btn-group .btn + .btn-group,
@@ -6782,7 +6789,15 @@ button.close {
 }
 .download-pdf {
   background: url("../../images/pdf-icon-big.png") no-repeat 0 0;
-  padding: 16px 0 25px 60px !important;
+  padding: 16px 0 32px 60px !important;
+}
+.download-pdf-medium {
+  background: url("../../images/pdf-icon-medium.png") no-repeat 0 0;
+  padding: 5px 0 5px 30px !important;
+}
+.download-pdf-small {
+  background: url("../../images/pdf-icon-small.png") no-repeat 0 9px;
+  padding: 8px 0 0 20px !important;
 }
 .download-excel {
   background: url("../../images/pdf-icon-small.png") no-repeat 0 0;
@@ -6815,6 +6830,12 @@ button.close {
   font-size: 13px;
   font-weight: 500;
   color: #F1F1F2;
+}
+.offsetT0 {
+  margin-top: 0;
+}
+.offsetB30 {
+  margin-bottom: 30px;
 }
 @-ms-viewport {
   width: device-width;
@@ -7051,36 +7072,47 @@ button.close {
   border-top: 0;
   border-radius: 0 0 10px 10px;
 }
-#accordion .more-less {
+.more-less {
   float: right;
   color: #fff;
   font-size: 16px;
   margin-right: 16px;
+}
+#form-accordion .panel {
+  margin-bottom: 0;
+  padding: 0;
+}
+#form-accordion .panel .panel-heading {
+  padding: 0;
+  text-align: left;
+}
+#form-accordion .panel .panel-heading .panel-title a {
+  background: #939597;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  display: block;
+  font-size: 13px;
+  padding: 10px 10px 10px 16px;
+}
+#form-accordion .panel .panel-heading .panel-title > a.collapsed {
+  border-radius: 10px;
+}
+#form-accordion .panel .panel-heading .panel-title .more-less {
+  margin-right: 0;
+}
+#form-accordion .panel .panel-collapse .panel-body {
+  background: transparent;
+  border: 1px solid #939597;
+  border-top: 0;
+}
+#form-accordion .panel + .panel {
+  margin-top: 16px;
 }
 .contact-us {
   padding-top: 60px;
 }
 .contact-us h5 {
   font-weight: bold;
-}
-.contact-us .contact-form {
-  background: #939597;
-  border-radius: 10px 10px 0 0;
-  padding: 16px;
-}
-.contact-us .contact-form legend {
-  font-size: 16px;
-  border-bottom: 0;
-}
-.contact-us .contact-form label {
-  color: #fff;
-}
-.contact-us .contact-form .btn-default {
-  padding: 5px 0;
-  font-size: 16px;
-  box-shadow: none;
-  color: #F1F1F2;
-  border: 1px solid #F1F1F2;
 }
 .sponsored-block {
   background: #F1F1F2;
@@ -7533,7 +7565,7 @@ button.close {
   margin-top: 16px;
 }
 .teaser.teaser-form .panel-heading {
-  background: #939597;
+  background: #fff;
 }
 .teaser.teaser-form .panel-heading h5 {
   position: static;
@@ -7542,7 +7574,11 @@ button.close {
   text-align: left;
 }
 .teaser.teaser-form .panel-heading .control-label {
-  color: #fff;
+  color: #626366;
+  padding: 0;
+}
+.teaser.teaser-form .panel-heading .form-group > [class*="col-"] {
+  padding-right: 0;
 }
 .teaser .panel {
   margin-bottom: 15px;
@@ -7588,6 +7624,10 @@ button.close {
   right: 16px;
   line-height: 19px;
   font-weight: normal;
+}
+.teaser .panel-heading .form-group {
+  margin-left: 0;
+  margin-right: 0;
 }
 .ncmec-irs-forms {
   list-style: none;
