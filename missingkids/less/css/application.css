@@ -1076,6 +1076,22 @@ th {
   src: url('../../fonts/BeautifulEveryTime/BeautifulEveryTime.eot');
   src: url('../../fonts/BeautifulEveryTime/BeautifulEveryTime.eot?#iefix') format('embedded-opentype'), url('../../fonts/BeautifulEveryTime/BeautifulEveryTime.woff') format('woff'), url('../../fonts/BeautifulEveryTime/BeautifulEveryTime.otf') format('opentype');
 }
+@font-face {
+  font-family: 'Futura';
+  src: url('../../fonts/Futura-PT/Futura.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Futura';
+  src: url('../../fonts/Futura-PT/FuturaBold.ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Futura';
+  src: url('../../fonts/Futura-PT/FuturaMdBTBoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1193,7 +1209,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: #404041;
@@ -1560,7 +1576,8 @@ address {
   font-weight: bold;
   margin-top: 0;
 }
-.para-1 {
+.para-1,
+.para-style1 {
   color: #F1F1F2;
 }
 code,
@@ -3069,7 +3086,7 @@ select[multiple].input-lg {
 .btn {
   display: inline-block;
   margin-bottom: 0;
-  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
@@ -3241,7 +3258,7 @@ fieldset[disabled] .btn-default-dark.focus {
   color: #fff;
   background-color: #39C2D7;
   border-color: #fff;
-  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -3301,7 +3318,7 @@ fieldset[disabled] .btn-primary.focus {
   color: #fff;
   background-color: #5cb85c;
   border-color: #4cae4c;
-  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -3361,7 +3378,7 @@ fieldset[disabled] .btn-success.focus {
   color: #fff;
   background-color: #5bc0de;
   border-color: #46b8da;
-  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -3421,7 +3438,7 @@ fieldset[disabled] .btn-info.focus {
   color: #fff;
   background-color: #f0ad4e;
   border-color: #eea236;
-  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -3481,7 +3498,7 @@ fieldset[disabled] .btn-warning.focus {
   color: #fff;
   background-color: #d9534f;
   border-color: #d43f3a;
-  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -4464,7 +4481,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin: 4px -8px;
 }
 .navbar-nav > li > a {
-  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 15px;
 }
@@ -6776,7 +6793,7 @@ button.close {
   padding: 16px 0 25px 60px !important;
 }
 .headline {
-  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: bold;
   color: #404041;
@@ -6788,7 +6805,7 @@ button.close {
   color: #626366;
 }
 .column-heading {
-  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: bold;
   color: #92D6E3;
@@ -7111,7 +7128,7 @@ button.close {
 }
 .sponsored-block .footer .title {
   float: left !important;
-  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-size: 16px;
   color: #92d6e3;
   font-weight: bold;
@@ -7139,7 +7156,7 @@ button.close {
 .sponsored-block .footer .right-block .contribution-amt {
   background: #39C2D7;
   border-radius: 0 0 10px 0;
-  font-family: 'ITCAvantGardeStd-Bk', 'Arial', sans-serif;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-size: 16px;
   color: #fff;
   width: 145px;
@@ -7252,6 +7269,10 @@ button.close {
 .header-container {
   background: #404041;
   min-height: 80px;
+}
+.header-container .nav > li > a {
+  padding-left: 13px;
+  padding-right: 13px;
 }
 .navbar .navbar-nav {
   padding-top: 25px;
