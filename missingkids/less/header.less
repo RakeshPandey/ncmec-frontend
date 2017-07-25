@@ -1,12 +1,19 @@
 .header-container {
-    background: @header-bg;
+
     min-height: @header-height;
+    .icon-Image-272:before {
+        content: "\e900";
+    }
+    >.navbar{
+        background: @header-bg;
+    }
 
+    > .nav {
 
-    .nav > li > a{
-
-        padding-left: 13px;
-        padding-right: 13px;
+        > li > a{
+            padding-left: 13px;
+            padding-right: 13px;
+        }
     }
 }
 .navbar {
