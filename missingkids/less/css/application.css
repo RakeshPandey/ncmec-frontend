@@ -3082,6 +3082,15 @@ select[multiple].input-lg {
   color: #626366;
   border: 1px solid #626366;
 }
+.ncmec-form hr {
+  margin: 16px -16px;
+  border-bottom: 1px solid #626366;
+  border-top: 0;
+}
+.ncmec-form .form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -6837,6 +6846,10 @@ button.close {
 .offsetB30 {
   margin-bottom: 30px;
 }
+.offsetLR16 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -7823,4 +7836,8 @@ hr {
 }
 .three-column .video-image-component .col-md-10 {
   width: 100%;
+}
+.gen-info-list .list-group-item img {
+  margin-left: 0;
+  border-radius: 10px 0 0 10px;
 }
