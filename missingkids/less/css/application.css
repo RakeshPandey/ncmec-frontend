@@ -1638,6 +1638,9 @@ address {
 .para-style1 {
   color: #F1F1F2;
 }
+.polo-blue {
+  color: #92D6E3;
+}
 code,
 kbd,
 pre,
@@ -2639,7 +2642,7 @@ input[type="search"] {
 }
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
+  margin: 2px 0 0;
   margin-top: 1px \9;
   line-height: normal;
 }
@@ -5489,6 +5492,9 @@ a.thumbnail.active {
   display: inline;
   float: left;
 }
+.section-listing-item .media-left picture img {
+  border-radius: 10px 0 0 10px;
+}
 .list-group {
   margin-bottom: 20px;
   padding-left: 0;
@@ -5702,6 +5708,7 @@ button.list-group-item-danger.active:focus {
   font-weight: normal;
   margin-bottom: 0;
   line-height: 16px;
+  padding: 0 16px;
 }
 .list-group-item {
   padding: 16px 16px 16px 0;
@@ -7872,6 +7879,19 @@ button.close {
 }
 .missing-person-lists li .missing-person-link {
   padding-top: 10px;
+}
+.teaser-component .teaser .panel .panel-body h1,
+.teaser-component .teaser .panel .panel-body h2,
+.teaser-component .teaser .panel .panel-body h3,
+.teaser-component .teaser .panel .panel-body h4,
+.teaser-component .teaser .panel .panel-body h5,
+.teaser-component .teaser .panel .panel-body h6 {
+  color: #F1F1F2;
+}
+.teaser-component .teaser .panel .panel-body p,
+.teaser-component .teaser .panel .panel-body span,
+.teaser-component .teaser .panel .panel-body small {
+  color: #F1F1F2;
 }
 picture,
 img {

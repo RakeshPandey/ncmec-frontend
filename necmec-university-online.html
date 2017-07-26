@@ -81,7 +81,7 @@
                         If you are an international law enforcement officer, please use our <a href="#">International Law Enforcement Application</a>.
                     </p>
                     <h5>To apply, please fill out the form below.</h5>
-                    <div class="form ncmec-form row">
+                    <div class="form ncmec-form row">                        
                         <form class="form-horizontal">
                             <legend>NCMEC University Online Form</legend>
                         <!--    <div class="form-group">
@@ -123,8 +123,7 @@
                                     </label>
                                 </div>
                             </div> -->
-                            
-                            <div class="form-group">
+                            <div id="js-select-form" class="form-group">
                                 <div class="radio">
                                     <label for="ncmec-uni-online">
                                         <input type="radio" name="ncmec-forms-online" id="ncmec-uni-online" checked value="js-ncmec-univ-form">
@@ -156,376 +155,894 @@
                                     </label>
                                 </div>
                             </div>
-
-                            <hr/>
-                            <!-- NCMEC University Form Starts Here -->
-                            <div id="js-ncmec-univ-form" class="ncmec-form-content">
-                                <div class="form-group">
-                                    <label for="prefix" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
-                                    <div class="col-md-3 col-sm-3 col-xs-3">
-                                        <select class="form-control" name="prefix" id="prefix">
-                                            <option>Mr.</option>
-                                            <option>Mrs.</option>
-                                            <option>Ms.</option>
-                                            <option>Dr.</option>
-                                        </select>
+                            <hr />
+                            <div id="js-forms-content">
+                                <!-- NCMEC University Form Starts Here -->
+                                <div id="js-ncmec-univ-form" class="ncmec-form-content">
+                                    <div class="form-group">
+                                        <label for="prefix" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <select class="form-control" name="prefix" id="prefix">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fname" class="col-md-3 col-sm-3 col-xs-3 control-label">First Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="fname" id="fname">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mname" class="col-md-3 col-sm-3 col-xs-3 control-label">Middle Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="mname" id="mname">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lname" class="col-md-3 col-sm-3 col-xs-3 control-label">Last Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="lname" id="lname">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="suffix" class="col-md-3 col-sm-3 col-xs-3 control-label">Suffix:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="suffix" id="suffix">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="agency_dept" class="col-md-3 col-sm-3 col-xs-3 control-label">Agency/Dep:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="agency_dept" id="agency_dept">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="unit_position" class="col-md-3 col-sm-3 col-xs-3 control-label">Unit/Positon:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="unit_position" id="unit_position">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="address" class="col-md-3 col-sm-3 col-xs-3 control-label">Address:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="address" id="address">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city" class="col-md-3 col-sm-3 col-xs-3 control-label">City:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="city" id="city">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state" class="col-md-3 col-sm-3 col-xs-3 control-label">State:</label>
+                                        <div class="col-md-4 col-sm-4 col-xs-4">
+                                            <select class="form-control"  name="state" id="state" aria-required="true" aria-invalid="true"><option value="All">Select</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="GU">Guam</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="MP">Northern Mariana Islands</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VI">Virgin Islands</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option></select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="zip" class="col-md-3 col-sm-3 col-xs-3 control-label">Zip:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="zip" id="zip">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="col-md-3 col-sm-3 col-xs-3 control-label">Country:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="country" id="country">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone" class="col-md-3 col-sm-3 col-xs-3 control-label">Phone:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="phone" id="phone">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cell_phone" class="col-md-3 col-sm-3 col-xs-3 control-label">Cell Phone:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="cell_phone" id="cell_phone">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="col-md-3 col-sm-3 col-xs-3 control-label">Email:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="email" class="form-control" name="email" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="alt_email" class="col-md-3 col-sm-3 col-xs-3 control-label">Alternate Email:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="email" class="form-control" name="alt_email" id="alt_email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fax" class="col-md-3 col-sm-3 col-xs-3 control-label">Fax:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="fax" id="fax">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h5>What is your role?</h5>
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label class="radio-inline" for="law_enforcement">
+                                                <input type="radio" name="applicantType" id="law_enforcement" value="option1"> Law Enforcement
+                                            </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="radio-inline" for="child_serving">
+                                                <input type="radio" name="applicantType" id="child_serving" value="option2"> Child Serving Professional
+                                            </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="radio-inline" for="private_security">
+                                                <input type="radio" name="applicantType" id="private_security" value="option3"> Private Security Professional
+                                            </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="radio-inline" for="education_professional">
+                                                <input type="radio" name="applicantType" id="education_professional" value="option3"> Education Professional
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form_group">
+                                        <div class="radio">
+                                            <label for="ncmec_newsletter">
+                                                <input type="radio" name="ncmec_newsletter" id="ncmec_newsletter" value="option2">
+                                                I would like to receive news about NCMEC programs and resources.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p class="LMS supervisorPrompt textColorRed">Please provide supervisor's name, title, email, and phone number below.</p>
+                                    <div class="form-group">
+                                        <label for="contact_text_0" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Your Comments</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <textarea class="form-control" name="contact_text_0" id="contact_text_0" rows="10">
+                                                
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <p class="LMS smallText"><em>Please note: You may be contacted to provide additional information to verify your status.</em></p>
+                                    <hr />
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-3 col-sm-5 col-xs-5">
+                                            <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="fname" class="col-md-3 col-sm-3 col-xs-3 control-label">First Name:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="fname" id="fname">
+                                <!-- NCMEC University Form Ends Here -->
+                                <!-- Missing Children Seminar for Chief Executives Application Form Starts Here -->
+                                <div id="js-ce-application" class="ncmec-form-content">
+                                    <div class="form-group">
+                                        <label for="prefix-1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <select class="form-control" name="prefix-1" id="prefix-1">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fname_1" class="col-md-3 col-sm-3 col-xs-3 control-label">First Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="fname_1" id="fname_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mname_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Middle Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="mname_1" id="mname_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lname_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Last Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="lname_1" id="lname_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="suffix_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Suffix:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="suffix_1" id="suffix_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="first_choice_1" class="col-md-3 col-sm-3 col-xs-3 control-label">First Choice:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <select class="form-control" name="first_choice_1" id="first_choice_1">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="second_choice_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Second Choice:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <select class="form-control" name="second_choice_1" id="second_choice_1">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="agency_dept_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Agency/Dep:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="agency_dept_1" id="agency_dept_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="unit_position_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Unit/Positon:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="unit_position_1" id="unit_position_1">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="address_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Address:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="address_1" id="address_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city_1" class="col-md-3 col-sm-3 col-xs-3 control-label">City:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="city_1" id="city_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state_1" class="col-md-3 col-sm-3 col-xs-3 control-label">State:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="state_1" id="state_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="zip_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Zip:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="zip_1" id="zip_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Country:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="country_1" id="country_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Phone:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="phone_1" id="phone_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cell_phone_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Cell Phone:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="cell_phone_1" id="cell_phone_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Email:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="email" class="form-control" name="email_1" id="email_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="alt_email_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Alternate Email:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="email" class="form-control" name="alt_email_1" id="alt_email_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fax_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Fax:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="fax_1" id="fax_1">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="sworn_title_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Sworn Title:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="sworn_title_1" id="sworn_title_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ncic_agency_1" class="col-md-3 col-sm-3 col-xs-3 control-label">NCIC Agency Identifier (9 character ORI):</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="ncic_agency_1" id="ncic_agency_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="child_policy_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> you currently have a Missing Child Policy in place?:</label>
+                                        <div class="radio col-sm-offset-3">
+                                            <label for="child_policy_yes">
+                                                <input type="radio" name="child_policy" id="child_policy_yes" value="Yes">
+                                                Yes
+                                            </label>
+                                            <label for="child_policy_no">
+                                                <input type="radio" name="child_policy" id="child_policy_no" value="No">
+                                                No
+                                            </label>
+                                        </div>                                                                                              
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="jurix_population" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> What is the population of your jurisdiction?:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="jurix_population" id="jurix_population">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sworn_officers" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> How many sworn officers are in your agency?:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="sworn_officers" id="sworn_officers">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="contact_text_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Your Comments</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <textarea class="form-control" name="contact_text_1" id="contact_text_1" rows="10">
+                                                
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-3 col-sm-5 col-xs-5">
+                                            <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="mname" class="col-md-3 col-sm-3 col-xs-3 control-label">Middle Name:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="mname" id="mname">
+                                <!-- Missing Children Seminar for Chief Executives Application Form Ends Here -->
+                                <!-- Missing Children Seminar for MCDR Form Starts Here -->
+                                <div id="js-mcdr" class="ncmec-form-content">
+                                    <div class="form-group">
+                                        <label for="prefix_2" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <select class="form-control" name="prefix_2" id="prefix_2">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fname_2" class="col-md-3 col-sm-3 col-xs-3 control-label">First Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="fname_2" id="fname_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mname_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Middle Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="mname_2" id="mname_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lname_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Last Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="lname_2" id="lname_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="suffix_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Suffix:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="suffix_2" id="suffix_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="first_choice_2" class="col-md-3 col-sm-3 col-xs-3 control-label">First Choice:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <select class="form-control" name="first_choice_2" id="first_choice_2">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="second_choice_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Second Choice:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <select class="form-control" name="second_choice_2" id="second_choice_2">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="agency_dept_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Agency/Dep:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="agency_dept_2" id="agency_dept_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="unit_position_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Unit/Positon:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="unit_position_2" id="unit_position_2">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="address_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Address:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="address_2" id="address_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city_2" class="col-md-3 col-sm-3 col-xs-3 control-label">City:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="city_2" id="city_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state_2" class="col-md-3 col-sm-3 col-xs-3 control-label">State:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="state_2" id="state_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="zip_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Zip:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="zip_2" id="zip_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Country:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="country_2" id="country_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Phone:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="phone_2" id="phone_1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cell_phone_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Cell Phone:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="cell_phone_1" id="cell_phone_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Email:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="email" class="form-control" name="email_2" id="email_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="alt_email_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Alternate Email:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="email" class="form-control" name="alt_email_2" id="alt_email_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fax_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Fax:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="fax_2" id="fax_2">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="sworn_title_2" class="col-md-3 col-sm-3 col-xs-3 control-label">Sworn Title:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="sworn_title_2" id="sworn_title_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ncic_agency_2" class="col-md-3 col-sm-3 col-xs-3 control-label">NCIC Agency Identifier (9 character ORI):</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="ncic_agency_2" id="ncic_agency_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="child_policy_2" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> you currently have a Missing Child Policy in place?:</label>
+                                        <div class="radio col-sm-offset-3">
+                                            <label for="child_policy_yes_2">
+                                                <input type="radio" name="child_policy_2" id="child_policy_yes_2" value="Yes">
+                                                Yes
+                                            </label>
+                                            <label for="child_policy_no_1">
+                                                <input type="radio" name="child_policy_2" id="child_policy_no_2" value="No">
+                                                No
+                                            </label>
+                                        </div>                                                                                              
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="jurix_population_2" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> What is the population of your jurisdiction?:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="jurix_population_2" id="jurix_population_2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sworn_officers_2" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> How many sworn officers are in your agency?:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="sworn_officers_2" id="sworn_officers_2">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="contact_text_2" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Your Comments</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <textarea class="form-control" name="contact_text_2" id="contact_text_2" rows="10">
+                                                
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-3 col-sm-5 col-xs-5">
+                                            <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="lname" class="col-md-3 col-sm-3 col-xs-3 control-label">Last Name:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="lname" id="lname">
+                                <!-- Missing Children Seminar for MCDR Form Ends Here -->
+                                <!-- Missing Children Seminar for Chief Executives Application Officer Form Starts Here -->
+                                <div id="js-ceo-application" class="ncmec-form-content">
+                                    <div class="form-group">
+                                        <label for="prefix_3" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <select class="form-control" name="prefix_3" id="prefix_3">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fname_3" class="col-md-3 col-sm-3 col-xs-3 control-label">First Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="fname_3" id="fname_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mname_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Middle Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="mname_3" id="mname_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lname_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Last Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="lname_3" id="lname_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="suffix_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Suffix:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="suffix_3" id="suffix_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="first_choice_3" class="col-md-3 col-sm-3 col-xs-3 control-label">First Choice:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <select class="form-control" name="first_choice_3" id="first_choice_3">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="second_choice_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Second Choice:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <select class="form-control" name="second_choice_3" id="second_choice_3">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="agency_dept_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Agency/Dep:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="agency_dept_3" id="agency_dept_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="unit_position_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Unit/Positon:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="unit_position_3" id="unit_position_3">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="address_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Address:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="address_3" id="address_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city_3" class="col-md-3 col-sm-3 col-xs-3 control-label">City:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="city_3" id="city_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state_3" class="col-md-3 col-sm-3 col-xs-3 control-label">State:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="state_3" id="state_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="zip_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Zip:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="zip_3" id="zip_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Country:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="country_3" id="country_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Phone:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="phone_3" id="phone_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cell_phone_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Cell Phone:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="cell_phone_3" id="cell_phone_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Email:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="email" class="form-control" name="email_3" id="email_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="alt_email_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Alternate Email:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="email" class="form-control" name="alt_email_3" id="alt_email_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fax_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Fax:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="fax_3" id="fax_3">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="sworn_title_3" class="col-md-3 col-sm-3 col-xs-3 control-label">Sworn Title:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="sworn_title_3" id="sworn_title_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ncic_agency_3" class="col-md-3 col-sm-3 col-xs-3 control-label">NCIC Agency Identifier (9 character ORI):</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="ncic_agency_3" id="ncic_agency_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="child_policy_3" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> you currently have a Missing Child Policy in place?:</label>
+                                        <div class="radio col-sm-offset-3">
+                                            <label for="child_policy_yes_4">
+                                                <input type="radio" name="child_policy_3" id="child_policy_yes_3" value="Yes">
+                                                Yes
+                                            </label>
+                                            <label for="child_policy_no_3">
+                                                <input type="radio" name="child_policy_3" id="child_policy_no_3" value="No">
+                                                No
+                                            </label>
+                                        </div>                                                                                              
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="jurix_population_3" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> What is the population of your jurisdiction?:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="jurix_population_3" id="jurix_population_3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sworn_officers_3" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> How many sworn officers are in your agency?:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="jurix_population_3" id="jurix_population_3">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="contact_text_3" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Your Comments</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <textarea class="form-control" name="contact_text_3" id="contact_text_3" rows="10">
+                                                
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-3 col-sm-5 col-xs-5">
+                                            <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="suffix" class="col-md-3 col-sm-3 col-xs-3 control-label">Suffix:</label>
-                                    <div class="col-md-3 col-sm-3 col-xs-3">
-                                        <input type="text" class="form-control" name="suffix" id="suffix">
+                                <!-- Missing Children Seminar for Chief Executives Application Officer Form Ends Here -->
+                                <!-- Course Application for : CSTAR14 Form Starts Here -->
+                                <div id="js-course-application" class="ncmec-form-content">
+                                    <div class="form-group">
+                                        <label for="prefix_4" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <select class="form-control" name="prefix_4" id="prefix_4">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fname_4" class="col-md-3 col-sm-3 col-xs-3 control-label">First Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="fname_4" id="fname_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mname_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Middle Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="mname_4" id="mname_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lname_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Last Name:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="lname_4" id="lname_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="suffix_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Suffix:</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="suffix_4" id="suffix_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="first_choice_4" class="col-md-3 col-sm-3 col-xs-3 control-label">First Choice:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <select class="form-control" name="first_choice_4" id="first_choice_4">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="second_choice_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Second Choice:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <select class="form-control" name="second_choice_4" id="second_choice_4">
+                                                <option>Mr.</option>
+                                                <option>Mrs.</option>
+                                                <option>Ms.</option>
+                                                <option>Dr.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="agency_dept_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Agency/Dep:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="agency_dept_4" id="agency_dept_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="unit_position_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Unit/Positon:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="unit_position_4" id="unit_position_4">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="address_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Address:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="address_4" id="address_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city_4" class="col-md-3 col-sm-3 col-xs-3 control-label">City:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="city_4" id="city_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state_4" class="col-md-3 col-sm-3 col-xs-3 control-label">State:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="state_4" id="state_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="zip_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Zip:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="zip_4" id="zip_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Country:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="country_4" id="country_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Phone:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="phone_4" id="phone_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cell_phone_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Cell Phone:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="cell_phone_4" id="cell_phone_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Email:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="email" class="form-control" name="email_4" id="email_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="alt_email_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Alternate Email:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="email" class="form-control" name="alt_email_4" id="alt_email_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fax_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Fax:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="fax_4" id="fax_4">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="sworn_title_4" class="col-md-3 col-sm-3 col-xs-3 control-label">Sworn Title:</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="sworn_title_4" id="sworn_title_4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ncic_agency_4" class="col-md-3 col-sm-3 col-xs-3 control-label">NCIC Agency Identifier (9 character ORI):</label>
+                                        <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <input type="text" class="form-control" name="ncic_agency_4" id="ncic_agency_4">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label for="contact_text_4" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Your Comments</label>
+                                        <div class="col-md-7 col-sm-8 col-xs-9">
+                                            <textarea class="form-control" name="contact_text_4" id="contact_text_4" rows="10">
+                                                
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-3 col-sm-5 col-xs-5">
+                                            <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="first_choice" class="col-md-3 col-sm-3 col-xs-3 control-label">First Choice:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <select class="form-control" name="first_choice" id="first_choice">
-                                            <option>Mr.</option>
-                                            <option>Mrs.</option>
-                                            <option>Ms.</option>
-                                            <option>Dr.</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="second_choice" class="col-md-3 col-sm-3 col-xs-3 control-label">Second Choice:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <select class="form-control" name="second_choice" id="second_choice">
-                                            <option>Mr.</option>
-                                            <option>Mrs.</option>
-                                            <option>Ms.</option>
-                                            <option>Dr.</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="agency_dept" class="col-md-3 col-sm-3 col-xs-3 control-label">Agency/Dep:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="agency_dept" id="agency_dept">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="unit_position" class="col-md-3 col-sm-3 col-xs-3 control-label">Unit/Positon:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="unit_position" id="unit_position">
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="form-group">
-                                    <label for="address" class="col-md-3 col-sm-3 col-xs-3 control-label">Address:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="address" id="address">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="city" class="col-md-3 col-sm-3 col-xs-3 control-label">City:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="city" id="city">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="state" class="col-md-3 col-sm-3 col-xs-3 control-label">State:</label>
-                                    <div class="col-md-4 col-sm-4 col-xs-4">
-                                        <select class="form-control"  name="state" id="state" aria-required="true" aria-invalid="true"><option value="All">Select</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="GU">Guam</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="MP">Northern Mariana Islands</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VI">Virgin Islands</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option></select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="zip" class="col-md-3 col-sm-3 col-xs-3 control-label">Zip:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="zip" id="zip">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="country" class="col-md-3 col-sm-3 col-xs-3 control-label">Country:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="country" id="country">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone" class="col-md-3 col-sm-3 col-xs-3 control-label">Phone:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="phone" id="phone">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="cell_phone" class="col-md-3 col-sm-3 col-xs-3 control-label">Cell Phone:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="cell_phone" id="cell_phone">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="col-md-3 col-sm-3 col-xs-3 control-label">Email:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="email" class="form-control" name="email" id="email">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="alt_email" class="col-md-3 col-sm-3 col-xs-3 control-label">Alternate Email:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="email" class="form-control" name="alt_email" id="alt_email">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="fax" class="col-md-3 col-sm-3 col-xs-3 control-label">Fax:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="fax" id="fax">
-                                    </div>
-                                </div>
-                                <hr>
-                                <h5>What is your role?</h5>
-                                <div class="form-group">
-                                    <div class="col-md-6">
-                                        <label class="radio-inline" for="law_enforcement">
-                                            <input type="radio" name="applicantType" id="law_enforcement" value="option1"> Law Enforcement
-                                        </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="radio-inline" for="child_serving">
-                                            <input type="radio" name="applicantType" id="child_serving" value="option2"> Child Serving Professional
-                                        </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="radio-inline" for="private_security">
-                                            <input type="radio" name="applicantType" id="private_security" value="option3"> Private Security Professional
-                                        </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="radio-inline" for="education_professional">
-                                            <input type="radio" name="applicantType" id="education_professional" value="option3"> Education Professional
-                                        </label>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="form_group">
-                                    <div class="radio">
-                                        <label for="ncmec_newsletter">
-                                            <input type="radio" name="ncmec_newsletter" id="ncmec_newsletter" value="option2">
-                                            I would like to receive news about NCMEC programs and resources.
-                                        </label>
-                                    </div>
-                                </div>
-                                <hr>
-                                <p class="LMS supervisorPrompt textColorRed">Please provide supervisor's name, title, email, and phone number below.</p>
-                                <div class="form-group">
-                                    <label for="contact-text" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Your Comments</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <textarea class="form-control" id="contact-text" rows="10">
-                                            
-                                        </textarea>
-                                    </div>
-                                </div>
-                                <p class="LMS smallText"><em>Please note: You may be contacted to provide additional information to verify your status.</em></p>
-                                <hr />
-                                <div class="form-group">
-                                    <div class="col-sm-offset-3 col-sm-5 col-xs-5">
-                                        <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
-                                    </div>
-                                </div>
+                            <!-- Course Application for : CSTAR14 Form Ends Here -->
                             </div>
-                            <!-- NCMEC University Form Ends Here -->
-                            <!-- Missing Children Seminar for Chief Executives Application Form Starts Here -->
-                            <div id="js-ce-application" class="ncmec-form-content">
-                                <div class="form-group">
-                                    <label for="prefix" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <select class="form-control" name="prefix" id="prefix">
-                                            <option>Mr.</option>
-                                            <option>Mrs.</option>
-                                            <option>Ms.</option>
-                                            <option>Dr.</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="fname" class="col-md-3 col-sm-3 col-xs-3 control-label">First Name:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="fname" id="fname">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="mname" class="col-md-3 col-sm-3 col-xs-3 control-label">Middle Name:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="mname" id="mname">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="lname" class="col-md-3 col-sm-3 col-xs-3 control-label">Last Name:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="lname" id="lname">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="suffix" class="col-md-3 col-sm-3 col-xs-3 control-label">Suffix:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="suffix" id="suffix">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="first_choice" class="col-md-3 col-sm-3 col-xs-3 control-label">First Choice:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <select class="form-control" name="first_choice" id="first_choice">
-                                            <option>Mr.</option>
-                                            <option>Mrs.</option>
-                                            <option>Ms.</option>
-                                            <option>Dr.</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="second_choice" class="col-md-3 col-sm-3 col-xs-3 control-label">Second Choice:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <select class="form-control" name="second_choice" id="second_choice">
-                                            <option>Mr.</option>
-                                            <option>Mrs.</option>
-                                            <option>Ms.</option>
-                                            <option>Dr.</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="agency_dept" class="col-md-3 col-sm-3 col-xs-3 control-label">Agency/Dep:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="agency_dept" id="agency_dept">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="unit_position" class="col-md-3 col-sm-3 col-xs-3 control-label">Unit/Positon:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="unit_position" id="unit_position">
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="form-group">
-                                    <label for="address" class="col-md-3 col-sm-3 col-xs-3 control-label">Address:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="address" id="address">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="city" class="col-md-3 col-sm-3 col-xs-3 control-label">City:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="city" id="city">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="state" class="col-md-3 col-sm-3 col-xs-3 control-label">State:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="state" id="state">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="zip" class="col-md-3 col-sm-3 col-xs-3 control-label">Zip:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="zip" id="zip">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="country" class="col-md-3 col-sm-3 col-xs-3 control-label">Country:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="country" id="country">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone" class="col-md-3 col-sm-3 col-xs-3 control-label">Phone:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="phone" id="phone">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="cell_phone" class="col-md-3 col-sm-3 col-xs-3 control-label">Cell Phone:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="cell_phone" id="cell_phone">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="col-md-3 col-sm-3 col-xs-3 control-label">Email:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="email" class="form-control" name="email" id="email">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="alt_email" class="col-md-3 col-sm-3 col-xs-3 control-label">Alternate Email:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="email" class="form-control" name="alt_email" id="alt_email">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="fax" class="col-md-3 col-sm-3 col-xs-3 control-label">Fax:</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="fax" id="fax">
-                                    </div>
-                                </div>
-                                <hr>
-                                <h5>What is your role?</h5>
-                                <div class="form-group">
-                                    <div class="col-md-6">
-                                        <label class="radio-inline" for="law_enforcement">
-                                            <input type="radio" name="applicantType" id="law_enforcement" value="option1"> Law Enforcement
-                                        </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="radio-inline" for="child_serving">
-                                            <input type="radio" name="applicantType" id="child_serving" value="option2"> Child Serving Professional
-                                        </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="radio-inline" for="private_security">
-                                            <input type="radio" name="applicantType" id="private_security" value="option3"> Private Security Professional
-                                        </label>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label class="radio-inline" for="education_professional">
-                                            <input type="radio" name="applicantType" id="education_professional" value="option3"> Education Professional
-                                        </label>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="form_group">
-                                    <div class="radio">
-                                        <label for="ncmec_newsletter">
-                                            <input type="radio" name="ncmec_newsletter" id="ncmec_newsletter" value="option2">
-                                            I would like to receive news about NCMEC programs and resources.
-                                        </label>
-                                    </div>
-                                </div>
-                                <hr>
-                                <p class="LMS supervisorPrompt textColorRed">Please provide supervisor's name, title, email, and phone number below.</p>
-                                <div class="form-group">
-                                    <label for="contact-text" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Your Comments</label>
-                                    <div class="col-md-7 col-sm-8 col-xs-9">
-                                        <textarea class="form-control" id="contact-text" rows="10">
-                                            
-                                        </textarea>
-                                    </div>
-                                </div>
-                                <p class="LMS smallText"><em>Please note: You may be contacted to provide additional information to verify your status.</em></p>
-                                <hr />
-                                <div class="form-group">
-                                    <div class="col-sm-offset-3 col-sm-5 col-xs-5">
-                                        <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Missing Children Seminar for Chief Executives Application Form Ends Here -->
                         </form>
                     </div>
                 </div>
