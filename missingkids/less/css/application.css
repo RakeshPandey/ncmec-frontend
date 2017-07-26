@@ -1123,6 +1123,7 @@ th {
 /* Webfont: NECMEC Futura  - Webfont */
 @font-face {
   font-family: 'Futura';
+  src: url('../../fonts/Futura-PT/Futura-Book.ttf');
   src: url('../../fonts/Futura-PT/Futura.otf') format('opentype');
 }
 @font-face {
@@ -1145,7 +1146,7 @@ th {
 }
 /* Webfont: NECMEC Custom Icomoon */
 @font-face {
-  font-family: 'ITCAvantGardeStd-Bk';
+  font-family: 'icomoon';
   src: url('../../fonts/CustomIcomoon/icomoon.eot');
   src: url('../../fonts/CustomIcomoon/icomoon.eot?#iefix') format('embedded-opentype'), url('../../fonts/CustomIcomoon/icomoon.woff') format('woff'), url('../../fonts/CustomIcomoon/ITCAvantGardeStd-Bk.otf') format('opentype');
 }
@@ -3322,7 +3323,7 @@ fieldset[disabled] .btn-default-dark.focus {
 .btn-primary {
   color: #fff;
   background-color: #39C2D7;
-  border-color: #fff;
+  border-color: #39C2D7;
   font-family: 'Futura', 'Arial', sans-serif;
   font-size: 24px;
   text-transform: uppercase;
@@ -3331,19 +3332,19 @@ fieldset[disabled] .btn-default-dark.focus {
 .btn-primary.focus {
   color: #fff;
   background-color: #25a4b8;
-  border-color: #bfbfbf;
+  border-color: #186b78;
 }
 .btn-primary:hover {
   color: #fff;
   background-color: #25a4b8;
-  border-color: #e0e0e0;
+  border-color: #239daf;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
   background-color: #25a4b8;
-  border-color: #e0e0e0;
+  border-color: #239daf;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3356,7 +3357,7 @@ fieldset[disabled] .btn-default-dark.focus {
 .open > .dropdown-toggle.btn-primary.focus {
   color: #fff;
   background-color: #1f8a9a;
-  border-color: #bfbfbf;
+  border-color: #186b78;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3373,7 +3374,7 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
   background-color: #39C2D7;
-  border-color: #fff;
+  border-color: #39C2D7;
 }
 .btn-primary .badge {
   color: #39C2D7;
@@ -3669,7 +3670,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-xs,
 .btn-group-xs > .btn {
-  padding: 2px 10px;
+  padding: 2px 16px;
   font-size: 16px;
   line-height: 1.5;
   border-radius: 6px;
@@ -4214,7 +4215,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 0px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -7371,22 +7372,147 @@ button.close {
 .header-container {
   min-height: 80px;
 }
-.header-container .icon-Image-272:before {
-  content: "\e900";
+.header-container .nav > li {
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.header-container > .navbar {
+.header-container .navbar .navbar-header {
+  padding-left: 8px;
   background: #404041;
 }
-.header-container > .nav > li > a {
-  padding-left: 13px;
-  padding-right: 13px;
+.header-container .navbar .navbar-header .navbar-brand {
+  padding: 6px 0;
 }
-.navbar .navbar-nav {
-  padding-top: 25px;
+.header-container .navbar .navbar-header .donate-btn-container {
+  float: right;
+  margin: 10px;
 }
-.navbar .right-section {
+.header-container .navbar .navbar-header .donate-btn-container .btn {
+  font-family: 'Futura', 'Arial', sans-serif;
+  padding: 2px;
+  font-size: 16px;
+}
+.header-container .navbar .navbar-header .navbar-toggle {
+  border: none;
+  padding: 0;
+  margin: 8px 16px;
+}
+.header-container .navbar .navbar-header .navbar-toggle img {
+  height: 32px;
+  width: 8px;
+}
+.header-container .navbar .navbar-header .navbar-toggle:focus {
+  background-color: transparent;
+}
+.header-container .navbar .navbar-header .mobile-logo {
+  height: 100%;
+}
+.header-container #navbar {
+  background: #626366;
+  height: 30px;
+  position: absolute;
+  z-index: 99;
+  overflow-x: scroll;
+  width: 100%;
+}
+.header-container #navbar > ul {
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+}
+.header-container #navbar > ul > li {
+  display: inline-block;
+  padding: 7px 8px 7px 8px;
+}
+.header-container #navbar > ul > li a {
+  color: #fff;
+}
+.header-container #navbar > ul > li.open {
+  background-color: #fff;
+}
+.header-container #navbar > ul > li.open a {
+  text-decoration: none;
+  color: #008DB6;
+}
+.header-container #navbar > ul > li.open > ul {
+  position: fixed;
+  top: 80px;
+  width: 95%;
+  border-radius: 0;
+  left: 8px;
   padding: 16px;
-  float: right !important;
+  border: 0;
+  margin: 0;
+  font-family: 'Futura', 'Arial', sans-serif;
+  font-weight: bold;
+}
+.header-container .secondary-header {
+  background: #626366;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-container .secondary-header ul {
+  padding-left: 8px;
+  padding-bottom: 5px;
+  height: 30px;
+  padding-top: 5px;
+  margin: 0;
+}
+.header-container .secondary-header ul li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 16px;
+}
+.header-container .secondary-header ul li img {
+  width: 20px;
+  height: 20px;
+}
+.header-container .secondary-header .site-functionalities {
+  display: flex;
+  flex-direction: row;
+  /* The switch - the box around the slider */
+  /* Hide default HTML checkbox */
+}
+.header-container .secondary-header .site-functionalities .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 0;
+}
+.header-container .secondary-header .site-functionalities .switch .lang {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+.header-container .secondary-header .site-functionalities .switch .lang .en,
+.header-container .secondary-header .site-functionalities .switch .lang .sp {
+  height: 100%;
+  display: inline-block;
+  flex: 1;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 2px;
+  font-family: 'Futura', 'Arial', sans-serif;
+  font-weight: normal;
+}
+.header-container .secondary-header .site-functionalities .switch .en {
+  background: #fff;
+  color: #404041;
+}
+.header-container .secondary-header .site-functionalities .switch input {
+  display: none;
+}
+.header-container .secondary-header .site-functionalities input:checked + .lang .en {
+  background: transparent;
+  color: #fff;
+}
+.header-container .secondary-header .site-functionalities input:checked + .lang .sp {
+  background: #fff;
+  color: #404041;
 }
 .hero-youtube iframe {
   width: 100%;
