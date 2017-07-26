@@ -1170,7 +1170,7 @@ body {
   font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 1.23;
-  color: #939597;
+  color: #95989A;
   background-color: #f1f1f1;
 }
 input,
@@ -1677,7 +1677,7 @@ pre {
   line-height: 1.23;
   word-break: break-all;
   word-wrap: break-word;
-  color: #939597;
+  color: #95989A;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -2625,7 +2625,7 @@ legend {
   margin-bottom: 15px;
   font-size: 19.5px;
   line-height: inherit;
-  color: #939597;
+  color: #95989A;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -3037,7 +3037,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #d4d5d6;
+  color: #d6d7d8;
 }
 @media (min-width: 767px) {
   .form-inline .form-group {
@@ -3129,12 +3129,15 @@ select[multiple].input-lg {
 }
 .ncmec-form {
   background: transparent;
-  border: 1px solid #939597;
+  border: 1px solid #95989A;
   border-radius: 10px 10px 0 0;
   padding: 16px;
 }
 .ncmec-form legend {
+  color: #404041;
+  font-family: 'Futura', 'Arial', sans-serif;
   font-size: 16px;
+  font-weight: bold;
   border-bottom: 0;
 }
 .ncmec-form .btn-default {
@@ -3691,6 +3694,28 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+.social-buttons {
+  padding: 20px 0 16px 8px;
+}
+.social-buttons .btn-social {
+  background: #1b95e0;
+  border-radius: 10px;
+  box-shadow: none;
+  color: #fff;
+  font-family: 'Futura', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 30px;
+  padding: 0 10px;
+  width: 200px;
+  height: 32px;
+  text-align: left;
+}
+.social-buttons .btn-social i {
+  font-size: 24px;
+  padding: 0 10px 0 0;
+  vertical-align: middle;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -3778,13 +3803,13 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.23;
-  color: #939597;
+  color: #95989A;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #86888a;
+  color: #888b8e;
   background-color: #f5f5f5;
 }
 .dropdown-menu > .active > a,
@@ -3879,7 +3904,7 @@ tbody.collapse.in {
   font-size: 13px;
   padding: 4px 15px;
   border-color: none;
-  border: 1px solid #939597;
+  border: 1px solid #95989A;
   border-right: 0;
 }
 .btn-group > .btn:last-child,
@@ -3895,7 +3920,7 @@ tbody.collapse.in {
 .btn-group > .btn.active,
 .btn-group-vertical > .btn.active {
   z-index: 2;
-  background: #939597;
+  background: #95989A;
   box-shadow: none;
   color: #fff;
 }
@@ -5972,7 +5997,7 @@ button.list-group-item-danger.active:focus {
   border-color: #ddd;
 }
 .panel-default > .panel-heading {
-  color: #939597;
+  color: #95989A;
   background-color: #fff;
   border-color: #ddd;
 }
@@ -5981,7 +6006,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading .badge {
   color: #fff;
-  background-color: #939597;
+  background-color: #95989A;
 }
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #ddd;
@@ -6916,6 +6941,9 @@ button.close {
   margin-left: 16px;
   margin-right: 16px;
 }
+.offsetTB20 {
+  margin: 20px 0;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -7166,7 +7194,7 @@ button.close {
   text-align: left;
 }
 #form-accordion .panel .panel-heading .panel-title a {
-  background: #939597;
+  background: #95989A;
   border-radius: 10px 10px 0 0;
   color: #fff;
   display: block;
@@ -7181,7 +7209,7 @@ button.close {
 }
 #form-accordion .panel .panel-collapse .panel-body {
   background: transparent;
-  border: 1px solid #939597;
+  border: 1px solid #95989A;
   border-top: 0;
 }
 #form-accordion .panel + .panel {
@@ -7560,6 +7588,7 @@ button.close {
 .image-area img {
   width: 100%;
   margin-bottom: 16px;
+  border-radius: 10px 10px 0 0;
 }
 .footer-container {
   background: #404041;
@@ -7580,7 +7609,7 @@ button.close {
   background: yellow;
   border: 0;
   border-radius: 0 10px 10px 0;
-  color: #939597;
+  color: #95989A;
   float: left !important;
 }
 .footer-nav {
