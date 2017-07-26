@@ -1123,24 +1123,25 @@ th {
 /* Webfont: NECMEC Futura  - Webfont */
 @font-face {
   font-family: 'Futura';
-  src: url('../../fonts/Futura-PT/Futura-Book.ttf');
   src: url('../../fonts/Futura-PT/Futura.otf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
 }
 @font-face {
   font-family: 'Futura';
-  src: url('../../fonts/Futura-PT/FuturaBold.ttf');
+  src: url('../../fonts/Futura-PT/Futura-BoldRegular.ttf') format('truetype');
   font-style: normal;
   font-weight: bold;
 }
 @font-face {
   font-family: 'Futura';
-  src: url('../../fonts/Futura-PT/FuturaMdBTBoldItalic.ttf');
+  src: url('../../fonts/Futura-PT/FuturaMdBTBoldItalic.ttf') format('truetype');
   font-style: italic;
-  font-weight: bold;
+  font-weight: normal;
 }
 @font-face {
   font-family: 'Futura';
-  src: url('../../fonts/Futura-PT/FuturaMdBTBoldItalic.ttf');
+  src: url('../../fonts/Futura-PT/FuturaMdBTBoldItalic.ttf') format('truetype');
   font-style: italic;
   font-weight: bold;
 }
@@ -7404,9 +7405,19 @@ button.close {
   padding: 0;
   margin: 8px 16px;
 }
-.header-container .navbar .navbar-header .navbar-toggle img {
+.header-container .navbar .navbar-header .navbar-toggle .hamburger-icon {
+  height: 28px;
+  width: 28px;
+  background: url('../../images/icons/hamburger-opened.svg') no-repeat;
+  display: block;
+}
+.header-container .navbar .navbar-header .navbar-toggle.collapsed {
+  margin-top: 10px;
+}
+.header-container .navbar .navbar-header .navbar-toggle.collapsed .hamburger-icon {
   height: 32px;
   width: 8px;
+  background: url('../../images/icons/Image282.svg') no-repeat;
 }
 .header-container .navbar .navbar-header .navbar-toggle:focus {
   background-color: transparent;
@@ -7436,10 +7447,13 @@ button.close {
 }
 .header-container #navbar > ul > li.open {
   background-color: #fff;
+  padding: 7px 6px 7px 6px;
 }
-.header-container #navbar > ul > li.open a {
+.header-container #navbar > ul > li.open > a {
   text-decoration: none;
-  color: #008DB6;
+  color: #006C8A;
+  font-family: 'Futura', 'Arial', sans-serif;
+  font-weight: bold;
 }
 .header-container #navbar > ul > li.open > ul {
   position: fixed;
@@ -7450,7 +7464,21 @@ button.close {
   padding: 16px;
   border: 0;
   margin: 0;
+  font-weight: bold;
+}
+.header-container #navbar > ul > li.open > ul > li,
+.header-container #navbar > ul > li.open > ul a {
+  font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 13px;
+  padding: 0;
+  color: #626366;
+}
+.header-container #navbar > ul > li.open > ul > li.seperator,
+.header-container #navbar > ul > li.open > ul a.seperator {
   font-family: 'Futura', 'Arial', sans-serif;
+  color: #008DB6;
   font-weight: bold;
 }
 .header-container .secondary-header {
