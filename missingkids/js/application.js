@@ -6,6 +6,6 @@ $(function() {
             $divs.eq( $("input[name$='ncmec-forms-online']").index( this ) ).show();
     });
 
-    $('.content-wrapper > .container > .row > div').matchHeight({byRow: false})
+    $('.match-height').matchHeight({byRow: false})
 
 });

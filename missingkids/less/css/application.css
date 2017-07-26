@@ -5491,6 +5491,9 @@ a.thumbnail.active {
   display: inline;
   float: left;
 }
+.section-listing-item .media-left picture img {
+  border-radius: 10px 0 0 10px;
+}
 .list-group {
   margin-bottom: 20px;
   padding-left: 0;
