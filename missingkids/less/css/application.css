@@ -5704,6 +5704,7 @@ button.list-group-item-danger.active:focus {
   font-weight: normal;
   margin-bottom: 0;
   line-height: 16px;
+  padding: 0 16px;
 }
 .list-group-item {
   padding: 16px 16px 16px 0;
@@ -7758,7 +7759,9 @@ button.close {
 .teaser-component .teaser .panel .panel-body h6 {
   color: #F1F1F2;
 }
-.teaser-component .teaser .panel .panel-body p {
+.teaser-component .teaser .panel .panel-body p,
+.teaser-component .teaser .panel .panel-body span,
+.teaser-component .teaser .panel .panel-body small {
   color: #F1F1F2;
 }
 picture,
