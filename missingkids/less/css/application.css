@@ -1637,6 +1637,9 @@ address {
 .para-style1 {
   color: #F1F1F2;
 }
+.polo-blue {
+  color: #92D6E3;
+}
 code,
 kbd,
 pre,
@@ -2638,7 +2641,7 @@ input[type="search"] {
 }
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
+  margin: 2px 0 0;
   margin-top: 1px \9;
   line-height: normal;
 }
@@ -7746,6 +7749,17 @@ button.close {
 }
 .missing-person-lists li .missing-person-link {
   padding-top: 10px;
+}
+.teaser-component .teaser .panel .panel-body h1,
+.teaser-component .teaser .panel .panel-body h2,
+.teaser-component .teaser .panel .panel-body h3,
+.teaser-component .teaser .panel .panel-body h4,
+.teaser-component .teaser .panel .panel-body h5,
+.teaser-component .teaser .panel .panel-body h6 {
+  color: #F1F1F2;
+}
+.teaser-component .teaser .panel .panel-body p {
+  color: #F1F1F2;
 }
 picture,
 img {
