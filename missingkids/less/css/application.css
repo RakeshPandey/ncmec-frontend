@@ -7380,49 +7380,82 @@ button.close {
 .header-container {
   min-height: 80px;
 }
+@media (min-width: 767px) {
+  .header-container {
+    min-height: 65px;
+  }
+}
 .header-container .nav > li {
   padding-left: 10px;
   padding-right: 10px;
 }
-.header-container .navbar .navbar-header {
+.header-container .navbar-header {
   padding-left: 8px;
   background: #404041;
 }
-.header-container .navbar .navbar-header .navbar-brand {
+@media (min-width: 767px) {
+  .header-container .navbar-header {
+    width: 100%;
+    height: 65px;
+  }
+}
+.header-container .navbar-header .navbar-brand {
   padding: 6px 0;
 }
-.header-container .navbar .navbar-header .donate-btn-container {
-  float: right;
-  margin: 10px;
+@media (min-width: 767px) {
+  .header-container .navbar-header .navbar-brand {
+    height: 100%;
+  }
 }
-.header-container .navbar .navbar-header .donate-btn-container .btn {
+.header-container .navbar-header .scroll-started-action {
+  display: none;
+  float: right;
+  margin: 13px;
+}
+.header-container .navbar-header .scroll-started-action .hamburger-icon {
+  height: 32px;
+  width: 8px;
+  background: url('../../images/icons/Image282.svg') no-repeat;
+  display: block;
+}
+.header-container .navbar-header .donate-btn-container {
+  float: right;
+  margin: 8px;
+}
+.header-container .navbar-header .donate-btn-container .btn {
   font-family: 'Futura', 'Arial', sans-serif;
-  padding: 2px;
+  padding: 3px 4px;
   font-size: 16px;
 }
-.header-container .navbar .navbar-header .navbar-toggle {
+@media (min-width: 767px) {
+  .header-container .navbar-header .donate-btn-container {
+    margin: 13px;
+  }
+}
+.header-container .navbar-header .navbar-toggle {
   border: none;
   padding: 0;
   margin: 8px 16px;
 }
-.header-container .navbar .navbar-header .navbar-toggle .hamburger-icon {
+.header-container .navbar-header .navbar-toggle .hamburger-icon {
   height: 28px;
   width: 28px;
   background: url('../../images/icons/hamburger-opened.svg') no-repeat;
   display: block;
 }
-.header-container .navbar .navbar-header .navbar-toggle.collapsed {
-  margin-top: 10px;
+.header-container .navbar-header .navbar-toggle.collapsed {
+  margin-top: 8px;
 }
-.header-container .navbar .navbar-header .navbar-toggle.collapsed .hamburger-icon {
+.header-container .navbar-header .navbar-toggle.collapsed .hamburger-icon {
   height: 32px;
   width: 8px;
   background: url('../../images/icons/Image282.svg') no-repeat;
 }
-.header-container .navbar .navbar-header .navbar-toggle:focus {
+.header-container .navbar-header .navbar-toggle:focus {
   background-color: transparent;
 }
-.header-container .navbar .navbar-header .mobile-logo {
+.header-container .navbar-header .mobile-logo,
+.header-container .navbar-header .desktop-logo {
   height: 100%;
 }
 .header-container #navbar {
@@ -7433,6 +7466,16 @@ button.close {
   overflow-x: scroll;
   width: 100%;
 }
+@media (min-width: 767px) {
+  .header-container #navbar {
+    width: initial;
+    background: #404041;
+    height: 65px;
+    position: absolute;
+    left: 80px;
+    top: 11px;
+  }
+}
 .header-container #navbar > ul {
   white-space: nowrap;
   padding: 0;
@@ -7440,14 +7483,24 @@ button.close {
 }
 .header-container #navbar > ul > li {
   display: inline-block;
-  padding: 7px 8px 7px 8px;
+  padding: 7px 8px;
+}
+@media (min-width: 767px) {
+  .header-container #navbar > ul > li {
+    padding: 12px 13px;
+  }
 }
 .header-container #navbar > ul > li a {
   color: #fff;
 }
 .header-container #navbar > ul > li.open {
   background-color: #fff;
-  padding: 7px 6px 7px 6px;
+  padding: 7px 6px;
+}
+@media (min-width: 767px) {
+  .header-container #navbar > ul > li.open {
+    padding: 12px 6px;
+  }
 }
 .header-container #navbar > ul > li.open > a {
   text-decoration: none;
@@ -7465,6 +7518,13 @@ button.close {
   border: 0;
   margin: 0;
   font-weight: bold;
+}
+@media (min-width: 767px) {
+  .header-container #navbar > ul > li.open > ul {
+    top: 50px;
+    width: 467px;
+    left: 85px;
+  }
 }
 .header-container #navbar > ul > li.open > ul > li,
 .header-container #navbar > ul > li.open > ul a {
@@ -7487,6 +7547,12 @@ button.close {
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 767px) {
+  .header-container .secondary-header {
+    float: right;
+    flex-direction: row-reverse;
+  }
+}
 .header-container .secondary-header ul {
   padding-left: 8px;
   padding-bottom: 5px;
@@ -7499,6 +7565,11 @@ button.close {
   display: inline-block;
   padding-right: 16px;
 }
+@media (min-width: 767px) {
+  .header-container .secondary-header ul li {
+    padding-right: 13px;
+  }
+}
 .header-container .secondary-header ul li img {
   width: 20px;
   height: 20px;
@@ -7508,6 +7579,13 @@ button.close {
   flex-direction: row;
   /* The switch - the box around the slider */
   /* Hide default HTML checkbox */
+}
+@media (min-width: 767px) {
+  .header-container .secondary-header .site-functionalities .search-icon {
+    position: absolute;
+    top: 23px;
+    right: 89px;
+  }
 }
 .header-container .secondary-header .site-functionalities .switch {
   position: relative;
@@ -7548,6 +7626,21 @@ button.close {
 .header-container .secondary-header .site-functionalities input:checked + .lang .sp {
   background: #fff;
   color: #404041;
+}
+@media (min-width: 767px) {
+  .scroll-started .header-container .secondary-header {
+    background-color: transparent;
+  }
+  .scroll-started .header-container .secondary-header .language-selector,
+  .scroll-started .header-container .secondary-header .social-icons {
+    display: none;
+  }
+  .scroll-started .header-container .secondary-header .search-icon {
+    right: 120px;
+  }
+}
+.scroll-started .header-container .scroll-started-action {
+  display: block;
 }
 .hero-youtube iframe {
   width: 100%;

@@ -1,6 +1,11 @@
 .header-container {
 
     min-height: @header-height;
+    @media(min-width: @screen-sm-min){
+        min-height: 65px;
+    }
+
+
 
     .nav {
 
@@ -10,63 +15,80 @@
         }
     }
 
-    .navbar {
 
 
-        .navbar-header{
-            padding-left:8px;
-            background: @header-bg;
+    .navbar-header{
+        padding-left:8px;
+        background: @header-bg;
+        @media(min-width: @screen-sm-min){
+            width:100%;
+            height: 65px;
 
-
-
-            .navbar-brand {
-                padding: 6px 0;
-            }
-            .donate-btn-container{
-                float: right;
-                margin: 10px;
-                .btn{
-                    font-family: @font-family-serif;
-                    padding: 2px; 
-                    font-size: 16px;
-
-                }
-            }
-            .navbar-toggle{
-                border:none;
-                padding:0;
-                margin:@mobile-spacing-a @mobile-spacing-b;
-                .hamburger-icon{
-                    height : 28px;
-                    width: 28px;
-
-                    background: url('../../images/icons/hamburger-opened.svg') no-repeat;
-                    display: block;
-                }
-                &.collapsed{
-
-                    margin-top: 10px;
-                    .hamburger-icon{
-                        height : 32px;
-                        width: 8px;
-                        background: url('../../images/icons/Image282.svg') no-repeat;
-                    }
-                }
-                img {
-
-                }
-
-                &:focus{
-                    background-color: transparent;
-                }
-            }
-            .mobile-logo{
-
-                height: 100%;
+        }
+        .navbar-brand {
+            padding: 6px 0;
+            @media(min-width: @screen-sm-min){
+                height:100%;
             }
         }
 
+        .scroll-started-action {
+            display:none;
+            float:right;
+            margin:@tablet-spacing;
+            .hamburger-icon{
+                height : 32px;
+                width: 8px;
+                background: url('../../images/icons/Image282.svg') no-repeat;
+                display:block;
+            }
+        }
+        .donate-btn-container{
+            float: right;
+            margin: 8px;
+            .btn {
+                font-family: @font-family-serif;
+                padding: 3px 4px;
+                font-size: 16px;
+            }
+            @media(min-width: @screen-sm-min){
+                margin:@tablet-spacing;
+            }
+        }
+        .navbar-toggle{
+            border:none;
+            padding:0;
+            margin:@mobile-spacing-a @mobile-spacing-b;
+            .hamburger-icon{
+                height : 28px;
+                width: 28px;
+
+                background: url('../../images/icons/hamburger-opened.svg') no-repeat;
+                display: block;
+            }
+            &.collapsed{
+
+                margin-top: @mobile-spacing-a ;
+                .hamburger-icon{
+                    height : 32px;
+                    width: 8px;
+                    background: url('../../images/icons/Image282.svg') no-repeat;
+                }
+            }
+            img {
+
+            }
+
+            &:focus{
+                background-color: transparent;
+            }
+        }
+        .mobile-logo, .desktop-logo {
+            height: 100%;
+        }
+
     }
+
     #navbar{
         background: @header-bg-secondary;
         height:30px;
@@ -74,21 +96,37 @@
         z-index:99;
         overflow-x: scroll;
         width: 100%;
+        @media(min-width: @screen-sm-min){
+
+            width: initial;
+            background: @header-bg;
+            height: 65px;
+            position: absolute;
+            left: 80px;
+            top: 11px;
+        }
         > ul {
             white-space: nowrap;
             padding:0;
             margin:0;
             >li {
                 display:inline-block;
-                padding:7px @mobile-spacing-a 7px @mobile-spacing-a;
+                padding:7px @mobile-spacing-a;
+                @media(min-width: @screen-sm-min){
+                    padding: 12px @tablet-spacing;
 
+                }
                 a{
                     color:@white;
                 }
 
                 &.open{
                     background-color: @white;
-                    padding:7px (@mobile-spacing-a - 2) 7px (@mobile-spacing-a - 2);
+                    padding:7px (@mobile-spacing-a - 2);
+                    @media(min-width: @screen-sm-min){
+                        padding: 12px 6px;
+
+                    }
                     > a{
                         text-decoration: none;
                         color:@blue-base;
@@ -107,7 +145,11 @@
                         border: 0;
                         margin: 0;
                         font-weight: bold;
-
+                        @media(min-width: @screen-sm-min){
+                            top: 50px;
+                            width: 467px;
+                            left: 85px;
+                        }
                         >li, a{
                             font-family:@font-family-sans-serif;
                             font-style: normal;
@@ -133,7 +175,10 @@
         height:30px;
         display:flex;
         justify-content:space-between;
-
+        @media(min-width: @screen-sm-min){
+            float: right;
+            flex-direction: row-reverse;
+        }
         ul{
             padding-left:@mobile-spacing-a;
             padding-bottom: 5px;
@@ -144,6 +189,12 @@
                 list-style: none;
                 display:inline-block;
                 padding-right:@mobile-spacing-b;
+
+                @media(min-width: @screen-sm-min){
+                    padding-right:@tablet-spacing;
+
+                }
+
                 img{
                     width: 20px;
                     height: 20px;
@@ -154,6 +205,16 @@
         .site-functionalities{
             display:flex;
             flex-direction:row;
+
+            .search-icon{
+                @media(min-width: @screen-sm-min){
+                    position: absolute;
+                    top: 23px;
+                    right: 89px;
+                }
+            }
+
+
 
             /* The switch - the box around the slider */
             .switch {
@@ -203,4 +264,30 @@
     }
 
 
+}
+.scroll-started{
+    .header-container{
+        .secondary-header{
+
+            @media(min-width: @screen-sm-min){
+                .language-selector, .social-icons{
+
+                    display:none;
+                }
+                background-color:transparent;
+
+                .search-icon{
+                    right: 120px;
+                }
+            }
+
+
+        }
+
+
+
+        .scroll-started-action{
+            display:block;
+        }
+    }
 }
