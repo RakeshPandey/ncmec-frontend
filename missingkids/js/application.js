@@ -12,7 +12,7 @@ $(function () {
 
     window.onresize = function () {
 
-        
+
         ///////////////////////////////////////////////////////////////////
         /** Make desktop header navigation hoverable instead of click **/
         if (window.matchMedia("(min-width: 1024px)").matches) {
@@ -27,27 +27,21 @@ $(function () {
         }
         /** -- END -- Make desktop header navigation hoverable instead of click **/
         ////////////////////////////////////////////////////////////////////
-    }
-    
-    
-    
+    };
+
+
+
     function onScroll() {
         var $body = $('body');
-            if (document.body.scrollTop > 1) {
-
-                if (!$body.hasClass('scroll-started')) {
-                    $body.addClass('scroll-started');
-                }
-
-            } else {
-                if ($body.hasClass('scroll-started')) {
-                    $body.removeClass('scroll-started');
-                }
+        if (document.body.scrollTop > 1) {
+            if (!$body.hasClass('scroll-started')) {
+                $body.addClass('scroll-started');
             }
-
-
-
-        
+        } else {
+            if ($body.hasClass('scroll-started')) {
+                $body.removeClass('scroll-started');
+            }
+        }
     }
     $(window).scroll(onScroll);
     onScroll();
