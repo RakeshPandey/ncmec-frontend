@@ -7413,6 +7413,11 @@ button.close {
     min-height: 65px;
   }
 }
+@media (min-width: 767px) and (orientation: landscape) {
+  .header-container {
+    min-height: 80px;
+  }
+}
 .header-container .nav > li {
   padding-left: 10px;
   padding-right: 10px;
@@ -7425,6 +7430,11 @@ button.close {
   .header-container .navbar-header {
     width: 100%;
     height: 65px;
+  }
+}
+@media (min-width: 767px) and (orientation: landscape) {
+  .header-container .navbar-header {
+    height: 80px;
   }
 }
 .header-container .navbar-header .navbar-brand {
@@ -7500,7 +7510,7 @@ button.close {
     background: #404041;
     height: 65px;
     position: absolute;
-    left: 80px;
+    left: 64px;
     top: 11px;
   }
 }
@@ -7615,6 +7625,18 @@ button.close {
     right: 89px;
   }
 }
+@media (min-width: 767px) and (orientation: landscape) {
+  .header-container .secondary-header .site-functionalities .search-icon {
+    position: static;
+  }
+}
+@media (min-width: 767px) and (orientation: landscape) {
+  .header-container .secondary-header .site-functionalities {
+    position: absolute;
+    top: 12px;
+    right: 89px;
+  }
+}
 .header-container .secondary-header .site-functionalities .switch {
   position: relative;
   display: inline-block;
@@ -7667,8 +7689,23 @@ button.close {
     right: 120px;
   }
 }
-.scroll-started .header-container .scroll-started-action {
-  display: block;
+@media (min-width: 767px) and (orientation: landscape) {
+  .scroll-started .header-container .secondary-header .site-functionalities {
+    position: absolute;
+    top: 12px;
+    right: 128px;
+  }
+  .scroll-started .header-container .secondary-header .site-functionalities .search-icon {
+    position: static;
+  }
+  .scroll-started .header-container .secondary-header .site-functionalities .language-selector {
+    display: block;
+  }
+}
+@media (min-width: 767px) {
+  .scroll-started .header-container .scroll-started-action {
+    display: block;
+  }
 }
 .hero-youtube iframe {
   width: 100%;

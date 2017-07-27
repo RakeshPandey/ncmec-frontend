@@ -12,16 +12,15 @@ $(function () {
 
     window.onresize = function () {
 
-
         ///////////////////////////////////////////////////////////////////
         /** Make desktop header navigation hoverable instead of click **/
         if (window.matchMedia("(min-width: 1024px)").matches) {
             $('#navbar > ul > li').hover(
                     function () {
-                        $(this).addClass('open')
+                        $(this).addClass('open');
                     },
                     function () {
-                        $(this).removeClass('open')
+                        $(this).removeClass('open');
                     }
             );
         }
