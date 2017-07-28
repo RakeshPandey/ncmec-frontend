@@ -116,9 +116,9 @@
                                 </p>
 
 
-                                <div class="emphasisBlock">
+                                <div class="form ncmec-form row">
 
-                                    <form class="mkForm" action="sendEmailReport" data-json='{"customFormFn":"posterPartner"}'>
+                                    <form class="form-horizontal">
 
                                         <p class="textColorBlue"><strong>To join OR unsubscribe, first click on your region in the map then fill out the form below it.</strong></p>
                                         <img class="responsive alignCenter" src="missingkids/images/mk3d4-USmap.png" alt="US Zones Map" usemap="#Map" />
@@ -131,30 +131,56 @@
                                             <area zone="southeast" title="southeast" shape="poly" coords="266,147,321,139,349,102,381,95,388,101,378,144,351,179,342,198,363,230,361,243,356,251,336,219,322,206,284,207,282,165,274,163,267,148"/>
                                         </map>
 
-                                        <div class="returnMessage"></div>
 
-                                        <input type="hidden" name="tmpRegion" class="required" value="">  <!-- field used by javascript -->
-                                        <input type="hidden" name="mailtoName" value="">
-                                        <input type="hidden" name="mailtoDomain" value="ncmec-news.org">
-                                        <input type="hidden" name="subject" value="">
-                                        <input type="hidden" name="cc" value="">
-                                        <input type="hidden" name="act" value="sendEmailReport">
 
-                                        <p><b><span id="posterRegion"></span></b></p>
-                                        <label class="textAlignLeft short" required>E-mail:</label>
-                                        <input class="required email" type="text" name="fromAddress">
-                                        <br/>
+                                        <div class="form-group">
+                                            <label class="col-md-3 col-sm-3 col-xs-3 control-label" required>E-mail:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input class="required email" type="text" name="fromAddress">
+                                            </div>
+                                        </div>                                        
+                                        <div class="form-group">
 
-                                        <label class="short">&nbsp;</label>
-                                        <input type="radio" name="request" checked value="join"/><label class="autoLength">Join</label>
-                                        <input type="radio" name="request" value="unsubscribe"/><label class="autoLength">Unsubscribe</label>
-                                        <br/><br/>
-                                        <input class="btn" type="submit" value="Submit">
+
+                                            <label class="col-md-3 col-sm-3 col-xs-3 control-label">&nbsp;</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="radio" name="request" checked value="join"/><label class="autoLength">Join</label>
+                                                <input type="radio" name="request" value="unsubscribe"/><label class="autoLength">Unsubscribe</label>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="col-sm-offset-3 col-sm-5 col-sm-5">
+                                            <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
+                                        </div>
                                     </form>
-                                </div> <!-- emphasis block -->
-                                <p>NCMEC will also notify you when a poster alert you have received has been discontinued and request you cease distributing that child’s poster along with retrieving any distributed posters to the best of your ability.</p>
-                                <h2>Poster Partner FAQs</h2>
+                                </div>
 
+                                <p></p>
+                                <p>NCMEC will also notify you when a poster alert you have received has been discontinued and request you cease distributing that child’s poster along with retrieving any distributed posters to the best of your ability.</p>
+                                <h5>Poster Partner FAQs</h5>
+                                <div class="faq-qa">
+                                    <p class="hangingIndent question"><span><b>Q:</b></span>May I change the layout, add a phone number, add a logo or in any other way alter a missing child poster before I distribute it?</p>
+                                    <p class="hangingIndent answer textColorBlue"><span><b>A:</b></span>No. Posters must remain in their original format with NCMEC’s name, logo and toll-free number. For more details read our Terms of Use.</p>
+
+                                    <p class="hangingIndent question"><span><b>Q:</b></span>How often will I receive missing child poster alerts?</p>
+                                    <p class="hangingIndent answer textColorBlue"><span><b>A:</b></span>NCMEC adds approximately 40 new missing child posters to its website each week. The majority of these posters come from the most populated states.</p>
+
+                                    <p class="hangingIndent question"><span><b>Q:</b></span>I joined the Poster Partner Program. Why haven’t I received any poster alerts?</p>
+                                    <p class="hangingIndent answer textColorBlue"><span><b>A:</b></span>If you have not received any poster alerts within three weeks of joining, make sure you have responded to the Poster Partner confirmation email. Please check your spam filters if you have not received a confirmation email. If you continue to have trouble receiving poster alerts contact NCMEC for assistance.</p>
+
+                                    <p class="hangingIndent question"><span><b>Q:</b></span>Where should I display the posters?</p>
+                                    <p class="hangingIndent answer textColorBlue"><span><b>A:</b></span>The posters can be displayed anywhere in your community where people will see them, but be sure to ask for permission before placing a poster on someone else’s property.</p>
+
+                                    <p class="hangingIndent question"><span><b>Q:</b></span>I forwarded a missing child’s poster to an email list. Do I need to notify the recipients when the child is recovered?</p>
+                                    <p class="hangingIndent answer textColorBlue"><span><b>A:</b></span>Yes. NCMEC requests you to retrieve as many posters as you are able to when a child is recovered. In the case of an email distribution we ask that you notify any recipients to the best of your ability.</p>
+
+                                    <p class="hangingIndent question"><span><b>Q:</b></span>I would like to distribute the missing child posters at a community event. Is it my responsibility to retrieve these posters if the child is recovered?</p>
+                                    <p class="hangingIndent answer textColorBlue"><span><b>A:</b></span>Yes. We ask that you notify any recipients and retrieve any distributed posters to the best of your ability.</p>
+
+                                    <p class="hangingIndent question"><span><b>Q:</b></span>How do I remove myself from a poster partner distribution list?</p>
+                                    <p class="hangingIndent answer textColorBlue"><span><b>A:</b></span>The next time you receive a poster or recovery alert, click on the unsubscribe link at the bottom of the message. If you have joined more than one zone, you will need to follow the process noted above for each zone you have joined.</p>
+
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4 hidden-sm hidden-xs">

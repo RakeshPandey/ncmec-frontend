@@ -8080,6 +8080,24 @@ button.close {
 .teaser-component .teaser .panel .panel-body small {
   color: #F1F1F2;
 }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 28, 2017, 2:59:06 PM
+    Author     : hnair
+*/
+.faq-qa .hangingIndent {
+  padding-left: 35px;
+  text-indent: -25px;
+}
+.faq-qa .hangingIndent span:first-child {
+  text-indent: 0;
+  display: inline-block;
+  width: 25px;
+}
 picture,
 img {
   max-width: 100%;
