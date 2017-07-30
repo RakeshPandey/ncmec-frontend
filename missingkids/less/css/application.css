@@ -8254,3 +8254,17 @@ hr {
   margin-left: 0;
   border-radius: 10px 0 0 10px;
 }
+.image-grid-container > * {
+  margin-bottom: 16px;
+}
+.table-ncmec {
+  font-family: AvenirLTStd-Black;
+  font-size: 13px;
+}
+.table-ncmec thead td {
+  padding: 10px;
+}
+.emphasisBlock .title span {
+  width: 59%;
+  padding: 20px 0;
+}
