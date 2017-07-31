@@ -8275,6 +8275,35 @@ hr {
   width: 59%;
   padding: 20px 0;
 }
+#siteSearchResults dd {
+  padding: 10px 0;
+}
+#siteSearchResults dd img {
+  width: 18px;
+  height: 18px;
+  transform: translateY(-13%);
+}
+.siteSearch {
+  float: right;
+  margin-top: 10px;
+  border: 1px solid #404041;
+  background: #404041;
+}
+.siteSearch .textField,
+.siteSearch .icon {
+  display: inline-block;
+}
+.siteSearch .icon {
+  background: #404041;
+  width: 17px;
+  display: inline-block;
+  padding: 0 2px 0 0;
+  border: 0;
+  outline: none;
+}
+#dafdirectdiv {
+  width: 100%;
+}
 .flex-container {
   -webkit-flex-direction: row;
   /* Safari */
