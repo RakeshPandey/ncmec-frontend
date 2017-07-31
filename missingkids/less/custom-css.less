@@ -6,6 +6,10 @@ picture, img{
 .inner-wrapper {
     background: @white;
     padding: 0 8px 15px;
+    /*    @media (min-width: @screen-md) {
+             padding: 0 16px 15px;
+            
+        }*/
     .clearfix();
     > h1, > h2, > h3, > h4, > h5, > h6, > p {
         padding-left: 8px;
@@ -153,12 +157,12 @@ hr {
 .table-ncmec {
     font-family: AvenirLTStd-Black;
     font-size: 13px;
-    width:100%;
     border: 1px solid @table-bg-accent;
     border-top-right-radius: 5px;
     border-collapse: initial;
     border-top-left-radius: 5px;
-
+    margin-left:8px;
+    margin-right:8px;
     thead {
         background:@table-bg-accent;
         color:@white;
@@ -183,6 +187,10 @@ hr {
     margin-bottom: 10px;
 }
 
+.seperator {
+    margin: 0 8px 34px;
+}
+
 .emphasisBlock{
     .title{
         span{
@@ -192,7 +200,10 @@ hr {
     }
 }
 
-#siteSearchResults{
+#siteSearchResults {
+    dl {
+        padding: 0 8px;
+    }
     dd{
         padding:10px 0;
         img {
@@ -204,13 +215,19 @@ hr {
 
 }
 .siteSearch{
-    float:right;
+
     margin-top:10px;
     border: 1px solid @headings-color;
     background: @headings-color;
+    border-radius: 4px;
+    width: 172px;
+    margin-left: auto;
+    margin-right: auto;
     .textField, .icon{
 
         display: inline-block;
+
+        padding: 2px;
     }
 
     .icon{
