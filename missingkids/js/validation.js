@@ -29,9 +29,9 @@ $().ready(function() {
         }
     });
 
-    // Online Application Form Starts Here
+    // Online Application Form 1 Starts Here
 
-    $("#js-online-application").validate({
+    $("#js-ncmec-univ-form").validate({
         rules: {
             prefix: "required", 
             fname: "required",
@@ -60,6 +60,48 @@ $().ready(function() {
             phone: "This field is required",
             email: "This field is required",
             additional_info: "This field is required"
+        }
+    });
+
+    // Online Application Form 2 Starts Here
+
+     $("#js-ce-application").validate({
+        rules: {
+            prefix_1: "required", 
+            fname_1: "required",
+            lname_1: "required",
+            first_choice_1: "required",
+            second_choice_1: "required",
+            agency_dept_1: "required",
+            address_1: "required",
+            city_1: "required",
+            state_1: "required",
+            zip_1: "required",
+            phone_1: "required",
+            email_1: {
+                required: true,
+                email: true
+            },
+            child_policy_1: "required",
+            jurix_population: "required",
+            sworn_officers: "required"
+        },
+        messages: {
+            prefix_1: "This field is required",
+            fname_1: "This field is required",
+            lname_1: "This field is required",
+            first_choice_1: "This field is required",
+            second_choice_1: "This field is required",
+            agency_dept_1: "This field is required",
+            address_1: "This field is required",
+            city_1: "This field is required",
+            state_1: "This field is required",
+            zip_1: "This field is required",
+            phone_1: "This field is required",
+            email_1: "This field is required",
+            child_policy_1: "This field is required",
+            jurix_population: "This field is required",
+            sworn_officers: "This field is required"
         }
     });
 
@@ -124,7 +166,10 @@ $().ready(function() {
                 required: true,
                 email: true
             },
-            comments: "required"
+            comments: {
+                required: true,
+                minlength: 8
+            }
         },
         messages: {
             contact_name: "This field is required",
