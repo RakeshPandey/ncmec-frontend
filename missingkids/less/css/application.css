@@ -8105,6 +8105,25 @@ and open the template in the editor.
   display: inline-block;
   width: 25px;
 }
+.pdf-list a.pdfLink {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.pdf-list a.pdfLink:before {
+  background: url(../../images/pdf-light.png) no-repeat;
+  content: " ";
+  width: 18px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 18px;
+  z-index: 999;
+  display: block;
+  background-size: 100%;
+}
 picture,
 img {
   max-width: 100%;
@@ -8269,30 +8288,38 @@ hr {
   margin-bottom: 16px;
 }
 .table-ncmec {
-  font-family: AvenirLTStd-Black;
-  font-size: 13px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
   border: 1px solid #939597;
-  border-top-right-radius: 5px;
-  border-collapse: initial;
-  border-top-left-radius: 5px;
   margin-left: 8px;
   margin-right: 8px;
   margin-bottom: 10px;
+  display: inline-block;
 }
-.table-ncmec thead {
-  background: #939597;
+.table-ncmec table {
+  font-family: AvenirLTStd-Black;
+  font-size: 13px;
+}
+.table-ncmec table thead {
   color: #fff;
 }
-.table-ncmec thead tr {
+.table-ncmec table thead tr {
   color: #fff;
 }
-.table-ncmec thead tr th {
+.table-ncmec table thead tr th {
   padding: 10px 10px 10px 20px;
+  background: #939597;
 }
-.table-ncmec tbody tr {
-  border-bottom: 1px solid #939597;
+.table-ncmec table thead tr th:first-child {
+  border-top-left-radius: 10px;
 }
-.table-ncmec tbody tr td {
+.table-ncmec table thead tr th:last-child {
+  border-top-right-radius: 10px;
+}
+.table-ncmec table tbody tr {
+  border-bottom: 2px solid #939597;
+}
+.table-ncmec table tbody tr td {
   padding: 10px 10px 10px 20px;
 }
 .seperator {
