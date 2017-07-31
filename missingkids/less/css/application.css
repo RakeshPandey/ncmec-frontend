@@ -8267,9 +8267,28 @@ hr {
 .table-ncmec {
   font-family: AvenirLTStd-Black;
   font-size: 13px;
+  width: 100%;
+  border: 1px solid #939597;
+  border-top-right-radius: 5px;
+  border-collapse: initial;
+  border-top-left-radius: 5px;
+  margin-bottom: 10px;
 }
-.table-ncmec thead td {
-  padding: 10px;
+.table-ncmec thead {
+  background: #939597;
+  color: #fff;
+}
+.table-ncmec thead tr {
+  color: #fff;
+}
+.table-ncmec thead tr th {
+  padding: 10px 10px 10px 20px;
+}
+.table-ncmec tbody tr {
+  border-bottom: 1px solid #939597;
+}
+.table-ncmec tbody tr td {
+  padding: 10px 10px 10px 20px;
 }
 .emphasisBlock .title span {
   width: 59%;

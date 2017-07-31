@@ -150,17 +150,37 @@ hr {
 
 }
 
-.table-ncmec{
-
+.table-ncmec {
     font-family: AvenirLTStd-Black;
     font-size: 13px;
-    thead{
-        td{
-            padding:10px;
+    width:100%;
+    border: 1px solid @table-bg-accent;
+    border-top-right-radius: 5px;
+    border-collapse: initial;
+    border-top-left-radius: 5px;
 
+    thead {
+        background:@table-bg-accent;
+        color:@white;
+        tr {
+
+            color:@white;
+
+            th {
+                padding: 10px 10px 10px 20px;
+            }
         }
     }
+    tbody {
+        tr {
+            border-bottom: 1px solid @table-bg-accent;
+            td{
 
+                padding: 10px 10px 10px 20px;
+            }
+        }
+    }
+    margin-bottom: 10px;
 }
 
 .emphasisBlock{
