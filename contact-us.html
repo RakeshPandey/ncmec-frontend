@@ -90,24 +90,24 @@
                     <p>Please use the form below to send general inquiries to NCMEC.</p>
                     <div class="spacer"></div>
                     <div class="form ncmec-form row">
-                        <form class="form-horizontal">
-                            <legend>Contact Us</legend>
+                        <form id="js-contact-us" class="form-horizontal">
+                            <legend>Contact Form</legend>
                             <div class="form-group">
-                                <label for="contact-name" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Name</label>
+                                <label for="contact_name" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Name</label>
                                 <div class="col-md-7 col-sm-8 col-xs-9">
-                                    <input type="text" class="form-control" id="contact-name" placeholder="Jane Doe">
+                                    <input type="text" class="form-control" name="contact_name" id="contact_name" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="contact-email" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Email</label>
+                                <label for="contact_email" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Email</label>
                                 <div class="col-md-7 col-sm-8 col-xs-9">
-                                    <input type="email" class="form-control" id="contact-email" placeholder="jane.doe@example.com">
+                                    <input type="email" class="form-control" name="contact_email" id="contact_email" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="contact-text" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Your Comments</label>
+                                <label for="comments" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Your Comments</label>
                                 <div class="col-md-7 col-sm-8 col-xs-9">
-                                    <textarea class="form-control" id="contact-text" rows="10">
+                                    <textarea class="form-control" name="comments" id="comments" rows="10" required minlength="50" maxlength="400">
                                         
                                     </textarea>
                                 </div>
@@ -165,5 +165,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="missingkids/js/plugin/jquery.min.js" type="text/javascript"></script>
+    <script src="missingkids/js/plugin/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="missingkids/js/plugin/bootstrap.min.js" type="text/javascript"></script>
+    <script src="missingkids/js/plugin/jquery.matchHeight.js" type="text/javascript"></script>
+    <script src="missingkids/js/application.js" type="text/javascript"></script>
+    <script src="missingkids/js/validation.js" type="text/javascript"></script>
   </body>
 </html>
