@@ -123,6 +123,7 @@
                                         <label for="prefix" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
                                         <div class="col-md-3 col-sm-3 col-xs-3">
                                             <select class="form-control" name="prefix" id="prefix" required>
+                                                <option value="">Select</option>
                                                 <option>Mr.</option>
                                                 <option>Mrs.</option>
                                                 <option>Ms.</option>
@@ -188,7 +189,7 @@
                                     <div class="form-group">
                                         <label for="zip" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Zip:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="text" class="form-control" required name="zip" id="zip">
+                                            <input type="text" class="form-control" required name="zip" id="zip" minlength="5" maxlength="5" pattern ="[A-Za-z0-9]{5}">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -200,7 +201,7 @@
                                     <div class="form-group">
                                         <label for="phone" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Phone:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="tel" class="form-control" required name="phone" id="phone">
+                                            <input type="tel" class="form-control" required name="phone" id="phone" minlength="10" maxlength="10" pattern="^\d{4}-\d{3}-\d{4}$">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -428,7 +429,7 @@
                                     <div class="form-group">
                                         <label for="zip_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Zip:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="text" class="form-control" name="zip_1" id="zip_1" required>
+                                            <input type="text" class="form-control" name="zip_1" id="zip_1" required minlength="5" maxlength="5" pattern ="[A-Za-z0-9]{5}">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -440,7 +441,7 @@
                                     <div class="form-group">
                                         <label for="phone_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Phone:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="text" class="form-control" name="phone_1" id="phone_1" required>
+                                            <input type="text" class="form-control" name="phone_1" id="phone_1" required  minlength="10" maxlength="10" pattern="^\d{4}-\d{3}-\d{4}$">
                                         </div>
                                     </div>
                                     <div class="form-group">
