@@ -8329,6 +8329,9 @@ hr {
   width: 59%;
   padding: 20px 0;
 }
+#siteSearchResults > p {
+  margin-left: 8px;
+}
 #siteSearchResults dl {
   padding: 0 8px;
 }
@@ -8363,7 +8366,7 @@ hr {
   outline: none;
 }
 #dafdirectdiv {
-  width: 100%;
+  width: 100% !important;
 }
 .flex-container {
   -webkit-flex-direction: row;
@@ -8574,4 +8577,7 @@ a.mk-partnerBlock .imgBlock div.imagewrap img {
   margin: 0 3% 10px 0;
   color: #656b79;
   line-height: 1.2;
+}
+iframe {
+  border: 0;
 }
