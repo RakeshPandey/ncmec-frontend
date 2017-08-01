@@ -81,84 +81,44 @@
                         If you are an international law enforcement officer, please use our <a href="#">International Law Enforcement Application</a>.
                     </p>
                     <h5>To apply, please fill out the form below.</h5>
-                    <div class="form ncmec-form row">                        
-                        <form id="js-online-application" class="form-horizontal">
-                            <legend>NCMEC University Online Form</legend>
-                        <!--    <div class="form-group">
-                                <label for="select_video" class="control-label"><span>*</span> Please select the videos you want</label>
-                                <div class="radio">
-                                    <label for="optionsRadios1">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                        Option one is this and that&mdash;be sure to include why it's great
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label for="optionsRadios2">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                        Option two can be something else and selecting it will deselect option one
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label for="optionsRadios3">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                                        Option one is this and that&mdash;be sure to include why it's great
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label for="optionsRadios4">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-                                        Option two can be something else and selecting it will deselect option one
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label for="optionsRadios5">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
-                                        Option one is this and that&mdash;be sure to include why it's great
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label for="optionsRadios6">
-                                        <input type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
-                                        Option two can be something else and selecting it will deselect option one
-                                    </label>
-                                </div>
-                            </div> -->
-                            <div id="js-select-form" class="form-group">
-                                <div class="radio">
-                                    <label for="ncmec-uni-online">
-                                        <input type="radio" name="ncmec-forms-online" id="ncmec-uni-online" checked value="js-ncmec-univ-form">
-                                        NCMEC University Online
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label for="ce-application">
-                                        <input type="radio" name="ncmec-forms-online" id="ce-application" value="js-ce-application">
-                                        Missing Children Seminar for Chief Executives Application
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label for="mcdr">
-                                        <input type="radio" name="ncmec-forms-online" id="mcdr" value="js-mcdr">
-                                        Missing Children Seminar for MCDR
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label for="ceo-application">
-                                        <input type="radio" name="ncmec-forms-online" id="ceo-application" value="js-ceo-application">
-                                        Missing Children Seminar for Chief Executives Application
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label for="course-application">
-                                        <input type="radio" name="ncmec-forms-online" id="course-application" value="js-course-application">
-                                        Course Application for : CSTAR14
-                                    </label>
-                                </div>
+                    <div class="form ncmec-form row">                                                
+                        <div id="js-select-form" class="form-group">
+                            <div class="radio">
+                                <label for="ncmec-uni-online">
+                                    <input type="radio" name="ncmec-forms-online" id="ncmec-uni-online" checked value="js-ncmec-univ-form">
+                                    NCMEC University Online
+                                </label>
                             </div>
-                            <hr />
-                            <div id="js-forms-content">
-                                <!-- NCMEC University Form Starts Here -->
-                                <div id="js-ncmec-univ-form" class="ncmec-form-content">
+                            <div class="radio">
+                                <label for="ce-application">
+                                    <input type="radio" name="ncmec-forms-online" id="ce-application" value="js-ce-application">
+                                    Missing Children Seminar for Chief Executives Application
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="mcdr">
+                                    <input type="radio" name="ncmec-forms-online" id="mcdr" value="js-mcdr">
+                                    Missing Children Seminar for MCDR
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="ceo-application">
+                                    <input type="radio" name="ncmec-forms-online" id="ceo-application" value="js-ceo-application">
+                                    Missing Children Seminar for Chief Executives Application
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="course-application">
+                                    <input type="radio" name="ncmec-forms-online" id="course-application" value="js-course-application">
+                                    Course Application for : CSTAR14
+                                </label>
+                            </div>
+                        </div>
+                        <hr />
+                        <div id="js-forms-content">
+                            <!-- NCMEC University Form Starts Here -->
+                            <div class="ncmec-form-content">
+                                <form id="js-ncmec-univ-form" class="form-horizontal">
                                     <div class="form-group">
                                         <label for="prefix" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
                                         <div class="col-md-3 col-sm-3 col-xs-3">
@@ -222,7 +182,7 @@
                                     <div class="form-group">
                                         <label for="state" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> State:</label>
                                         <div class="col-md-4 col-sm-4 col-xs-4">
-                                            <select class="form-control" required name="state" id="state" aria-required="true" aria-invalid="true"><option value="All">Select</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="GU">Guam</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="MP">Northern Mariana Islands</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VI">Virgin Islands</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option></select>
+                                            <select class="form-control" required name="state" id="state" aria-required="true" aria-invalid="true"><option value="">Select</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="GU">Guam</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="MP">Northern Mariana Islands</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VI">Virgin Islands</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option></select>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -305,9 +265,7 @@
                                     <div class="form-group">
                                         <label for="additional_info" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Additional Info:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <textarea class="form-control" name="additional_info" id="additional_info" minlength="20" maxlength="200" rows="10" required aria-required="true">
-                                                
-                                            </textarea>
+                                            <textarea class="form-control required" name="additional_info" id="additional_info" rows="10" required aria-required="true"></textarea>
                                         </div>
                                     </div>
                                     <p class="LMS smallText"><em>Please note: You may be contacted to provide additional information to verify your status.</em></p>
@@ -317,25 +275,28 @@
                                             <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- NCMEC University Form Ends Here -->
-                                <!-- Missing Children Seminar for Chief Executives Application Form Starts Here -->
-                                <div id="js-ce-application" class="ncmec-form-content">
+                                </form>
+                            </div>
+                            <!-- NCMEC University Form Ends Here -->
+                            <!-- Missing Children Seminar for Chief Executives Application Form Starts Here -->
+                            <div class="ncmec-form-content">
+                                <form id="js-ce-application" class="form-horizontal">
                                     <div class="form-group">
-                                        <label for="prefix-1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
+                                        <label for="prefix_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
                                         <div class="col-md-3 col-sm-3 col-xs-3">
-                                            <select class="form-control" name="prefix-1" id="prefix-1">
-                                                <option>Mr.</option>
-                                                <option>Mrs.</option>
-                                                <option>Ms.</option>
-                                                <option>Dr.</option>
+                                            <select class="form-control" name="prefix_1" id="prefix_1" required>
+                                                <option value="">Please Select</option>
+                                                <option value="mr">Mr.</option>
+                                                <option value="mrs">Mrs.</option>
+                                                <option value="ms">Ms.</option>
+                                                <option value="dr">Dr.</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="fname_1" class="col-md-3 col-sm-3 col-xs-3 control-label">First Name:</label>
+                                        <label for="fname_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> First Name:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="text" class="form-control" name="fname_1" id="fname_1">
+                                            <input type="text" class="form-control" name="fname_1" id="fname_1" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -345,9 +306,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="lname_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Last Name:</label>
+                                        <label for="lname_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Last Name:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="text" class="form-control" name="lname_1" id="lname_1">
+                                            <input type="text" class="form-control" name="lname_1" id="lname_1" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -357,31 +318,29 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="first_choice_1" class="col-md-3 col-sm-3 col-xs-3 control-label">First Choice:</label>
+                                        <label for="first_choice_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> First Choice:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <select class="form-control" name="first_choice_1" id="first_choice_1">
-                                                <option>Mr.</option>
-                                                <option>Mrs.</option>
-                                                <option>Ms.</option>
-                                                <option>Dr.</option>
+                                            <select class="form-control" name="first_choice_1" id="first_choice_1" required>
+                                                <option value="">Please Select</option>
+                                                <option value="CEO166">CEO166 (December 04-05, 2017)</option>
+                                                <option value="CEO167">CEO167 (March 11-12, 2018)</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="second_choice_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Second Choice:</label>
+                                        <label for="second_choice_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Second Choice:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <select class="form-control" name="second_choice_1" id="second_choice_1">
-                                                <option>Mr.</option>
-                                                <option>Mrs.</option>
-                                                <option>Ms.</option>
-                                                <option>Dr.</option>
+                                            <select class="form-control" name="second_choice_1" id="second_choice_1" required>
+                                                <option value="">Please Select</option>
+                                                <option value="CEO166">CEO166 (December 04-05, 2017)</option>
+                                                <option value="CEO167">CEO167 (March 11-12, 2018)</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="agency_dept_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Agency/Dep:</label>
+                                        <label for="agency_dept_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Agency/Dep:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="text" class="form-control" name="agency_dept_1" id="agency_dept_1">
+                                            <input type="text" class="form-control" name="agency_dept_1" id="agency_dept_1" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -392,27 +351,84 @@
                                     </div>
                                     <hr>
                                     <div class="form-group">
-                                        <label for="address_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Address:</label>
+                                        <label for="address_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Address:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="text" class="form-control" name="address_1" id="address_1">
+                                            <input type="text" class="form-control" name="address_1" id="address_1" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="city_1" class="col-md-3 col-sm-3 col-xs-3 control-label">City:</label>
+                                        <label for="city_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> City:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="text" class="form-control" name="city_1" id="city_1">
+                                            <input type="text" class="form-control" name="city_1" id="city_1" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="state_1" class="col-md-3 col-sm-3 col-xs-3 control-label">State:</label>
+                                        <label for="state_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> State:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="text" class="form-control" name="state_1" id="state_1">
+                                            <select class="form-control required" id="state_1" name="state_1" aria-required="true">
+                                                <option value="">Select</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="CA">California</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="DC">District of Columbia</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="GU">Guam</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="MP">Northern Mariana Islands</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="PR">Puerto Rico</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VI">Virgin Islands</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="WV">West Virginia</option>
+                                                <option value="WI">Wisconsin</option>
+                                                <option value="WY">Wyoming</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="zip_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Zip:</label>
+                                        <label for="zip_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Zip:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="text" class="form-control" name="zip_1" id="zip_1">
+                                            <input type="text" class="form-control" name="zip_1" id="zip_1" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -422,9 +438,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="phone_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Phone:</label>
+                                        <label for="phone_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Phone:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="text" class="form-control" name="phone_1" id="phone_1">
+                                            <input type="text" class="form-control" name="phone_1" id="phone_1" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -434,9 +450,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="email_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Email:</label>
+                                        <label for="email_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Email:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <input type="email" class="form-control" name="email_1" id="email_1">
+                                            <input type="email" class="form-control" name="email_1" id="email_1" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -491,9 +507,9 @@
                                     </div>
                                     <hr>
                                     <div class="form-group">
-                                        <label for="contact_text_1" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Your Comments</label>
+                                        <label for="additional_info_1" class="col-md-3 col-sm-3 col-xs-3 control-label">Additional Info:</label>
                                         <div class="col-md-7 col-sm-8 col-xs-9">
-                                            <textarea class="form-control" name="contact_text_1" id="contact_text_1" rows="10">
+                                            <textarea class="form-control" name="additional_info_1" id="additional_info_1" rows="10">
                                                 
                                             </textarea>
                                         </div>
@@ -504,10 +520,12 @@
                                             <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Missing Children Seminar for Chief Executives Application Form Ends Here -->
-                                <!-- Missing Children Seminar for MCDR Form Starts Here -->
-                                <div id="js-mcdr" class="ncmec-form-content">
+                                </form>
+                            </div>
+                            <!-- Missing Children Seminar for Chief Executives Application Form Ends Here -->
+                            <!-- Missing Children Seminar for MCDR Form Starts Here -->
+                            <div class="ncmec-form-content">
+                                <form id="js-mcdr" class="form-horizontal">
                                     <div class="form-group">
                                         <label for="prefix_2" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
                                         <div class="col-md-3 col-sm-3 col-xs-3">
@@ -691,10 +709,12 @@
                                             <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Missing Children Seminar for MCDR Form Ends Here -->
-                                <!-- Missing Children Seminar for Chief Executives Application Officer Form Starts Here -->
-                                <div id="js-ceo-application" class="ncmec-form-content">
+                                </form>
+                            </div>
+                            <!-- Missing Children Seminar for MCDR Form Ends Here -->
+                            <!-- Missing Children Seminar for Chief Executives Application Officer Form Starts Here -->
+                            <div class="ncmec-form-content">
+                                <form id="js-ceo-application" class="form-horizontal">
                                     <div class="form-group">
                                         <label for="prefix_3" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
                                         <div class="col-md-3 col-sm-3 col-xs-3">
@@ -878,10 +898,12 @@
                                             <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Missing Children Seminar for Chief Executives Application Officer Form Ends Here -->
-                                <!-- Course Application for : CSTAR14 Form Starts Here -->
-                                <div id="js-course-application" class="ncmec-form-content">
+                                </form>
+                            </div>
+                            <!-- Missing Children Seminar for Chief Executives Application Officer Form Ends Here -->
+                            <!-- Course Application for : CSTAR14 Form Starts Here -->
+                            <div class="ncmec-form-content">
+                                <form id="js-course-application" class="form-horizontal">
                                     <div class="form-group">
                                         <label for="prefix_4" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Prefix:</label>
                                         <div class="col-md-3 col-sm-3 col-xs-3">
@@ -1040,10 +1062,10 @@
                                             <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
                                         </div>
                                     </div>
-                                </div>
-                            <!-- Course Application for : CSTAR14 Form Ends Here -->
+                                </form>
                             </div>
-                        </form>
+                        <!-- Course Application for : CSTAR14 Form Ends Here -->
+                        </div>                        
                     </div>
                 </div>
               </div>
