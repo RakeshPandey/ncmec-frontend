@@ -1,6 +1,8 @@
 $(function () {
-    var $divs = $("#js-forms-content > div");
-    $divs.first().show()
+  //  alert('fsdfsd');
+    var $divs = $("#js-forms-content > .ncmec-form-content");
+    $divs.hide();
+    $divs.first().show();
     $("input[name$='ncmec-forms-online']").on("change", function () {
         $divs.hide();
         $divs.eq($("input[name$='ncmec-forms-online']").index(this)).show();
