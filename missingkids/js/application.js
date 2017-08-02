@@ -1,5 +1,5 @@
 $(function () {
-  //  alert('fsdfsd');
+    //  alert('fsdfsd');
     var $divs = $("#js-forms-content > .ncmec-form-content");
     $divs.hide();
     $divs.first().show();
@@ -8,7 +8,7 @@ $(function () {
         $divs.eq($("input[name$='ncmec-forms-online']").index(this)).show();
     });
 
- //   $('.match-height').matchHeight({byRow: false})
+    //   $('.match-height').matchHeight({byRow: false})
 
 
 
@@ -29,6 +29,16 @@ $(function () {
         /** -- END -- Make desktop header navigation hoverable instead of click **/
         ////////////////////////////////////////////////////////////////////
     };
+
+//    var height_arr = [];
+//    $(".content-wrapper > .container > .row > div:lt(2)").each(function () {
+//        height_arr.push(parseInt($(this).height()));
+//    });
+//    var maxHeight = Math.max.apply(null, height_arr);
+//    $(".content-wrapper > .container > .row > div").each(function () {
+//        $(this).find('>.teaser, >.inner-wrapper').height(maxHeight);
+//
+//    });
 
 
 
