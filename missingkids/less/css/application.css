@@ -8322,6 +8322,10 @@ hr {
 .table-ncmec table tbody tr td {
   padding: 10px 10px 10px 20px;
 }
+#accordion .table-ncmec {
+  margin-left: 0;
+  margin-right: 0;
+}
 .seperator {
   margin: 0 8px 34px;
 }
@@ -8348,7 +8352,7 @@ hr {
   border: 1px solid #404041;
   background: #404041;
   border-radius: 4px;
-  width: 172px;
+  width: 173px;
   margin-left: auto;
   margin-right: auto;
 }

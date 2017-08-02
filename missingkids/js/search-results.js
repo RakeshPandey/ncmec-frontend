@@ -13,7 +13,6 @@
         },
         init: function () {
             _this = this;
-
             _this.initHandlebarRegisters();
             _this.el.searchBtn.click(_this.performSearch);
             _this.el.siteSearchResults.on('click', '.pagination a', _this.performSearch);
@@ -31,8 +30,7 @@
 
         initHandlebarRegisters: function () {
 
-            Handlebars.registerHelper("inc", function (value, options)
-            {
+            Handlebars.registerHelper("inc", function (value, options) {
                 return parseInt(value) + 1;
             });
 
@@ -42,10 +40,7 @@
                 }
                 return options.inverse(this);
             });
-
         }
-
-
     };
 
 
