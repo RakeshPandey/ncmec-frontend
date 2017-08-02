@@ -48,3 +48,15 @@ $(function () {
     onScroll();
 
 });
+
+function mobileViewUpdate() {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 767) {
+        $("#js-partner-listing").removeClass("mk-lg mk-md").addClass("mk-sm");
+    } else if (viewportWidth < 944) {
+        $("#js-partner-listing").removeClass("mk-lg mk-sm").addClass("mk-md");
+    }
+}
+
+$(window).load(mobileViewUpdate);
+$(window).resize(mobileViewUpdate);
