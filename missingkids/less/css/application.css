@@ -3272,6 +3272,7 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-default:hover {
   background: #008DB6;
+  border-color: #008DB6;
   color: #fff;
 }
 .btn-default-dark {
@@ -3333,6 +3334,7 @@ fieldset[disabled] .btn-default-dark.focus {
 }
 .btn-default-dark:hover {
   background: #008DB6;
+  border-color: #008DB6;
   color: #fff;
 }
 .btn-primary {
