@@ -6826,6 +6826,7 @@ button.close {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  float: none;
 }
 .pull-right {
   float: right !important;
@@ -7221,6 +7222,136 @@ label.error {
 }
 #form-accordion .panel + .panel {
   margin-top: 16px;
+}
+.ncmec-banner-horizontal {
+  margin-bottom: 16px;
+}
+.ncmec-banner-horizontal #ncmec_container {
+  font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
+  color: #404041;
+  display: inline-block;
+  width: 100%;
+}
+.ncmec-banner-horizontal #ncmec_container table {
+  width: 100%;
+}
+.ncmec-banner-horizontal #ncmec_container table #ncmec_td_one {
+  vertical-align: top;
+  padding-top: 16px;
+  width: 30%;
+  text-align: center;
+}
+.ncmec-banner-horizontal #ncmec_container table #ncmec_td_one #ncmec_help_me_div a {
+  color: #404041;
+  text-align: center;
+  display: block;
+}
+.ncmec-banner-horizontal #ncmec_container table #ncmec_td_one #ncmec_call_text {
+  display: block;
+  font-size: 13px;
+  margin: 5px 0 0;
+  text-align: center;
+}
+.ncmec-banner-horizontal #ncmec_container table #ncmec_td_two {
+  width: 70%;
+  vertical-align: top;
+  background: #404041;
+  padding: 16px;
+  border-radius: 0 10px 10px 0;
+}
+.ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_photo {
+  float: left;
+  margin: 0 16px 0 0;
+  display: inline-block;
+  border-radius: 10px 0 0 10px;
+}
+.ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_name_link {
+  font-family: 'Futura', 'Arial', sans-serif;
+  font-size: 16px;
+  color: #92D6E3;
+  margin: 0 0 5px;
+  text-decoration: none;
+}
+.ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_info {
+  font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
+  font-size: 11px;
+  line-height: 13px;
+  color: #fff;
+  margin: 0 0 5px;
+  text-decoration: none;
+}
+.ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_info strong {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
+}
+.ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_click_photo {
+  color: #92D6E3;
+}
+.ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_controls {
+  margin: 0 0 10px 80px;
+}
+.ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_controls img {
+  margin-right: 20px;
+}
+.ncmec-banner-vertical #ncmec_container .banner-header {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #404041;
+  border-radius: 10px 10px 0 0;
+  padding: 16px 16px;
+  text-align: center;
+}
+.ncmec-banner-vertical #ncmec_container .banner-header #ncmec_help_me_link {
+  color: #404041;
+  text-align: center;
+  display: block;
+}
+.ncmec-banner-vertical #ncmec_container .banner-body {
+  padding: 16px;
+  background: #404041;
+  border-radius: 0 0 10px 10px;
+}
+.ncmec-banner-vertical #ncmec_container .banner-body #ncmec_child_photo {
+  float: left;
+  margin: 0 16px 0 0;
+  display: inline-block;
+  border-radius: 10px 0 0 10px;
+}
+.ncmec-banner-vertical #ncmec_container .banner-body #ncmec_child_name_link {
+  font-family: 'Futura', 'Arial', sans-serif;
+  font-size: 16px;
+  color: #92D6E3;
+  margin: 0 0 5px;
+  text-decoration: none;
+}
+.ncmec-banner-vertical #ncmec_container .banner-body #ncmec_child_info {
+  font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
+  font-size: 11px;
+  line-height: 13px;
+  color: #fff;
+  margin: 0 0 5px;
+  text-decoration: none;
+}
+.ncmec-banner-vertical #ncmec_container .banner-body #ncmec_child_info strong {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
+}
+.ncmec-banner-vertical #ncmec_container .banner-body #ncmec_click_photo_text {
+  color: #92D6E3;
+}
+.ncmec-banner-vertical #ncmec_container .banner-body #ncmec_controls {
+  margin: 0 0 10px 80px;
+}
+.ncmec-banner-vertical #ncmec_container .banner-body #ncmec_controls img {
+  margin-right: 20px;
+}
+@media (min-width: 768px) and (max-width: 768px) and (orientation: portrait) {
+  #ncmec_click_photo_text,
+  #ncmec_click_photo {
+    text-align: right;
+  }
 }
 .contact-us {
   padding-top: 60px;

@@ -1,0 +1,138 @@
+.ncmec-banner-horizontal{
+    margin-bottom: 16px;
+    #ncmec_container {
+        font-family: @font-family-sans-serif;
+        color: @headings-color;
+        display: inline-block;
+        width: 100%;
+        table {
+            width: 100%;
+            #ncmec_td_one {
+                vertical-align: top;
+                padding-top: 16px;
+                width: 30%;
+                text-align: center;
+                #ncmec_help_me_div {
+                    a {
+                        color: @headings-color;
+                        text-align: center;
+                        display: block;
+                    }
+                }
+                #ncmec_call_text {
+                    display: block;
+                    font-size: @font-size-base;
+                    margin: 5px 0 0;
+                    text-align: center;
+                }
+            }
+            #ncmec_td_two {
+                width: 70%;
+                vertical-align: top;
+                background: @headings-color;
+                padding: 16px;
+                border-radius: 0 10px 10px 0;
+                #ncmec_child_photo {
+                    float: left;
+                    margin: 0 16px 0 0;
+                    display: inline-block;
+                    border-radius: 10px 0 0 10px;
+                }
+                #ncmec_child_name_link {
+                    font-family: @font-family-serif;
+                    font-size: @font-size-small;
+                    color: @blue-lighter;
+                    margin: 0 0 5px;
+                    text-decoration: none;
+                }
+                #ncmec_child_info {
+                    font-family: @font-family-sans-serif;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: @white;
+                    margin: 0 0 5px;
+                    text-decoration: none;
+                    strong {
+                        font-size: 13px;
+                        line-height: 16px;
+                        font-weight: normal;
+                    }                    
+                }
+                #ncmec_click_photo {
+                    color: @blue-lighter;
+                }
+                #ncmec_controls {
+                    margin: 0 0 10px 80px;
+                    img {
+                        margin-right: 20px; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.ncmec-banner-vertical {
+    #ncmec_container {
+        .banner-header {
+            position: relative;
+            background-color: #fff;
+            border: 1px solid @headings-color;
+            border-radius: 10px 10px 0 0;
+            padding: 16px 16px;
+            text-align: center;
+            #ncmec_help_me_link {
+                color: @headings-color;
+                text-align: center;
+                display: block;
+            }
+        }
+        .banner-body {
+            padding: 16px;
+            background: #404041;
+            border-radius: 0 0 10px 10px;
+            #ncmec_child_photo {
+                float: left;
+                margin: 0 16px 0 0;
+                display: inline-block;
+                border-radius: 10px 0 0 10px;
+            }
+            #ncmec_child_name_link {
+                font-family: @font-family-serif;
+                font-size: @font-size-small;
+                color: @blue-lighter;
+                margin: 0 0 5px;
+                text-decoration: none;
+            }
+            #ncmec_child_info {
+                font-family: @font-family-sans-serif;
+                font-size: 11px;
+                line-height: 13px;
+                color: @white;
+                margin: 0 0 5px;
+                text-decoration: none;
+                strong {
+                    font-size: 13px;
+                    line-height: 16px;
+                    font-weight: normal;
+                }                    
+            }
+            #ncmec_click_photo_text {
+                color: @blue-lighter;
+            }
+            #ncmec_controls {
+                margin: 0 0 10px 80px;
+                img {
+                    margin-right: 20px; 
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 768px) and (orientation: portrait) {
+    #ncmec_click_photo_text, #ncmec_click_photo {
+        text-align: right;
+    }
+}
