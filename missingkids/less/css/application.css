@@ -8746,18 +8746,18 @@ a.mk-partnerBlock .imgBlock div.imagewrap img {
   margin: 0 0 10px;
 }
 .partnerLevel div.listBlock {
-  background-color: #f7f8fb;
-  padding: 20px;
+  background-color: #F1F1F2;
+  padding: 40px 20px 0;
 }
 .partnerLevel div.listBlock li {
   font-size: 15px;
-  font-size: 1.5rem;
   display: block;
   float: left;
   width: 30%;
-  margin: 0 3% 10px 0;
-  color: #656b79;
+  margin: 0 3% 0 0;
   line-height: 1.2;
+  min-height: 50px;
+  text-align: center;
 }
 iframe {
   border: 0;
