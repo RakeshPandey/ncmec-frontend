@@ -8,9 +8,16 @@ $(function () {
         $divs.eq($("input[name$='ncmec-forms-online']").index(this)).show();
     });
 
-    //   $('.match-height').matchHeight({byRow: false})
+    function appChangeContent() {
+        var $content = $(".js-application-type-content > .js-app-content");
+        $content.hide();
+        $("input[name$='applicantType']").on("change", function () {
+            $content.hide();
+            $content.eq($("input[name$='applicantType']").index(this)).show();
+        });
+    }
 
-
+    
 
     window.onresize = function () {
 
@@ -53,6 +60,7 @@ $(function () {
     }
     window.onload = function(){
         matchHeight();
+        appChangeContent();
             
     }
 
