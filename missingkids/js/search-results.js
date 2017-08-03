@@ -21,7 +21,8 @@
             if (e) {
                 e.preventDefault();
             }
-            _this.el.siteSearchResults.empty().html("<p>Loading..</p>");
+           // _this.el.siteSearchResults.empty().html("<p>Loading..</p>");
+           
             $.get('./missingkids/js/search-results.json', function (data) {
                 var html = _this.templates.searchItem(data);
                 _this.el.siteSearchResults.empty().html(html);

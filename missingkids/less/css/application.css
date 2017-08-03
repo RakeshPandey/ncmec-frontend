@@ -3270,6 +3270,10 @@ fieldset[disabled] .btn-default.focus {
   color: transparent;
   background-color: #F1F1F2;
 }
+.btn-default:hover {
+  background: #008DB6;
+  color: #fff;
+}
 .btn-default-dark {
   color: #404041;
   background-color: transparent;
@@ -3326,6 +3330,10 @@ fieldset[disabled] .btn-default-dark.focus {
 .btn-default-dark .badge {
   color: transparent;
   background-color: #404041;
+}
+.btn-default-dark:hover {
+  background: #008DB6;
+  color: #fff;
 }
 .btn-primary {
   color: #fff;
@@ -3386,6 +3394,11 @@ fieldset[disabled] .btn-primary.focus {
 .btn-primary .badge {
   color: #39C2D7;
   background-color: #fff;
+}
+.btn-primary:hover {
+  background: #FDB813;
+  border-color: #FDB813;
+  color: #fff;
 }
 .btn-success {
   color: #fff;

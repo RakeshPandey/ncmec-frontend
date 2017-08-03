@@ -40,6 +40,21 @@ $(function () {
 //
 //    });
 
+    function matchHeight(){
+        var mainContentHeight = parseInt($(".content-wrapper > .container > .row > div:first").height()),
+            sideContentHeight = parseInt($(".content-wrapper > .container > .row > div:eq(1)").height());
+            
+            //console.log(mainContentHeight, sideContentHeight);
+            
+            
+            if (sideContentHeight > mainContentHeight){
+                $(".content-wrapper > .container > .row > div:first .inner-wrapper").height(sideContentHeight);
+            }
+    }
+    window.onload = function(){
+        matchHeight();
+            
+    }
 
 
     function onScroll() {

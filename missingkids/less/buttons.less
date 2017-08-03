@@ -67,15 +67,34 @@
 
 .btn-default {
   .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+    &:hover{
+      background: @blue-darker;
+      color:@white;
+  }
 }
 .btn-default-dark {
   .button-variant(@btn-default-dark-color; @btn-default-dark-bg; @btn-default-dark-border);
+  
+  &:hover{
+      background: @blue-darker;
+      color:@white;
+  }
+  
+  
 }
 .btn-primary {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border;);
   font-family:  @font-family-serif;
   font-size: @font-size-h4;
   text-transform: uppercase;
+  
+  &:hover{
+      background: @orange-light;
+      border-color:@orange-light;
+      color:@white;
+  }
+  
+  
 }
 // Success appears as green
 .btn-success {
