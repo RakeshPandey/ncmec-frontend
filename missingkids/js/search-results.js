@@ -6,7 +6,8 @@
     var _this, searchMod = {
         el: {
             searchBtn: $("#searchBtn"),
-            siteSearchResults: $("#siteSearchResults")
+            siteSearchResults: $("#siteSearchResults"),
+            siteSearchResultsWrapper:$(".siteSearchResultsWrapper")
         },
         templates: {
             searchItem: Handlebars.compile($("#search-result-item").html())
@@ -21,11 +22,12 @@
             if (e) {
                 e.preventDefault();
             }
-           // _this.el.siteSearchResults.empty().html("<p>Loading..</p>");
+           _this.el.siteSearchResultsWrapper.find('.ajax-loader').show();
            
             $.get('./missingkids/js/search-results.json', function (data) {
                 var html = _this.templates.searchItem(data);
                 _this.el.siteSearchResults.empty().html(html);
+                _this.el.siteSearchResultsWrapper.find('.ajax-loader').hide();
             });
         },
 
