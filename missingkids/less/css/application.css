@@ -7423,7 +7423,7 @@ label.error {
   font-family: 'Futura', 'Arial', sans-serif;
   font-size: 16px;
   color: #92d6e3;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 19px;
   padding: 23px 16px 24px;
 }
@@ -8750,7 +8750,7 @@ a.mk-partnerBlock .imgBlock div.imagewrap img {
   padding: 40px 20px 0;
 }
 .partnerLevel div.listBlock li {
-  font-size: 15px;
+  font-size: 13px;
   display: block;
   float: left;
   width: 30%;
