@@ -8858,6 +8858,7 @@ iframe {
 }
 .signup-poster-form {
   max-width: 500px;
+  margin: 0 auto;
 }
 /* Custom form-control */
 textarea.form-control {
