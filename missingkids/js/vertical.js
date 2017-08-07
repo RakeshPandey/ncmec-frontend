@@ -88,8 +88,8 @@ function updateNCMECDisplayWithObject(which) {
     //alt and title
     document.getElementById('ncmec_child_photo').alt = ncmecObject.name;
     document.getElementById('ncmec_child_photo').title = ncmecObject.name;
-    document.getElementById('ncmec_help_me_img').alt = 'Help '+ncmecObject.name+' get back home';
-    document.getElementById('ncmec_help_me_img').title = 'Help '+ncmecObject.name+' get back home';
+    document.getElementById('ncmec_help_me_link').alt = 'Help '+ncmecObject.name+' get back home';
+    document.getElementById('ncmec_help_me_link').title = 'Help '+ncmecObject.name+' get back home';
     
     currentNCMECChildShown = which;
 }
