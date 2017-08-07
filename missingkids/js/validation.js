@@ -1,11 +1,5 @@
 
-$.validator.setDefaults({
-    submitHandler: function() {
-        alert("submitted!");
-    }
-});
-
-$().ready(function() {
+$(document).ready(function() {
     // validate the comment form when it is submitted
  //   $("#js-interview-form").validate();
 
@@ -214,4 +208,47 @@ $().ready(function() {
         }
     });
     
-});
+
+
+// Validation for CodeAdam page starts here
+
+    $("#js-codeadam-form").validate({
+        rules: {
+            fname: "required",
+            lname: "required",
+           organisationType : "required",
+            city: "required",
+            state: "required",
+            zip: "required",
+            mailingAddress : "required",
+            locations : "required",
+            englishKits : "required",
+            spanishKits : "required",
+            phoneNumber: {
+                phoneUS: true,
+                required: true,
+                minlength : 10,
+                maxlength : 10
+            },
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            fname: "This field is required",
+            lname: "This field is required",
+            city: "This field is required",
+            state: "This field is required",
+            organisationType: "This field is required",
+            zip: "This field is required",
+            mailingAddress: "This field is required",
+            locations: "This field is required",
+            englishKits: "This field is required",
+            spanishKits: "This field is required",
+            phoneNumber: "Please Enter a valid phone number"
+            email: "Please Enter a valid email address"
+        }
+    });
+
+    });
