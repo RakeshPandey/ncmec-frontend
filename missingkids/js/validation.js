@@ -246,7 +246,41 @@ $(document).ready(function() {
             locations: "This field is required",
             englishKits: "This field is required",
             spanishKits: "This field is required",
-            phoneNumber: "Please Enter a valid phone number"
+            phoneNumber: "Please Enter a valid phone number",
+            email: "Please Enter a valid email address"
+        }
+
+    });
+// Validation for disaster-response-vedio page starts here
+
+    $("#js-disaster-response-vedio").validate({
+        rules: {
+            fname: "required",
+            lname: "required",
+            city: "required",
+            state: "required",
+            zip: "required",
+            mailingAddress : "required",
+            locations : "required",
+            phoneNumber: {
+                phoneUS: true,
+                required: true,
+                minlength : 10,
+                maxlength : 10
+            },
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            fname: "This field is required",
+            lname: "This field is required",
+            city: "This field is required",
+            state: "This field is required",
+            zip: "This field is required",
+            mailingAddress: "This field is required",
+            phoneNumber: "Please Enter a valid phone number",
             email: "Please Enter a valid email address"
         }
     });
