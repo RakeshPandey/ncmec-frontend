@@ -1,7 +1,4 @@
 
-(function () {
-
-
     /**
      * NCMEC/MissingKids.com horizontal javascript banner v1.0
      * Please see http://banner.missingkids.com/js for more information
@@ -327,4 +324,3 @@
             }
         };
     }
-})();
