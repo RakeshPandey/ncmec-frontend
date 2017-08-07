@@ -8856,9 +8856,10 @@ iframe {
 #mobilePopupCaptcha .modal-dialog {
   margin: 0px auto;
 }
-.textColorBlue {
-  color: #006C8A;
-}
 .signup-poster-form {
   max-width: 500px;
+}
+/* Custom form-control */
+textarea.form-control {
+  height: 120px;
 }
