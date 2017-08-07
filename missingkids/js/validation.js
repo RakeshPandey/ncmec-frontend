@@ -1,4 +1,8 @@
-
+$.validator.setDefaults({
+     submitHandler: function() {
+         alert("submitted!");
+     }
+ });
 $(document).ready(function() {
     // validate the comment form when it is submitted
  //   $("#js-interview-form").validate();
