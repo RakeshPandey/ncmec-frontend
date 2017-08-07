@@ -7238,7 +7238,6 @@ label.error {
 #form-accordion .panel + .panel {
   margin-top: 16px;
 }
-
 .ncmec-banner-horizontal {
   margin-bottom: 16px;
 }
@@ -7246,6 +7245,7 @@ label.error {
   font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
   color: #404041;
   display: inline-block;
+  max-width: 520px;
   width: 100%;
 }
 .ncmec-banner-horizontal #ncmec_container table {
@@ -7309,6 +7309,10 @@ label.error {
 }
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_controls img {
   margin-right: 20px;
+}
+.ncmec-banner-vertical #ncmec_container {
+  width: 100%;
+  max-width: 300px;
 }
 .ncmec-banner-vertical #ncmec_container .banner-header {
   position: relative;
