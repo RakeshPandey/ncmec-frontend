@@ -8864,3 +8864,7 @@ iframe {
 textarea.form-control {
   height: 120px;
 }
+/* Blue-base text color */
+p.textColorBlueBase {
+  color: #006C8A;
+}
