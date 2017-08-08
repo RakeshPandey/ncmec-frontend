@@ -8331,6 +8331,29 @@ and open the template in the editor.
   display: block;
   background-size: 100%;
 }
+.missing-anniversary-container .missing-anniversary-grid {
+  margin-left: -16px;
+  margin-right: -16px;
+  color: #fff;
+}
+.missing-anniversary-container .missing-anniversary-grid .grid-item {
+  margin-bottom: 16px;
+  border-radius: 10px;
+  background: #404041;
+}
+.missing-anniversary-container .missing-anniversary-grid .grid-item img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.missing-anniversary-container .missing-anniversary-grid .grid-item .image-desc {
+  padding: 16px;
+}
+.missing-anniversary-container .missing-anniversary-grid .grid-item a {
+  color: #92D6E3;
+}
+.missing-anniversary-container .missing-anniversary-grid .grid-item a.kid-name {
+  font-family: Futura;
+}
 picture,
 img {
   max-width: 100%;
@@ -8379,6 +8402,12 @@ img {
 .base-template .inner-wrapper p {
   padding-left: 8px;
   padding-right: 8px;
+}
+.base-template .inner-wrapper h5 > p {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: inherit;
 }
 .show-grid [class^=col-] {
   padding-top: 10px;
@@ -8863,4 +8892,8 @@ iframe {
 /* Custom form-control */
 textarea.form-control {
   height: 120px;
+}
+/* Blue-base text color */
+p.textColorBlueBase {
+  color: #006C8A;
 }
