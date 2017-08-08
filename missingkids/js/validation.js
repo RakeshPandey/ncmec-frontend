@@ -229,7 +229,7 @@ $(document).ready(function() {
             englishKits : "required",
             spanishKits : "required",
             phoneNumber: {
-                phoneUS: true,
+               // phoneUS: true,
                 required: true,
                 minlength : 10,
                 maxlength : 10
