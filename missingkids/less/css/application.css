@@ -8393,6 +8393,12 @@ img {
   padding-left: 8px;
   padding-right: 8px;
 }
+.inner-wrapper h5 > p {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: inherit;
+}
 .base-template .inner-wrapper h1,
 .base-template .inner-wrapper h2,
 .base-template .inner-wrapper h3,
@@ -8402,12 +8408,6 @@ img {
 .base-template .inner-wrapper p {
   padding-left: 8px;
   padding-right: 8px;
-}
-.base-template .inner-wrapper h5 > p {
-  font-family: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  margin: inherit;
 }
 .show-grid [class^=col-] {
   padding-top: 10px;
