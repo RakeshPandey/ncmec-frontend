@@ -7416,6 +7416,13 @@ label.error {
   list-style: none;
   padding: 16px;
   margin: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .sponsored-block ul:before,
 .sponsored-block ul:after {
