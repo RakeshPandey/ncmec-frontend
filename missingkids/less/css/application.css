@@ -7442,10 +7442,6 @@ label.error {
   display: block;
   text-align: center;
 }
-.sponsored-block ul li a img {
-  width: 100%;
-  height: 100%;
-}
 .sponsored-block .footer {
   background: #404041;
   border-radius: 0 0 10px 10px;
