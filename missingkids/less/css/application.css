@@ -8864,10 +8864,7 @@ iframe {
     height: 170px;
   }
 }
-.siteSearchResultsWrapper {
-  position: relative;
-}
-.siteSearchResultsWrapper .ajax-loader {
+.ajax-loader {
   position: absolute;
   top: 0;
   opacity: .18;
@@ -8875,6 +8872,9 @@ iframe {
   left: 50%;
   right: 50%;
   width: 40px;
+}
+.siteSearchResultsWrapper {
+  position: relative;
 }
 #mobilePopupCaptcha .modal.in .modal-dialog {
   -webkit-transform: translate(0, -50%);
@@ -8896,4 +8896,21 @@ textarea.form-control {
 /* Blue-base text color */
 p.textColorBlueBase {
   color: #006C8A;
+}
+.icon-sub-heading {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.icon-sub-heading img {
+  max-height: 90px;
+}
+.icon-sub-heading h5 {
+  padding-left: 10px;
 }
