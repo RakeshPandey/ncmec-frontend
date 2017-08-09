@@ -16,6 +16,7 @@
             _this = this;
             //_this.initHandlebarRegisters();
             _this.el.timeframeRadio.change(_this.performSearch);
+            _this.performSearch();
         },
         performSearch: function (e) {
             if (e) {
@@ -23,7 +24,7 @@
             }
            _this.el.siteSearchResultsWrapper.find('.ajax-loader').show();
            
-            $.get('./missingkids/js/json/anniversaries-grid.json', function (data) {
+            $.get('./missingkids/js/json/anniversaries-grid-results.json', {timeframe:_this.el.timeframeRadio.val()}, function (data) {
                 var html = _this.templates.searchItem(data);
                 _this.el.siteSearchResults.empty().html(html);
                 _this.el.siteSearchResultsWrapper.find('.ajax-loader').hide();
