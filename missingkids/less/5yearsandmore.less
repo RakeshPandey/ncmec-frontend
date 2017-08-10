@@ -1,0 +1,37 @@
+.yearsandmore-container{
+    >p, >h2{
+        padding-left:8px;
+        padding-right:8px;
+    }
+    .long-years-grid{
+
+        >ul{
+            list-style-type: none;
+            display:flex;
+            flex-wrap:wrap;
+
+            padding-left: 16px;
+            >li{
+                
+                width:50%;
+                @media (min-width: @screen-sm-min) {
+                    width:30%;
+                }
+                @media (min-width: @screen-md-min) {
+                    width:20%;
+                }
+                
+            }
+        }
+    }
+    .section-title{
+        padding-left:8px;
+        padding-right:8px;
+    }
+    .ajax-loader {
+        opacity: .18;
+        display: none;
+        width: 40px;
+        margin: 0 auto;
+    }
+}

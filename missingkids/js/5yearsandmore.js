@@ -1,6 +1,6 @@
 (function ($, Handlebars) {
 
-    var _this, anniversariesMod = {
+    var _this, yearsandmoreMod = {
         el: {
             siteSearchResults: $("#missing-anniversary-grid"),
             siteSearchResultsWrapper: $("#missing-anniversary-grid-wrapper"),
@@ -21,17 +21,19 @@
             }
             _this.el.siteSearchResultsWrapper.find('.ajax-loader').show();
 
-            $.get('./missingkids/js/json/anniversaries-grid-results.json', {timeframe: _this.el.timeframeRadio.val()}, function (data) {
+            $.get('./missingkids/js/json/5yearsandmore.json', {timeframe: _this.el.timeframeRadio.val()}, function (data) {
                 var html = _this.templates.searchItem(data);
                 _this.el.siteSearchResults.empty().html(html);
                 _this.el.siteSearchResultsWrapper.find('.ajax-loader').hide();
             });
         },
         onScroll: function () {
-            if (($(window).scrollTop() + $(window).height()) == $(document).height()) {
+            
+            var difference = Math.abs(parseInt($(window).scrollTop() + $(window).height())- parseInt($(document).height()))
+            if (difference < 5) {
 
                 _this.el.siteSearchResultsWrapper.find('.ajax-loader').show();
-                $.get('./missingkids/js/json/anniversaries-grid-results.json', {timeframe: _this.el.timeframeRadio.val()}, function (data) {
+                $.get('./missingkids/js/json/5yearsandmore.json', {timeframe: _this.el.timeframeRadio.val()}, function (data) {
                     var html = _this.templates.searchItem(data);
                     _this.el.siteSearchResults.append(html);
                     _this.el.siteSearchResultsWrapper.find('.ajax-loader').hide();
@@ -41,8 +43,7 @@
         }
     };
 
-
-    anniversariesMod.init();
+    yearsandmoreMod.init();
 
 
 

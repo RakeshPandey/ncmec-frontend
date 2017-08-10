@@ -8334,6 +8334,11 @@ and open the template in the editor.
   display: block;
   background-size: 100%;
 }
+.missing-anniversary-container > p,
+.missing-anniversary-container > h2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
 .missing-anniversary-container .missing-anniversary-grid {
   margin-left: -16px;
   margin-right: -16px;
@@ -8358,7 +8363,50 @@ and open the template in the editor.
 .missing-anniversary-container .missing-anniversary-grid .grid-item a.kid-name {
   font-family: Futura;
 }
+.missing-anniversary-container .section-title > p {
+  padding-left: 8px;
+  padding-right: 8px;
+}
 .missing-anniversary-container .ajax-loader {
+  opacity: .18;
+  display: none;
+  width: 40px;
+  margin: 0 auto;
+}
+.yearsandmore-container > p,
+.yearsandmore-container > h2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.yearsandmore-container .long-years-grid > ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 16px;
+}
+.yearsandmore-container .long-years-grid > ul > li {
+  width: 50%;
+}
+@media (min-width: 767px) {
+  .yearsandmore-container .long-years-grid > ul > li {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .yearsandmore-container .long-years-grid > ul > li {
+    width: 20%;
+  }
+}
+.yearsandmore-container .section-title {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.yearsandmore-container .ajax-loader {
   opacity: .18;
   display: none;
   width: 40px;
