@@ -4,8 +4,8 @@
 
         margin-left: -16px;
         margin-right: -16px;
-       color:@white;
-        
+        color:@white;
+
         .grid-item{ 
             margin-bottom:16px;
             border-radius:10px;
@@ -13,20 +13,26 @@
             img {
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
+                width:100%;
             }
             .image-desc{
                 padding:16px;
-                
+
             }
-            
-            a{
+
+            a {
                 &.kid-name{
                     font-family: Futura;
                 }
-                
+
                 color:@blue-lighter;
             }
         }
     }
-
+    .ajax-loader {       
+        opacity: .18;
+        display: none;
+        width: 40px;
+        margin: 0 auto;
+    }
 }

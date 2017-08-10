@@ -37,25 +37,13 @@ $(function () {
         ////////////////////////////////////////////////////////////////////
     };
 
-//    var height_arr = [];
-//    $(".content-wrapper > .container > .row > div:lt(2)").each(function () {
-//        height_arr.push(parseInt($(this).height()));
-//    });
-//    var maxHeight = Math.max.apply(null, height_arr);
-//    $(".content-wrapper > .container > .row > div").each(function () {
-//        $(this).find('>.teaser, >.inner-wrapper').height(maxHeight);
-//
-//    });
-
     function matchHeight(){
         var mainContentHeight = parseInt($(".content-wrapper > .container > .row > div:first").height()),
             sideContentHeight = parseInt($(".content-wrapper > .container > .row > div:eq(1)").height());
-            
-            //console.log(mainContentHeight, sideContentHeight);
-            
+                        
             
             if (sideContentHeight > mainContentHeight){
-                $(".content-wrapper > .container > .row > div:first .inner-wrapper").height(sideContentHeight);
+                $(".content-wrapper > .container > .row > div:first .inner-wrapper:not(.dont-set-height)").height(sideContentHeight);
             }
     }
     window.onload = function(){

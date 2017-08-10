@@ -63,7 +63,7 @@
 
                     <div class="row">
                         <div class="col-md-6 col-sm-8 col-md-offset-2 col-sm-offset-3">
-                            <div class="inner-wrapper">
+                            <div class="inner-wrapper dont-set-height">
 
                                 <div class="missing-anniversary-container">
                                     <h2 class="main-title">Missing Anniversaries</h2>
@@ -74,20 +74,11 @@
                                     </p>
                                     <p>
                                         <b>View anniversaries for :</b> 
-                                        <input type="radio" name="timeframe" value="week" data-role="none">&nbsp;This week
+                                        <input type="radio" name="timeframe" value="week" data-role="none" checked="true">&nbsp;This week
                                         <input type="radio" name="timeframe" value="day" data-role="none">&nbsp;This day
                                     </p>
                                     <div id="missing-anniversary-grid-wrapper">
-                                        <p>
-                                            <strong>Anniversaries This Week - </strong>
-
-
-                                        </p>
-                                        <p>2010 - 2017</p>
-
-                                        <div class="row missing-anniversary-grid" id="missing-anniversary-grid">
-
-                                        </div>
+                                        <div id="missing-anniversary-grid"></div>
                                         <div class="ajax-loader"><img src="missingkids/images/ajax-loader.gif" alt=""/></div>
                                     </div>
 
@@ -179,24 +170,37 @@
 
         <script id="tmpl-anniversary-grid-item" type="text/x-handlebars-template">
             
-            {{#each results}}
-            <div class="col-sm-6 col-md-4">
-                <div class="grid-item">
-                    <img src="http://via.placeholder.com/224x280" />
-                    <div class="image-desc">
-                        <p>
-                            <a href="#" class="kid-name">{{name}}</a>
-                        </p>
-                        <p>
-                            Missing Since: {{missing-since}}<br/>
-                            Age Now: {{age-now}}<br/>
-                            Missing From: {{missing-from}}
-                        </p>
-                        <div class="text-right"><a href="#">View Poster >></a></div>
+
+            <div>
+            
+                {{#each sections}}
+                    <div class="section-title">
+                        <p><strong>{{section-title}} - </strong></p>
+                        <p>{{section-title-val}}</p>
                     </div>
-                </div>
+                    <div class="row missing-anniversary-grid">
+                    {{#each results}}
+                    <div class="col-sm-6 col-md-4">
+                        <div class="grid-item">
+                            <img src="http://via.placeholder.com/224x280" />
+                            <div class="image-desc">
+                                <p>
+                                    <a href="#" class="kid-name">{{name}}</a>
+                                </p>
+                                <p>
+                                    Missing Since: {{missing-since}}<br/>
+                                    Age Now: {{age-now}}<br/>
+                                    Missing From: {{missing-from}}
+                                </p>
+                                <div class="text-right"><a href="#">View Poster >></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                        </div>
+                {{/each}}    
+                
             </div>
-      {{/each}}
         </script>
         <!-- Bootstrap core JavaScript
         ================================================== -->

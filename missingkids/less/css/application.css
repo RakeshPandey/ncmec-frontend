@@ -8347,6 +8347,7 @@ and open the template in the editor.
 .missing-anniversary-container .missing-anniversary-grid .grid-item img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  width: 100%;
 }
 .missing-anniversary-container .missing-anniversary-grid .grid-item .image-desc {
   padding: 16px;
@@ -8356,6 +8357,12 @@ and open the template in the editor.
 }
 .missing-anniversary-container .missing-anniversary-grid .grid-item a.kid-name {
   font-family: Futura;
+}
+.missing-anniversary-container .ajax-loader {
+  opacity: .18;
+  display: none;
+  width: 40px;
+  margin: 0 auto;
 }
 picture,
 img {
@@ -8867,7 +8874,10 @@ iframe {
     height: 170px;
   }
 }
-.ajax-loader {
+.siteSearchResultsWrapper {
+  position: relative;
+}
+.siteSearchResultsWrapper .ajax-loader {
   position: absolute;
   top: 0;
   opacity: .18;
@@ -8875,9 +8885,6 @@ iframe {
   left: 50%;
   right: 50%;
   width: 40px;
-}
-.siteSearchResultsWrapper {
-  position: relative;
 }
 #mobilePopupCaptcha .modal.in .modal-dialog {
   -webkit-transform: translate(0, -50%);
