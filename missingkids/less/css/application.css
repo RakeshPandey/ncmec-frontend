@@ -7416,6 +7416,13 @@ label.error {
   list-style: none;
   padding: 16px;
   margin: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .sponsored-block ul:before,
 .sponsored-block ul:after {
@@ -7441,10 +7448,6 @@ label.error {
   color: #626366;
   display: block;
   text-align: center;
-}
-.sponsored-block ul li a img {
-  width: 100%;
-  height: 100%;
 }
 .sponsored-block .footer {
   background: #404041;
@@ -8393,6 +8396,12 @@ img {
   padding-left: 8px;
   padding-right: 8px;
 }
+.inner-wrapper h5 > p {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: inherit;
+}
 .base-template .inner-wrapper h1,
 .base-template .inner-wrapper h2,
 .base-template .inner-wrapper h3,
@@ -8402,12 +8411,6 @@ img {
 .base-template .inner-wrapper p {
   padding-left: 8px;
   padding-right: 8px;
-}
-.base-template .inner-wrapper h5 > p {
-  font-family: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  margin: inherit;
 }
 .show-grid [class^=col-] {
   padding-top: 10px;
@@ -8864,10 +8867,7 @@ iframe {
     height: 170px;
   }
 }
-.siteSearchResultsWrapper {
-  position: relative;
-}
-.siteSearchResultsWrapper .ajax-loader {
+.ajax-loader {
   position: absolute;
   top: 0;
   opacity: .18;
@@ -8875,6 +8875,9 @@ iframe {
   left: 50%;
   right: 50%;
   width: 40px;
+}
+.siteSearchResultsWrapper {
+  position: relative;
 }
 #mobilePopupCaptcha .modal.in .modal-dialog {
   -webkit-transform: translate(0, -50%);
@@ -8897,6 +8900,20 @@ textarea.form-control {
 p.textColorBlueBase {
   color: #006C8A;
 }
-.checkbox .reprint-label {
+.icon-sub-heading {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.icon-sub-heading img {
+  max-height: 90px;
+}
+.icon-sub-heading h5 {
   padding-left: 10px;
 }
