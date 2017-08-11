@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -30,15 +30,24 @@
   </head>
 
   <body>
-    
+
     <div class="wrapper">
-      
+
       <div class="container">
         <div class="teaser">
           <div class="col-sm-6 col-md-4">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <img src="missingkids/images/heroes-circle.png" class="" alt="Heros Circle"> 
+                <picture>
+                    <!-- tablet landscape -->
+                    <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/heroes-circle_TL_M_4C.png">
+                    <!-- mobile devices -->
+                    <source media="(max-width:767px)" srcset="missingkids/images/heroes-circle_M_4C.png">
+                    <!-- tablet portrait -->
+                    <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/heroes-circle_TP_4C.png">
+                    <!-- desktop -->
+                    <img src="missingkids/images/heroes-circle.png" alt="Heros Circle" />
+                </picture>
               </div>
               <div class="panel-body">
                 <h5 class="title-5">Give Monthly or Quarterly</h5>
@@ -50,7 +59,16 @@
           <div class="col-sm-6 col-md-4">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <img src="missingkids/images/graph.png" class="" alt="Heros Circle"> 
+                <picture>
+                    <!-- tablet landscape -->
+                    <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/graph_TL_M.png">
+                    <!-- mobile devices -->
+                    <source media="(max-width:767px)" srcset="missingkids/images/graph_M.png">
+                    <!-- tablet portrait -->
+                    <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/graph_TP.png">
+                    <!-- desktop -->
+                    <img src="missingkids/images/graph.png" class="" alt="Heros Circle">
+                </picture>
               </div>
               <div class="panel-body">
                 <h5 class="title-5">Proud of Our Commitment</h5>
@@ -61,8 +79,15 @@
           <div class="col-sm-6 col-md-4">
             <div class="panel panel-default">
               <div class="panel-heading no-pad">
-                <img src="missingkids/images/image_01.png" class="img-full-width" alt="Heros Circle">
-                <h5 class="title-5">Every child deserves<br> a Safe childhood</h5> 
+                <picture>
+                    <!-- mobile devices -->
+                    <source media="(max-width: 767px)" srcset="missingkids/images/image_01_M.png">
+                    <!-- tablet portrait -->
+                    <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/image_01_TP.png">
+                    <!-- desktop -->
+                    <img src="missingkids/images/image_01.png" class="img-full-width" alt="Heros Circle">
+                </picture>
+                <h5 class="title-5">Every child deserves<br> a Safe childhood</h5>
               </div>
               <div class="panel-body">
                 <h5 class="title-5">Form 990</h5>
@@ -79,7 +104,14 @@
           <div class="col-sm-6 col-md-4">
             <div class="panel panel-default">
               <div class="panel-heading no-pad">
-                <img src="missingkids/images/image_01.png" class="img-responsive img-full-width" alt="Heros Circle">
+                <picture>
+                    <!-- mobile devices -->
+                    <source media="(max-width: 767px)" srcset="missingkids/images/image_01_M.png">
+                    <!-- tablet portrait -->
+                    <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/image_01_TP.png">
+                    <!-- desktop -->
+                    <img src="missingkids/images/image_01.png" class="img-full-width" alt="Heros Circle">
+                </picture>
               </div>
               <div class="panel-body">
                 <h5 class="title-5">Child Safety &amp; Prevention</h5>
@@ -98,7 +130,14 @@
           <div class="col-sm-6 col-md-4">
             <div class="panel panel-default">
               <div class="panel-heading no-pad-LR">
-                <img src="missingkids/images/missing_person_logo.png" class="img-full-width" alt="Missing Person">
+                <picture>
+                  <!-- mobile devices -->
+                  <source media="(max-width: 767px)" srcset="missingkids/images/missing_person_logo_M.png">
+                  <!-- tablet portrait -->
+                  <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/missing_person_logo_TP.png">
+                  <!-- desktop -->
+                  <img src="missingkids/images/missing_person_logo.png" class="img-full-width" alt="Missing Person">
+                </picture>
                 <div class="select-state">
                     <form>
                         <label for="state">Select State : </label>
@@ -142,7 +181,14 @@
           <div class="col-sm-6 col-md-4">
             <div class="panel panel-default">
               <div class="panel-heading no-pad-LR">
-                <img src="missingkids/images/hotline-image.png" class="img-full-width" alt="24 Hour Hotline">
+                <picture>
+                  <!-- mobile devices -->
+                  <source media="(max-width: 767px)" srcset="missingkids/images/hotline-image_M.png">
+                  <!-- tablet portrait -->
+                  <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/hotline-image_TP.png">
+                  <!-- desktop -->
+                  <img src="missingkids/images/hotline-image.png" class="img-full-width" alt="24 Hour Hotline">
+                </picture>
               </div>
               <div class="panel-body">
                 <h5 class="title-5">Report It</h5>
@@ -157,7 +203,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
 
 

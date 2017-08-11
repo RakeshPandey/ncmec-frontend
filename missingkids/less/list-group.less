@@ -26,7 +26,6 @@
   margin-bottom: -1px;
   background-color: @list-group-bg;
   border-top: 1px solid @list-group-border;
-  border-bottom: 1px solid @list-group-border;
 
   // Round the first and last items
   /*
@@ -37,6 +36,10 @@
     margin-bottom: 0;
     .border-bottom-radius(@list-group-border-radius);
   } */
+  &:not(:last-child) {
+    border-bottom: 1px solid @list-group-border;
+  }
+
 }
 
 
@@ -123,10 +126,10 @@ button.list-group-item {
 // Extra classes for creating well-formatted content within `.list-group-item`s.
 
 .list-group-item-heading {
-  color: @headings-color;  
+  color: @headings-color;
   font-size: @font-size-small;
   font-weight: bold;
-  padding: 16px 0; 
+  padding: 16px 0;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -135,18 +138,17 @@ button.list-group-item {
   font-weight: normal;
   margin-bottom: 0;
   line-height: 16px;
+  padding: 0 16px;
 }
 
-// Custom 
+// Custom
 .list-group-item {
   padding: 16px 16px 16px 0;
   .clearfix();
   img {
     .pull-left();
     border: 1px solid #939597;
-    border-radius: 10px 0 0 10px;
-    margin-right: 20px;
-    width: 144px;
-    height: 180px;
+    //border-radius: 10px 0 0 10px;
+    margin: 0 20px 0 10px;
   }
 }

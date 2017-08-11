@@ -9,14 +9,26 @@
   display: inline-block;
   vertical-align: middle; // match .btn alignment given font-size hack above
   > .btn {
+    color: @gray-base;
     position: relative;
     float: left;
+    font-size: 13px;
+    padding: 4px 15px;
+    border-color: none;
+    border: 1px solid @gray-dark;
+    border-right: 0;
+    &:last-child {
+        border-right: 1px solid #939597;
+    }
     // Bring the "active" button to the front
     &:hover,
     &:focus,
     &:active,
     &.active {
       z-index: 2;
+      background: @gray-dark;
+      box-shadow: none;
+      color: @white;
     }
   }
 }

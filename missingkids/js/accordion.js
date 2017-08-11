@@ -1,6 +1,10 @@
 /*******************************
 * ACCORDION WITH TOGGLE ICONS
 *******************************/
+    $(function() {
+        $('#accordion .collapse').collapse('hide');
+    });
+
 	function toggleIcon(e) {
         $(e.target)
             .prev('.panel-heading')
@@ -9,3 +13,5 @@
     }
     $('.panel-group').on('hidden.bs.collapse', toggleIcon);
     $('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+    $('#form-accordion .collapse').collapse('show');
