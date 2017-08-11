@@ -289,4 +289,21 @@ $(document).ready(function() {
         }
     });
 
+    $("#fundraiser-form").validate({
+        rules: {
+            "sponsor-name":"required",
+            "contact-name":"required",
+            "telephone":"required",
+            "email":"required",
+            "address":"required",
+            "city":"required",
+            "state":"required",
+            "zip":"required",
+            "event-location":"required",
+            "proposed-date":"required",
+            "desc-fundraiser":"required",
+            
+        }
+    });
+
     });

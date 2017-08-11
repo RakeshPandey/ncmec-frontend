@@ -117,7 +117,7 @@
                                 <p>Fundraisers may range from bake sales to auctions, walk-a-thons to employee driven workplace events and beyond. If you would like to help NCMEC by organizing a fundraiser, please complete the form below. A NCMEC staff member will respond to your request.</p>
 
                                 <div class="form ncmec-form row">
-                                    <form class="form-horizontal">
+                                    <form class="form-horizontal" id="fundraiser-form">
                                         <legend>Sponsor information</legend>
                                         <div class="form-group">
                                             <label for="sponsor-name" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Name of sponsoring organization or individual:</label>
@@ -211,7 +211,7 @@
                                         <div class="form-group">
                                             <label for="desc-fundraiser" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Describe your fundraiser:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="desc-fundraiser" id="desc-fundraiser" required="" >
+                                                <textarea class="form-control" name="desc-fundraiser" id="desc-fundraiser" required="" ></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -223,9 +223,45 @@
                                         <div class="form-group">
                                             <label for="promotion-strategy" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Promotion Strategy:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="promotion-strategy" id="promotion-strategy" required="" >
+                                                <textarea class="form-control" name="promotion-strategy" id="promotion-strategy" required="" ></textarea>
                                             </div>
                                         </div>
+                                        <hr />
+                                        <legend>Funds raised</legend>
+
+                                        <div class="form-group">
+                                            <label class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Will the funds raised be donated exclusively to NCMEC?:</label>
+                                            <div class="checkbox col-sm-offset-4 col-sm-offset-right-1">            
+                                                <input type="radio" name="fund-donation" id="yes-fund-donation" value="yes">
+                                                <label for="yes-fund-donation" class="reprint-label">Yes</label>
+                                            </div>
+                                            <div class="checkbox col-sm-offset-4 col-sm-offset-right-1">
+                                                <input type="radio" name="fund-donation" id="no-fund-donation" value="no">
+                                                <label for="no-fund-donation" class="reprint-label">No</label>
+                                            </div>                        
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="promotion-strategy" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> If no, to what other organization will the funds be donated:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <textarea class="form-control" name="promotion-strategy" id="promotion-strategy" required="" ></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="promotion-strategy" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Anticipated Income Raised:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <textarea class="form-control" name="promotion-strategy" id="promotion-strategy" required="" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="promotion-strategy" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Anticipated Income Raised for NCMEC:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <textarea class="form-control" name="promotion-strategy" id="promotion-strategy" required="" ></textarea>
+                                            </div>
+                                        </div>
+
+
 
 
                                         <div class="form-group">
