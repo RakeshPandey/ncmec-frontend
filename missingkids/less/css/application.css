@@ -7679,3 +7679,13 @@ hr {
 .three-column .video-image-component .col-md-10 {
   width: 100%;
 }
+.control-label {
+  word-wrap: break-word;
+}
+.error {
+  color: #b30303;
+  padding-right: 5px;
+}
+#background-form label.text-left {
+  text-align: left;
+}
