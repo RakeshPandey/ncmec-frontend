@@ -1,4 +1,22 @@
 .teaser{
+    &.teaser-form {
+        .panel-heading {
+            background: @white;
+            h5 {
+                position: static;
+                top: 0;
+                left: 0;
+                text-align: left;
+            }
+            .control-label {
+                color: @gray-darker;
+                padding: 0;
+            }
+            .form-group > [class*="col-"] {
+                padding-right: 0;
+            }
+        }
+    }
     margin-top: @panel-body-padding;
     .panel {
         margin-bottom: @line-height-computed;
@@ -22,7 +40,7 @@
     }
     .panel-heading {
         position: relative;
-        background-color: @panel-bg;
+        background-color: @white;
         padding: @panel-heading-padding;
         border-bottom: 0;
         .border-top-radius(@panel-border-radius);
@@ -42,6 +60,10 @@
             right: 16px;
             line-height: 19px;
             font-weight: normal;
+        }
+        .form-group {
+            margin-left: 0;
+            margin-right: 0; 
         }
     }
 }
@@ -93,6 +115,21 @@
         }
         .missing-person-link {
             padding-top: 10px;
+        }
+    }
+}
+
+.teaser-component { 
+    .teaser {
+        .panel {
+            .panel-body {
+                h1, h2, h3, h4, h5, h6 {
+                    color: @gray-lighter;
+                }
+                p, span, small {
+                    color: @gray-lighter;
+                }
+            }
         }
     }
 }

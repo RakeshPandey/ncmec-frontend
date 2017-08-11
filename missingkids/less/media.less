@@ -1,6 +1,8 @@
 .media {
   // Proper spacing between instances of .media
   margin-top: 15px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
 
   &:first-child {
     margin-top: 0;
@@ -19,6 +21,7 @@
 
 .media-object {
   display: block;
+  border-radius: 10px 0 0 10px;
 
   // Fix collapse in webkit from max-width: 100% and display: table-cell.
   &.img-thumbnail {
@@ -63,4 +66,16 @@
 .media-list {
   padding-left: 0;
   list-style: none;
+}
+
+.section-listing-item {
+  .media-left {
+    display: inline;
+    float: left;
+    picture {
+      img {
+        border-radius: 10px 0 0 10px;
+      }
+    }
+  }
 }

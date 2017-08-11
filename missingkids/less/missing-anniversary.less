@@ -1,0 +1,48 @@
+.missing-anniversary-container{
+    >p, >h2{
+        padding-left:8px;
+        padding-right:8px;
+    }
+    .missing-anniversary-grid {
+
+        margin-left: -16px;
+        margin-right: -16px;
+        color:@white;
+
+
+        .grid-item{ 
+            margin-bottom:16px;
+            border-radius:10px;
+            background: @gray-darkest;
+            img {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                width:100%;
+            }
+            .image-desc{
+                padding:16px;
+            }
+
+            a {
+                &.kid-name{
+                    font-family: Futura;
+                }
+
+                color:@blue-lighter;
+            }
+        }
+    }
+
+    .section-title{
+        >p{
+            padding-left:8px;
+            padding-right:8px;
+        }
+    }
+    .ajax-loader {
+        opacity: .18;
+        display: none;
+        width: 40px;
+        margin: 0 auto;
+    }
+}

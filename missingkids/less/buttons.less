@@ -67,15 +67,38 @@
 
 .btn-default {
   .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+  
+    &:hover{
+      background: @blue-darker;
+      border-color:@blue-darker;
+      color:@white;
+  }
 }
+
 .btn-default-dark {
   .button-variant(@btn-default-dark-color; @btn-default-dark-bg; @btn-default-dark-border);
+  
+  &:hover{
+      background: @blue-darker;
+      border-color:@blue-darker;
+      color:@white;
+  }
+  
+  
 }
 .btn-primary {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border;);
   font-family:  @font-family-serif;
   font-size: @font-size-h4;
   text-transform: uppercase;
+  
+  &:hover{
+      background: @orange-light;
+      border-color:@orange-light;
+      color:@white;
+  }
+  
+  
 }
 // Success appears as green
 .btn-success {
@@ -183,5 +206,28 @@ input[type="reset"],
 input[type="button"] {
   &.btn-block {
     width: 100%;
+  }
+}
+
+.social-buttons {
+  padding: 20px 0 16px 8px;
+  .btn-social {
+    background: #1b95e0;
+    border-radius: 10px;
+    box-shadow: none;
+    color: @white;
+    font-family: @font-family-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 0 10px;
+    width: 200px;
+    height: 32px;  
+    text-align: left;
+    i {
+      font-size: 24px;
+      padding: 0 10px 0 0;
+      vertical-align: middle;
+    }
   }
 }
