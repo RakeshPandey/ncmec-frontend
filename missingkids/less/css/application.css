@@ -8972,3 +8972,61 @@ p.textColorBlueBase {
 .icon-sub-heading h5 {
   padding-left: 10px;
 }
+/*.form-horizontal .control-label {
+    text-align: right;
+    margin-bottom: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    float: none;
+  }*/
+.missing-help-bring-me-home .panel-heading {
+  background-color: transparent;
+}
+.missing-help-bring-me-home .panel-heading .select-state {
+  margin-top: 12px;
+  margin-bottom: 3px;
+  font-weight: normal;
+}
+.missing-help-bring-me-home .panel-heading .select-state select {
+  background-color: transparent;
+  width: 80px;
+  margin-left: 10px;
+}
+.missing-help-bring-me-home .child-list {
+  padding: 0;
+  list-style-type: none;
+}
+.missing-help-bring-me-home .child-list > li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.missing-help-bring-me-home .child-list > li img {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.missing-help-bring-me-home .child-list .child-thumb {
+  width: 64px;
+  padding: 0;
+}
+.missing-help-bring-me-home .child-list .child-details {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 16px;
+  color: #F1F1F2;
+}
+.missing-help-bring-me-home .child-list .child-details a {
+  color: #92D6E3;
+}
+.missing-help-bring-me-home .child-list .child-details a.report-sighting {
+  font-size: 13px;
+}
+.missing-help-bring-me-home .child-list .child-details .child-missing {
+  margin-top: 6px;
+  line-height: 17px;
+}
