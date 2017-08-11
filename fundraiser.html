@@ -120,114 +120,114 @@
                                     <form class="form-horizontal">
                                         <legend>Sponsor information</legend>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Name of sponsoring organization or individual:</label>
+                                            <label for="sponsor-name" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Name of sponsoring organization or individual:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="sponsor-name" id="sponsor-name" required="" >
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="desc-org" class="col-md-3 col-sm-3 col-xs-3 control-label">Describe your organization:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <textarea id="desc-org" class="form-control"></textarea>
+                                                <textarea id="desc-org" name="desc-org" class="form-control"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Contact name:</label>
+                                            <label for="contact-name" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Contact name:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="contact-name" id="contact-name" required="" >
                                             </div>
                                         </div>
-                                      
+
                                         <div class="form-group">
-                                            <label for="when" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Telephone:</label>
+                                            <label for="telephone" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Telephone:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="when" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Email:</label>
-                                            <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="telephone" id="telephone" required="" >
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Address:</label>
+                                            <label for="email" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Email:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="email" class="form-control" name="email" id="email" required="" >
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> City:</label>
+                                            <label for="address" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Address:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="address" id="address" required="" >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="city" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> City:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="city" id="city" required="" >
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="state" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> State:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <select id="state" class="form-control">
+                                                <select id="state" class="form-control" name="state">
                                                     <option>Florida</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span>  Zip/Postal Code:</label>
+                                            <label for="zip" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span>  Zip/Postal Code:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="zip" id="zip" required="" >
                                             </div>
                                         </div>
                                         <hr />
                                         <legend>Fundraising details</legend>
-                                  <div class="form-group">
+                                        <div class="form-group">
                                             <label class="col-md-4 col-sm-3 col-xs-3 control-label">Who is organizing the fundraiser?:</label>
                                             <div class="checkbox col-sm-offset-4 col-sm-offset-right-1">            
-                                                <input type="radio" name="org_type" id="non_profit" value="non_profit">
-                                                <label for="non_profit" class="reprint-label">Individual</label>
+                                                <input type="radio" name="fundraising-org" id="individual" value="non_profit">
+                                                <label for="individual" class="reprint-label">Individual</label>
                                             </div>
                                             <div class="checkbox col-sm-offset-4 col-sm-offset-right-1">
-                                                <input type="radio" name="org_type" id="profit" value="profit">
-                                                <label for="profit" class="reprint-label">Company</label>
+                                                <input type="radio" name="fundraising-org" id="fundraising-org-Company" value="profit">
+                                                <label for="fundraising-org-Company" class="reprint-label">Company</label>
                                             </div>
                                             <div class="checkbox col-sm-offset-4">
-                                                <input type="radio" name="org_type" id="law_enf_gov" value="law_enf_gov">
-                                                <label for="law_enf_gov" class="reprint-label">Organization</label>
+                                                <input type="radio" name="fundraising-org" id="fundraising-org-organization" value="law_enf_gov">
+                                                <label for="fundraising-org-organization" class="reprint-label">Organization</label>
                                             </div>
                                         </div>
                                         <hr />
-                                         <legend>Type of event</legend>
-                                         <div class="form-group">
-                                            <label for="when" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Event location:</label>
-                                            <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
-                                            </div>
-                                        </div>
-                                         
+                                        <legend>Type of event</legend>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Proposed start date:</label>
+                                            <label for="event-location" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Event location:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="event-location" id="event-location" required="" >
                                             </div>
                                         </div>
-                                         <div class="form-group">
-                                            <label for="when" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Describe your fundraiser:</label>
+
+                                        <div class="form-group">
+                                            <label for="proposed-date" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Proposed start date:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="proposed-date" id="proposed-date" required="" >
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Target Audience:</label>
+                                            <label for="desc-fundraiser" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Describe your fundraiser:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="desc-fundraiser" id="desc-fundraiser" required="" >
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Promotion Strategy:</label>
+                                            <label for="target-audience" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Target Audience:</label>
                                             <div class="col-md-7 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="target-audience" id="target-audience" required="" >
                                             </div>
                                         </div>
-                                         
-                                         
+                                        <div class="form-group">
+                                            <label for="promotion-strategy" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Promotion Strategy:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="promotion-strategy" id="promotion-strategy" required="" >
+                                            </div>
+                                        </div>
+
+
                                         <div class="form-group">
                                             <div class="col-sm-offset-3 col-sm-5 col-sm-5">
                                                 <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
