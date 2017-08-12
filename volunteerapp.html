@@ -65,46 +65,46 @@
       <article class="content-wrapper">
         <div class="container">
 
-            <div class="row">
+            <div class="row volunteer-app-wrapper">
               <div class="col-md-offset-2 col-md-6">
-                <span class="error">*</span>means required field
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel-group volunteerAppAccordion" id="accordion" role="tablist" aria-multiselectable="true">
                     <!-- Personal Info Tab -->
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="personal-info-heading">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#personal-info-content" class="collapsed" aria-expanded="true" aria-controls="personal info content">
-                                    <i class="more-less fa fa-plus-circle"></i>
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#personal-info-content" aria-expanded="true" aria-controls="personal info content">
+                                    <i class="more-less fa fa-minus-circle"></i>
                                     Personal Info
                                 </a>
                             </h4>
                         </div>
-                        <div id="personal-info-content" class="panel-collapse collapse" role="tabpanel" aria-labelledby="personal info content">
+                        <div id="personal-info-content" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="personal info content">
                             <div class="panel-body">
-                              <form class="form-horizontal">
+                              <form class="form-horizontal" id="personal-info-form">
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Name</label>
+                                    <label for="pi-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Name</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" name="pi-name" id="pi-name" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Street</label>
+                                    <label for="pi-street" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Street</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" name="pi-street" id="pi-street" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>City</label>
+                                    <label for="pi-city" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>City</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" name="pi-city" id="pi-city" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>State</label>
+                                    <label for="pi-state" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>State</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <select class="form-control">
-                                          <option value="All">Select</option>
+                                        <select class="form-control" id="pi-state" name="pi-state" required>
+                                          <!-- not setting first value to make validator work -->
+                                          <option value="">Select</option>
                                           <option value="AL">Alabama</option>
                                           <option value="AK">Alaska</option>
                                           <option value="AZ">Arizona</option>
@@ -164,45 +164,45 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Zip code</label>
+                                    <label for="pi-zipcode" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Zip code</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" zipcodeUs="true" name="pi-zipcode" id="pi-zipcode" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Home Phone</label>
+                                    <label for="pi-homephone" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Home Phone</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" phoneUs="true" name="pi-homephone" id="pi-homephone" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-email" class="col-md-4 col-sm-2 control-label"><span class="error">*</span> Email</label>
+                                    <label for="pi-email" class="col-md-4 col-sm-2 control-label"><span class="error">*</span> Email</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="email" class="form-control" id="contact-email" placeholder="jane.doe@example.com">
+                                        <input type="email" class="form-control" email="true" name="pi-email" id="pi-email" placeholder="jane.doe@example.com" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label">Work Phone</label>
+                                    <label for="pi-workphone" class="col-md-4 col-sm-2 control-label">Work Phone</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" phoneUs="true" name="pi-workphone" id="pi-workphone">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label">Cell Phone</label>
+                                    <label for="pi-cellphone" class="col-md-4 col-sm-2 control-label">Cell Phone</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" phoneUs="true" name="pi-cellphone" id="pi-cellphone">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label">Date of Birth</label>
+                                    <label for="pi-dob" class="col-md-4 col-sm-2 control-label">Date of Birth</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" date="true" name="pi-dob" id="pi-dob">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label">Best way/time to reach</label>
+                                    <label for="pi-reach" class="col-md-4 col-sm-2 control-label">Best way/time to reach</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" name="pi-reach" id="pi-reach">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -229,23 +229,22 @@
                         <div id="child-case-content" class="panel-collapse collapse" role="tabpanel" aria-labelledby="child-case-heading">
                             <div class="panel-body">
                               <form class="form-horizontal">
-                                <legend class="title-5">Contact Us</legend>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Missing/recovered/sexually exploited child’s name</label>
+                                    <label for="child-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Missing/recovered/sexually exploited child’s name</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" id="child-name" name="child-name" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>His/Her Date of Birth</label>
+                                    <label for="child-dob" class="col-md-4 col-sm-2 control-label">His/Her Date of Birth</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" date="true" id="child-dob" name="child-dob">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Case Type</label>
+                                    <label for="child-case" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Case Type</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <select class="form-control">
+                                        <select class="form-control" id="child-case" name="child-case" required>
                                           <option value="">Select</option>
                                           <option value="runaway">Runaway</option>
                                           <option value="nonFamilyAbuction">Nonfamily abduction</option>
@@ -263,39 +262,39 @@
                                 <legend class="title-5">IF YOUR CHILD IS OR HAS BEEN MISSING, PLEASE ANSWER THE FOLLOWING QUESTIONS:</legend>
 
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label">His/Her Missing Date</label>
+                                    <label for="child-missing-date" class="col-md-4 col-sm-2 control-label">His/Her Missing Date</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" id="child-missing-date" name="child-missing-date">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label">His/Her Recovery Date</label>
+                                    <label for="child-recovery-date" class="col-md-4 col-sm-2 control-label">His/Her Recovery Date</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" id="child-recovery-date" name="child-recovery-date">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-email" class="col-md-4 col-sm-2 control-label">NCMEC Case Number</label>
+                                    <label for="child-case-no" class="col-md-4 col-sm-2 control-label">NCMEC Case Number</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-email" placeholder="jane.doe@example.com">
+                                        <input type="text" class="form-control" id="child-case-no" name="child-case-no">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label">NCMEC Case Manager</label>
+                                    <label for="child-case-manager" class="col-md-4 col-sm-2 control-label">NCMEC Case Manager</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" id="child-case-manager" name="child-case-manager">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label">Website</label>
+                                    <label for="child-website" class="col-md-4 col-sm-2 control-label">Website</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name" placeholder="If you have a website for you missing child">
+                                        <input type="text" class="form-control" id="child-website" name="child-website" placeholder="If you have a website for you missing child">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label">Online Flier/Facebook Page</label>
+                                    <label for="child-social-page" class="col-md-4 col-sm-2 control-label">Online Flier/Facebook Page</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name" placeholder="If there is another web page for your missing child">
+                                        <input type="text" class="form-control" id="child-social-page" name="child-social-page" placeholder="If there is another web page for your missing child">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -322,50 +321,50 @@
                             <div class="panel-body">
                               <form id="background-form" class="form-horizontal">
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-12 col-sm-12 control-label text-left"><span class="error">*</span>How did you find out about Team Hope?</label>
+                                    <label for="bg-how" class="col-md-12 col-sm-12 control-label text-left"><span class="error">*</span>How did you find out about Team Hope?</label>
                                     <div class="col-md-12 col-sm-12">
-                                        <textarea class="form-control"></textarea>
+                                        <textarea class="form-control" id="bg-how" name="bg-how" required></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-12 col-sm-12 control-label text-left"><span class="error">*</span> List other volunteer activities you have been involved with:</label>
+                                    <label for="bg-activities" class="col-md-12 col-sm-12 control-label text-left"><span class="error">*</span> List other volunteer activities you have been involved with:</label>
                                     <div class="col-md-12 col-sm-12">
-                                        <textarea class="form-control"></textarea>
+                                        <textarea class="form-control" id="bg-activities" name="bg-activities" required></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-12 col-sm-12 control-label text-left"><span class="error">*</span>List special skills/talents, areas of expertise and knowledge, which would be an asset to Team HOPE and searching parents such as peer support, crisis counseling, domestic violence, special needs, mental health issues, computer skills, writing, editing, public speaking.</label>
+                                    <label for="bg-skills" class="col-md-12 col-sm-12 control-label text-left"><span class="error">*</span>List special skills/talents, areas of expertise and knowledge, which would be an asset to Team HOPE and searching parents such as peer support, crisis counseling, domestic violence, special needs, mental health issues, computer skills, writing, editing, public speaking.</label>
                                     <div class="col-md-12 col-sm-12">
-                                        <textarea class="form-control"></textarea>
+                                        <textarea class="form-control" id="bg-skills" name="bg-skills" required></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-12 col-sm-12 control-label text-left"><span class="error">*</span>List languages in which you are fluent:</label>
+                                    <label for="bg-languages" class="col-md-12 col-sm-12 control-label text-left"><span class="error">*</span>List languages in which you are fluent:</label>
                                     <div class="col-md-12 col-sm-12">
-                                        <textarea class="form-control"></textarea>
+                                        <textarea class="form-control" id="bg-languages" name="bg-languages" required></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-12 col-sm-12 control-label text-left">How many hours a week are you able to commit to Team HOPE?</label>
+                                    <label for="bg-hours" class="col-md-12 col-sm-12 control-label text-left">How many hours a week are you able to commit to Team HOPE?</label>
                                     <div class="col-md-12 col-sm-12">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" id="bg-hours" name="bg-hours">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-12 col-sm-12 control-label text-left">Have you ever been convicted of a felony or misdemeanor? If yes, explain below:</label>
+                                    <label for="bg-conviction" class="col-md-12 col-sm-12 control-label text-left">Have you ever been convicted of a felony or misdemeanor? If yes, explain below:</label>
                                     <div class="col-md-12 col-sm-12">
                                         <label>
-                                          <input type="radio" class="form-control" name="hasConviction">
+                                          <input type="radio" name="bg-hasConviction">
                                           Yes
                                         </label>
                                         <label>
-                                          <input type="radio" class="form-control" name="hasConviction">
+                                          <input type="radio" name="bg-hasConviction">
                                           No
                                         </label>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control"></textarea>
+                                    <textarea class="form-control" id="bg-conviction" name="bg-conviction"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-4 col-sm-8">
@@ -389,31 +388,31 @@
                         </div>
                         <div id="references-content" class="panel-collapse collapse" role="tabpanel" aria-labelledby="references-heading">
                             <div class="panel-body">
-                              <form class="form-horizontal">
+                              <form class="form-horizontal" id="reference-form-1">
                                 <legend class="title-5">Professional Reference 1:</legend>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Name</label>
+                                    <label for="ref1-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Name</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" id="ref1-name" name="ref1-name" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Street</label>
+                                    <label for="ref1-street" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Street</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" id="ref1-street" name="ref1-street" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>City</label>
+                                    <label for="ref1-city" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>City</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" id="ref1-city" name="ref1-city" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>State</label>
+                                    <label for="ref1-state" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>State</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <select class="form-control">
-                                          <option value="All">Select</option>
+                                        <select class="form-control" id="ref1-state" name="ref1-state" required>
+                                          <option value="">Select</option>
                                           <option value="AL">Alabama</option>
                                           <option value="AK">Alaska</option>
                                           <option value="AZ">Arizona</option>
@@ -473,54 +472,54 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Zip code</label>
+                                    <label for="ref1-zipcode" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Zip code</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" id="ref1-zipcode" name="ref1-zipcode" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Phone</label>
+                                    <label for="ref1-phone" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Phone</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" id="ref1-phone" name="ref1-phone" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>How long have you know this reference</label>
+                                    <label for="ref1-duration" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>How long have you know this reference</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" id="ref1-duration" name="ref1-duration" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>How do you know this reference:(employer, law enforcement, other)</label>
+                                    <label for="ref1-how" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>How do you know this reference:(employer, law enforcement, other)</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="contact-name">
+                                        <input type="text" class="form-control" id="ref1-how" name="ref1-how" required>
                                     </div>
                                 </div>
 
                               <legend class="title-5">Professional Reference 2:</legend>
                               <div class="form-group">
-                                  <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Name</label>
+                                  <label for="ref2-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Name</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="contact-name">
+                                      <input type="text" class="form-control" id="ref2-name" name="ref2-name" required>
                                   </div>
                               </div>
                               <div class="form-group">
-                                  <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Street</label>
+                                  <label for="ref2-street" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Street</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="contact-name">
+                                      <input type="text" class="form-control" id="ref2-street" name="ref2-street" required>
                                   </div>
                               </div>
                               <div class="form-group">
-                                  <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>City</label>
+                                  <label for="ref2-city" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>City</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="contact-name">
+                                      <input type="text" class="form-control" id="ref2-city" name="ref2-city" required>
                                   </div>
                               </div>
                               <div class="form-group">
-                                  <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>State</label>
+                                  <label for="ref2-state" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>State</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <select class="form-control">
-                                        <option value="All">Select</option>
+                                      <select class="form-control" id="ref2-state" name="ref2-state" required>
+                                        <option value="">Select</option>
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
                                         <option value="AZ">Arizona</option>
@@ -580,27 +579,27 @@
                                   </div>
                               </div>
                               <div class="form-group">
-                                  <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Zip code</label>
+                                  <label for="ref2-zipcode" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Zip code</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="contact-name">
+                                      <input type="text" class="form-control" id="ref2-zipcode" name="ref2-zipcode" required>
                                   </div>
                               </div>
                               <div class="form-group">
-                                  <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Phone</label>
+                                  <label for="ref2-phone" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Phone</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="contact-name">
+                                      <input type="text" class="form-control" id="ref2-phone" name="ref2-phone" required>
                                   </div>
                               </div>
                               <div class="form-group">
-                                  <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>How long have you know this reference</label>
+                                  <label for="ref2-duration" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>How long have you know this reference</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="contact-name">
+                                      <input type="text" class="form-control" id="ref2-duration" name="ref2-duration" required>
                                   </div>
                               </div>
                               <div class="form-group">
-                                  <label for="contact-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>How do you know this reference:(employer, law enforcement, other)</label>
+                                  <label for="ref2-how" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>How do you know this reference:(employer, law enforcement, other)</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="contact-name">
+                                      <input type="text" class="form-control" id="ref2-how" name="ref2-how" required>
                                   </div>
                               </div>
                               <div class="form-group">
@@ -621,6 +620,7 @@
               <div class="col-md-4">
                 <div class="instructions-wrapper">
                   <img class="img-full-width" src="http://missingkids.org/en_US/websitePages/TeamHopeApplication/TeamHopeVolunteers.jpg">
+                  <p class="img-title">Photo of some Team Hope Volunteers.</p>
                   <p>We at Team HOPE know what it’s like to feel isolated and alone while living through your worst nightmare. Team HOPE volunteers are here to help alleviate that isolation and provide compassionate and empathetic support.
                   Our volunteers include parents, grandparents, and other family members, who are screened and trained before working with families. Team HOPE matches searching families and families with children who have been exploited with trained volunteers who have had or still have a missing or exploited child. Volunteers offer emotional support, compassion, guidance, empowerment, and assistance.
                   If you have had or still have a missing or sexually exploited child and would like to provide compassionate support to others going through similar nightmares, please fill out the application and a Team HOPE member will contact you to explain the role of a Team HOPE volunteer.
@@ -650,7 +650,10 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="missingkids/js/plugin/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="missingkids/js/jquery.validator.custom.js"></script>
     <script type="text/javascript" src="missingkids/js/accordion.js"></script>
+    <script type="text/javascript" src="missingkids/js/volunteer-app.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 

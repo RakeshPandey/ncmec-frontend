@@ -1,12 +1,40 @@
-.error{
+.error {
   color: #b30303;
   padding-right: 5px;
 }
+label.error{
+  color: #b30303;
+}
 
-#background-form{
-  label{
-    &.text-left{
-      text-align: left;
+.volunteer-app-wrapper {
+  padding: 25px 0;
+
+  .panel {
+    .panel-heading {
+      pointer-events: none;
+      padding-top: 0 !important;
+    }
+
+    &.has-valid-form {
+      .panel-heading {
+        pointer-events: auto;
+      }
+    }
+
+    #background-form {
+      label {
+        &.text-left {
+          text-align: left;
+        }
+      }
     }
   }
+
+  .img-title{
+    font-style: italic;
+    color: #165d9a;
+    padding: 5px 0 0;
+    font-weight: 500;
+  }
+
 }
