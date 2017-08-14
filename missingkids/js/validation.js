@@ -337,7 +337,49 @@ $(document).ready(function() {
             email: "Please Enter a valid email address",
             publication_title:"This field is required"
         }
-    });   
+    });  
+    
+    $("#js-international-form").validate({
+        rules: {
+            name:"required",
+            title:"required",
+            agency:"required",
+            mailing_address:"required",
+            phone: {
+                required: true,
+                regex : /^(1-)?\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
+            },
+            email: {
+                required: true,
+                regex: /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/
+            },
+            supervisor_name: "required",
+            supervisor_phone: {
+                required: true,
+                regex : /^(1-)?\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
+            },
+            supervisor_email: {
+                required: true,
+                regex: /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/
+            },
+            population: "required",
+            num_sworn_officers: "required",
+            
+        },
+        messages: {
+            name:"This field is required",
+            title:"This field is required",
+            agency:"This field is required",
+            mailing_address:"This field is required",
+            phone: "Please Enter a valid phone number",
+            email: "Please Enter a valid email address",
+            supervisor_name: "This field is required",
+            supervisor_phone: "Please Enter a valid phone number",
+            supervisor_email: "Please Enter a valid email address",
+            population: "This field is required",
+            num_sworn_officers: "This field is required",
+        }
+    });
     
 
     });
