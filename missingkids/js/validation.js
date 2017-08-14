@@ -3,6 +3,10 @@ $.validator.setDefaults({
          alert("submitted!");
      }
  });
+$.validator.addMethod("regex", function(value, element, regexpr) {          
+    return regexpr.test(value);
+}, "Please enter a valid value");
+
 $(document).ready(function() {
     // validate the comment form when it is submitted
  //   $("#js-interview-form").validate();
@@ -305,5 +309,35 @@ $(document).ready(function() {
             
         }
     });
+    
+    $("#js-reprint-request-form").validate({
+        rules: {
+            requestor_name:"required",
+            address_1:"required",
+            city:"required",
+            state:"required",
+            zip:"required",
+            phone: {
+                required: true,
+                regex : /^(1-)?\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
+            },
+            email: {
+                required: true,
+                regex: /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/
+            },
+            publication_title:"required"
+        },
+        messages: {
+            requestor_name: "This field is required",
+            address_1:"This field is required",
+            city:"This field is required",
+            state:"This field is required",
+            zip:"This field is required",
+            phone: "Please Enter a valid phone number",
+            email: "Please Enter a valid email address",
+            publication_title:"This field is required"
+        }
+    });   
+    
 
     });
