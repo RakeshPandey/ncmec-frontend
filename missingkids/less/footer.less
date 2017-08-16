@@ -6,19 +6,42 @@
     }
 }
 .subscribe-form {
+
     form {
         text-align: center;
+        margin:16px 0;
         .input-subscribe {
-            border: 1px solid yellow;
-            border-radius: 10px 0 0 10px;
-            .pull-left();
+            border: 1px solid @yellow-dark;
+            border-radius: 5px 0 0 5px;
+            height: 24px;
+            padding:5px;
+            background: transparent;
+            color:@white;
+            outline:none;
         }
         .btn-subscribe {
-            background: yellow;
+            background: @yellow-dark;
             border: 0;
-            border-radius: 0 10px 10px 0;            
-            color: @gray-dark;
-            .pull-left();
+            border-radius: 0 5px 5px 0;            
+            height: 24px;
+            outline:none;
+            color:@gray-darkest;
+            border: 1px solid @yellow-dark;
+        }
+
+        ::-webkit-input-placeholder { /* Chrome */
+            color: @white;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+            color: @white;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+            color: @white;
+            opacity: 1;
+        }
+        :-moz-placeholder { /* Firefox 4 - 18 */
+            color: @white;
+            opacity: 1;
         }
     }    
 }

@@ -7950,18 +7950,43 @@ label.error {
 }
 .subscribe-form form {
   text-align: center;
+  margin: 16px 0;
 }
 .subscribe-form form .input-subscribe {
-  border: 1px solid yellow;
-  border-radius: 10px 0 0 10px;
-  float: left !important;
+  border: 1px solid #FDB814;
+  border-radius: 5px 0 0 5px;
+  height: 24px;
+  padding: 5px;
+  background: transparent;
+  color: #fff;
+  outline: none;
 }
 .subscribe-form form .btn-subscribe {
-  background: yellow;
+  background: #FDB814;
   border: 0;
-  border-radius: 0 10px 10px 0;
-  color: #95989A;
-  float: left !important;
+  border-radius: 0 5px 5px 0;
+  height: 24px;
+  outline: none;
+  color: #404041;
+  border: 1px solid #FDB814;
+}
+.subscribe-form form ::-webkit-input-placeholder {
+  /* Chrome */
+  color: #fff;
+}
+.subscribe-form form :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fff;
+}
+.subscribe-form form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+.subscribe-form form :-moz-placeholder {
+  /* Firefox 4 - 18 */
+  color: #fff;
+  opacity: 1;
 }
 .footer-nav {
   margin-bottom: 16px;
