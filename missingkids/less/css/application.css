@@ -9009,6 +9009,7 @@ p.textColorBlueBase {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 13px;
 }
 .missing-help-bring-me-home .child-list > li img {
   border-top-left-radius: 8px;
