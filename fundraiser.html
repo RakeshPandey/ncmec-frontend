@@ -112,52 +112,163 @@
                         <div class="col-md-6 col-sm-8">
                             <div class="inner-wrapper">
 
-                                <h2 class="main-title">Quick Report</h2>
-
-                                
+                                <h2 class="main-title">Host a Fundraiser</h2>
+                                <p>The National Center for Missing & Exploited Children® is proud to work with a variety of individuals, organizations and corporations who choose to support NCMEC's mission by hosting their own fundraising programs.</p>
+                                <p>Fundraisers may range from bake sales to auctions, walk-a-thons to employee driven workplace events and beyond. If you would like to help NCMEC by organizing a fundraiser, please complete the form below. A NCMEC staff member will respond to your request.</p>
 
                                 <div class="form ncmec-form row">
-                                    <form class="form-horizontal">
-                                        <legend>I have seen a missing child</legend>
-                                        
-                                        
-                                    <h5 class="col-md-offset-4 col-md-7 col-sm-8 col-xs-12">Andrew Pinedo</h5>    
-                                <p class="col-md-offset-4 col-md-7 col-sm-8 col-xs-12">
-                                    <img src="http://via.placeholder.com/64x80" />
-                                </p>
+                                    <form class="form-horizontal" id="fundraiser-form">
+                                        <legend>Sponsor information</legend>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-4 col-sm-4 col-xs-12 control-label">When:</label>
-                                            <div class="col-md-7 col-sm-8 col-xs-12">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                            <label for="sponsor-name" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Name of sponsoring organization or individual:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="sponsor-name" id="sponsor-name" required="" >
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-4 col-sm-4 col-xs-12 control-label">Where ( complete address if possible ):</label>
-                                            <div class="col-md-7 col-sm-8 col-xs-12">
-                                                <textarea class="form-control" name="when" id="when-field" required="" ></textarea>
+                                            <label for="desc-org" class="col-md-3 col-sm-3 col-xs-3 control-label">Describe your organization:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <textarea id="desc-org" name="desc-org" class="form-control"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-4 col-sm-4 col-xs-12 control-label">Description and/or circumstances:</label>
-                                            <div class="col-md-7 col-sm-8 col-xs-12">
-                                                <textarea class="form-control" name="when" id="when-field" required="" ></textarea>
+                                            <label for="contact-name" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Contact name:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="contact-name" id="contact-name" required="" >
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="telephone" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Telephone:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="telephone" id="telephone" required="" >
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-4 col-sm-4 col-xs-12 control-label">Your contact info (name, email, phone):</label>
-                                            <div class="col-md-7 col-sm-8 col-xs-12">
-                                                <textarea class="form-control" name="when" id="when-field" required="" ></textarea>
+                                            <label for="email" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Email:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="email" class="form-control" name="email" id="email" required="" >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="address" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Address:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="address" id="address" required="" >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="city" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> City:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="city" id="city" required="" >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="state" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> State:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <select id="state" class="form-control" name="state">
+                                                    <option>Florida</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="zip" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span>  Zip/Postal Code:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="zip" id="zip" required="" >
                                             </div>
                                         </div>
                                         <hr />
+                                        <legend>Fundraising details</legend>
+                                        <div class="form-group">
+                                            <label class="col-md-4 col-sm-3 col-xs-3 control-label">Who is organizing the fundraiser?:</label>
+                                            <div class="checkbox col-sm-offset-4 col-sm-offset-right-1">            
+                                                <input type="radio" name="fundraising-org" id="individual" value="non_profit">
+                                                <label for="individual" class="reprint-label">Individual</label>
+                                            </div>
+                                            <div class="checkbox col-sm-offset-4 col-sm-offset-right-1">
+                                                <input type="radio" name="fundraising-org" id="fundraising-org-Company" value="profit">
+                                                <label for="fundraising-org-Company" class="reprint-label">Company</label>
+                                            </div>
+                                            <div class="checkbox col-sm-offset-4">
+                                                <input type="radio" name="fundraising-org" id="fundraising-org-organization" value="law_enf_gov">
+                                                <label for="fundraising-org-organization" class="reprint-label">Organization</label>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <legend>Type of event</legend>
+                                        <div class="form-group">
+                                            <label for="event-location" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Event location:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="event-location" id="event-location" required="" >
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="proposed-date" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Proposed start date:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="proposed-date" id="proposed-date" required="" >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="desc-fundraiser" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Describe your fundraiser:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <textarea class="form-control" name="desc-fundraiser" id="desc-fundraiser" required="" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="target-audience" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Target Audience:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="target-audience" id="target-audience" required="" >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="promotion-strategy" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Promotion Strategy:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <textarea class="form-control" name="promotion-strategy" id="promotion-strategy" required="" ></textarea>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <legend>Funds raised</legend>
+
+                                        <div class="form-group">
+                                            <label class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Will the funds raised be donated exclusively to NCMEC?:</label>
+                                            <div class="checkbox col-sm-offset-4 col-sm-offset-right-1">            
+                                                <input type="radio" name="fund-donation" id="yes-fund-donation" value="yes">
+                                                <label for="yes-fund-donation" class="reprint-label">Yes</label>
+                                            </div>
+                                            <div class="checkbox col-sm-offset-4 col-sm-offset-right-1">
+                                                <input type="radio" name="fund-donation" id="no-fund-donation" value="no">
+                                                <label for="no-fund-donation" class="reprint-label">No</label>
+                                            </div>                     
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="fund-to-be-donated-to" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> If no, to what other organization will the funds be donated:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="fund-to-be-donated-to" id="fund-to-be-donated-to" required="" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ancticipated-income" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Anticipated Income Raised:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="ancticipated-income" id="ancticipated-income" required="" >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="ancticipated-income-raised" class="col-md-3 col-sm-3 col-xs-3 control-label"><span>*</span> Anticipated Income Raised for NCMEC:</label>
+                                            <div class="col-md-7 col-sm-8 col-xs-9">
+                                                <input type="text" class="form-control" name="ancticipated-income-raised" id="ancticipated-income-raised" required="" >
+                                            </div>
+                                        </div>
+
+
+
+
                                         <div class="form-group">
                                             <div class="col-sm-offset-3 col-sm-5 col-sm-5">
                                                 <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
-
                                             </div>
                                         </div>
-                                        <strong>NCMEC 24-Hour Call Center</strong><br/>
-                                        <a href="#" target="_blank" title="1-800-THE-LOST">1-800-THE-LOST (1-800-843-5678)</a>
                                     </form>
                                 </div>
                             </div>
@@ -249,9 +360,10 @@
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="missingkids/js/plugin/jquery.min.js" type="text/javascript"></script>
+        <script src="missingkids/js/plugin/jquery.validate.min.js" type="text/javascript"></script>
         <script src="missingkids/js/plugin/bootstrap.min.js" type="text/javascript"></script>
         <script src="missingkids/js/application.js" type="text/javascript"></script>
 
-
+        <script src="missingkids/js/validation.js" type="text/javascript"></script>
     </body>
 </html>

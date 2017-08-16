@@ -15,6 +15,15 @@ picture, img{
         padding-left: 8px;
         padding-right: 8px;
     }
+
+    h5{
+        >p{
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+            margin: inherit;
+        }
+    }
 }
 .base-template {
     .inner-wrapper {
@@ -22,6 +31,8 @@ picture, img{
             padding-left: 8px;
             padding-right: 8px;
         }
+
+
     }
 }
 .show-grid [class^=col-] {
@@ -530,6 +541,7 @@ iframe {
 }
 
 
+
 .siteSearchResultsWrapper{
     position:relative;
     .ajax-loader{
@@ -556,7 +568,7 @@ iframe {
 }
 
 .signup-poster-form{
-    
+
     max-width:500px;
     margin: 0 auto;
 }
@@ -580,4 +592,88 @@ textarea.form-control {
     width:90%;
     height:300px;
     margin:16px;
+}
+.icon-sub-heading{
+
+    display: flex;
+    align-items: center;
+    margin-bottom:8px;
+    img {
+        max-height: 90px;
+    }
+
+    h5{
+        padding-left: 10px;
+    }
+
+}
+
+/*.form-horizontal .control-label {
+    text-align: right;
+    margin-bottom: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    float: none;
+  }*/
+
+.missing-help-bring-me-home{
+    .panel-heading{
+        background-color: transparent;
+        .select-state{
+            margin-top: 12px;
+            margin-bottom: 3px;
+            font-weight: normal;
+            select{
+                background-color: transparent;
+                width: 80px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .child-list{
+        padding:0;
+        list-style-type: none;
+        > li{
+            display:flex;
+            margin-bottom: 13px;
+            img {
+
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+        }
+
+
+        .child-thumb{
+
+            width: 64px;
+            padding:0;
+        }
+        .child-details{
+            flex: 1;
+            padding-left: 16px;
+            color:@gray-lighter;
+            a{
+                color : @blue-lighter;
+
+                &.report-sighting{
+                    font-size:13px;
+
+                }
+            }
+            .child-missing{
+
+                margin-top: 6px;
+                line-height: 17px;
+            }
+        }
+    }
+}
+
+.checkbox {
+    .reprint-label {
+        padding-left: 10px;
+    }
 }

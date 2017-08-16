@@ -15,81 +15,41 @@
         <link href="missingkids/less/css/application.css" rel="stylesheet">
         <!-- Bootstrap theme -->
 
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+        <!-- Custom styles for this template -->
+
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
 
     <body>
 
         <div class="wrapper">
             <header class="header-container">
-                <nav class="navbar navbar-fixed-top">
-                    <div class="">
+                <nav class="navbar navbar-default">
+                    <div class="container">
                         <div class="navbar-header">
-
-
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="hamburger-icon"></span>
-                            </button>
-
-                            <a class="navbar-brand" href="#"><img src="missingkids/images/logo.png" class="hidden-xs desktop-logo" alt="NCMEC">
-                                <img src="missingkids/images/logo-xs.svg" class="visible-xs hidden-sm mobile-logo" alt="NCMEC"></a>
-                            <div class="scroll-started-action"><span class="hamburger-icon"></span></div>
-                            <div class="donate-btn-container"><button type="button" class="btn btn-xs btn-primary">Donate</button></div>
-
+                            <a class="navbar-brand" href="#"><img src="missingkids/images/logo.png" alt="NCMEC"></a>
                         </div>
-                        <div id="navbar" class="navbar-collapse collapse">
-                            <ul class="">
-                                <li><a href="#">GET HELP NOW</a></li>
-                                <li><a href="#">THE ISSUES</a></li>
-                                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">OUR WORK</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="seperator">Victim & Family Services</li>
-                                        <li><a href="#">Reunification & FAON</a></li>
-                                        <li><a href="#">Team HOPE</a></li>
-                                        <li>Hope Bags</li>
-                                        <li>Legal Resources</li>
-                                        <li class="seperator">Non-Investigative Case Services</li>
-                                        <li>Forensic Services Unit</li>
-                                        <li>Project Alert</li>
-                                        <li>Team Adam</li>
-                                        <li>Team Fight</li>
-                                        <li>CMFC</li>
-                                        <li>LESP</li>
-
-                                    </ul>
-
-                                </li>
-                                <li><a href="#">EDUCATION</a></li>
-                                <li><a href="#">SUPPORT US</a></li>
-                            </ul>
-                        </div>
-
-                    </div> 
-                    <div class="secondary-header">
-                        <ul class="social-icons">
-                            <li><img src="missingkids/images/icons/Path 243.svg"></li>
-                            <li><img src="missingkids/images/icons/Path 244.svg"></li>
-
-                            <li><img src="missingkids/images/icons/Group 1038.svg"></li>
-                            <li><img src="missingkids/images/icons/Group 1039.svg"></li>
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">GET HELP NOW</a></li>
+                            <li><a href="#">THE ISSUES</a></li>
+                            <li class="active"><a href="#">OUR WORK</a></li>
+                            <li><a href="#">EDUCATION</a></li>
+                            <li><a href="#">SUPPORT US</a></li>
                         </ul>
-                        <ul class="site-functionalities">
-                            <li class="search-icon"><img src="missingkids/images/icons/Image 306.svg"></li>
-                            <li class="language-selector">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="lang">
-                                        <span class="en">EN</span>
-                                        <span class="sp">SP</span>
-                                    </span>
-
-                                </label>
-                            </li>
-                        </ul>
+                        <div class="right-section pull-right"><button type="button" class="btn btn-lg btn-primary">Donate</button></div>
                     </div>
                 </nav>
             </header>
-            <div class="breadcrumbs hidden-xs">
+            <div class="breadcrumbs">
                 <div class="container">
                     <ol class="breadcrumb">
                         <li><a href="#">Our Work</a></li>
@@ -102,63 +62,22 @@
                 <div class="container">
 
                     <div class="row">
-                        <div class="col-md-2 col-sm-3">
-                            <div class="inner-wrapper">
-                                <h4>Heading 1</h4>
-                                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-8">
-                            <div class="inner-wrapper">
+                        <div class="col-md-6 col-sm-8 col-md-offset-2 col-sm-offset-3">
+                            <div class="inner-wrapper dont-set-height">
 
-                                <h2 class="main-title">Quick Report</h2>
+                                <div class="yearsandmore-container">
+                                    <h2 class="main-title">5 years and more</h2>
+                                    <p>
+                                        Children are missing. And some have been missing a very long time. It doesn’t matter how long a child has been missing, we keep <strong>searching</strong>. We keep <strong>supporting</strong>. And we keep <strong>hoping</strong>.
 
-                                
+                                    </p>
+                                   
+                                    <div id="5yearsandmore-wrapper">
+                                        <div id="missing-anniversary-grid"></div>
+                                        <div class="ajax-loader"><img src="missingkids/images/ajax-loader.gif" alt=""/></div>
+                                    </div>
 
-                                <div class="form ncmec-form row">
-                                    <form class="form-horizontal">
-                                        <legend>I have seen a missing child</legend>
-                                        
-                                        
-                                    <h5 class="col-md-offset-4 col-md-7 col-sm-8 col-xs-12">Andrew Pinedo</h5>    
-                                <p class="col-md-offset-4 col-md-7 col-sm-8 col-xs-12">
-                                    <img src="http://via.placeholder.com/64x80" />
-                                </p>
-                                        <div class="form-group">
-                                            <label for="when" class="col-md-4 col-sm-4 col-xs-12 control-label">When:</label>
-                                            <div class="col-md-7 col-sm-8 col-xs-12">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="when" class="col-md-4 col-sm-4 col-xs-12 control-label">Where ( complete address if possible ):</label>
-                                            <div class="col-md-7 col-sm-8 col-xs-12">
-                                                <textarea class="form-control" name="when" id="when-field" required="" ></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="when" class="col-md-4 col-sm-4 col-xs-12 control-label">Description and/or circumstances:</label>
-                                            <div class="col-md-7 col-sm-8 col-xs-12">
-                                                <textarea class="form-control" name="when" id="when-field" required="" ></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="when" class="col-md-4 col-sm-4 col-xs-12 control-label">Your contact info (name, email, phone):</label>
-                                            <div class="col-md-7 col-sm-8 col-xs-12">
-                                                <textarea class="form-control" name="when" id="when-field" required="" ></textarea>
-                                            </div>
-                                        </div>
-                                        <hr />
-                                        <div class="form-group">
-                                            <div class="col-sm-offset-3 col-sm-5 col-sm-5">
-                                                <button type="submit" class="btn btn-lg btn-block btn-default">Submit</button>
 
-                                            </div>
-                                        </div>
-                                        <strong>NCMEC 24-Hour Call Center</strong><br/>
-                                        <a href="#" target="_blank" title="1-800-THE-LOST">1-800-THE-LOST (1-800-843-5678)</a>
-                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -244,14 +163,35 @@
 
         </div>
 
-
+        <script id="tmpl-anniversary-grid-item" type="text/x-handlebars-template">
+            <div>
+            
+                {{#each sections}}
+                    <div class="section-title">
+                        <h5>{{title}}</h5>
+                    </div>
+                    <div class="row long-years-grid">
+                        <ul>   
+                            {{#each persons}}
+                                <li><a href=#">{{firstName}}</a></li>
+                            {{/each}}
+                        </ul>
+                        </div>
+                {{/each}}    
+                
+            </div>
+        </script>
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="missingkids/js/plugin/jquery.min.js" type="text/javascript"></script>
         <script src="missingkids/js/plugin/bootstrap.min.js" type="text/javascript"></script>
+        <script src="missingkids/js/plugin/handlebars-v4.0.10.js" type="text/javascript"></script>
+        <script src="missingkids/js/plugin/jquery.matchHeight.js" type="text/javascript"></script>
         <script src="missingkids/js/application.js" type="text/javascript"></script>
-
+        <script src="missingkids/js/5yearsandmore.js" type="text/javascript"></script>
 
     </body>
 </html>

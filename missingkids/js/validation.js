@@ -1,11 +1,15 @@
 $.validator.setDefaults({
-     submitHandler: function() {
-         alert("submitted!");
-     }
- });
-$(document).ready(function() {
+    submitHandler: function () {
+        alert("submitted!");
+    }
+});
+$.validator.addMethod("regex", function (value, element, regexpr) {
+    return regexpr.test(value);
+}, "Please enter a valid value");
+
+$(document).ready(function () {
     // validate the comment form when it is submitted
- //   $("#js-interview-form").validate();
+    //   $("#js-interview-form").validate();
 
     // validate signup form on keyup and submit
 
@@ -30,7 +34,7 @@ $(document).ready(function() {
 
     $("#js-ncmec-univ-form").validate({
         rules: {
-            prefix: "required", 
+            prefix: "required",
             fname: "required",
             lname: "required",
             agency_dept: "required",
@@ -41,8 +45,8 @@ $(document).ready(function() {
             phoneNumber: {
                 phoneUS: true,
                 required: true,
-                minlength : 10,
-                maxlength : 10
+                minlength: 10,
+                maxlength: 10
             },
             email: {
                 required: true,
@@ -64,9 +68,9 @@ $(document).ready(function() {
 
     // Online Application Form 2 Starts Here
 
-     $("#js-ce-application").validate({
+    $("#js-ce-application").validate({
         rules: {
-            prefix_1: "required", 
+            prefix_1: "required",
             fname_1: "required",
             lname_1: "required",
             first_choice_1: "required",
@@ -79,8 +83,8 @@ $(document).ready(function() {
             phoneNumber: {
                 phoneUS: true,
                 required: true,
-                minlength : 10,
-                maxlength : 10
+                minlength: 10,
+                maxlength: 10
             },
             email_1: {
                 required: true,
@@ -99,7 +103,7 @@ $(document).ready(function() {
             agency_dept_1: "This field is required",
             address_1: "This field is required",
             city_1: "This field is required",
-            state_1: "This field is required",            
+            state_1: "This field is required",
             child_policy_1: "This field is required",
             jurix_population: "This field is required",
             sworn_officers: "This field is required"
@@ -110,7 +114,7 @@ $(document).ready(function() {
 
     $("#js-icaan-form").validate({
         rules: {
-            name: "required", 
+            name: "required",
             firm: "required",
             address: "required",
             city: "required",
@@ -119,8 +123,8 @@ $(document).ready(function() {
             phoneNumber: {
                 phoneUS: true,
                 required: true,
-                minlength : 10,
-                maxlength : 10
+                minlength: 10,
+                maxlength: 10
             },
             email: {
                 required: true,
@@ -146,7 +150,7 @@ $(document).ready(function() {
 
     $("#js-donor-privacy").validate({
         rules: {
-            name: "required", 
+            name: "required",
             email: {
                 required: true,
                 email: true
@@ -163,7 +167,7 @@ $(document).ready(function() {
 
     $("#js-contact-us").validate({
         rules: {
-            contact_name: "required", 
+            contact_name: "required",
             contact_email: {
                 required: true,
                 email: true
@@ -182,7 +186,7 @@ $(document).ready(function() {
     /* ===== Enews Form Starts Here ===== */
 
     $("#js-enews").validate({
-        rules: { 
+        rules: {
             contact_email: {
                 required: true,
                 email: true
@@ -196,7 +200,7 @@ $(document).ready(function() {
     /* ===== Media Connect Form Starts Here ===== */
 
     $("#js-media-connect").validate({
-        rules: { 
+        rules: {
             email: {
                 required: true,
                 email: true
@@ -207,11 +211,11 @@ $(document).ready(function() {
         },
         messages: {
             fullname: "This field is required",
-            city: "This field is required",            
+            city: "This field is required",
             state: "This field is required"
         }
     });
-    
+
 
 
 // Validation for CodeAdam page starts here
@@ -220,19 +224,19 @@ $(document).ready(function() {
         rules: {
             fname: "required",
             lname: "required",
-           organisationType : "required",
+            organisationType: "required",
             city: "required",
             state: "required",
             zip: "required",
-            mailingAddress : "required",
-            locations : "required",
-            englishKits : "required",
-            spanishKits : "required",
+            mailingAddress: "required",
+            locations: "required",
+            englishKits: "required",
+            spanishKits: "required",
             phoneNumber: {
-               // phoneUS: true,
+                // phoneUS: true,
                 required: true,
-                minlength : 10,
-                maxlength : 10
+                minlength: 10,
+                maxlength: 10
             },
             email: {
                 required: true,
@@ -264,13 +268,13 @@ $(document).ready(function() {
             city: "required",
             state: "required",
             zip: "required",
-            mailingAddress : "required",
-            locations : "required",
+            mailingAddress: "required",
+            locations: "required",
             phoneNumber: {
                 phoneUS: true,
                 required: true,
-                minlength : 10,
-                maxlength : 10
+                minlength: 10,
+                maxlength: 10
             },
             email: {
                 required: true,
@@ -289,4 +293,105 @@ $(document).ready(function() {
         }
     });
 
+    $("#fundraiser-form").validate({
+        rules: {
+            "sponsor-name": "required",
+            "contact-name": "required",
+            "telephone": "required",
+            "email": "required",
+            "address": "required",
+            "city": "required",
+            "state": "required",
+            "zip": "required",
+            "event-location": "required",
+            "proposed-date": "required",
+            "desc-fundraiser": "required",
+            "fund-to-be-donated-to": "required",
+            "ancticipated-income": "required",
+            "ancticipated-income-raised": "required",
+            "fund-donation":"required"
+
+        },
+        errorPlacement: function (error, element) {
+            if (element.attr("name") == "fund-donation") {
+                error.css('display', 'block').insertAfter($("#no-fund-donation").siblings('label') );
+            } else {
+                error.insertAfter(element);
+            }
+        }
+
     });
+
+    $("#js-reprint-request-form").validate({
+        rules: {
+            requestor_name: "required",
+            address_1: "required",
+            city: "required",
+            state: "required",
+            zip: "required",
+            phone: {
+                required: true,
+                regex: /^(1-)?\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
+            },
+            email: {
+                required: true,
+                regex: /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/
+            },
+            publication_title: "required"
+        },
+        messages: {
+            requestor_name: "This field is required",
+            address_1: "This field is required",
+            city: "This field is required",
+            state: "This field is required",
+            zip: "This field is required",
+            phone: "Please Enter a valid phone number",
+            email: "Please Enter a valid email address",
+            publication_title: "This field is required"
+        }
+    });
+
+    $("#js-international-form").validate({
+        rules: {
+            name: "required",
+            title: "required",
+            agency: "required",
+            mailing_address: "required",
+            phone: {
+                required: true,
+                regex: /^(1-)?\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
+            },
+            email: {
+                required: true,
+                regex: /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/
+            },
+            supervisor_name: "required",
+            supervisor_phone: {
+                required: true,
+                regex: /^(1-)?\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
+            },
+            supervisor_email: {
+                required: true,
+                regex: /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/
+            },
+            population: "required",
+            num_sworn_officers: "required",
+
+        },
+        messages: {
+            name: "This field is required",
+            title: "This field is required",
+            agency: "This field is required",
+            mailing_address: "This field is required",
+            phone: "Please Enter a valid phone number",
+            email: "Please Enter a valid email address",
+            supervisor_name: "This field is required",
+            supervisor_phone: "Please Enter a valid phone number",
+            supervisor_email: "Please Enter a valid email address",
+            population: "This field is required",
+            num_sworn_officers: "This field is required",
+        }
+    });
+
+
+});
