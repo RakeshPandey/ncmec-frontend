@@ -1,0 +1,36 @@
+.radio-section {
+  border: 1px solid red;
+  padding: 12px 0px;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+.radio-section label {
+  padding: 12px ;
+  border-right: 1px solid red;
+}
+.radio-section label:last-child {
+  padding: 12px ;
+  border-right: none;
+}
+.radio-section input {
+  display: none;
+}
+input[type="radio"]:checked + label {
+  background-color: red;
+}
+input[type="radio"]:checked + label:first-child {
+  border-radius: 8px;
+  background-color: red;
+}
+.form-header {
+  border: 1px solid grey;
+  background-color: grey;
+  margin: 20px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.form-header p {
+  color: white;
+  padding: 0px 12px;
+}
