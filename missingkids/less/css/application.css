@@ -9262,3 +9262,17 @@ label.error {
   padding: 5px 0 0;
   font-weight: 500;
 }
+.ncmec-style-page .nomargin {
+  margin: 0px;
+}
+.ncmec-style-page .safety-store-images {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 16px;
+}
+.ncmec-style-page .safety-store-images img {
+  height: 30px;
+  width: 100px;
+  vertical-align: middle;
+}
