@@ -7388,7 +7388,7 @@ label.error {
 }
 .sponsored-block ul {
   list-style: none;
-  padding: 16px;
+  padding: 20px 20px 0;
   margin: 0;
   display: inline-flex;
   flex-wrap: wrap;
@@ -7420,7 +7420,7 @@ label.error {
 }
 .sponsored-block .footer {
   background: #404041;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px 10px 0 0;
   height: 66px;
 }
 .sponsored-block .footer .title {
@@ -7452,7 +7452,7 @@ label.error {
 }
 .sponsored-block .footer .right-block .contribution-amt {
   background: #39C2D7;
-  border-radius: 0 0 10px 0;
+  border-radius: 0 10px 0 0;
   font-family: 'Futura', 'Arial', sans-serif;
   font-size: 16px;
   color: #fff;
