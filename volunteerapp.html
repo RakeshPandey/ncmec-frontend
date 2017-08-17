@@ -84,25 +84,25 @@
                                 <div class="form-group">
                                     <label for="pi-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Name</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" name="pi-name" id="pi-name" required>
+                                        <input type="text" class="form-control" name="pi-name" id="pi-name" required data-msg-required="This field is required.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="pi-street" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Street</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" name="pi-street" id="pi-street" required>
+                                        <input type="text" class="form-control" name="pi-street" id="pi-street" required data-msg-required="This field is required.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="pi-city" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>City</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" name="pi-city" id="pi-city" required>
+                                        <input type="text" class="form-control" name="pi-city" id="pi-city" required data-msg-required="This field is required.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="pi-state" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>State</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <select class="form-control" id="pi-state" name="pi-state" required>
+                                        <select class="form-control" id="pi-state" name="pi-state" required data-msg-required="This field is required.">
                                           <!-- not setting first value to make validator work -->
                                           <option value="">Select</option>
                                           <option value="AL">Alabama</option>
@@ -166,37 +166,37 @@
                                 <div class="form-group">
                                     <label for="pi-zipcode" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Zip code</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" zipcodeUs="true" name="pi-zipcode" id="pi-zipcode" required>
+                                        <input type="text" class="form-control" zipcodeUs="true" name="pi-zipcode" id="pi-zipcode" required data-msg-required="This field is required." data-msg-zipcodeUs="The specified US ZIP Code is invalid.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="pi-homephone" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Home Phone</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" phoneUs="true" name="pi-homephone" id="pi-homephone" required>
+                                        <input type="text" class="form-control" phoneUs="true" name="pi-homephone" id="pi-homephone" required  data-msg-required="This field is required." data-msg-phoneUs="Please specify a valid phone number.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="pi-email" class="col-md-4 col-sm-2 control-label"><span class="error">*</span> Email</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="email" class="form-control" email="true" name="pi-email" id="pi-email" placeholder="jane.doe@example.com" required>
+                                        <input type="email" class="form-control" email="true" name="pi-email" id="pi-email" placeholder="jane.doe@example.com" required data-msg-required="This field is required." data-msg-email="Please enter a valid email address.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="pi-workphone" class="col-md-4 col-sm-2 control-label">Work Phone</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" phoneUs="true" name="pi-workphone" id="pi-workphone">
+                                        <input type="text" class="form-control" phoneUs="true" name="pi-workphone" id="pi-workphone" data-msg-phoneUs="Please specify a valid phone number.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="pi-cellphone" class="col-md-4 col-sm-2 control-label">Cell Phone</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" phoneUs="true" name="pi-cellphone" id="pi-cellphone">
+                                        <input type="text" class="form-control" phoneUs="true" name="pi-cellphone" id="pi-cellphone" data-msg-phoneUs="Please specify a valid phone number.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="pi-dob" class="col-md-4 col-sm-2 control-label">Date of Birth</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" date="true" name="pi-dob" id="pi-dob">
+                                        <input type="text" class="form-control" date="true" name="pi-dob" id="pi-dob" data-msg-date="Use mm-dd-yyyy for dates.">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -232,19 +232,19 @@
                                 <div class="form-group">
                                     <label for="child-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Missing/recovered/sexually exploited child’s name</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="child-name" name="child-name" required>
+                                        <input type="text" class="form-control" id="child-name" name="child-name" required data-msg-required="This field is required.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="child-dob" class="col-md-4 col-sm-2 control-label">His/Her Date of Birth</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" date="true" id="child-dob" name="child-dob">
+                                        <input type="text" class="form-control" date="true" id="child-dob" name="child-dob" data-msg-date="Use mm-dd-yyyy for dates.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="child-case" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Case Type</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <select class="form-control" id="child-case" name="child-case" required>
+                                        <select class="form-control" id="child-case" name="child-case" required data-msg-required="This field is required.">
                                           <option value="">Select</option>
                                           <option value="runaway">Runaway</option>
                                           <option value="nonFamilyAbuction">Nonfamily abduction</option>
@@ -323,25 +323,25 @@
                                 <div class="form-group">
                                     <label for="bg-how" class="col-md-12 col-sm-12 control-label text-left"><span class="error">*</span>How did you find out about Team Hope?</label>
                                     <div class="col-md-12 col-sm-12">
-                                        <textarea class="form-control" id="bg-how" name="bg-how" required></textarea>
+                                        <textarea class="form-control" id="bg-how" name="bg-how" required data-msg-required="This field is required."></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="bg-activities" class="col-md-12 col-sm-12 control-label text-left"><span class="error">*</span> List other volunteer activities you have been involved with:</label>
                                     <div class="col-md-12 col-sm-12">
-                                        <textarea class="form-control" id="bg-activities" name="bg-activities" required></textarea>
+                                        <textarea class="form-control" id="bg-activities" name="bg-activities" required data-msg-required="This field is required."></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="bg-skills" class="col-md-12 col-sm-12 control-label text-left"><span class="error">*</span>List special skills/talents, areas of expertise and knowledge, which would be an asset to Team HOPE and searching parents such as peer support, crisis counseling, domestic violence, special needs, mental health issues, computer skills, writing, editing, public speaking.</label>
                                     <div class="col-md-12 col-sm-12">
-                                        <textarea class="form-control" id="bg-skills" name="bg-skills" required></textarea>
+                                        <textarea class="form-control" id="bg-skills" name="bg-skills" required data-msg-required="This field is required."></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="bg-languages" class="col-md-12 col-sm-12 control-label text-left"><span class="error">*</span>List languages in which you are fluent:</label>
                                     <div class="col-md-12 col-sm-12">
-                                        <textarea class="form-control" id="bg-languages" name="bg-languages" required></textarea>
+                                        <textarea class="form-control" id="bg-languages" name="bg-languages" required data-msg-required="This field is required."></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -393,25 +393,25 @@
                                 <div class="form-group">
                                     <label for="ref1-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Name</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="ref1-name" name="ref1-name" required>
+                                        <input type="text" class="form-control" id="ref1-name" name="ref1-name" required data-msg-required="This field is required.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="ref1-street" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Street</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="ref1-street" name="ref1-street" required>
+                                        <input type="text" class="form-control" id="ref1-street" name="ref1-street" required data-msg-required="This field is required.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="ref1-city" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>City</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="ref1-city" name="ref1-city" required>
+                                        <input type="text" class="form-control" id="ref1-city" name="ref1-city" required data-msg-required="This field is required.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="ref1-state" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>State</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <select class="form-control" id="ref1-state" name="ref1-state" required>
+                                        <select class="form-control" id="ref1-state" name="ref1-state" required data-msg-required="This field is required.">
                                           <option value="">Select</option>
                                           <option value="AL">Alabama</option>
                                           <option value="AK">Alaska</option>
@@ -474,25 +474,25 @@
                                 <div class="form-group">
                                     <label for="ref1-zipcode" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Zip code</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="ref1-zipcode" name="ref1-zipcode" required>
+                                        <input type="text" class="form-control" zipcodeUs="true" id="ref1-zipcode" name="ref1-zipcode" required data-msg-required="This field is required." data-msg-zipcodeUs="The specified US ZIP Code is invalid.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="ref1-phone" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Phone</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="ref1-phone" name="ref1-phone" required>
+                                        <input type="text" class="form-control" phoneUs="true" id="ref1-phone" name="ref1-phone" required data-msg-required="This field is required." data-msg-phoneUs="Please specify a valid phone number.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="ref1-duration" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>How long have you know this reference</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="ref1-duration" name="ref1-duration" required>
+                                        <input type="text" class="form-control" id="ref1-duration" name="ref1-duration" required data-msg-required="This field is required.">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="ref1-how" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>How do you know this reference:(employer, law enforcement, other)</label>
                                     <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                        <input type="text" class="form-control" id="ref1-how" name="ref1-how" required>
+                                        <input type="text" class="form-control" id="ref1-how" name="ref1-how" required data-msg-required="This field is required.">
                                     </div>
                                 </div>
 
@@ -500,25 +500,25 @@
                               <div class="form-group">
                                   <label for="ref2-name" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Name</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="ref2-name" name="ref2-name" required>
+                                      <input type="text" class="form-control" id="ref2-name" name="ref2-name" required data-msg-required="This field is required.">
                                   </div>
                               </div>
                               <div class="form-group">
                                   <label for="ref2-street" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Street</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="ref2-street" name="ref2-street" required>
+                                      <input type="text" class="form-control" id="ref2-street" name="ref2-street" required data-msg-required="This field is required.">
                                   </div>
                               </div>
                               <div class="form-group">
                                   <label for="ref2-city" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>City</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="ref2-city" name="ref2-city" required>
+                                      <input type="text" class="form-control" id="ref2-city" name="ref2-city" required data-msg-required="This field is required.">
                                   </div>
                               </div>
                               <div class="form-group">
                                   <label for="ref2-state" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>State</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <select class="form-control" id="ref2-state" name="ref2-state" required>
+                                      <select class="form-control" id="ref2-state" name="ref2-state" required data-msg-required="This field is required.">
                                         <option value="">Select</option>
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
@@ -581,25 +581,25 @@
                               <div class="form-group">
                                   <label for="ref2-zipcode" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Zip code</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="ref2-zipcode" name="ref2-zipcode" required>
+                                      <input type="text" class="form-control" zipcodeUs="true" id="ref2-zipcode" name="ref2-zipcode" required data-msg-required="This field is required." data-msg-zipcodeUs="The specified US ZIP Code is invalid.">
                                   </div>
                               </div>
                               <div class="form-group">
                                   <label for="ref2-phone" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>Phone</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="ref2-phone" name="ref2-phone" required>
+                                      <input type="text" phoneUs="true" class="form-control" id="ref2-phone" name="ref2-phone" required data-msg-required="This field is required." data-msg-phoneUs="Please specify a valid phone number.">
                                   </div>
                               </div>
                               <div class="form-group">
                                   <label for="ref2-duration" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>How long have you know this reference</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="ref2-duration" name="ref2-duration" required>
+                                      <input type="text" class="form-control" id="ref2-duration" name="ref2-duration" required data-msg-required="This field is required.">
                                   </div>
                               </div>
                               <div class="form-group">
                                   <label for="ref2-how" class="col-md-4 col-sm-2 control-label"><span class="error">*</span>How do you know this reference:(employer, law enforcement, other)</label>
                                   <div class="col-md-7 col-sm-8 col-sm-offset-right-1">
-                                      <input type="text" class="form-control" id="ref2-how" name="ref2-how" required>
+                                      <input type="text" class="form-control" id="ref2-how" name="ref2-how" required data-msg-required="This field is required.">
                                   </div>
                               </div>
                               <div class="form-group">
