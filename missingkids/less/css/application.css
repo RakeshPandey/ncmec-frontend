@@ -8422,6 +8422,8 @@ and open the template in the editor.
 }
 .yearsandmore-container .long-years-grid > ul > li {
   width: 50%;
+  overflow: hidden;
+  height: 21px;
 }
 @media (min-width: 767px) {
   .yearsandmore-container .long-years-grid > ul > li {
@@ -8432,6 +8434,9 @@ and open the template in the editor.
   .yearsandmore-container .long-years-grid > ul > li {
     width: 20%;
   }
+}
+.yearsandmore-container .long-years-grid > ul > li a {
+  line-height: 30px;
 }
 .yearsandmore-container .section-title {
   padding-left: 8px;
@@ -8697,22 +8702,27 @@ hr {
   border: 1px solid #404041;
   background: #404041;
   border-radius: 4px;
-  width: 173px;
+  width: 220px;
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 .siteSearch .textField,
 .siteSearch .icon {
-  display: inline-block;
   padding: 2px;
+  width: 90%;
 }
 .siteSearch .icon {
   background: #404041;
   width: 17px;
-  display: inline-block;
   padding: 0 2px 0 0;
   border: 0;
   outline: none;
+  margin-right: auto;
+  margin-left: auto;
 }
 #dafdirectdiv {
   width: 100% !important;
