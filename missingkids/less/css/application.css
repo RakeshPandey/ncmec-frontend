@@ -7954,6 +7954,7 @@ label.error {
   background: transparent;
   color: #fff;
   outline: none;
+  width: 162px;
 }
 .subscribe-form form .btn-subscribe {
   background: #FDB814;
