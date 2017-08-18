@@ -9172,9 +9172,8 @@ textarea.form-control {
   padding: 5px 16px;
 }
 .cybertipline-banner .centre-body-cover {
-  margin-right: auto;
-  margin-left: auto;
-  width: 40%;
+  max-width: 300px;
+  margin-bottom: 10px;
 }
 .cybertipline-banner .header-box-cover-withborder h2 {
   background-color: red;
@@ -9239,7 +9238,7 @@ textarea.form-control {
 }
 .cybertipline-banner .header-top2 p {
   font-size: 13px;
-  font-family: Avenir;
+  font-family: 'AvenirLTStd-Black';
 }
 .cybertipline-banner .text-align-centre {
   text-align: centre;
