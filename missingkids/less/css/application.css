@@ -9267,6 +9267,9 @@ label.error {
 .volunteer-app-wrapper .panel #background-form label.text-left {
   text-align: left;
 }
+.volunteer-app-wrapper .panel #background-form label.text-left.text-top {
+  padding-bottom: 7px;
+}
 .volunteer-app-wrapper .img-title {
   font-style: italic;
   color: #165d9a;
