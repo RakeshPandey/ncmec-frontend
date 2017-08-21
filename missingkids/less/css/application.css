@@ -9026,7 +9026,8 @@ textarea.form-control {
     float: none;
   }*/
 .missing-help-bring-me-home .panel-heading {
-  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
 }
 .missing-help-bring-me-home .panel-heading .select-state {
   margin-top: 12px;
