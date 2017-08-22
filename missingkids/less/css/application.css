@@ -9247,6 +9247,9 @@ textarea.form-control {
 .cybertipline-banner .text-align-centre {
   text-align: centre;
 }
+.cybertipline-banner .text-align-centre p {
+  margin-bottom: 0px;
+}
 .control-label {
   word-wrap: break-word;
 }
@@ -9292,4 +9295,20 @@ label.error {
   height: 30px;
   width: 100px;
   vertical-align: middle;
+}
+.enews .submitbutton {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.enews .right-cover-div {
+  width: 50%;
+  float: left;
+}
+.enews .label-div {
+  width: 30%;
+  float: left;
+  text-align: right;
+  padding-right: 16px;
+  padding-top: 8px;
 }
