@@ -9296,6 +9296,13 @@ label.error {
   width: 100px;
   vertical-align: middle;
 }
+.ncmec-style-page .safety-store-images a:hover {
+  text-decoration: none;
+}
+.ncmec-style-page .safety-store-images a {
+  margin: 0 5px;
+  text-decoration: none;
+}
 .enews .submitbutton {
   width: 30%;
   margin: 0 auto;
