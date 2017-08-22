@@ -9066,6 +9066,20 @@ textarea.form-control {
   padding-left: 16px;
   color: #F1F1F2;
 }
+.missing-help-bring-me-home .child-list .child-details .child-missing-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.missing-help-bring-me-home .child-list .child-details .missing-label {
+  font-size: 11px;
+  width: 38%;
+}
+.missing-help-bring-me-home .child-list .child-details .value {
+  font-size: 13px;
+  font-weight: bold;
+}
 .missing-help-bring-me-home .child-list .child-details a {
   color: #92D6E3;
 }
