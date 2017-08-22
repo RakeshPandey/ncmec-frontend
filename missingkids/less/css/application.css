@@ -7884,41 +7884,83 @@ label.error {
 .footer-container {
   background: #404041;
   text-align: center;
+  padding: 15px 0;
 }
-.footer-container p {
+.footer-container .legal-container p {
   color: #F1F1F2;
+  font-size: 11px;
 }
-.subscribe-form form {
+.footer-container .subscribe-form {
+  padding: 0;
+}
+.footer-container .subscribe-form form {
   text-align: center;
 }
-.subscribe-form form .input-subscribe {
-  border: 1px solid yellow;
-  border-radius: 10px 0 0 10px;
+@media (max-width: 768px) {
+  .footer-container .subscribe-form form {
+    display: inline-block;
+  }
+}
+.footer-container .subscribe-form form .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+.footer-container .subscribe-form form .form-group .input-subscribe {
+  border: 1px solid #fdb814;
+  border-radius: 5px 0 0 5px;
+  background: transparent;
+  color: #F1F1F2;
+  padding: 5px 10px;
+  float: left !important;
+  width: 200px;
+  outline: none;
+}
+.footer-container .subscribe-form form .form-group .btn-subscribe {
+  background: #fdb814;
+  border: 1px solid #fdb814;
+  border-radius: 0 5px 5px 0;
+  color: #404041;
+  padding: 5px 10px;
   float: left !important;
 }
-.subscribe-form form .btn-subscribe {
-  background: yellow;
-  border: 0;
-  border-radius: 0 10px 10px 0;
-  color: #95989A;
-  float: left !important;
+.footer-container .subscribe-form form .form-group .btn-subscribe:hover {
+  background-color: #FFC107;
 }
-.footer-nav {
+.footer-container .footer-social-links {
+  margin: 0;
+  padding-left: 0;
+}
+.footer-container .footer-social-links li {
+  display: inline-block;
+}
+.footer-container .footer-nav-wrapper .footer-nav {
   margin-bottom: 16px;
   text-align: center;
 }
-.footer-nav ul {
+.footer-container .footer-nav-wrapper .footer-nav ul {
   border-top: 1px solid #F1F1F2;
   list-style: none;
-  padding: 16px 0;
+  padding: 15px 0;
   margin: 0;
 }
-.footer-nav ul li {
+.footer-container .footer-nav-wrapper .footer-nav ul li {
   float: left;
   margin: 0 32px;
 }
-.footer-nav ul li a {
+@media (max-width: 768px) {
+  .footer-container .footer-nav-wrapper .footer-nav ul li {
+    margin: 0 31px;
+  }
+}
+.footer-container .footer-nav-wrapper .footer-nav ul li a {
   color: #F1F1F2;
+  font-size: 13px;
+}
+.footer-container .footer-nav-wrapper .footer-nav ul li:first-child {
+  margin-left: 0;
+}
+.footer-container .footer-nav-wrapper .footer-nav ul li:last-child {
+  margin-right: 0;
 }
 .col-xs-offset-right-12 {
   margin-right: 100%;
