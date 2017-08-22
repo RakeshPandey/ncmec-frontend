@@ -21,15 +21,10 @@
     });
   });
 
-
-  // $('.volunteerAppAccordion').on('hidden.bs.collapse', function (e) {
-  //   var panelWrapper = $(e.target).parents('.panel');
-  //   //panelWrapper.removeClass('has-valid-form');
-  //   panelWrapper.nextAll('.panel').removeClass('has-valid-form');
-  // });
-  //
-  // $(document).on('mouseenter', '.volunteerAppAccordion > .panel > .panel-heading  a', function(e){
-  //   e.preventDefault();
-  // });
+  $(document).on('click', '.volunteerAppAccordion > .panel > .panel-heading  a', function(e){
+    //e.preventDefault();
+    var panelWrapper = $(e.target).parents('.panel');
+    panelWrapper.nextAll('.panel').removeClass('has-valid-form');
+  });
 
 })();

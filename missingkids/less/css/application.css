@@ -7414,7 +7414,7 @@ label.error {
 }
 .sponsored-block ul {
   list-style: none;
-  padding: 16px;
+  padding: 20px 20px 0;
   margin: 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7451,7 +7451,7 @@ label.error {
 }
 .sponsored-block .footer {
   background: #404041;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px 10px 0 0;
   height: 66px;
 }
 .sponsored-block .footer .title {
@@ -7483,7 +7483,7 @@ label.error {
 }
 .sponsored-block .footer .right-block .contribution-amt {
   background: #39C2D7;
-  border-radius: 0 0 10px 0;
+  border-radius: 0 10px 0 0;
   font-family: 'Futura', 'Arial', sans-serif;
   font-size: 16px;
   color: #fff;
@@ -7954,6 +7954,7 @@ label.error {
   background: transparent;
   color: #fff;
   outline: none;
+  width: 162px;
 }
 .subscribe-form form .btn-subscribe {
   background: #FDB814;
@@ -8416,6 +8417,8 @@ and open the template in the editor.
 }
 .yearsandmore-container .long-years-grid > ul > li {
   width: 50%;
+  overflow: hidden;
+  height: 21px;
 }
 @media (min-width: 767px) {
   .yearsandmore-container .long-years-grid > ul > li {
@@ -8426,6 +8429,9 @@ and open the template in the editor.
   .yearsandmore-container .long-years-grid > ul > li {
     width: 20%;
   }
+}
+.yearsandmore-container .long-years-grid > ul > li a {
+  line-height: 30px;
 }
 .yearsandmore-container .section-title {
   padding-left: 8px;
@@ -8691,22 +8697,27 @@ hr {
   border: 1px solid #404041;
   background: #404041;
   border-radius: 4px;
-  width: 173px;
+  width: 220px;
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 .siteSearch .textField,
 .siteSearch .icon {
-  display: inline-block;
   padding: 2px;
+  width: 90%;
 }
 .siteSearch .icon {
   background: #404041;
   width: 17px;
-  display: inline-block;
   padding: 0 2px 0 0;
   border: 0;
   outline: none;
+  margin-right: auto;
+  margin-left: auto;
 }
 #dafdirectdiv {
   width: 100% !important;
@@ -9015,7 +9026,8 @@ textarea.form-control {
     float: none;
   }*/
 .missing-help-bring-me-home .panel-heading {
-  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
 }
 .missing-help-bring-me-home .panel-heading .select-state {
   margin-top: 12px;
@@ -9164,9 +9176,8 @@ textarea.form-control {
   padding: 5px 16px;
 }
 .cybertipline-banner .centre-body-cover {
-  margin-right: auto;
-  margin-left: auto;
-  width: 40%;
+  max-width: 300px;
+  margin-bottom: 10px;
 }
 .cybertipline-banner .header-box-cover-withborder h2 {
   background-color: red;
@@ -9231,7 +9242,7 @@ textarea.form-control {
 }
 .cybertipline-banner .header-top2 p {
   font-size: 13px;
-  font-family: Avenir;
+  font-family: 'AvenirLTStd-Black';
 }
 .cybertipline-banner .text-align-centre {
   text-align: centre;
@@ -9258,6 +9269,9 @@ label.error {
 }
 .volunteer-app-wrapper .panel #background-form label.text-left {
   text-align: left;
+}
+.volunteer-app-wrapper .panel #background-form label.text-left.text-top {
+  padding-bottom: 7px;
 }
 .volunteer-app-wrapper .img-title {
   font-style: italic;

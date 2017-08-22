@@ -11,6 +11,7 @@
         },
         init: function () {
             _this = this;
+            _this.initHandlebarsRegisters();
             _this.el.timeframeRadio.change(_this.performSearch);
             _this.performSearch();
             $(window).scroll(_this.onScroll);
@@ -40,6 +41,12 @@
                 });
 
             }
+        },
+        initHandlebarsRegisters:function(){
+            Handlebars.registerHelper('captilize', function(str) {
+                return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+                
+            });
         }
     };
 
