@@ -9067,20 +9067,14 @@ textarea.form-control {
 .checkbox .reprint-label {
   padding-left: 10px;
 }
-.search-missing-children {
-  /*input[type="radio"]:checked+div .radio-section-individual{
-     background-color: red;
- }*/
-}
 .search-missing-children .radio-section {
-  border: 1px solid red;
-  border-radius: 8px;
   margin-bottom: 20px;
   display: inline-block;
 }
 .search-missing-children .radio-section-individual {
-  border-right: 1px solid red;
-  display: inline-block;
+  display: block;
+  float: left;
+  overflow: hidden;
 }
 .search-missing-children .radio-section-individual label {
   margin-bottom: 0px;
@@ -9091,8 +9085,17 @@ textarea.form-control {
   margin-bottom: 20px;
   border: 1px solid grey;
 }
-.search-missing-children .radio-section-individual:last-child {
+.search-missing-children .radio-section-individual {
+  border: 1px solid red;
+}
+.search-missing-children .radio-section-individual:not(:last-child) {
   border-right: none;
+}
+.search-missing-children .radio-section-individual:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.search-missing-children .radio-section-individual:last-child {
+  border-radius: 0 8px 8px 0;
 }
 .search-missing-children .form-horizontal-cover .form-horizontal .control-label {
   text-align: left;
@@ -9103,24 +9106,20 @@ textarea.form-control {
 .search-missing-children .radio-section input {
   display: none;
 }
-.search-missing-children input[type="radio"]:checked + label:last-of-type {
+.search-missing-children .radio-section input[type="radio"]:checked + label {
   background-color: red;
-  border-radius: 8px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-.search-missing-children input[type="radio"]:checked + label:first-of-type {
-  background-color: red;
-  border-radius: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
 }
 .search-missing-children .form-header {
   border: 1px solid grey;
   background-color: grey;
   padding: 5px 0px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 8px;
+}
+.search-missing-children .form-header.open {
+  border-radius: 8px 8px 0 0;
+}
+.search-missing-children .form-div-cover {
+  padding-bottom: 16px;
 }
 .search-missing-children .form-header p {
   text-align: left;
@@ -9134,6 +9133,10 @@ textarea.form-control {
   background-repeat: no-repeat;
   border: none;
   padding: 8px;
+}
+.search-missing-children button:active + .form-header {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .cybertipline-banner .form-cover-box {
   border: 1px solid grey;
