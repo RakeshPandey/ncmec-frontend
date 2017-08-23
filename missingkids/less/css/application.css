@@ -9030,7 +9030,7 @@ textarea.form-control {
   padding-right: 0;
 }
 .missing-help-bring-me-home .panel-heading .select-state {
-  margin-top: 12px;
+  margin-top: 0px;
   margin-bottom: 3px;
   font-weight: normal;
 }
@@ -9319,3 +9319,4 @@ label.error {
   padding-right: 16px;
   padding-top: 8px;
 }
+
