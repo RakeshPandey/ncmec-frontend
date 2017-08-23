@@ -1,19 +1,18 @@
 .search-missing-children{
 .radio-section{
-border : 1px solid red;
-border-radius: 8px;
 margin-bottom: 20px;
 display: inline-block;
 }
 .radio-section-individual {
- border-right : 1px solid red;
- display: inline-block;
+ display: block;
+ float: left;
+ overflow: hidden;
 
 }
 
 .radio-section-individual label{
     margin-bottom:0px;
-     padding:12px;
+    padding:12px;
 }
 
 .form-horizontal-cover {
@@ -22,9 +21,21 @@ display: inline-block;
     border:1px solid grey;
 }
 
-.radio-section-individual:last-child {
+.radio-section-individual{
+    border: 1px solid red;
+}
+.radio-section-individual:not(:last-child) {
  border-right:none;
 }
+
+.radio-section-individual:first-child{
+    border-radius: 8px 0 0 8px;
+}
+
+.radio-section-individual:last-child{
+    border-radius: 0 8px 8px 0;
+}
+
 .form-horizontal-cover .form-horizontal .control-label {
     text-align:left;
 }
@@ -36,26 +47,27 @@ form.form-horizontal label{
    display: none;
 }
 
-
-/*input[type="radio"]:checked+div .radio-section-individual{
-     background-color: red;
- }*/
-
- input[type="radio"]:checked + label:last-of-type {
+.radio-section input[type="radio"]:checked + label{
     background-color:red;
-    border-radius:8px;
-    border-top-left-radius:0px;
-    border-bottom-left-radius : 0px;
-   // padding:12px;   
 }
 
- input[type="radio"]:checked + label:first-of-type {
-    background-color:red;
-    border-radius:8px;
-    border-top-right-radius:0px;
-    border-bottom-right-radius : 0px;
-   // padding:12px;   
-}
+
+
+// input[type="radio"]:checked+label{
+//      background-color: red;
+//  }
+
+//  input[type="radio"]:checked + label:first-child{
+//     background-color:red;
+//      border-radius: 8px 0 0 8px;
+//    // padding:12px;   
+// }
+
+//  input[type="radio"]:checked + label:last-child{
+//     background-color:red;
+//     border-radius: 0 8px 8px 0;
+//    // padding:12px;   
+// }
 //  input[type="radio"]:checked + input{
 //     background-color:red;
 //    // padding:12px;   
@@ -66,8 +78,13 @@ form.form-horizontal label{
 border: 1px solid grey;
 background-color: grey;
 padding:5px 0px;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
+border-radius:8px;
+    &.open {
+        border-radius: 8px 8px 0 0;
+    }
+}
+.form-div-cover {
+    padding-bottom: 16px;
 }
 
 .form-header p{
@@ -83,6 +100,13 @@ padding: 0px 12px;
   background-repeat:no-repeat;
   border:none;
   padding:8px;
-  
+}
+
+button:active+.form-header{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.tabcontent {
+    //display: none;
 }
 }
