@@ -7454,6 +7454,10 @@ label.error {
   border-radius: 10px 10px 0 0;
   height: 66px;
 }
+.sponsored-block .footer p{
+  margin-left: 16px;
+  margin-top: 16px;
+}
 .sponsored-block .footer .title {
   float: left !important;
   font-family: 'Futura', 'Arial', sans-serif;
