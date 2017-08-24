@@ -7456,7 +7456,7 @@ label.error {
 }
 .sponsored-block .footer .title {
   float: left !important;
-  font-family: 'Futura', 'Arial', sans-serif;
+  font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
   font-size: 16px;
   color: #92d6e3;
   font-weight: normal;
@@ -8841,7 +8841,7 @@ a.mk-partnerBlock .imgBlock div.imagewrap img {
   margin: 0 auto;
 }
 .stars5 .imgBlock {
-  height: 130px;
+  height: 170px;
 }
 .stars4 .imgBlock {
   height: 120px;
@@ -9332,4 +9332,7 @@ label.error {
   text-align: right;
   padding-right: 16px;
   padding-top: 8px;
+}
+.gen-info-list .list-group-item img {
+  border-radius: 0;
 }
