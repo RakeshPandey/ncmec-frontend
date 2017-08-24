@@ -7454,10 +7454,6 @@ label.error {
   border-radius: 10px 10px 0 0;
   height: 66px;
 }
-.sponsored-block .footer p{
-  margin-left: 16px;
-  margin-top: 16px;
-}
 .sponsored-block .footer .title {
   float: left !important;
   font-family: 'Futura', 'Arial', sans-serif;
@@ -9246,6 +9242,7 @@ textarea.form-control {
 }
 .cybertipline-banner .header-top2 a:hover {
   text-decoration: none;
+  color: #92D6E3;
 }
 .cybertipline-banner .header-top1 img {
   width: 100%;
@@ -9335,6 +9332,11 @@ label.error {
   text-align: right;
   padding-right: 16px;
   padding-top: 8px;
+}
+
+.all-form-centre-button{
+      margin: 0 auto;
+    width: 144px;
 }
 
 /*# sourceMappingURL=application.css.map */
