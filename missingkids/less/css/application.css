@@ -7581,6 +7581,11 @@ label.error {
     width: 20%;
     float: left;
   }
+}
+.stars5 .imgBlock {
+  height: 60px;
+}
+@media (min-width: 768px) {
   .stars5 .imgBlock {
     height: 170px;
   }
@@ -8955,6 +8960,11 @@ iframe {
     float: left;
   }
   .stars5 .imgBlock {
+    height: 60px;
+  }
+}
+@media (max-width: 767px) and (min-width: 768px) {
+  .stars5 .imgBlock {
     height: 170px;
   }
 }
@@ -9030,7 +9040,7 @@ textarea.form-control {
   padding-right: 0;
 }
 .missing-help-bring-me-home .panel-heading .select-state {
-  margin-top: 0px;
+  margin-top: 12px;
   margin-bottom: 3px;
   font-weight: normal;
 }
@@ -9230,6 +9240,9 @@ textarea.form-control {
   text-align: right;
   text-decoration: none;
 }
+.cybertipline-banner .header-top2 a:hover {
+  text-decoration: none;
+}
 .cybertipline-banner .header-top1 img {
   width: 100%;
 }
@@ -9320,3 +9333,4 @@ label.error {
   padding-top: 8px;
 }
 
+/*# sourceMappingURL=application.css.map */
