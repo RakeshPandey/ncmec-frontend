@@ -1127,7 +1127,7 @@ th {
 }
 @font-face {
   font-family: 'Futura';
-  src: url('../../fonts/Futura-PT/Futura-BoldRegular.ttf') format('truetype');
+  src: url('../../fonts/Futura-PT/Futura-Bold.woff') format('woff'), url('../../fonts/Futura-PT/Futura-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: bold;
 }
@@ -7460,7 +7460,7 @@ label.error {
 }
 .sponsored-block .footer .title {
   float: left !important;
-  font-family: 'Futura', 'Arial', sans-serif;
+  font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
   font-size: 16px;
   color: #92d6e3;
   font-weight: normal;
@@ -8850,7 +8850,7 @@ a.mk-partnerBlock .imgBlock div.imagewrap img {
   margin: 0 auto;
 }
 .stars5 .imgBlock {
-  height: 130px;
+  height: 170px;
 }
 .stars4 .imgBlock {
   height: 120px;
@@ -9079,6 +9079,20 @@ textarea.form-control {
   flex: 1;
   padding-left: 16px;
   color: #F1F1F2;
+}
+.missing-help-bring-me-home .child-list .child-details .child-missing-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.missing-help-bring-me-home .child-list .child-details .missing-label {
+  font-size: 11px;
+  width: 38%;
+}
+.missing-help-bring-me-home .child-list .child-details .value {
+  font-size: 13px;
+  font-weight: bold;
 }
 .missing-help-bring-me-home .child-list .child-details a {
   color: #92D6E3;
@@ -9336,5 +9350,5 @@ label.error {
   padding-right: 16px;
   padding-top: 8px;
 }
-
 /*# sourceMappingURL=application.css.map */
+
