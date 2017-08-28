@@ -7454,10 +7454,6 @@ label.error {
   border-radius: 10px 10px 0 0;
   height: 66px;
 }
-.sponsored-block .footer p{
-  margin-left: 16px;
-  margin-top: 16px;
-}
 .sponsored-block .footer .title {
   float: left !important;
   font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
@@ -7937,7 +7933,7 @@ label.error {
   min-height: 352px;
   border: 0;
   outline: 0;
-  border-radius: 10px 10px 0 0;
+  border-radius: 0;
 }
 .image-area img {
   width: 100%;
@@ -9350,5 +9346,6 @@ label.error {
   padding-right: 16px;
   padding-top: 8px;
 }
-/*# sourceMappingURL=application.css.map */
-
+.gen-info-list .list-group-item img {
+  border-radius: 0;
+}
