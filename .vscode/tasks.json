@@ -4,5 +4,5 @@
     "version": "0.1.0",
     "command": "lessc",
     "isShellCommand": true,
-    "args": ["bootstrap.less", "application.css"]
+    "args": ["missingkids/less/bootstrap.less", "missingkids/less/css/application.css"]
 }
