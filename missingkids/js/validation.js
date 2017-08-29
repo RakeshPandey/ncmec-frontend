@@ -325,6 +325,7 @@ $(document).ready(function () {
     $("#js-reprint-request-form").validate({
         rules: {
             requestor_name: "required",
+            org_type: "required",
             address_1: "required",
             city: "required",
             state: "required",
@@ -341,6 +342,7 @@ $(document).ready(function () {
         },
         messages: {
             requestor_name: "This field is required",
+            org_type: "This field is required",
             address_1: "This field is required",
             city: "This field is required",
             state: "This field is required",
