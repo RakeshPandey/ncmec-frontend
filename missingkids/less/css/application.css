@@ -2392,7 +2392,7 @@ th {
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  background: #939597;
+  background: #626366;
   border-bottom: 0;
   color: #fff;
 }
@@ -2443,7 +2443,7 @@ th {
   border-top: 0;
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #939597;
+  background-color: #626366;
 }
 .table-hover > tbody > tr:hover {
   background-color: #f5f5f5;
@@ -8729,9 +8729,9 @@ hr {
   margin-bottom: 16px;
 }
 .table-ncmec {
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
-  border: 1px solid #939597;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border: 1px solid #626366;
   margin-left: 8px;
   margin-right: 8px;
   margin-bottom: 10px;
@@ -8749,16 +8749,16 @@ hr {
 }
 .table-ncmec table thead tr th {
   padding: 10px 10px 10px 20px;
-  background: #939597;
+  background: #626366;
 }
 .table-ncmec table thead tr th:first-child {
-  border-top-left-radius: 10px;
+  border-top-left-radius: 0;
 }
 .table-ncmec table thead tr th:last-child {
-  border-top-right-radius: 10px;
+  border-top-right-radius: 0;
 }
 .table-ncmec table tbody tr {
-  border-bottom: 2px solid #939597;
+  border-bottom: 2px solid #626366;
 }
 .table-ncmec table tbody tr td {
   padding: 10px 10px 10px 20px;
@@ -8773,7 +8773,7 @@ hr {
 .emphasisBlock {
   padding-left: 8px;
   padding-right: 8px;
-  border-bottom: 1px solid #939597;
+  border-bottom: 1px solid #626366;
 }
 .emphasisBlock .title span {
   width: 59%;
