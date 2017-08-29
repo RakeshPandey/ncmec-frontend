@@ -13,3 +13,13 @@ $(document).on("click", ".search-container .search-icon", function(){
         : navbar.css('left', '104px');
     }
 });
+
+//===============================
+// Statistics counter initiation
+//===============================
+(function(){
+  $('.statistics-content .counter').counterUp({
+      delay: 10,
+      time: 1000
+  });
+})();
