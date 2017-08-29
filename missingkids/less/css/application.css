@@ -9634,3 +9634,40 @@ label.error {
 .helpline-wrapper .report-content .btn:hover {
   background: #d43f3a;
 }
+.statistics-wrapper {
+  position: relative;
+}
+.statistics-wrapper .statistics-content {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+.statistics-wrapper .statistics-content h3 {
+  color: inherit;
+}
+@media (max-width: 480px) {
+  .statistics-wrapper .statistics-content h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 380px) {
+  .statistics-wrapper .statistics-content h3 {
+    font-size: 20px;
+  }
+}
+.statistics-wrapper .statistics-content .counter {
+  font-size: 144px;
+  font-family: 'Futura', 'Arial', sans-serif;
+}
+@media (max-width: 380px) {
+  .statistics-wrapper .statistics-content .counter {
+    font-size: 104px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .statistics-wrapper .statistics-content .counter {
+    font-size: 104px;
+  }
+}
