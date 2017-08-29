@@ -325,6 +325,7 @@ $(document).ready(function () {
     $("#js-reprint-request-form").validate({
         rules: {
             requestor_name: "required",
+            org_type: "required",
             address_1: "required",
             city: "required",
             state: "required",
@@ -341,6 +342,7 @@ $(document).ready(function () {
         },
         messages: {
             requestor_name: "This field is required",
+            org_type: "This field is required",
             address_1: "This field is required",
             city: "This field is required",
             state: "This field is required",
@@ -348,6 +350,13 @@ $(document).ready(function () {
             phone: "Please Enter a valid phone number",
             email: "Please Enter a valid email address",
             publication_title: "This field is required"
+        },
+        errorPlacement: function(error, element) {
+          if (element.attr("name") == "org_type") {
+             error.insertAfter("#js-div-NA").addClass("col-md-offset-4 col-sm-offset-4 col-xs-offset-4");
+          } else {
+             error.insertAfter(element);
+          }
         }
     });
 
