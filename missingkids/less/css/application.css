@@ -9596,3 +9596,40 @@ label.error {
 .gen-info-list .list-group-item img {
   border-radius: 0;
 }
+.helpline-wrapper {
+  text-align: center;
+}
+.helpline-wrapper .helpline-content {
+  background: #AD1A1F;
+}
+.helpline-wrapper .helpline-content h3,
+.helpline-wrapper .helpline-content label {
+  color: #fff;
+}
+.helpline-wrapper .helpline-content h3 {
+  margin-top: 5px;
+}
+.helpline-wrapper .helpline-content label {
+  font-weight: normal;
+}
+.helpline-wrapper .report-content {
+  background: #fff;
+}
+.helpline-wrapper .report-content h4 {
+  margin-top: 5px;
+}
+@media (max-width: 768px) {
+  .helpline-wrapper .report-content h4 {
+    font-size: 24px;
+  }
+}
+.helpline-wrapper .report-content .btn {
+  background: #AD1A1F;
+  font-size: 16px;
+  padding: 5px 30px;
+  text-transform: none;
+  margin-bottom: 5px;
+}
+.helpline-wrapper .report-content .btn:hover {
+  background: #d43f3a;
+}
