@@ -118,60 +118,63 @@
                                 <p>For further information about Reprint Requests please contact NCMEC's Office of Legal Counsel at Charles B. Wang International Children's Building, 699 Prince Street, Alexandria, Virginia 22314-3175; telephone number 800-843-5678; legal@ncmec.org.</p>
 
                                 <div class="form ncmec-form row">
-                                    <form class="form-horizontal">
+                                    <form id ="js-reprint-request-form" class="form-horizontal">
                                         <div class="form-group">
                                             <label for="when" class="col-md-4 col-sm-4 col-xs-4 control-label"><span>*</span> Requestor Name:</label>
                                             <div class="col-md-8 col-sm-8 col-xs-8">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="requestor_name" id="requestor_name" aria-required="true" >
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="when" class="col-md-4 col-sm-3 col-xs-3 control-label">Organization Name:</label>
                                             <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="organization_name" aria-required="true" >
                                             </div>
                                         </div>
                                         <div class="form-group">
+                                            
                                             <label class="col-md-4 col-sm-3 col-xs-3 control-label">Organization Type:</label>
-                                            <div class="checkbox col-sm-offset-4 col-sm-offset-right-1">            
+                                            <div class="checkbox col-sm-offset-4 col-sm-offset-right-1 col-xs-offset-3">            
                                                 <input type="radio" name="org_type" id="non_profit" value="non_profit">
                                                 <label for="non_profit" class="reprint-label">Non-profit</label>
                                             </div>
-                                            <div class="checkbox col-sm-offset-4 col-sm-offset-right-1">
+                                            <div class="checkbox col-sm-offset-4 col-sm-offset-right-1 col-xs-offset-3">
                                                 <input type="radio" name="org_type" id="profit" value="profit">
                                                 <label for="profit" class="reprint-label">For profit</label>
                                             </div>
-                                            <div class="checkbox col-sm-offset-4">
+                                            <div class="checkbox col-sm-offset-4 col-xs-offset-3">
                                                 <input type="radio" name="org_type" id="law_enf_gov" value="law_enf_gov">
                                                 <label for="law_enf_gov" class="reprint-label">Law Enforcement/Government Agency</label>
                                             </div>
-                                            <div class="checkbox col-sm-offset-4">
+                                            <div class="checkbox col-sm-offset-4 col-xs-offset-3">
                                                 <input type="radio" name="org_type" id="NA" value="NA">
                                                 <label for="NA" class="reprint-label">Not applicable ( requestor is an individual)</label>
                                             </div>
+                                          
                                         </div>
                                         <div class="form-group">
                                             <label for="when" class="col-md-4 col-sm-3 col-xs-3 control-label"><span>*</span> Address 1:</label>
                                             <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="address_1" id="address_1" aria-required="true" >
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="when" class="col-md-4 col-sm-3 col-xs-3 control-label">Address 2:</label>
                                             <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="when" id="when-field" >
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="when" class="col-md-4 col-sm-3 col-xs-3 control-label"><span>*</span> City:</label>
                                             <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="city" id="city" aria-required="true">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="when" class="col-md-4 col-sm-3 col-xs-3 control-label"><span>*</span> State:</label>
+                                            <label for="state" class="col-md-4 col-sm-3 col-xs-3 control-label"><span>*</span> State:</label>
                                             <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <select class="form-control" name="state" data-role="none" required="true"><option value="All">Select</option><option value="AL">Alabama</option>
+                                                <select class="form-control required" id="state" name="state" aria-required="true">
+                                                    <option value="">Select</option><option value="AL">Alabama</option>
                                                     <option value="AK">Alaska</option>
                                                     <option value="AZ">Arizona</option>
                                                     <option value="AR">Arkansas</option>
@@ -229,44 +232,44 @@
                                         <div class="form-group">
                                             <label for="when" class="col-md-4 col-sm-3 col-xs-3 control-label"><span>*</span> Zip code:</label>
                                             <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="zip" id="zip" aria-required="true">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="when" class="col-md-4 col-sm-3 col-xs-3 control-label"><span>*</span> Contact Phone:</label>
                                             <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="phone" id="phone" aria-required="true">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="when" class="col-md-4 col-sm-3 col-xs-3 control-label"><span>*</span> Email:</label>
                                             <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="email" id="email" aria-required="true">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="when" class="col-md-4 col-sm-3 col-xs-3 control-label"><span>*</span> Publication title:</label>
                                             <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="publication_title" id="publication_title" aria-required="true">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="when" class="col-md-4 col-sm-3 col-xs-3 control-label">Publication Date:</label>
                                             <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="when" id="when-field">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="media_outlets">Requestor's publication/conference/event name (if applicable)</label>
                                             <div class="checkbox col-sm-offset-4">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="when" id="when-field">
 
                                             </div>                                            
                                         </div>
                                         <div class="form-group">
                                             <label for="media_outlets">Requested format of reprinted pubication (e.g., book, newsletter, pamphlet, overhead, website, PoserPoint presentation)</label>
                                             <div class="checkbox col-sm-offset-4">
-                                                <input type="text" class="form-control" name="when" id="when-field" required="" >
+                                                <input type="text" class="form-control" name="when" id="when-field">
 
                                             </div>                                            
                                         </div>
@@ -288,10 +291,9 @@
                                         </div>
                                         <div class="form-group">                                            
                                             <div class="col-sm-offset-4">
-                                                <textarea type="text" class="form-control" name="when" id="when-field" required="" >[Describe modifications here.]</textarea>
+                                                <textarea type="text" class="form-control" name="when" id="when-field">[Describe modifications here.]</textarea>
                                             </div>                                            
                                         </div>
-                                        <hr />
                                         <div class="form-group">
                                             <h5>By submitting this form, you agree to the following terms and conditions:</h5>
                                             <ul>
@@ -393,8 +395,11 @@
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="missingkids/js/plugin/jquery.min.js" type="text/javascript"></script>
+        <script src="missingkids/js/plugin/jquery.validate.min.js" type="text/javascript"></script>
+
         <script src="missingkids/js/plugin/bootstrap.min.js" type="text/javascript"></script>
         <script src="missingkids/js/application.js" type="text/javascript"></script>
+        <script src="missingkids/js/validation.js" type="text/javascript"></script>
 
 
     </body>

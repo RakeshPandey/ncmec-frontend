@@ -28,7 +28,8 @@
             });
         },
         onScroll: function () {
-            if (($(window).scrollTop() + $(window).height()) == $(document).height()) {
+           var difference = Math.abs(parseInt($(window).scrollTop() + $(window).height())- parseInt($(document).height()));
+            if (difference < 5) {
 
                 _this.el.siteSearchResultsWrapper.find('.ajax-loader').show();
                 $.get('./missingkids/js/json/anniversaries-grid-results.json', {timeframe: _this.el.timeframeRadio.val()}, function (data) {

@@ -279,24 +279,25 @@ hr {
     border: 1px solid @headings-color;
     background: @headings-color;
     border-radius: 4px;
-    width: 173px;
+    width: 220px;
     margin-left: auto;
     margin-right: auto;
-    .textField, .icon{
+    display:flex;
 
-        display: inline-block;
-
+    .textField, .icon {
         padding: 2px;
+        width: 90%;
     }
 
     .icon{
 
         background: @headings-color;
         width: 17px;
-        display: inline-block;
         padding: 0 2px 0 0;
         border: 0;
         outline: none;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 #dafdirectdiv{
@@ -420,7 +421,7 @@ a.mk-partnerBlock .imgBlock div.imagewrap img {
     margin: 0 auto;
 }
 .stars5 .imgBlock {
-    height: 130px;
+    height: 170px;
 }
 .stars4 .imgBlock {
     height: 120px;
@@ -530,14 +531,19 @@ iframe {
     border:0;
 }
 
-@media (max-width: 767px) {
-    .col-sm-5ths {
-        width: 20%;
-        float: left;
+ @media (max-width: 767px) {
+     .col-sm-5ths {
+         width: 20%;
+         float: left;
     }
     .stars5 .imgBlock {
+             height: 60px;
+        
+    @media (min-width: 768px) {
         height: 170px;
+    
     }
+     }
 }
 
 
@@ -579,13 +585,21 @@ textarea.form-control {
 }
 
 /* Blue-base text color */
-p.textColorBlueBase {
+.textColorBlueBase {
     color: @blue-base;
 
 }
 
+.textColorLightBlue{
+    color: @blue-lighter;
+}
 
-.icon-sub-heading{
+.textarea{
+    width:90%;
+    height:300px;
+    margin:16px;
+}
+.icon-sub-heading {
 
     display: flex;
     align-items: center;
@@ -612,7 +626,9 @@ p.textColorBlueBase {
 
 .missing-help-bring-me-home{
     .panel-heading{
-        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+        
         .select-state{
             margin-top: 12px;
             margin-bottom: 3px;
@@ -629,6 +645,7 @@ p.textColorBlueBase {
         list-style-type: none;
         > li{
             display:flex;
+            margin-bottom: 13px;
             img {
 
                 border-top-left-radius: 8px;
@@ -646,6 +663,17 @@ p.textColorBlueBase {
             flex: 1;
             padding-left: 16px;
             color:@gray-lighter;
+            .child-missing-item{
+                display:flex;
+            }
+            .missing-label{
+                font-size:11px;
+                width:38%
+            }
+            .value{
+                font-size:13px;
+                font-weight: bold;
+            }
             a{
                 color : @blue-lighter;
 
@@ -660,5 +688,11 @@ p.textColorBlueBase {
                 line-height: 17px;
             }
         }
+    }
+}
+
+.checkbox {
+    .reprint-label {
+        padding-left: 10px;
     }
 }
