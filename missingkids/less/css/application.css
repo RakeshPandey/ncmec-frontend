@@ -9671,3 +9671,31 @@ label.error {
     font-size: 104px;
   }
 }
+.home-content {
+  text-align: center;
+  padding: 20px 40px;
+}
+@media (max-width: 767px) {
+  .home-content {
+    padding: 10px 20px;
+  }
+}
+.home-content .desc {
+  color: #818181;
+  line-height: 32px;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .home-content .desc {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.home-content .title {
+  color: #FDB813;
+}
+@media (max-width: 767px) {
+  .home-content .title {
+    font-size: 34px;
+  }
+}
