@@ -350,6 +350,13 @@ $(document).ready(function () {
             phone: "Please Enter a valid phone number",
             email: "Please Enter a valid email address",
             publication_title: "This field is required"
+        },
+        errorPlacement: function(error, element) {
+          if (element.attr("name") == "org_type") {
+             error.insertAfter("#js-div-NA").addClass("col-md-offset-4 col-sm-offset-4 col-xs-offset-4");
+          } else {
+             error.insertAfter(element);
+          }
         }
     });
 

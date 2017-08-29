@@ -9293,6 +9293,10 @@ textarea.form-control {
 .checkbox .reprint-label {
   padding-left: 10px;
 }
+.form-group textarea {
+  max-width: 100%;
+  max-height: 100%;
+}
 .search-missing-children .radio-section {
   margin-bottom: 20px;
   display: inline-block;
