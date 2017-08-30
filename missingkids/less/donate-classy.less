@@ -20,7 +20,7 @@
     .donate-row {
         .btn {
             font-size: 16px;
-            margin: 0 10px;
+            margin: 0 8px;
             text-transform: none;
             background-color: #008DB6;
             border: 1px solid #008DB6;
@@ -29,7 +29,7 @@
         }
         .btn-secondary{
             font-size: 16px;
-            margin: 0 10px;
+            margin: 0 8px;
             background-color: #FFFFFF;
             border: solid 1px #626366;
             border-radius: 10px;
@@ -73,11 +73,35 @@
     }
 }
 
-@media (max-width: 768px) {
-    .donate-row {
-        .btn {
-            width: 52px;
-            height: 39px;
+.donate-classy{
+    .form-control, .radio, .checkbox{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px){
+    .donate-classy {
+        .donate-row {
+            .btn {
+                margin: 0px;
+            }
         }
-    } 
+        .donation input[type="text"]{
+            top: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    .donate-classy {
+        text-align: center;
+        .donate-row {
+            .btn{
+                margin: 0px 8px;
+                width: 52px;
+                height: 39px;
+                padding: 0px;
+            }
+        }
+    }
 }
