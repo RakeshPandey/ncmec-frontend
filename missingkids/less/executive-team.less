@@ -1,0 +1,58 @@
+.executive-team{
+  h2 {
+    color: #006C8A;
+    font-weight: normal;
+  }
+  .list-group-item { 
+    line-height: 1.4;
+    padding: 8px;
+    @media(min-width: @screen-sm-min) {
+      padding: 16px;
+    }
+    @media(min-width: @screen-sm-min) and (orientation : landscape) {
+      padding: 13px;
+    }
+    @media (min-width: @screen-lg-min) { 
+      padding: 16px ;
+    }
+
+    img {
+      border: 0;
+      
+      float: left;
+      border-radius: 10px;
+      width: 144px;
+      @media(min-width: @screen-sm-min) {
+        width: 144px;
+      }
+      @media(min-width: @screen-sm-min) and (orientation : landscape) {
+        width: 117px;
+      }
+      @media (min-width: @screen-lg-min) { 
+        width: 144px;
+      } 
+    }
+    .name {
+      font-family: 'Futura';
+      font-size: 16px;
+      color: #404041;
+      padding: 8px 0;
+      font-weight:bold;
+      @media(min-width: @screen-sm-min) {
+        padding: 16px 0;
+      }
+      @media(min-width: @screen-sm-min) and (orientation : landscape) {
+        padding: 13px 0;
+      }
+      @media (min-width: @screen-lg-min) { 
+        padding: 16px 0;
+      }
+    }
+    .title {
+      font-family: 'AvenirLTStd-Black';
+      color: #626366;
+      font-size: 13px;
+      font-style: italic;
+    }
+  }
+}
