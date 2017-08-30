@@ -7301,13 +7301,13 @@ label.error {
   vertical-align: top;
   background: #404041;
   padding: 16px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0px;
 }
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_photo {
   float: left;
   margin: 0 16px 0 0;
   display: inline-block;
-  border-radius: 10px 0 0 10px;
+  border-radius: 0px;
 }
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_name_link {
   font-family: 'Futura', 'Arial', sans-serif;
@@ -9463,4 +9463,11 @@ label.error {
   border-radius: 0;
 }
 
+.panel-heading-black{
+  background-color: #404041 !important;
+}
+
+.simple-heading{
+  color:  #006C8A;
+}
 /*# sourceMappingURL=application.css.map */
