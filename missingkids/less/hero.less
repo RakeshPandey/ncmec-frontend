@@ -1,8 +1,5 @@
 
 .hero-banner-wrapper {
-   @media (min-width: @screen-sm) {
-     max-width: 1024px;
-   }
   .hero-banner {
     position: relative;
     height: 218px;
@@ -14,26 +11,25 @@
       height: 435px;
     }
     picture, img {
-      height: 100%;
       max-width: none;
-      @media (min-width: @screen-sm) {
-        width: 100%;
-        height: auto;
-      }
+      position: absolute;
+      min-width: 100%;
+      left: 0;
+      top: 0;
     }
     iframe {
       position: absolute;
     }
     .hero-content-wrapper {
-      position: absolute;
-      left: 10px;
-      top: 10px;
-      display: inline-block;
+      position: relative;
       @media (min-width: @screen-sm) {
         left: 40px;
         top: 30px;
       }
       .hero-content {
+        position: absolute;
+        left: 10px;
+        top: 10px;
         .title {
           max-width: 200px;
           color: inherit;
