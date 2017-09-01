@@ -8044,11 +8044,6 @@ label.error {
     margin: 20px 13px;
   }
 }
-@media (min-width: 767px) {
-  .hero-banner-wrapper {
-    max-width: 1024px;
-  }
-}
 .hero-banner-wrapper .hero-banner {
   position: relative;
   height: 218px;
@@ -8066,30 +8061,28 @@ label.error {
 }
 .hero-banner-wrapper .hero-banner picture,
 .hero-banner-wrapper .hero-banner img {
-  height: 100%;
   max-width: none;
-}
-@media (min-width: 767px) {
-  .hero-banner-wrapper .hero-banner picture,
-  .hero-banner-wrapper .hero-banner img {
-    width: 100%;
-    height: auto;
-  }
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 .hero-banner-wrapper .hero-banner iframe {
   position: absolute;
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  display: inline-block;
+  position: relative;
 }
 @media (min-width: 767px) {
   .hero-banner-wrapper .hero-banner .hero-content-wrapper {
     left: 40px;
     top: 30px;
   }
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content {
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .title {
   max-width: 200px;
