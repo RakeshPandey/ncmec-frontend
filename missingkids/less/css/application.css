@@ -6970,6 +6970,18 @@ label.error {
   font-weight: 500;
   padding: 5px 0 0;
 }
+.hero-page-text {
+  font-family: 'Futura';
+  font-size: 24px;
+  font-weight: 600;
+  color: #818181 ;
+}
+.hero-page-custom-heading {
+  font-family: 'Futura';
+  font-size: 42px;
+  font-weight: 600;
+  color: #FDB813 ;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -9444,15 +9456,15 @@ textarea.form-control {
 }
 .search-missing-children .radio-section-individual label {
   margin-bottom: 0px;
-  padding: 12px;
+  padding: 4px 15px;
 }
 .search-missing-children .form-horizontal-cover {
   padding: 16px;
   margin-bottom: 20px;
-  border: 1px solid grey;
+  border: 1px solid #626366;
 }
 .search-missing-children .radio-section-individual {
-  border: 1px solid red;
+  border: 1px solid #626366;
 }
 .search-missing-children .radio-section-individual:not(:last-child) {
   border-right: none;
@@ -9473,7 +9485,8 @@ textarea.form-control {
   display: none;
 }
 .search-missing-children .radio-section input[type="radio"]:checked + label {
-  background-color: red;
+  background-color: #626366;
+  color: white;
 }
 .search-missing-children .form-header {
   border: 1px solid grey;
@@ -9894,6 +9907,8 @@ label.error {
   z-index: 1000;
   top: 50%;
   left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
   width: 80px;
   height: 60px;
@@ -9911,6 +9926,8 @@ label.error {
   position: absolute;
   left: 59%;
   top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   font-size: 25px;
   height: 30px;
@@ -10116,6 +10133,8 @@ label.error {
     bottom: 35px;
     width: 80%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 }
@@ -10131,6 +10150,8 @@ label.error {
   font-size: 13px;
   position: absolute;
   left: auto;
+  -webkit-transform: none;
+  -ms-transform: none;
   transform: none;
   right: 25px;
   bottom: 25px;
@@ -10308,3 +10329,7 @@ label.error {
     padding: 0px;
   }
 }
+
+
+/*# sourceMappingURL=application.css.map */
+
