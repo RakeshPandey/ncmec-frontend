@@ -30,31 +30,71 @@
   </head>
 
   <body>
-    
+
     <div class="wrapper">
-      
-      <div class="hero">
-        <div class="container">
-          <div class="embed-responsive embed-responsive-4by3">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TQl_Sv3LztQ"></iframe>
-          </div>
-          <div class="embed-responsive embed-responsive-4by3">
-              <iframe class="embed-responsive-item" src="https://vimeo.com/47924072"></iframe>
+     <div class="content-wrapper">
+
+          <div class="hero-banner-wrapper center-block">
+              <!-- home page hero banner -->
+              <h3>Hero Banner With only Image</h3>
+
+              <div class="hero-banner image-content">
+                <picture>
+                    <!-- tablet landscape -->
+                    <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/hero-banner_TL.png">
+                    <!-- mobile devices -->
+                    <source media="(max-width:767px)" srcset="missingkids/images/hero-banner_M.png">
+                    <!-- tablet portrait -->
+                    <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/hero-banner_TP.png">
+                    <!-- desktop -->
+                    <img src="missingkids/images/hero-banner.png" alt="hero" />
+                </picture>
+
+                <div class="hero-content-wrapper">
+                  <div class="hero-content white">
+                    <h3 class="title">2017 HEROS Breakfast</h3>
+                    <p class="desc h4">Honoring Law Enforcement Who Go Above and Beyond To Help Our Children</p>
+                  </div>
+                </div>
+            </div>
+
+            <!-- home page hero banner -->
+            <h3>Hero Banner With Vimeo Video </h3>
+
+            <div class="hero-banner image-content">
+              <!-- vimeo with play button -->
+              <iframe class="embed-responsive-item" frameborder="0" src="//player.vimeo.com/video/12345" height="100%" width="100%" allowfullscreen=""></iframe>
+              <!-- ## ends youtube with play button -->
+
+              <div class="hero-content-wrapper">
+                <div class="hero-content white">
+                  <h3 class="title">2017 HEROS Breakfast</h3>
+                  <p class="desc h4">Honoring Law Enforcement Who Go Above and Beyond To Help Our Children</p>
+                </div>
+              </div>
+            </div>
+
+          <!-- home page hero banner -->
+            <h3>Hero Banner With Youtube Video </h3>
+
+            <div class="hero-banner image-content">
+              <!-- ## youtube video-->
+              <iframe class="embed-responsive-item" frameborder="0" src="//www.youtube.com/embed/TQl_Sv3LztQ?enablejsapi=1&html5=1&el=1" height="100%" width="100%" allowfullscreen=""></iframe>
+              <!-- ## ends youtube -->
+
+              <div class="hero-content-wrapper">
+                <div class="hero-content white">
+                  <h3 class="title">2017 HEROS Breakfast</h3>
+                  <p class="desc h4">Honoring Law Enforcement Who Go Above and Beyond To Help Our Children</p>
+                </div>
+              </div>
+            </div>
+
           </div>
 
-          <video controls style="width:640px;height:360px;" poster="missingkids/images/image_01.png">
-            <source src="https://www.youtube.com/embed/TQl_Sv3LztQ" 
-                    type='video/webm;codecs="vp8, vorbis"' />
-            <source src="https://www.youtube.com/embed/TQl_Sv3LztQ" 
-                    type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
-            <track src="devstories-en.vtt" label="English subtitles" 
-                  kind="subtitles" srclang="en" default></track>
-          </video>
         </div>
-      </div>
-      
-    </div>
 
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
