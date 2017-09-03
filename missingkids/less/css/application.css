@@ -10291,6 +10291,56 @@ hr {
   padding: 10px 10px 10px 20px;
   background: #626366;
 }
+
+.helpline-container {
+  position: relative;
+}
+.helpline-container:before,
+.helpline-container:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+.helpline-container:before {
+  background: #AD1A1F;
+  left: 0;
+}
+.helpline-container:after {
+  background: #fff;
+  right: 0;
+}
+.helpline-container .helpline-wrapper {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .helpline-container .helpline-wrapper {
+    display: flex;
+  }
+}
+.helpline-container .helpline-wrapper .helpline-content {
+  padding: 0;
+}
+.helpline-container .helpline-wrapper .report-content h4 {
+  margin-top: 5px;
+}
+@media (max-width: 768px) {
+  .helpline-container .helpline-wrapper .report-content h4 {
+    font-size: 24px;
+  }
+}
+.helpline-container .helpline-wrapper .report-content .btn {
+  background: #AD1A1F;
+  font-size: 16px;
+  padding: 5px 30px;
+  text-transform: none;
+  margin-bottom: 5px;
+}
+.helpline-container .helpline-wrapper .report-content .btn:hover {
+  background: #d43f3a;
+=======
 .table-ncmec table thead tr th:first-child {
   border-top-left-radius: 0;
 }
