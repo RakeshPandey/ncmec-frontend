@@ -9216,13 +9216,20 @@ label.error {
 }
 .statistics-wrapper {
   position: relative;
+  overflow: hidden;
+}
+.statistics-wrapper picture,
+.statistics-wrapper img {
+  max-width: none;
+  position: absolute;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  width: auto;
 }
 .statistics-wrapper .statistics-content {
-  color: #fff;
-  position: absolute;
-  top: 0;
-  width: 100%;
   text-align: center;
+  position: relative;
 }
 .statistics-wrapper .statistics-content h3 {
   color: inherit;
@@ -9238,6 +9245,7 @@ label.error {
   }
 }
 .statistics-wrapper .statistics-content .counter {
+  color: inherit;
   font-size: 144px;
   font-family: 'Futura', 'Arial', sans-serif;
 }
@@ -9250,6 +9258,9 @@ label.error {
   .statistics-wrapper .statistics-content .counter {
     font-size: 104px;
   }
+}
+.statistics-wrapper .statistics-content.white {
+  color: #fff;
 }
 .home-content {
   text-align: center;
