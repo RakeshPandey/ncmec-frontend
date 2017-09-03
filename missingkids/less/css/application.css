@@ -9168,25 +9168,33 @@ label.error {
 .helpline-container {
   position: relative;
 }
-.helpline-container:before,
-.helpline-container:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  width: 50%;
-  height: 100%;
-  z-index: -1;
-}
-.helpline-container:before {
-  background: #AD1A1F;
-  left: 0;
-}
-.helpline-container:after {
-  background: #fff;
-  right: 0;
+@media (min-width: 767px) {
+  .helpline-container:before,
+  .helpline-container:after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+  }
+  .helpline-container:before {
+    background: #AD1A1F;
+    left: 0;
+  }
+  .helpline-container:after {
+    background: #fff;
+    right: 0;
+  }
 }
 .helpline-container .helpline-wrapper {
   text-align: center;
+}
+@media (max-width: 767px) {
+  .helpline-container .helpline-wrapper {
+    padding: 0;
+  }
 }
 @media (min-width: 768px) {
   .helpline-container .helpline-wrapper {
@@ -9195,6 +9203,16 @@ label.error {
 }
 .helpline-container .helpline-wrapper .helpline-content {
   padding: 0;
+}
+@media (max-width: 767px) {
+  .helpline-container .helpline-wrapper .helpline-content {
+    background: #AD1A1F;
+  }
+}
+@media (max-width: 767px) {
+  .helpline-container .helpline-wrapper .report-content {
+    background: #fff;
+  }
 }
 .helpline-container .helpline-wrapper .report-content h4 {
   margin-top: 5px;
