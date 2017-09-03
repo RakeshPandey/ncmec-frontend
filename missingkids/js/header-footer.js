@@ -28,7 +28,7 @@ $(document).on("click", ".search-container .search-icon", function(){
 // Hero banner carousel initiation
 //===================================
 (function(){
-  $(window).load(function() {
+  if($('.hero-carousel').length) {
     $('.hero-carousel').owlCarousel({
         loop:true,
         nav:false,
@@ -38,5 +38,5 @@ $(document).on("click", ".search-container .search-icon", function(){
             }
         }
     });
-  });
+  }
 })();
