@@ -23,3 +23,20 @@ $(document).on("click", ".search-container .search-icon", function(){
       time: 1000
   });
 })();
+
+//==================================
+// Hero banner carousel initiation
+//===================================
+(function(){
+  $(window).load(function() {
+    $('.hero-carousel').owlCarousel({
+        loop:true,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+    });
+  });
+})();

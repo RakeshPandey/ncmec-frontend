@@ -11,6 +11,8 @@
 
     <title>Theme Template for Bootstrap</title>
 
+    <link href="missingkids/less/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="missingkids/less/css/owl.theme.default.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="missingkids/less/css/application.css" rel="stylesheet">
     <!-- Bootstrap theme -->
@@ -34,13 +36,11 @@
     <div class="wrapper">
      <div class="content-wrapper">
 
+         <!-- home page hero banner -->
+         <h3>Hero Banner With only Image</h3>
 
           <div class="hero-banner-wrapper">
-
-              <!-- home page hero banner -->
-              <h3>Hero Banner With only Image</h3>
-
-              <div class="hero-banner image-content">
+            <div class="hero-banner image-content">
                 <picture>
                     <!-- tablet landscape -->
                     <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/hero-banner_TL.png">
@@ -61,10 +61,102 @@
                   </div>
                 </div>
             </div>
+          </div>
 
-            <!-- home page hero banner -->
-            <h3>Hero Banner With Vimeo Video </h3>
+          <!-- home page hero banner Carousel -->
+          <h3>Hero Banner Carousel</h3>
 
+          <div class="hero-banner-wrapper owl-carousel owl-theme hero-carousel">
+
+            <div class="hero-banner image-content">
+              <picture>
+                  <!-- tablet landscape -->
+                  <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/hero-banner_TL.png">
+                  <!-- mobile devices -->
+                  <source media="(max-width:767px)" srcset="missingkids/images/hero-banner_M.png">
+                  <!-- tablet portrait -->
+                  <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/hero-banner_TP.png">
+                  <!-- desktop -->
+                  <img src="missingkids/images/hero-banner.png" alt="hero" />
+              </picture>
+
+
+              <div class="hero-content-wrapper container">
+
+                <div class="hero-content white">
+                  <h3 class="title">2017 HEROS Breakfast</h3>
+                  <p class="desc h4">Honoring Law Enforcement Who Go Above and Beyond To Help Our Children</p>
+                </div>
+              </div>
+            </div>
+            <div class="hero-banner image-content">
+              <picture>
+                  <!-- tablet landscape -->
+                  <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/hero-banner_TL.png">
+                  <!-- mobile devices -->
+                  <source media="(max-width:767px)" srcset="missingkids/images/hero-banner_M.png">
+                  <!-- tablet portrait -->
+                  <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/hero-banner_TP.png">
+                  <!-- desktop -->
+                  <img src="missingkids/images/hero-banner.png" alt="hero" />
+              </picture>
+
+
+              <div class="hero-content-wrapper container">
+
+                <div class="hero-content white">
+                  <h3 class="title">2017 HEROS Breakfast</h3>
+                  <p class="desc h4">Honoring Law Enforcement Who Go Above and Beyond To Help Our Children</p>
+                </div>
+              </div>
+            </div>
+            <div class="hero-banner image-content">
+              <picture>
+                  <!-- tablet landscape -->
+                  <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/hero-banner_TL.png">
+                  <!-- mobile devices -->
+                  <source media="(max-width:767px)" srcset="missingkids/images/hero-banner_M.png">
+                  <!-- tablet portrait -->
+                  <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/hero-banner_TP.png">
+                  <!-- desktop -->
+                  <img src="missingkids/images/hero-banner.png" alt="hero" />
+              </picture>
+
+
+              <div class="hero-content-wrapper container">
+
+                <div class="hero-content white">
+                  <h3 class="title">2017 HEROS Breakfast</h3>
+                  <p class="desc h4">Honoring Law Enforcement Who Go Above and Beyond To Help Our Children</p>
+                </div>
+              </div>
+            </div>
+            <div class="hero-banner image-content">
+              <picture>
+                  <!-- tablet landscape -->
+                  <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/hero-banner_TL.png">
+                  <!-- mobile devices -->
+                  <source media="(max-width:767px)" srcset="missingkids/images/hero-banner_M.png">
+                  <!-- tablet portrait -->
+                  <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/hero-banner_TP.png">
+                  <!-- desktop -->
+                  <img src="missingkids/images/hero-banner.png" alt="hero" />
+              </picture>
+
+
+              <div class="hero-content-wrapper container">
+
+                <div class="hero-content white">
+                  <h3 class="title">2017 HEROS Breakfast</h3>
+                  <p class="desc h4">Honoring Law Enforcement Who Go Above and Beyond To Help Our Children</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- home page hero banner -->
+          <h3>Hero Banner With Vimeo Video </h3>
+          <div class="hero-banner-wrapper">
             <div class="hero-banner image-content">
               <!-- vimeo with play button -->
               <iframe class="embed-responsive-item" frameborder="0" src="//player.vimeo.com/video/12345" height="100%" width="100%" allowfullscreen=""></iframe>
@@ -79,10 +171,11 @@
                 </div>
               </div>
             </div>
+          </div>
 
           <!-- home page hero banner -->
-            <h3>Hero Banner With Youtube Video </h3>
-
+          <h3>Hero Banner With Youtube Video </h3>
+          <div class="hero-banner-wrapper">
             <div class="hero-banner image-content">
               <!-- ## youtube video-->
               <iframe class="embed-responsive-item" frameborder="0" src="//www.youtube.com/embed/TQl_Sv3LztQ?enablejsapi=1&html5=1&el=1" height="100%" width="100%" allowfullscreen=""></iframe>
@@ -97,7 +190,6 @@
                 </div>
               </div>
             </div>
-
           </div>
 
         </div>
@@ -107,7 +199,16 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="missingkids/js/plugin/jquery.min.js" type="text/javascript"></script>
+    <script src="missingkids/js/plugin/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="missingkids/js/plugin/bootstrap.min.js" type="text/javascript"></script>
+    <script src="missingkids/js/plugin/jquery.matchHeight.js" type="text/javascript"></script>
+    <script src="missingkids/js/plugin/jquery.waypoints.min.js"></script>
+    <script src="missingkids/js/plugin/jquery.counterup.min.js"></script>
+    <script src="missingkids/js/plugin/owl.carousel.min.js"></script>
+    <script src="missingkids/js/application.js" type="text/javascript"></script>
+    <script src="missingkids/js/validation.js" type="text/javascript"></script>
+    <script type="text/javascript" src="missingkids/js/header-footer.js"></script>
+    <script type="text/javascript" src="missingkids/js/home-teaser.js"></script>
   </body>
 </html>
