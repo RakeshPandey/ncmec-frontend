@@ -69,15 +69,19 @@
         left: 0;
         top: 0;
         background: rgba(71, 165, 194, 0.5);
-        color: #fff;
         .teaser-content {
-          border: 1px solid #fff;
           padding: 16px;
           position: absolute;
           top: 15px;
           left: 15px;
           bottom: 15px;
           max-width: 320px;
+          border: 1px solid;
+          color: #fff;
+          border-color: #fff;
+          &.no-border {
+            border: none;
+          }
           @media (min-width: @screen-sm) {
             top: 25px;
             left: 25px;
