@@ -4962,7 +4962,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #626366;
 }
 .breadcrumbs .breadcrumb {
-  padding: 8px 16px;
+  padding: 8px 16px 8px 0;
   margin-bottom: 0;
   list-style: none;
   min-height: 30px;
@@ -8236,8 +8236,9 @@ label.error {
   display: none;
 }
 .footer-container .footer-nav-wrapper .footer-nav {
-  margin-bottom: 16px;
+  margin-bottom: 2px;
   text-align: center;
+  font-family: 'Futura', 'Arial', sans-serif;
 }
 .footer-container .footer-nav-wrapper .footer-nav ul {
   border-top: 1px solid #F1F1F2;
@@ -8247,7 +8248,12 @@ label.error {
 }
 .footer-container .footer-nav-wrapper .footer-nav ul li {
   float: left;
-  margin: 0 32px;
+  margin: 0 36px;
+}
+@media (max-width: 768px) {
+  .footer-container .footer-nav-wrapper .footer-nav ul li {
+    margin: 0 35px;
+  }
 }
 @media (max-width: 767px) {
   .footer-container .footer-nav-wrapper .footer-nav ul li {
