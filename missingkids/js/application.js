@@ -23,18 +23,18 @@ $(function () {
 
         ///////////////////////////////////////////////////////////////////
         /** Make desktop header navigation hoverable instead of click **/
-        if (window.matchMedia("(min-width: 1024px)").matches) {
-            $('#navbar > ul > li').hover(
-                    function () {
-                        $(this).addClass('open');
-                        $(this).parents('.container').css('overflow', 'hidden');
-                    },
-                    function () {
-                        $(this).removeClass('open');
-                        $(this).parents('.container').css('overflow', 'initial');
-                    }
-            );
-        }
+        // if (window.matchMedia("(min-width: 1024px)").matches) {
+        //     $('#navbar > ul > li').hover(
+        //             function () {
+        //                 $(this).addClass('open');
+        //                 $(this).parents('.container').css('overflow', 'hidden');
+        //             },
+        //             function () {
+        //                 $(this).removeClass('open');
+        //                 $(this).parents('.container').css('overflow', 'initial');
+        //             }
+        //     );
+        // }
         /** -- END -- Make desktop header navigation hoverable instead of click **/
         ////////////////////////////////////////////////////////////////////
     };

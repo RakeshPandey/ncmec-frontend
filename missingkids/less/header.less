@@ -13,6 +13,19 @@
 
       .container{
         position: relative;
+        @media (max-width: @screen-sm) {
+          padding: 0;
+        }
+        &::before {
+          @media (min-width: @screen-sm) {
+            position: absolute;
+            left: -50%;
+            width: 50%;
+            height: 80px;
+            background: #404041;
+            z-index: 10;
+          }
+        }
         .nav {
             > li {
                 padding-left: 10px;
@@ -86,7 +99,7 @@
             .navbar-toggle{
                 border:none;
                 padding:0;
-                margin:@mobile-spacing-a @mobile-spacing-b;
+                margin:18px @mobile-spacing-b;
                 .hamburger-icon{
                     height : 28px;
                     width: 28px;
@@ -94,8 +107,7 @@
                     display: block;
                 }
                 &.collapsed{
-
-                    margin-top: @mobile-spacing-a ;
+                    margin-top:18px ;
                     .hamburger-icon{
                         height : 32px;
                         width: 8px;
@@ -162,12 +174,12 @@
                         text-decoration: none;
                     }
 
-                    &.open{
-                        //border-bottom: 3px solid @navbar-default-link-active-color;
+                    &:hover{
                         position: relative;
+                        background: #fff;
                         > a{
                             text-decoration: none;
-                            color: @navbar-default-link-active-color;
+                            color: #006C8A;
                         }
                         &:not(:first-child) {
                           > ul {
@@ -185,23 +197,13 @@
                             position: absolute;
                             top: 80px;
                             border-radius: 0;
-                            left: 8px;
                             padding: (@mobile-spacing-a*2);
                             border: 0;
                             margin: 0;
                             font-weight: bold;
                             @media(min-width: @screen-sm-min){
-                                top: 55px;
+                                top: 49px;
                                 min-width: 480px;
-                                border-top: 3px solid @navbar-default-link-active-color;
-                                &:after {
-                                  content: "\25B2";
-                                  position: absolute;
-                                  top: -17px;
-                                  color: @navbar-default-link-active-color;
-                                  left: 20px;
-                                  font-size: 16px;
-                                }
                                 &.one-column{
                                   min-width: 90%;
                                 }
@@ -212,17 +214,17 @@
                                 font-weight: normal;
                                 margin-bottom: 13px;
                                 padding:0;
-                                color:@header-bg-secondary;
+                                color: #006C8A;
                                 &.seperator{
                                     font-family: @font-family-serif;
-                                    color:@navbar-default-link-active-color;
-
+                                    color:#006C8A;
                                     font-weight: bold;
                                 }
                             }
                         }
 
                         ul.dropdown-menu {
+                          display: block;
                           > li {
                             margin-bottom: 0;
                             a{
@@ -275,6 +277,9 @@
                     list-style: none;
                     display:inline-block;
                     padding-right:@mobile-spacing-b;
+                    @media (max-width: @screen-sm) {
+                      padding-right: 10px;
+                    }
                     @media(min-width: @screen-sm-min){
                         padding-right:@tablet-spacing;
                     }
