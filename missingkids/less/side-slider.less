@@ -1,0 +1,116 @@
+* {
+      margin: 0;
+      padding: 0;
+    }
+      .content-wrapper {
+          position: relative;
+      }
+    .stickyWrapper{
+        z-index: 1;
+        position: fixed;
+        width: 200px;
+        left: 10px;
+        padding: 5px;
+        bottom: 0;
+        background: #c6c8ca;
+        border-radius: 5px;
+    }
+      .absolute {
+          position: absolute;
+      }
+    .stickyBox{        
+        color: #626366;
+        padding: 10px;
+        height: 205px;
+        
+        li {  
+            
+            list-style: none;
+            background: #fff;
+            border-radius: 10px;
+            border: 1px solid #d5d6d8;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            margin-top: 10px;
+            
+            i {
+                color: #C6C8CA;
+                position: absolute;
+                right: 8px;
+                top: 8px;
+            }
+        }
+        li:first-child {
+            margin-top: 0;
+        }
+        
+        
+    }
+    #arrow{
+        position: absolute;
+        top: 0;
+        left: 45%;
+        z-index: 9;
+    }
+    #arrow.down{
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 7px solid #626366;
+    }
+    #arrow.up{
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 7px solid #626366;
+    }
+    /*.stickyBox li:first-child{
+        margin-top: 0;
+    }
+    .stickyBox li{
+        list-style: none;
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid #d5d6d8;
+        padding: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        margin-top: 10px;
+    } 
+    .stickyBox li i {
+        color: #C6C8CA;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    } */
+
+
+
+
+@media (min-width: 767px) {
+    
+}
+
+@media (max-width: @screen-xs) {
+    .stickyBox li:first-child{
+        margin-top: 10px;
+    }
+    .stickyWrapper {
+        position: fixed;
+        width: 80%;
+        left:10%
+    }
+    .stickyBox{
+           height: 122px;
+    }
+    .stickyBox li {    
+        width: 50%;        
+    }
+    .stickyBox li:nth-child(odd){
+        float: left;
+    }
+    .stickyBox li:nth-child(even){
+        float: right;
+    }
+}
