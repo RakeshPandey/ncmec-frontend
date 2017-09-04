@@ -8,9 +8,11 @@ $(document).on("click", ".search-container .search-icon", function(){
   var navbar = $(this).parents().siblings('#navbar');
   if(navbar){
     var viewport = window.innerWidth;
-    (searchContainer.hasClass('opened')) ?
-        ((viewport <= 768) ? navbar.css('left', '-10px') : navbar.css('left', '-60px'))
-        : navbar.css('left', '104px');
+      if(viewport >= 768) {
+        (searchContainer.hasClass('opened'))
+            ? navbar.css('left', '-60px')
+            : navbar.css('left', '104px');
+      }
     }
 });
 

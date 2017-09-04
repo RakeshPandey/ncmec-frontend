@@ -169,9 +169,20 @@
                         padding: 20px @mobile-spacing-a 10px;
 
                     }
+
+                    @media(max-width: @screen-sm){
+                        padding: 8px 5px;
+                    }
                     a{
                         color:@white;
                         text-decoration: none;
+                    }
+
+                    &.active{
+                      > a{
+                          text-decoration: none;
+                          color: #006C8A;
+                      }
                     }
 
                     &:hover{
@@ -181,13 +192,15 @@
                             text-decoration: none;
                             color: #006C8A;
                         }
-                        &:not(:first-child) {
-                          > ul {
-                            left: 50%;
-                            transform: translateX(-50%);
-                            &:after{
+                        @media (min-width: 768px) {
+                          &:not(:first-child) {
+                            > ul {
                               left: 50%;
                               transform: translateX(-50%);
+                              &:after{
+                                left: 50%;
+                                transform: translateX(-50%);
+                              }
                             }
                           }
                         }
@@ -214,7 +227,7 @@
                                 font-weight: normal;
                                 margin-bottom: 13px;
                                 padding:0;
-                                color: #006C8A;
+                                color: #626366;
                                 &.seperator{
                                     font-family: @font-family-serif;
                                     color:#006C8A;
@@ -225,8 +238,16 @@
 
                         ul.dropdown-menu {
                           display: block;
+                          @media(max-width: @screen-sm){
+                            position: fixed;
+                            top: 98px;
+                            width: 100%;
+                          }
                           > li {
                             margin-bottom: 0;
+                            @media(max-width: @screen-sm){
+                              margin-bottom: 10px;
+                            }
                             a{
                               opacity: 0.9;
                               &:hover {
@@ -291,6 +312,19 @@
 
                 &.social-icons {
                   font-size: 20px;
+                  @media (min-width: 1023px) {
+                    position: absolute;
+                    right: 0;
+                    bottom: -30px;
+                  }
+                  li {
+                    a{
+                      &:hover {
+                        color: #ccc;
+                        text-decoration: none;
+                      }
+                    }
+                  }
                 }
 
                 @media(min-width: @screen-sm-min) and (orientation : landscape) {
@@ -335,6 +369,10 @@
                         input[type='text'] {
                           min-width: 165px;
                           outline: none;
+                          border-radius: 5px;
+                          border-color: #fff;
+                          border-style: solid;
+                          padding-left: 3px;
                           @media (max-width: 400px) {
                             position: absolute;
                             top: -15px;
@@ -343,10 +381,10 @@
                         }
                         .search-submit{
                           position: absolute;
-                          right: 0;
-                          top: 0;
-                          padding: 2px 6px;
-                          height: 20px;
+                          right: 5px;
+                          top: 2px;
+                          padding: 0;
+                          height: 18px;
                           background: #fff;
                           border: none;
                           font-size: 16px;
@@ -410,6 +448,10 @@
                             padding-top: 2px;
                             font-family: 'Futura', 'Arial', sans-serif;
                             font-weight: normal;
+                            a {
+                              color: inherit;
+                              text-decoration: none;
+                            }
                         }
                     }
 
@@ -419,9 +461,7 @@
                     }
                 }
 
-                /* Hide default HTML checkbox */
-                .switch input {display:none;}
-                input:checked + .lang {
+                .lang.sp {
                     .en{
                         background: transparent;
                         color:@white;
