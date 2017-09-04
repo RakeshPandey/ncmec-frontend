@@ -56,8 +56,9 @@
 
     .footer-nav-wrapper {
       .footer-nav {
-          margin-bottom: 16px;
+          margin-bottom: 2px;
           text-align: center;
+          font-family: 'Futura', 'Arial', sans-serif;
           ul {
               border-top: 1px solid @gray-lighter;
               list-style: none;
@@ -65,7 +66,10 @@
               margin: 0;
               li {
                   float: left;
-                  margin: 0 32px;
+                  margin: 0 36px;
+                  @media (max-width: 768px) {
+                    margin: 0 35px;
+                  }
                   @media (max-width: 767px) {
                     margin: 10px 0;
                     width: 33.3%;
