@@ -3170,6 +3170,20 @@ select[multiple].input-lg {
   margin-left: 0;
   margin-right: 0;
 }
+.ncmec-form-no-border {
+  background: transparent;
+  border: none;
+  border-radius: 0px;
+  padding: 0px;
+}
+.ncmec-form-no-border .btn-default {
+  padding: 5px 0;
+  font-size: 16px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #626366;
+  border: 1px solid #626366;
+}
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -8996,7 +9010,7 @@ and open the template in the editor.
 }
 .search-missing-children .radio-section-individual label {
   margin-bottom: 0px;
-  padding: 4px 15px;
+  padding: 8px 15px;
 }
 .search-missing-children .form-horizontal-cover {
   padding: 16px;
@@ -9052,6 +9066,18 @@ and open the template in the editor.
   background-repeat: no-repeat;
   border: none;
   padding: 8px;
+}
+.checkbox-search-wizard {
+  margin-top: 16px;
+}
+.checkbox-search-wizard label {
+  float: left;
+}
+.full-width {
+  width: 100%;
+}
+.align-left {
+  text-align: left;
 }
 .cybertipline-banner .form-cover-box {
   border: 1px solid grey;
@@ -9964,7 +9990,7 @@ label.error {
   position: relative;
 }
 .slider.slider-horizontal {
-  width: 210px;
+  width: 175px;
   height: 20px;
 }
 .slider.slider-horizontal .slider-track {
@@ -11029,12 +11055,6 @@ textarea.form-control {
 }
 .margin-top {
   margin-top: 16px;
-}
-.teaser .panel-heading > h5 {
-  top: 16px;
-  right: 16px;
-  line-height: 19px;
-  font-weight: normal;
 }
 
 /*# sourceMappingURL=application.css.map */
