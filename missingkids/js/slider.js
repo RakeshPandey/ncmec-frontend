@@ -1,7 +1,9 @@
 // With JQuery
-$("#ex2").slider({});
+$("#height").slider({});
 
-// Without JQuery
-var slider = new Slider('#ex2', {});
+$("#weight").slider({});
+
+$("#age").slider({});
+
 
 
