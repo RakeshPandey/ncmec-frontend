@@ -158,7 +158,7 @@
             </div>
           </nav>
       </header>
-      <div class="breadcrumbs hidden-xs">
+      <div class="breadcrumbs">
           <div class="container">
               <ol class="breadcrumb">
                   <li><a href="#">Our Work</a></li>
@@ -169,14 +169,36 @@
       </div>
 
 
-      <!-- helpline-content -->
+      <!-- hero banner -->
+      <div class="hero-banner-wrapper">
+
+          <div class="hero-banner image-content">
+            <picture>
+                <!-- tablet landscape -->
+                <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/hero-banner_TL.png">
+                <!-- mobile devices -->
+                <source media="(max-width:767px)" srcset="missingkids/images/hero-banner_M.png">
+                <!-- tablet portrait -->
+                <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/hero-banner_TP.png">
+                <!-- desktop -->
+                <img src="missingkids/images/hero-banner.png" alt="hero" />
+            </picture>
+
+            <div class="hero-content-wrapper container">
+              <div class="hero-content white">
+                <h3 class="title">2017 HEROS Breakfast</h3>
+                <p class="desc h4">Honoring Law Enforcement Who Go Above and Beyond To Help Our Children</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- helpline-component -->
 
       <article class="content-wrapper">
-        <div class="container">
-
+        <div class="helpline-container">
           <!-- helpline-content -->
-
-          <div class="row helpline-wrapper clearfix">
+          <div class="row helpline-wrapper container center-block clearfix ">
             <div class="helpline-content col-xs-12 col-sm-6 col-md-6">
               <img src="missingkids/images/helpline.png">
             </div>
@@ -185,34 +207,31 @@
               <a href="#" class="btn btn-danger">Make a CYBERTIPLINE Report</a>
             </div>
           </div>
-
         </div>
       </article>
 
       <!-- statistics-component -->
       <article class="content-wrapper">
-        <div class="container">
 
-          <!-- statistics-content -->
+        <!-- statistics-content -->
 
-          <div class="statistics-wrapper row">
-            <picture>
-                <!-- tablet landscape -->
-                <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/statistics-bg_TL_M_4C.png">
-                <!-- mobile devices -->
-                <source media="(max-width:767px)" srcset="missingkids/images/statistics-bg_M_4C.png">
-                <!-- tablet portrait -->
-                <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/statistics-bg_TP_4C.png">
-                <!-- desktop -->
-                <img src="missingkids/images/statistics-bg.png" alt="statistics" />
-            </picture>
-            <div class="statistics-content">
-              <h3>Number of kids reported MISSING</h3>
-              <span class="counter">4,346</span>
-            </div>
+        <div class="statistics-wrapper">
+          <picture>
+              <!-- tablet landscape -->
+              <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/statistics-bg_TL_M_4C.png">
+              <!-- mobile devices -->
+              <source media="(max-width:767px)" srcset="missingkids/images/statistics-bg_M_4C.png">
+              <!-- tablet portrait -->
+              <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/statistics-bg_TP_4C.png">
+              <!-- desktop -->
+              <img src="missingkids/images/statistics-bg.png" alt="statistics" />
+          </picture>
+          <div class="statistics-content container white">
+            <h3>Number of kids reported MISSING</h3>
+            <span class="counter">4,346</span>
           </div>
-
         </div>
+
       </article>
 
       <!-- home RTE content -->
@@ -391,6 +410,7 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
 
 
       <!-- Inner page footer -->

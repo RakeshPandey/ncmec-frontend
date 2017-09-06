@@ -9,8 +9,12 @@
         min-height: 80px;
     }
 
-    .navbar{
+    @media(max-width: @screen-sm){
+      min-height: 68px;
+    }
 
+    .navbar{
+      background: #404041;
       .container{
         position: relative;
         @media (max-width: @screen-sm) {
@@ -73,6 +77,7 @@
                 display:none;
                 float:right;
                 margin: 25px 13px;
+                cursor: pointer;
                 .hamburger-icon{
                     height : 32px;
                     width: 8px;
@@ -135,6 +140,7 @@
             z-index:99;
             overflow-x: scroll;
             width: 100%;
+            margin: 0;
             transition: all 0.2s ease-in;
             @media(min-width: @screen-sm-min){
                 width: initial;
@@ -302,9 +308,12 @@
             height:30px;
             display:flex;
             justify-content:space-between;
-            @media(min-width: @screen-sm-min){
+            @media(min-width: @screen-sm-min) and (max-width: @screen-md){
                 float: right;
                 flex-direction: row-reverse;
+                position: absolute;
+                right: 0;
+                bottom: -30px;
             }
             ul{
                 padding-left:@mobile-spacing-a;
@@ -494,12 +503,40 @@
         }
       }
 
+      &.home {
+        .navbar {
+          .container {
+            .secondary-header {
+              display: none;
+              @media (min-width: @screen-sm) and (max-width: @screen-md){
+                display: flex;
+                background: none;
+                .social-icons {
+                  visibility: hidden;
+                }
+                .site-functionalities {
+                  .language-selector {
+                    visibility: hidden;
+                  }
+                }
+              }
+              @media (min-width: @screen-md) {
+                display: flex;
+              }
+              .social-icons {
+                @media (min-width: @screen-md) {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
 
 }
 .scroll-started {
     .header-container {
         .navbar{
-          background: #404041;
           .container {
             .secondary-header {
                 @media(min-width: @screen-sm-min){
@@ -511,7 +548,7 @@
 
                 @media (min-width: 480px) and (max-width: 768px){
                   .search-wrapper{
-                    right: 145px;
+                    right: 150px;
                   }
                 }
 
@@ -543,4 +580,14 @@
           }
         }
     }
+}
+
+body {
+  &.fixed-breadcrump {
+    .header-container {
+      .social-icons {
+        display: block !important;
+      }
+    }
+  }
 }
