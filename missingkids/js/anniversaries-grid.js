@@ -48,3 +48,8 @@
 
 
 })(jQuery, Handlebars);
+
+ $(function() {
+    $('.box').matchHeight(false);
+});
+               
