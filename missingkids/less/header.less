@@ -151,8 +151,8 @@
                 top: 10px;
                 z-index: 5;
             }
-            @media(min-width: @screen-sm-min) and (orientation : landscape) {
-
+            @media(max-width: @screen-sm){
+              left: 0 !important;
             }
             .open {
               &>.dropdown-menu {
@@ -313,7 +313,7 @@
                 flex-direction: row-reverse;
                 position: absolute;
                 right: 0;
-                bottom: -30px;
+                bottom: -31px;
             }
             ul{
                 padding-left:@mobile-spacing-a;
@@ -585,9 +585,22 @@
 body {
   &.fixed-breadcrump {
     .header-container {
-      .social-icons {
-        display: block !important;
+      .navbar {
+        .container {
+          .secondary-header {
+            .search-wrapper {
+              right: -58px;
+            }
+            .language-selector {
+              display: block !important;
+            }
+            .social-icons {
+              display: block !important;
+            }
+          }
+        }
       }
+
     }
   }
 }

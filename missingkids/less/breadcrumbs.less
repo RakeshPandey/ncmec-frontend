@@ -60,8 +60,11 @@ body {
     .breadcrumbs {
       position: fixed;
       z-index: 10;
-      top: 80px;
+      top: 65px;
       width: 100%;
+      @media (min-width: @screen-md) {
+          top: 80px;
+      }
     }
   }
 }
