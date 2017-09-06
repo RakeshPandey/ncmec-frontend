@@ -37,7 +37,14 @@ $(function () {
         // }
         /** -- END -- Make desktop header navigation hoverable instead of click **/
         ////////////////////////////////////////////////////////////////////
+
     };
+
+    $(document).on("click", ".scroll-started-action", function() {
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        $('body').toggleClass('fixed-breadcrump');
+      }
+    });
 
     function matchHeight(){
         var mainContentHeight = parseInt($(".content-wrapper > .container > .row > div:first").height()),
@@ -57,6 +64,7 @@ $(function () {
 
     function onScroll() {
         var $body = $('body');
+        $body.removeClass('fixed-breadcrump');
         if (document.body.scrollTop > 1) {
             if (!$body.hasClass('scroll-started')) {
                 $body.addClass('scroll-started');
@@ -67,9 +75,10 @@ $(function () {
             }
         }
     }
-    $(window).scroll(onScroll);
-    onScroll();
-
+    if(!$(".header-container").hasClass('home')){
+      $(window).scroll(onScroll);
+      onScroll();
+    }
 });
 
 function mobileViewUpdate() {

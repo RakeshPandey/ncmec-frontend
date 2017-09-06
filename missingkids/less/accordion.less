@@ -46,7 +46,7 @@
             .panel-title {
                 a {
                     background: @gray-dark;
-                    border-radius: 10px 10px 0 0;
+                    border-radius: 10px;
                     color: @white;
                     display: block;
                     font-size: 13px;
@@ -55,6 +55,9 @@
                 > a.collapsed {
                     border-radius: 10px;
                     transition: border-radius 0.3s ease-in;
+                }
+                a[aria-expanded="true"] {
+                    border-radius: 10px 10px 0 0;
                 }
                 .more-less {
                     margin-right: 0;

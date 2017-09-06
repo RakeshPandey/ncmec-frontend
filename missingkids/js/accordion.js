@@ -18,4 +18,4 @@
   $('.panel-group').on('hidden.bs.collapse', toggleIcon);
   $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
-  $('#form-accordion .collapse').collapse('show');
+ // $('#form-accordion .collapse').collapse('show');
