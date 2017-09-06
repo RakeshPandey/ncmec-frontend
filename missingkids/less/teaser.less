@@ -111,6 +111,8 @@
     padding: 0;
     li {
         color: @gray-lighter;
+        margin-bottom: 16px;
+        .clearfix();
         img {
             .pull-left();
             margin-right: 16px;
@@ -128,9 +130,16 @@
     }
 }
 
-.missing-person-link  a{
-            color:#92D6E3;
-        }
+.missing-person-link {
+  a {
+    color:#92D6E3;
+    &.active {
+        color: @white;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+  }
+}
 
 .teaser-component { 
     .teaser {

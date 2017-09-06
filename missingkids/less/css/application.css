@@ -8872,6 +8872,23 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .missing-person-lists li {
   color: #F1F1F2;
+  margin-bottom: 16px;
+}
+.missing-person-lists li:before,
+.missing-person-lists li:after {
+  content: " ";
+  display: table;
+}
+.missing-person-lists li:after {
+  clear: both;
+}
+.missing-person-lists li:before,
+.missing-person-lists li:after {
+  content: " ";
+  display: table;
+}
+.missing-person-lists li:after {
+  clear: both;
 }
 .missing-person-lists li img {
   float: left !important;
@@ -8888,6 +8905,11 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .missing-person-link a {
   color: #92D6E3;
+}
+.missing-person-link a.active {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
 }
 .teaser-component .teaser .panel .panel-body h1,
 .teaser-component .teaser .panel .panel-body h2,
@@ -9323,6 +9345,9 @@ label.error {
   color: #404041;
   padding: 8px 0;
   font-weight: bold;
+}
+.executive-team .list-group-item .name a {
+  color: #404041;
 }
 @media (min-width: 767px) {
   .executive-team .list-group-item .name {
@@ -10565,7 +10590,7 @@ hr {
 }
 .gen-info-list .list-group-item img {
   margin-left: 0;
-  border-radius: 10px 0 0 10px;
+  border-radius: 0;
 }
 .image-grid-container > * {
   margin-bottom: 16px;

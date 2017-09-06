@@ -118,7 +118,7 @@
                   <div id="js-search-form" class="panel panel-default">
                     <div class="panel-heading">
                       <div class="form missing-kids-form">
-                        
+                        <form id="js-missing-kids-form" class="form-horizontal">
                           <legend class="hide">Searching for</legend>
                           <h5 class="offsetT0">Searching for:</h5>
                           <ul class="nav nav-pills" id="myTabs" role="tablist">
@@ -127,53 +127,52 @@
                             <li role="presentation"><a href="#unidentified" aria-controls="unidentified" role="tab" data-toggle="tab">Unidentified</a></li>
                           </ul>
                           <div class="tab-content" id="myTabContent">
-                            <div role="tabpanel" class="tab-pane active" id="child">
-                                <form class="form-horizontal">
-                                    <h5 class="offsetT0">Sex:</h5>
-                                    <div class="form-group">
-                                        <label for="gender" class="control-label hide">Searching</label>
-                                        <div class="input-group">
-                                        <div class="radio-section">
-                                            <div class="radio-section-individual">
-                                            <input type="radio" name="gender_child" id="child_male" value="male">
-                                            <label for="child_male">Male</label>
-                                            </div>
-                                            <div class="radio-section-individual">
-                                            <input type="radio" name="gender_child" id="child_female" value="female">
-                                            <label for="child_female">Female</label>
-                                            </div>
-                                            <div class="radio-section-individual">
-                                            <input type="radio" name="gender_child" id="child_unknown" value="unknown">
-                                            <label for="child_unknown">Unknown</label>
-                                            </div>
+                            <div role="tabpanel" class="tab-pane active" id="child">                                
+                                <h5 class="offsetT0">Sex:</h5>
+                                <div class="form-group">
+                                    <label for="gender" class="control-label hide">Searching</label>
+                                    <div class="input-group">
+                                    <div class="radio-section">
+                                        <div class="radio-section-individual">
+                                        <input type="radio" name="gender_child" id="child_male" checked value="male">
+                                        <label for="child_male">Male</label>
                                         </div>
+                                        <div class="radio-section-individual">
+                                        <input type="radio" name="gender_child" id="child_female" value="female">
+                                        <label for="child_female">Female</label>
+                                        </div>
+                                        <div class="radio-section-individual">
+                                        <input type="radio" name="gender_child" id="child_unknown" value="unknown">
+                                        <label for="child_unknown">Unknown</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="child_fname" class="col-md-4 col-sm-3 col-xs-3 control-label">First Name: </label>
-                                        <div class="col-md-8 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="child_fname" id="child_fname" required>
-                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="child_mname" class="col-md-4 col-sm-3 col-xs-3 control-label">Middle Name: </label>
-                                        <div class="col-md-8 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="child_mname" id="child_mname" required>
-                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="child_fname" class="col-md-4 col-sm-3 col-xs-3 control-label">First Name: </label>
+                                    <div class="col-md-8 col-sm-8 col-xs-9">
+                                    <input type="text" class="form-control" name="child_fname" id="child_fname" required>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="child_lname" class="col-md-4 col-sm-3 col-xs-3 control-label">Last Name: </label>
-                                        <div class="col-md-8 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="child_lname" id="child_lname" required>
-                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="child_mname" class="col-md-4 col-sm-3 col-xs-3 control-label">Middle Name: </label>
+                                    <div class="col-md-8 col-sm-8 col-xs-9">
+                                    <input type="text" class="form-control" name="child_mname" id="child_mname" required>
                                     </div>
-                                    <div class="panel-group" id="form-accordion" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="missing-child-accordion-1">
-                                            <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#js-child-missing-from" aria-controls="js-child-missing-from"> <i class="more-less fa fa-minus-circle"></i> Missing Form </a> </h4>
-                                        </div>
-                                        <div id="js-child-missing-from" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                            <div class="panel-body">
+                                </div>
+                                <div class="form-group">
+                                    <label for="child_lname" class="col-md-4 col-sm-3 col-xs-3 control-label">Last Name: </label>
+                                    <div class="col-md-8 col-sm-8 col-xs-9">
+                                    <input type="text" class="form-control" name="child_lname" id="child_lname" required>
+                                    </div>
+                                </div>
+                                <div class="panel-group form-accordion" id="form-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="missing-child-accordion-1">
+                                        <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#js-child-missing-from" aria-controls="js-child-missing-from"> <i class="more-less fa fa-plus-circle"></i> Missing Form </a> </h4>
+                                    </div>
+                                    <div id="js-child-missing-from" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
                                             <div class="form-group">
                                                 <label for="child_city" class="col-md-3 col-sm-3 col-xs-3 control-label">City*</label>
                                                 <div class="col-md-8 col-sm-8 col-xs-9">
@@ -306,12 +305,12 @@
                                                 </select>
                                                 </div>
                                             </div>
-                                            </div>
                                         </div>
-                                        </div>
-                                        <div class="panel panel-default">
+                                    </div>
+                                    </div>
+                                    <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="missing-child-accordion-2">
-                                            <h4 class="panel-title"> <a class="" role="button" data-toggle="collapse" data-parent="#accordion" href="#js-child-missing-date" aria-controls="js-child-missing-date"> <i class="more-less fa fa-minus-circle"></i> Missing Date </a> </h4>
+                                            <h4 class="panel-title"> <a class="" role="button" data-toggle="collapse" data-parent="#accordion" href="#js-child-missing-date" aria-controls="js-child-missing-date"> <i class="more-less fa fa-plus-circle"></i> Missing Date </a> </h4>
                                         </div>
                                         <div id="js-child-missing-date" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                             <div class="panel-body">
@@ -329,10 +328,10 @@
                                             </div>
                                             </div>
                                         </div>
-                                        </div>
-                                        <div class="panel panel-default">
+                                    </div>
+                                    <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="missing-child-accordion-3">
-                                            <h4 class="panel-title"> <a class="" role="button" data-toggle="collapse" data-parent="#accordion" href="#js-advanced-search" aria-expanded="false" aria-controls="collapseTwo"> <i class="more-less fa fa-minus-circle"></i> Advanced Search: </a> </h4>
+                                            <h4 class="panel-title"> <a class="" role="button" data-toggle="collapse" data-parent="#accordion" href="#js-advanced-search" aria-expanded="false" aria-controls="collapseTwo"> <i class="more-less fa fa-plus-circle"></i> Advanced Search: </a> </h4>
                                         </div>
                                         <div id="js-advanced-search" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="">
                                             <div class="panel-body">
@@ -556,64 +555,52 @@
                                             </div>
                                             </div>
                                         </div>
-                                        </div>
-                                        <div class="form-group margin-top">
-                                            <div class="col-sm-12 col-xs-12 col-md-6 center-block">
-                                                <button type="submit" class="btn btn-lg btn-block btn-default js-btn-submit">Submit</button>
-                                            </div>
-                                            </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-12 col-xs-12 col-md-6 center-block">
-                                                <button type="submit" class="btn btn-lg btn-block btn-default">Reset</button>
-                                            </div>
-                                            </div>
                                     </div>
-                                </form>
+                                </div>                                
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="abductor">
-                                <form class="form-horizontal">
-                                    <h5 class="offsetT0">Sex:</h5>
-                                    <div class="form-group">
-                                        <label for="gender" class="control-label hide">Searching</label>
-                                        <div class="input-group">
-                                        <div class="radio-section">
-                                            <div class="radio-section-individual">
-                                            <input type="radio" name="abductor_gender" id="abductor_male" value="aductor_male">
-                                            <label for="aductor_male">Male</label>
-                                            </div>
-                                            <div class="radio-section-individual">
-                                            <input type="radio" name="abductor_gender" id="abductor_female" value="abductor_female">
-                                            <label for="female">Female</label>
-                                            </div>
-                                            <div class="radio-section-individual">
-                                            <input type="radio" name="abductor_gender" id="abductor_unknown" value="abductor_unknown">
-                                            <label for="unknown">Unknown</label>
-                                            </div>
+                            <div role="tabpanel" class="tab-pane" id="abductor">                                
+                                <h5 class="offsetT0">Sex:</h5>
+                                <div class="form-group">
+                                    <label for="gender" class="control-label hide">Searching</label>
+                                    <div class="input-group">
+                                    <div class="radio-section">
+                                        <div class="radio-section-individual">
+                                        <input type="radio" name="abductor_gender" id="abductor_male" value="aductor_male">
+                                        <label for="abductor_male">Male</label>
                                         </div>
+                                        <div class="radio-section-individual">
+                                        <input type="radio" name="abductor_gender" id="abductor_female" value="abductor_female">
+                                        <label for="abductor_female">Female</label>
+                                        </div>
+                                        <div class="radio-section-individual">
+                                        <input type="radio" name="abductor_gender" id="abductor_unknown" value="abductor_unknown">
+                                        <label for="abductor_unknown">Unknown</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="abductor_fname" class="col-md-4 col-sm-3 col-xs-3 control-label">First Name: </label>
-                                        <div class="col-md-8 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="abductor_fname" id="abductor_fname" required>
-                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="abductor_mname" class="col-md-4 col-sm-3 col-xs-3 control-label">Middle Name: </label>
-                                        <div class="col-md-8 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="abductor_mname" id="abductor_mname" required>
-                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="abductor_fname" class="col-md-4 col-sm-3 col-xs-3 control-label">First Name: </label>
+                                    <div class="col-md-8 col-sm-8 col-xs-9">
+                                    <input type="text" class="form-control" name="abductor_fname" id="abductor_fname" required>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="abductor_lname" class="col-md-4 col-sm-3 col-xs-3 control-label">Last Name: </label>
-                                        <div class="col-md-8 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="abductor_lname" id="abductor_lname" required>
-                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="abductor_mname" class="col-md-4 col-sm-3 col-xs-3 control-label">Middle Name: </label>
+                                    <div class="col-md-8 col-sm-8 col-xs-9">
+                                    <input type="text" class="form-control" name="abductor_mname" id="abductor_mname" required>
                                     </div>
-                                    <div class="panel-group" id="form-accordion" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default">
+                                </div>
+                                <div class="form-group">
+                                    <label for="abductor_lname" class="col-md-4 col-sm-3 col-xs-3 control-label">Last Name: </label>
+                                    <div class="col-md-8 col-sm-8 col-xs-9">
+                                    <input type="text" class="form-control" name="abductor_lname" id="abductor_lname" required>
+                                    </div>
+                                </div>
+                                <div class="panel-group form-accordion" id="form-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingOne">
-                                            <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-controls="collapseOne"> <i class="more-less fa fa-minus-circle"></i> Missing Form </a> </h4>
+                                            <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-controls="collapseOne"> <i class="more-less fa fa-plus-circle"></i> Missing Form </a> </h4>
                                         </div>
                                         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                             <div class="panel-body">
@@ -751,238 +738,452 @@
                                             </div>
                                             </div>
                                         </div>
-                                        </div>
-                                        <div class="panel panel-default">
+                                    </div>
+                                    <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingTwo">
-                                            <h4 class="panel-title"> <a class="" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-controls="collapseTwo"> <i class="more-less fa fa-minus-circle"></i> Missing Date </a> </h4>
+                                            <h4 class="panel-title"> <a class="" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-controls="collapseTwo"> <i class="more-less fa fa-plus-circle"></i> Missing Date </a> </h4>
                                         </div>
                                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                             <div class="panel-body">
-                                            <div class="form-group clearfix">
-                                                <label for="abductor_missing_date_from" class="col-md-5 col-sm-3 control-label">From:(m/d/yyyy)</label>
-                                                <div class="col-md-7 col-sm-8">
-                                                <input type="text" class="form-control" name="abductor_missing_date_from" id="abductor_missing_date_from">
+                                                <div class="form-group clearfix">
+                                                    <label for="abductor_missing_date_from" class="col-md-5 col-sm-3 control-label">From:(m/d/yyyy)</label>
+                                                    <div class="col-md-7 col-sm-8">
+                                                    <input type="text" class="form-control" name="abductor_missing_date_from" id="abductor_missing_date_from">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="abductor_missing_date_to" class="col-md-5 col-sm-3 control-label">To:(m/d/yyyy)</label>
-                                                <div class="col-md-7 col-sm-8">
-                                                <input type="text" class="form-control" name="abductor_missing_date_to" id="abductor_missing_date_to">
+                                                <div class="form-group">
+                                                    <label for="abductor_missing_date_to" class="col-md-5 col-sm-3 control-label">To:(m/d/yyyy)</label>
+                                                    <div class="col-md-7 col-sm-8">
+                                                    <input type="text" class="form-control" name="abductor_missing_date_to" id="abductor_missing_date_to">
+                                                    </div>
                                                 </div>
-                                            </div>
                                             </div>
                                         </div>
-                                        </div>                                
-                                        <div class="form-group margin-top">
-                                            <div class="col-sm-12 col-xs-12 col-md-6 center-block">
-                                                <button type="submit" class="btn btn-lg btn-block btn-default js-btn-submit">Submit</button>
+                                    </div> 
+                                    <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="missing-child-accordion-3">
+                                                <h4 class="panel-title"> <a class="" role="button" data-toggle="collapse" data-parent="#accordion" href="#js-advanced-search-1" aria-expanded="false" aria-controls="collapseTwo"> <i class="more-less fa fa-plus-circle"></i> Advanced Search: </a> </h4>
                                             </div>
+                                            <div id="js-advanced-search-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="">
+                                                <div class="panel-body">
+                                                <div class="form-group clearfix">
+                                                    <label for="abductor_race" class="col-md-4 col-sm-3 col-xs-3 control-label">Race:</label>
+                                                    <div class="col-md-8 col-sm-8 col-xs-9">
+                                                    <select class="form-control required" id="abductor_race" name="abductor_race" aria-required="true">
+                                                        <option value="">Select</option>
+                                                        <option value="AL">Alabama</option>
+                                                        <option value="AK">Alaska</option>
+                                                        <option value="AZ">Arizona</option>
+                                                        <option value="AR">Arkansas</option>
+                                                        <option value="CA">California</option>
+                                                        <option value="CO">Colorado</option>
+                                                        <option value="CT">Connecticut</option>
+                                                        <option value="DE">Delaware</option>
+                                                        <option value="DC">District of Columbia</option>
+                                                        <option value="FL">Florida</option>
+                                                        <option value="GA">Georgia</option>
+                                                        <option value="GU">Guam</option>
+                                                        <option value="HI">Hawaii</option>
+                                                        <option value="ID">Idaho</option>
+                                                        <option value="IL">Illinois</option>
+                                                        <option value="IN">Indiana</option>
+                                                        <option value="IA">Iowa</option>
+                                                        <option value="KS">Kansas</option>
+                                                        <option value="KY">Kentucky</option>
+                                                        <option value="LA">Louisiana</option>
+                                                        <option value="ME">Maine</option>
+                                                        <option value="MD">Maryland</option>
+                                                        <option value="MA">Massachusetts</option>
+                                                        <option value="MI">Michigan</option>
+                                                        <option value="MN">Minnesota</option>
+                                                        <option value="MS">Mississippi</option>
+                                                        <option value="MO">Missouri</option>
+                                                        <option value="MT">Montana</option>
+                                                        <option value="NE">Nebraska</option>
+                                                        <option value="NV">Nevada</option>
+                                                        <option value="NH">New Hampshire</option>
+                                                        <option value="NJ">New Jersey</option>
+                                                        <option value="NM">New Mexico</option>
+                                                        <option value="NY">New York</option>
+                                                        <option value="NC">North Carolina</option>
+                                                        <option value="ND">North Dakota</option>
+                                                        <option value="MP">Northern Mariana Islands</option>
+                                                        <option value="OH">Ohio</option>
+                                                        <option value="OK">Oklahoma</option>
+                                                        <option value="OR">Oregon</option>
+                                                        <option value="PA">Pennsylvania</option>
+                                                        <option value="PR">Puerto Rico</option>
+                                                        <option value="RI">Rhode Island</option>
+                                                        <option value="SC">South Carolina</option>
+                                                        <option value="SD">South Dakota</option>
+                                                        <option value="TN">Tennessee</option>
+                                                        <option value="TX">Texas</option>
+                                                        <option value="UT">Utah</option>
+                                                        <option value="VT">Vermont</option>
+                                                        <option value="VI">Virgin Islands</option>
+                                                        <option value="VA">Virginia</option>
+                                                        <option value="WA">Washington</option>
+                                                        <option value="WV">West Virginia</option>
+                                                        <option value="WI">Wisconsin</option>
+                                                        <option value="WY">Wyoming</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group clearfix">
+                                                    <label for="abductor_hair_color" class="col-md-4 col-sm-3 col-xs-3 control-label">Hair Color:</label>
+                                                    <div class="col-md-8 col-sm-8 col-xs-9">
+                                                    <select class="form-control required" id="abductor_hair_color" name="abductor_hair_color" aria-required="true">
+                                                        <option value="">Select</option>
+                                                        <option value="AL">Alabama</option>
+                                                        <option value="AK">Alaska</option>
+                                                        <option value="AZ">Arizona</option>
+                                                        <option value="AR">Arkansas</option>
+                                                        <option value="CA">California</option>
+                                                        <option value="CO">Colorado</option>
+                                                        <option value="CT">Connecticut</option>
+                                                        <option value="DE">Delaware</option>
+                                                        <option value="DC">District of Columbia</option>
+                                                        <option value="FL">Florida</option>
+                                                        <option value="GA">Georgia</option>
+                                                        <option value="GU">Guam</option>
+                                                        <option value="HI">Hawaii</option>
+                                                        <option value="ID">Idaho</option>
+                                                        <option value="IL">Illinois</option>
+                                                        <option value="IN">Indiana</option>
+                                                        <option value="IA">Iowa</option>
+                                                        <option value="KS">Kansas</option>
+                                                        <option value="KY">Kentucky</option>
+                                                        <option value="LA">Louisiana</option>
+                                                        <option value="ME">Maine</option>
+                                                        <option value="MD">Maryland</option>
+                                                        <option value="MA">Massachusetts</option>
+                                                        <option value="MI">Michigan</option>
+                                                        <option value="MN">Minnesota</option>
+                                                        <option value="MS">Mississippi</option>
+                                                        <option value="MO">Missouri</option>
+                                                        <option value="MT">Montana</option>
+                                                        <option value="NE">Nebraska</option>
+                                                        <option value="NV">Nevada</option>
+                                                        <option value="NH">New Hampshire</option>
+                                                        <option value="NJ">New Jersey</option>
+                                                        <option value="NM">New Mexico</option>
+                                                        <option value="NY">New York</option>
+                                                        <option value="NC">North Carolina</option>
+                                                        <option value="ND">North Dakota</option>
+                                                        <option value="MP">Northern Mariana Islands</option>
+                                                        <option value="OH">Ohio</option>
+                                                        <option value="OK">Oklahoma</option>
+                                                        <option value="OR">Oregon</option>
+                                                        <option value="PA">Pennsylvania</option>
+                                                        <option value="PR">Puerto Rico</option>
+                                                        <option value="RI">Rhode Island</option>
+                                                        <option value="SC">South Carolina</option>
+                                                        <option value="SD">South Dakota</option>
+                                                        <option value="TN">Tennessee</option>
+                                                        <option value="TX">Texas</option>
+                                                        <option value="UT">Utah</option>
+                                                        <option value="VT">Vermont</option>
+                                                        <option value="VI">Virgin Islands</option>
+                                                        <option value="VA">Virginia</option>
+                                                        <option value="WA">Washington</option>
+                                                        <option value="WV">West Virginia</option>
+                                                        <option value="WI">Wisconsin</option>
+                                                        <option value="WY">Wyoming</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group clearfix">
+                                                    <label for="abductor_eye_color" class="col-md-4 col-sm-3 col-xs-3 control-label">Eye Color:</label>
+                                                    <div class="col-md-8 col-sm-8 col-xs-9">
+                                                    <select class="form-control required" id="abductor_eye_color" name="abductor_eye_color" aria-required="true">
+                                                        <option value="">Select</option>
+                                                        <option value="AL">Alabama</option>
+                                                        <option value="AK">Alaska</option>
+                                                        <option value="AZ">Arizona</option>
+                                                        <option value="AR">Arkansas</option>
+                                                        <option value="CA">California</option>
+                                                        <option value="CO">Colorado</option>
+                                                        <option value="CT">Connecticut</option>
+                                                        <option value="DE">Delaware</option>
+                                                        <option value="DC">District of Columbia</option>
+                                                        <option value="FL">Florida</option>
+                                                        <option value="GA">Georgia</option>
+                                                        <option value="GU">Guam</option>
+                                                        <option value="HI">Hawaii</option>
+                                                        <option value="ID">Idaho</option>
+                                                        <option value="IL">Illinois</option>
+                                                        <option value="IN">Indiana</option>
+                                                        <option value="IA">Iowa</option>
+                                                        <option value="KS">Kansas</option>
+                                                        <option value="KY">Kentucky</option>
+                                                        <option value="LA">Louisiana</option>
+                                                        <option value="ME">Maine</option>
+                                                        <option value="MD">Maryland</option>
+                                                        <option value="MA">Massachusetts</option>
+                                                        <option value="MI">Michigan</option>
+                                                        <option value="MN">Minnesota</option>
+                                                        <option value="MS">Mississippi</option>
+                                                        <option value="MO">Missouri</option>
+                                                        <option value="MT">Montana</option>
+                                                        <option value="NE">Nebraska</option>
+                                                        <option value="NV">Nevada</option>
+                                                        <option value="NH">New Hampshire</option>
+                                                        <option value="NJ">New Jersey</option>
+                                                        <option value="NM">New Mexico</option>
+                                                        <option value="NY">New York</option>
+                                                        <option value="NC">North Carolina</option>
+                                                        <option value="ND">North Dakota</option>
+                                                        <option value="MP">Northern Mariana Islands</option>
+                                                        <option value="OH">Ohio</option>
+                                                        <option value="OK">Oklahoma</option>
+                                                        <option value="OR">Oregon</option>
+                                                        <option value="PA">Pennsylvania</option>
+                                                        <option value="PR">Puerto Rico</option>
+                                                        <option value="RI">Rhode Island</option>
+                                                        <option value="SC">South Carolina</option>
+                                                        <option value="SD">South Dakota</option>
+                                                        <option value="TN">Tennessee</option>
+                                                        <option value="TX">Texas</option>
+                                                        <option value="UT">Utah</option>
+                                                        <option value="VT">Vermont</option>
+                                                        <option value="VI">Virgin Islands</option>
+                                                        <option value="VA">Virginia</option>
+                                                        <option value="WA">Washington</option>
+                                                        <option value="WV">West Virginia</option>
+                                                        <option value="WI">Wisconsin</option>
+                                                        <option value="WY">Wyoming</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Slider Component -->
+                                                <div class="form-group clearfix">
+                                                    <p class="align-left">Check the box to include these fields in the search.</p>
+                                                    <div class="checkbox-search-wizard clearfix">
+                                                    <label for="abductor_height">
+                                                        <input type="checkbox" name="abductor_height" id="abductor_height" value="Height">
+                                                        Height range: </label>
+                                                    </div>
+                                                    <div class="full-width clearfix"> <b class="left-range">1'0"</b>
+                                                    <input id="height_abd" type="text" class="span2" value="3,5.5" data-slider-min="1" data-slider-max="7" data-slider-step=".1" data-slider-value="[3,5.5]" data-value="3,5.5" style="display: none;">
+                                                    <b class="right-range">7'0"</b> </div>
+                                                    <div class="checkbox-search-wizard clearfix">
+                                                    <label for="abductor_weight">
+                                                        <input type="checkbox" name="abductor_weight" id="abductor_weight" value="Height">
+                                                        Weight range: </label>
+                                                    </div>
+                                                    <div class="full-width clearfix"> <b class="left-range">1'0"</b>
+                                                    <input id="weight_abd" type="text" class="span2" value="50,200" data-slider-min="10" data-slider-max="300" data-slider-step="1" data-slider-value="[50,200]" data-value="50,200" style="display: none;">
+                                                    <b class="right-range">300 lb</b> </div>
+                                                    <div class="checkbox-search-wizard clearfix">
+                                                    <label for="abductor_age_range">
+                                                        <input type="checkbox" name="abductor_age_range" id="abductor_age_range" value="Height">
+                                                        Age range: </label>
+                                                    </div>
+                                                    <div class="full-width clearfix"> <b class="left-range">5 years</b>
+                                                    <input id="age_abd" type="text" class="span2" value="20,20" data-slider-min="20" data-slider-max="22" data-slider-step="1" data-slider-value="[15,20]" data-value="20,20" style="display: none;">
+                                                    <b class="right-range">99 years</b> </div>
+                                                </div>
+                                                </div>
                                             </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-12 col-xs-12 col-md-6 center-block">
-                                                <button type="submit" class="btn btn-lg btn-block btn-default">Reset</button>
-                                            </div>
-                                            </div>
-                                    </div>
-                                </form>
+                                        </div>                               
+                                </div>                                
                             </div>
                             <div role="tabpanel" class="tab-pane" id="unidentified">
-                                <form class="form-horizontal">
-                                    <h5 class="offsetT0">Sex:</h5>
-                                    <div class="form-group">
-                                        <label for="gender" class="control-label hide">Searching</label>
-                                        <div class="input-group">
-                                        <div class="radio-section">
-                                            <div class="radio-section-individual">
-                                            <input type="radio" name="undentified_gender" id="undentified_male" value="male">
-                                            <label for="undentified_male">Male</label>
-                                            </div>
-                                            <div class="radio-section-individual">
-                                            <input type="radio" name="undentified_gender" id="undentified_female" value="female">
-                                            <label for="undentified_female">Female</label>
-                                            </div>
-                                            <div class="radio-section-individual">
-                                            <input type="radio" name="undentified_gender" id="undentified_unknown" value="unknown">
-                                            <label for="undentified_unknown">Unknown</label>
-                                            </div>
+                                <h5 class="offsetT0">Sex:</h5>
+                                <div class="form-group">
+                                    <label for="gender" class="control-label hide">Searching</label>
+                                    <div class="input-group">
+                                    <div class="radio-section">
+                                        <div class="radio-section-individual">
+                                        <input type="radio" name="undentified_gender" id="undentified_male" value="male">
+                                        <label for="undentified_male">Male</label>
                                         </div>
+                                        <div class="radio-section-individual">
+                                        <input type="radio" name="undentified_gender" id="undentified_female" value="female">
+                                        <label for="undentified_female">Female</label>
+                                        </div>
+                                        <div class="radio-section-individual">
+                                        <input type="radio" name="undentified_gender" id="undentified_unknown" value="unknown">
+                                        <label for="undentified_unknown">Unknown</label>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="undentified_fname" class="col-md-4 col-sm-3 col-xs-3 control-label">First Name: </label>
-                                        <div class="col-md-8 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="undentified_fname" id="undentified_fname" required>
-                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="undentified_mname" class="col-md-4 col-sm-3 col-xs-3 control-label">Middle Name: </label>
-                                        <div class="col-md-8 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="undentified_mname" id="undentified_mname" required>
-                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="undentified_fname" class="col-md-4 col-sm-3 col-xs-3 control-label">First Name: </label>
+                                    <div class="col-md-8 col-sm-8 col-xs-9">
+                                    <input type="text" class="form-control" name="undentified_fname" id="undentified_fname" required>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="undentified_lname" class="col-md-4 col-sm-3 col-xs-3 control-label">Last Name: </label>
-                                        <div class="col-md-8 col-sm-8 col-xs-9">
-                                        <input type="text" class="form-control" name="undentified_lname" id="undentified_lname" required>
-                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="undentified_mname" class="col-md-4 col-sm-3 col-xs-3 control-label">Middle Name: </label>
+                                    <div class="col-md-8 col-sm-8 col-xs-9">
+                                    <input type="text" class="form-control" name="undentified_mname" id="undentified_mname" required>
                                     </div>
-                                    <div class="panel-group" id="form-accordion" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="heading-unidentified">
-                                            <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-unidentified" aria-controls="collapseTwo" aria-expanded="false"> <i class="more-less fa fa-plus-circle"></i> Location Found: </a> </h4>
-                                        </div>
-                                        <div id="collapse-unidentified" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-unidentified" aria-expanded="false" style="height: 0px;">
-                                            <div class="panel-body">
-                                            <div class="form-group">
-                                                <label for="undentified_city" class="col-md-3 col-sm-3 col-xs-3 control-label">City*</label>
-                                                <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <input type="text" class="form-control" name="undentified_city" id="undentified_city">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="undentified_state" class="col-md-3 col-sm-3 col-xs-3 control-label">State</label>
-                                                <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <select class="form-control required" id="undentified_state" name="undentified_state" aria-required="true">
-                                                    <option value="">Select</option>
-                                                    <option value="AL">Alabama</option>
-                                                    <option value="AK">Alaska</option>
-                                                    <option value="AZ">Arizona</option>
-                                                    <option value="AR">Arkansas</option>
-                                                    <option value="CA">California</option>
-                                                    <option value="CO">Colorado</option>
-                                                    <option value="CT">Connecticut</option>
-                                                    <option value="DE">Delaware</option>
-                                                    <option value="DC">District of Columbia</option>
-                                                    <option value="FL">Florida</option>
-                                                    <option value="GA">Georgia</option>
-                                                    <option value="GU">Guam</option>
-                                                    <option value="HI">Hawaii</option>
-                                                    <option value="ID">Idaho</option>
-                                                    <option value="IL">Illinois</option>
-                                                    <option value="IN">Indiana</option>
-                                                    <option value="IA">Iowa</option>
-                                                    <option value="KS">Kansas</option>
-                                                    <option value="KY">Kentucky</option>
-                                                    <option value="LA">Louisiana</option>
-                                                    <option value="ME">Maine</option>
-                                                    <option value="MD">Maryland</option>
-                                                    <option value="MA">Massachusetts</option>
-                                                    <option value="MI">Michigan</option>
-                                                    <option value="MN">Minnesota</option>
-                                                    <option value="MS">Mississippi</option>
-                                                    <option value="MO">Missouri</option>
-                                                    <option value="MT">Montana</option>
-                                                    <option value="NE">Nebraska</option>
-                                                    <option value="NV">Nevada</option>
-                                                    <option value="NH">New Hampshire</option>
-                                                    <option value="NJ">New Jersey</option>
-                                                    <option value="NM">New Mexico</option>
-                                                    <option value="NY">New York</option>
-                                                    <option value="NC">North Carolina</option>
-                                                    <option value="ND">North Dakota</option>
-                                                    <option value="MP">Northern Mariana Islands</option>
-                                                    <option value="OH">Ohio</option>
-                                                    <option value="OK">Oklahoma</option>
-                                                    <option value="OR">Oregon</option>
-                                                    <option value="PA">Pennsylvania</option>
-                                                    <option value="PR">Puerto Rico</option>
-                                                    <option value="RI">Rhode Island</option>
-                                                    <option value="SC">South Carolina</option>
-                                                    <option value="SD">South Dakota</option>
-                                                    <option value="TN">Tennessee</option>
-                                                    <option value="TX">Texas</option>
-                                                    <option value="UT">Utah</option>
-                                                    <option value="VT">Vermont</option>
-                                                    <option value="VI">Virgin Islands</option>
-                                                    <option value="VA">Virginia</option>
-                                                    <option value="WA">Washington</option>
-                                                    <option value="WV">West Virginia</option>
-                                                    <option value="WI">Wisconsin</option>
-                                                    <option value="WY">Wyoming</option>
-                                                </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="undentified_country" class="col-md-3 col-sm-3 col-xs-3 control-label">Country</label>
-                                                <div class="col-md-8 col-sm-8 col-xs-9">
-                                                <select class="form-control required" id="undentified_country" name="undentified_country" aria-required="true">
-                                                    <option value="">Select</option>
-                                                    <option value="AL">Alabama</option>
-                                                    <option value="AK">Alaska</option>
-                                                    <option value="AZ">Arizona</option>
-                                                    <option value="AR">Arkansas</option>
-                                                    <option value="CA">California</option>
-                                                    <option value="CO">Colorado</option>
-                                                    <option value="CT">Connecticut</option>
-                                                    <option value="DE">Delaware</option>
-                                                    <option value="DC">District of Columbia</option>
-                                                    <option value="FL">Florida</option>
-                                                    <option value="GA">Georgia</option>
-                                                    <option value="GU">Guam</option>
-                                                    <option value="HI">Hawaii</option>
-                                                    <option value="ID">Idaho</option>
-                                                    <option value="IL">Illinois</option>
-                                                    <option value="IN">Indiana</option>
-                                                    <option value="IA">Iowa</option>
-                                                    <option value="KS">Kansas</option>
-                                                    <option value="KY">Kentucky</option>
-                                                    <option value="LA">Louisiana</option>
-                                                    <option value="ME">Maine</option>
-                                                    <option value="MD">Maryland</option>
-                                                    <option value="MA">Massachusetts</option>
-                                                    <option value="MI">Michigan</option>
-                                                    <option value="MN">Minnesota</option>
-                                                    <option value="MS">Mississippi</option>
-                                                    <option value="MO">Missouri</option>
-                                                    <option value="MT">Montana</option>
-                                                    <option value="NE">Nebraska</option>
-                                                    <option value="NV">Nevada</option>
-                                                    <option value="NH">New Hampshire</option>
-                                                    <option value="NJ">New Jersey</option>
-                                                    <option value="NM">New Mexico</option>
-                                                    <option value="NY">New York</option>
-                                                    <option value="NC">North Carolina</option>
-                                                    <option value="ND">North Dakota</option>
-                                                    <option value="MP">Northern Mariana Islands</option>
-                                                    <option value="OH">Ohio</option>
-                                                    <option value="OK">Oklahoma</option>
-                                                    <option value="OR">Oregon</option>
-                                                    <option value="PA">Pennsylvania</option>
-                                                    <option value="PR">Puerto Rico</option>
-                                                    <option value="RI">Rhode Island</option>
-                                                    <option value="SC">South Carolina</option>
-                                                    <option value="SD">South Dakota</option>
-                                                    <option value="TN">Tennessee</option>
-                                                    <option value="TX">Texas</option>
-                                                    <option value="UT">Utah</option>
-                                                    <option value="VT">Vermont</option>
-                                                    <option value="VI">Virgin Islands</option>
-                                                    <option value="VA">Virginia</option>
-                                                    <option value="WA">Washington</option>
-                                                    <option value="WV">West Virginia</option>
-                                                    <option value="WI">Wisconsin</option>
-                                                    <option value="WY">Wyoming</option>
-                                                </select>
-                                                </div>
-                                            </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        <div class="form-group margin-top">
-                                            <div class="col-sm-12 col-xs-12 col-md-6 center-block">
-                                                <button type="submit" class="btn btn-lg btn-block btn-default js-btn-submit">Submit</button>
-                                            </div>
-                                            </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="undentified_lname" class="col-md-4 col-sm-3 col-xs-3 control-label">Last Name: </label>
+                                    <div class="col-md-8 col-sm-8 col-xs-9">
+                                    <input type="text" class="form-control" name="undentified_lname" id="undentified_lname" required>
+                                    </div>
+                                </div>
+                                <div class="panel-group" id="form-accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading-unidentified">
+                                        <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-unidentified" aria-controls="collapseTwo" aria-expanded="false"> <i class="more-less fa fa-plus-circle"></i> Location Found: </a> </h4>
+                                    </div>
+                                    <div id="collapse-unidentified" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-unidentified" aria-expanded="false" style="height: 0px;">
+                                        <div class="panel-body">
                                         <div class="form-group">
-                                            <div class="col-sm-12 col-xs-12 col-md-6 center-block">
-                                                <button type="submit" class="btn btn-lg btn-block btn-default">Reset</button>
+                                            <label for="undentified_city" class="col-md-3 col-sm-3 col-xs-3 control-label">City*</label>
+                                            <div class="col-md-8 col-sm-8 col-xs-9">
+                                            <input type="text" class="form-control" name="undentified_city" id="undentified_city">
                                             </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="undentified_state" class="col-md-3 col-sm-3 col-xs-3 control-label">State</label>
+                                            <div class="col-md-8 col-sm-8 col-xs-9">
+                                            <select class="form-control required" id="undentified_state" name="undentified_state" aria-required="true">
+                                                <option value="">Select</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="CA">California</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="DC">District of Columbia</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="GU">Guam</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="MP">Northern Mariana Islands</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="PR">Puerto Rico</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VI">Virgin Islands</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="WV">West Virginia</option>
+                                                <option value="WI">Wisconsin</option>
+                                                <option value="WY">Wyoming</option>
+                                            </select>
                                             </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="undentified_country" class="col-md-3 col-sm-3 col-xs-3 control-label">Country</label>
+                                            <div class="col-md-8 col-sm-8 col-xs-9">
+                                            <select class="form-control required" id="undentified_country" name="undentified_country" aria-required="true">
+                                                <option value="">Select</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="CA">California</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="DC">District of Columbia</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="GU">Guam</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="MP">Northern Mariana Islands</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="PR">Puerto Rico</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VI">Virgin Islands</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="WV">West Virginia</option>
+                                                <option value="WI">Wisconsin</option>
+                                                <option value="WY">Wyoming</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                        </div>
                                     </div>
-                                </form>
+                                    </div>                                    
+                                </div>                                
+                            </div>
+                            <div class="form-group margin-top">
+                                <div class="col-sm-12 col-xs-12 col-md-6 center-block">
+                                    <button type="submit" id="js-btn-submit" class="btn btn-lg btn-block btn-default">Submit</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12 col-xs-12 col-md-6 center-block">
+                                    <button type="submit" id="js-reset-form" class="btn btn-lg btn-block btn-default">Reset</button>
+                                </div>
                             </div>
                           </div>
-                        
+                        </form>
                       </div>
                     </div>
                     <div class="panel-body">
@@ -1002,26 +1203,23 @@
                               <div><small>Missing From: </small> Lake Worth, FL</div>
                               <div><small>Missing Since: </small> June 27, 2017</div>
                               <div><small>Age: </small>20</div>
-                              <p class="text-right missing-person-link"><a href="#">Report a sighting &gt;&gt;</a></p>
                             </li>
                             <li> <img src="missingkids/images/missing_person_thumb_02.png" alt="Missing Person 2">
                               <h5 class="title-5">Alexis Alfonso</h5>
                               <div><small>Missing From: </small> Lake Worth, FL</div>
                               <div><small>Missing Since: </small> June 27, 2017</div>
                               <div><small>Age: </small>20</div>
-                              <p class="text-right missing-person-link"><a href="#">Report a sighting &gt;&gt;</a></p>
                             </li>
                             <li> <img src="missingkids/images/missing_person_thumb_03.png" alt="Missing Person 3">
                               <h5 class="title-5">Alexis Alfonso</h5>
                               <div><small>Missing From: </small> Lake Worth, FL</div>
                               <div><small>Missing Since: </small> June 27, 2017</div>
                               <div><small>Age: </small>20</div>
-                              <p class="text-right missing-person-link"><a href="#">Report a sighting &gt;&gt;</a></p>
                             </li>
                           </ul>
                           <p class="text-right missing-person-link"> <a href="#">&laquo;</a> <a href="#">1</a> <a class="active" href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">&raquo;</a> </p>
                           <div>
-                            <button type="button" class="btn btn-lg btn-block btn-default js-new-search">New Search</button>
+                            <button type="button" id="js-new-search" class="btn btn-lg btn-block btn-default">New Search</button>
                           </div>
                         </div>
                       </div>
@@ -1055,14 +1253,17 @@ $(function(){
         $(this).tab('show')
     })
 
-    $( ".js-btn-submit" ).click(function() {
+    $( "#js-btn-submit" ).click(function() {
         $( "#js-search-form" ).hide();
         $( "#js-search-results" ).show();
     });
-    $( ".js-new-search" ).click(function() {
+    $( "#js-new-search" ).click(function() {
         $( "#js-search-form" ).show();
         $( "#js-search-results" ).hide();
-    });    
+    });
+    $( "#js-reset-form" ).click(function() {
+        $( "#js-missing-kids-form" ).trigger('reset');;
+    });   
     
     //-----------------------------
     
