@@ -2759,7 +2759,7 @@ input[type="search"] {
   }
 }
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 .radio,
 .checkbox {
@@ -3159,18 +3159,50 @@ select[multiple].input-lg {
   margin-left: 0;
   margin-right: 0;
 }
-.ncmec-form-no-border {
+.missing-kids-form {
   background: transparent;
   border: none;
   border-radius: 0px;
   padding: 0px;
 }
-.ncmec-form-no-border .btn-default {
+.missing-kids-form ul.nav-pills {
+  margin-bottom: 16px;
+}
+.missing-kids-form ul.nav-pills li {
+  margin-left: 0;
+}
+.missing-kids-form ul.nav-pills li a {
+  border: 1px solid #626366;
+  border-radius: 0;
+  border-right: 0;
+  color: #626366;
+  font-weight: bold;
+  padding: 8px 15px;
+}
+.missing-kids-form ul.nav-pills li.active a {
+  background: #626366;
+  color: #fff;
+  border-radius: 0;
+}
+.missing-kids-form ul.nav-pills li:first-child a {
+  border-radius: 10px 0 0 10px;
+}
+.missing-kids-form ul.nav-pills li:last-child a {
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #626366;
+}
+.missing-kids-form .tab-content .control-label {
+  line-height: 30px;
+}
+.missing-kids-form .btn-default {
   padding: 5px 0;
   font-size: 16px;
   box-shadow: none;
   color: #626366;
   border: 1px solid #626366;
+}
+#js-search-results {
+  display: none;
 }
 .btn {
   display: inline-block;
@@ -10228,10 +10260,11 @@ label.error {
 }
 .full-width {
   position: relative;
+  padding-bottom: 16px;
 }
 .full-width > b.left-range {
   position: absolute;
-  top: 18px;
+  top: 20px;
   left: 0;
   z-index: 1;
 }

@@ -214,7 +214,7 @@ input[type="search"] {
 // horizontal forms, use the predefined grid classes.
 
 .form-group {
-  margin-bottom: @form-group-margin-bottom;
+  margin-bottom: @form-group-margin-bottom + 1;
 }
 
 
@@ -647,11 +647,48 @@ input[type="checkbox"] {
     }
 }
 
-.ncmec-form-no-border {
+.missing-kids-form {
     background: transparent;
     border: none;
     border-radius:  0px;
     padding: 0px;
+    ul.nav-pills {
+      margin-bottom: 16px;
+      li {
+        margin-left: 0;
+        a {
+          border: 1px solid @gray-darker;
+          border-radius: 0;
+          border-right: 0;
+          color: @gray-darker;
+          font-weight: bold;
+          padding: 8px 15px;
+        }
+        &.active {
+          a {
+            background: @gray-darker;
+            color: @white; 
+            border-radius: 0;           
+          }
+        }
+        &:first-child{
+          a {
+            border-radius: 10px 0 0 10px;
+          }
+        }
+        &:last-child {
+          a {
+            border-radius: 0 10px 10px 0;
+            border: 1px solid @gray-darker;
+          }
+        }        
+      }
+    }
+    .tab-content {
+      .control-label {
+        line-height: 30px;
+      }
+    }
     .btn-default {
         padding: 5px 0;
         font-size: 16px;
@@ -659,4 +696,8 @@ input[type="checkbox"] {
         color: @gray-darker;
         border: 1px solid @gray-darker;
     }
+}
+
+#js-search-results {
+  display: none;
 }
