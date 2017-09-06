@@ -47,8 +47,24 @@
 @media (max-width: 767px) {
     .breadcrumbs {
         min-height: 30px;
+        visibility: hidden;
     }
     .social-share {
       .pull-left();
     }
+}
+
+body {
+  &.fixed-breadcrump {
+    padding-top: 31px;
+    .breadcrumbs {
+      position: fixed;
+      z-index: 10;
+      top: 65px;
+      width: 100%;
+      @media (min-width: @screen-md) {
+          top: 80px;
+      }
+    }
+  }
 }
