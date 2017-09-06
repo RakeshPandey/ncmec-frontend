@@ -9500,6 +9500,7 @@ label.error {
 .statistics-wrapper {
   position: relative;
   overflow: hidden;
+  min-height: 170px;
 }
 .statistics-wrapper picture,
 .statistics-wrapper img {
