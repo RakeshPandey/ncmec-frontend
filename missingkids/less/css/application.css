@@ -8231,6 +8231,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   position: relative;
   height: 218px;
   overflow: hidden;
+  display: block;
 }
 @media (min-width: 767px) {
   .hero-banner-wrapper .hero-banner {
@@ -8256,23 +8257,24 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper {
   position: relative;
-}
-@media (min-width: 767px) {
-  .hero-banner-wrapper .hero-banner .hero-content-wrapper {
-    left: 40px;
-    top: 30px;
-  }
+  min-height: calc(70%);
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content {
   position: absolute;
   left: 10px;
   top: 10px;
 }
+@media (min-width: 767px) {
+  .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content {
+    left: 50px;
+    top: 30px;
+  }
+}
 .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .title {
   max-width: 200px;
   color: inherit;
   line-height: 32px;
-  margin: 0 0 12px;
+  margin: 0;
   font-size: 24px;
 }
 @media (min-width: 767px) {
@@ -8294,6 +8296,11 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   font-size: 16px;
   line-height: 24px;
 }
+@media (max-width: 767px) {
+  .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .desc {
+    margin: 10px;
+  }
+}
 @media (min-width: 767px) {
   .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .desc {
     font-size: 24px;
@@ -8303,6 +8310,177 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content.white {
   color: #fff;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content.ship-gray {
+  color: #404041;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content.sun {
+  color: #FDB813;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content.blue-lagoon {
+  color: #006C8A;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content.bondi-blue {
+  color: #008DB6;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content.scooter {
+  color: #39C2D7;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content.morning-glory-blue {
+  color: #92D6E3;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content.mid-gray {
+  color: #626366;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content.oslo-gray {
+  color: #939597;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content.silver-stand {
+  color: #C6C8CA;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content.athens-gray {
+  color: #F1F1F2;
+}
+@media (min-width: 767px) {
+  .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn {
+    margin-top: 10px;
+  }
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.right {
+  float: right;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.left {
+  float: left;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.center {
+  float: none;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.white {
+  background-color: #fff;
+  border-color: #fff;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.ship-gray {
+  background-color: #404041;
+  border-color: #404041;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.sun {
+  background-color: #FDB813;
+  border-color: #FDB813;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.blue-lagoon {
+  background-color: #006C8A;
+  border-color: #006C8A;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.bondi-blue {
+  background-color: #008DB6;
+  border-color: #008DB6;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.scooter {
+  background-color: #39C2D7;
+  border-color: #39C2D7;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.morning-glory-blue {
+  background-color: #92D6E3;
+  border-color: #92D6E3;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.mid-gray {
+  background-color: #626366;
+  border-color: #626366;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.oslo-gray {
+  background-color: #939597;
+  border-color: #939597;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.silver-stand {
+  background-color: #C6C8CA;
+  border-color: #C6C8CA;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.athens-gray {
+  background-color: #F1F1F2;
+  border-color: #F1F1F2;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.btn-link {
+  padding-left: 0;
+  padding-right: 0;
+  background: none;
+  border: none;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.btn-link.white {
+  color: #fff;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.btn-link.ship-gray {
+  color: #404041;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.btn-link.sun {
+  color: #FDB813;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.btn-link.blue-lagoon {
+  color: #006C8A;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.btn-link.bondi-blue {
+  color: #008DB6;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.btn-link.scooter {
+  color: #39C2D7;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.btn-link.morning-glory-blue {
+  color: #92D6E3;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.btn-link.mid-gray {
+  color: #626366;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.btn-link.oslo-gray {
+  color: #939597;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.btn-link.silver-stand {
+  color: #C6C8CA;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.btn-link.athens-gray {
+  color: #F1F1F2;
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper.right .hero-content {
+  left: auto;
+  right: 10px;
+  text-align: right;
+}
+@media (min-width: 767px) {
+  .hero-banner-wrapper .hero-banner .hero-content-wrapper.right .hero-content {
+    right: 40px;
+  }
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper.right .hero-content .title {
+  display: inline-block;
+  text-align: inherit;
+}
+@media (min-width: 992px) {
+  .hero-banner-wrapper .hero-banner .hero-content-wrapper.right .hero-content .title {
+    margin: 0 0 24px;
+  }
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper.right .hero-content .desc {
+  text-align: inherit;
+}
+@media (min-width: 767px) {
+  .hero-banner-wrapper .hero-banner .hero-content-wrapper.center {
+    left: auto;
+  }
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper.center .hero-content {
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  min-width: 600px;
+}
+@media (max-width: 767px) {
+  .hero-banner-wrapper .hero-banner .hero-content-wrapper.center .hero-content {
+    min-width: 380px;
+  }
+}
+.hero-banner-wrapper .hero-banner .hero-content-wrapper.center .hero-content .title {
+  display: inline-block;
 }
 @media (min-width: 992px) {
   .hero-banner-wrapper.with-teaser {
@@ -11151,5 +11329,3 @@ textarea.form-control {
 .add-padding {
   padding-left: 8px;
 }
-
-/*# sourceMappingURL=application.css.map */
