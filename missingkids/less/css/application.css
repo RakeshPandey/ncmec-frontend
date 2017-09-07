@@ -7293,9 +7293,10 @@ label.error {
 #form-accordion .panel .panel-heading {
   padding: 0;
   text-align: left;
+  background: none;
 }
 #form-accordion .panel .panel-heading .panel-title a {
-  background: #95989A;
+  background: #626366;
   border-radius: 10px;
   color: #fff;
   display: block;
@@ -9353,13 +9354,13 @@ and open the template in the editor.
   margin: 0 auto;
 }
 .search-missing-children .radio-section {
-  margin-bottom: 20px;
   display: inline-block;
 }
 .search-missing-children .radio-section-individual {
   display: block;
   float: left;
   overflow: hidden;
+  max-height: 34px;
 }
 .search-missing-children .radio-section-individual label {
   margin-bottom: 0px;
@@ -9381,6 +9382,7 @@ and open the template in the editor.
 }
 .search-missing-children .radio-section-individual:last-child {
   border-radius: 0 8px 8px 0;
+  margin-left: -1px;
 }
 .search-missing-children .form-horizontal-cover .form-horizontal .control-label {
   text-align: left;
@@ -9419,6 +9421,19 @@ and open the template in the editor.
   background-repeat: no-repeat;
   border: none;
   padding: 8px;
+}
+.search-missing-children .teaser.teaser-form .search-form .panel-heading {
+  background: #626366;
+}
+.search-missing-children .teaser.teaser-form .search-form .panel-heading h5 {
+  margin: 0;
+}
+.search-missing-children .teaser.teaser-form .search-form .panel-body {
+  background: #fff;
+}
+.search-missing-children .teaser.teaser-form .search-form .panel-body .missing-kids-form .form-group {
+  margin-left: 0;
+  margin-right: 0;
 }
 .checkbox-search-wizard {
   margin-top: 16px;
@@ -10912,7 +10927,7 @@ hr {
 }
 .gen-info-list .list-group-item img {
   margin-left: 0;
-  border-radius: 0;
+  border-radius: 10px;
 }
 .image-grid-container > * {
   margin-bottom: 16px;
