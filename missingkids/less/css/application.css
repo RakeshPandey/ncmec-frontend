@@ -8379,6 +8379,9 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 @media (min-width: 992px) {
   .hero-banner-wrapper.with-teaser {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
   .hero-banner-wrapper.with-teaser .hero-teaser-wrapper {
@@ -8398,6 +8401,8 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
     position: absolute;
     display: inline-block;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: 10px;
   }
@@ -10601,6 +10606,27 @@ label.error {
   padding-left: 8px;
   padding-right: 8px;
   text-align: left;
+}
+#pagination-demo {
+  margin: 0px;
+  text-align: center;
+}
+#pagination-demo .pagination li a {
+  position: relative;
+  float: left;
+  width: 35px;
+  padding: 3px 10px;
+  line-height: 1.23;
+  background-color: transparent;
+  border: 0;
+  margin-left: -1px;
+}
+#pagination-demo .pagination > li.page-item.disabled > a {
+  color: #fff;
+}
+#pagination-demo .pagination > li.active > a.page-link {
+  font-weight: bold;
+  color: #fff;
 }
 picture,
 img {
