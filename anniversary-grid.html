@@ -1,718 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>Theme Template for Bootstrap</title>
 
-    <title>Theme Template for Bootstrap</title>
+<!-- Bootstrap core CSS -->
+<link href="missingkids/less/css/application.css" rel="stylesheet">
+<!-- Bootstrap theme -->
 
-    <!-- Bootstrap core CSS -->
-    <link href="missingkids/less/css/application.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!-- Custom styles for this template -->
 
-    <!-- Custom styles for this template -->
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
-
-    <div class="wrapper">
-
-      <header class="header-container">
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img src="missingkids/images/logo.png" alt="NCMEC"></a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="#">GET HELP NOW</a></li>
-                    <li><a href="#">THE ISSUES</a></li>
-                    <li class="active"><a href="#">OUR WORK</a></li>
-                    <li><a href="#">EDUCATION</a></li>
-                    <li><a href="#">SUPPORT US</a></li>
-                </ul>
-                <div class="right-section pull-right"><button type="button" class="btn btn-lg btn-primary">Donate</button></div>
-            </div>
-        </nav>
-      </header>
-
-      <div class="breadcrumbs">
-        <div class="container">
-            <ol class="breadcrumb">
-                <li><a href="#">Our Work</a></li>
-                <li><a href="#">Donate</a></li>
-                <li class="active">Ways to dontate</li>
-            </ol>
+<body>
+<div class="wrapper">
+  <header class="header-container">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header"> <a class="navbar-brand" href="#"><img src="missingkids/images/logo.png" alt="NCMEC"></a> </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#">GET HELP NOW</a></li>
+          <li><a href="#">THE ISSUES</a></li>
+          <li class="active"><a href="#">OUR WORK</a></li>
+          <li><a href="#">EDUCATION</a></li>
+          <li><a href="#">SUPPORT US</a></li>
+        </ul>
+        <div class="right-section pull-right">
+          <button type="button" class="btn btn-lg btn-primary">Donate</button>
         </div>
       </div>
-
-      <article class="content-wrapper">
-        <div class="container">
-
-            <div class="row">
-              <div class="col-md-2 col-sm-3">
-                <div class="inner-wrapper">
-                  <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                  <h4>Heading</h4>
-                  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                  <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-                </div>
-              </div>
-              <div class="col-md-10 col-sm-8">
-                  <div class="inner-wrapper dont-set-height box" id="missingAnniversaries">
-                      <div class="missing-anniversary-container">
-                        <p>
-                          <b>View anniversaries for:</b>&nbsp; <input type="radio" name="timeframe" value="thisWeek" data-role="none" checked="true">&nbsp;This Week&nbsp;<input type="radio" name="timeframe" value="today" data-role="none">&nbsp;This Day
-                        </p>
-                        <div id="missing-anniversary-grid-wrapper">
-                          <div id="missing-anniversary-grid">
-                                
-                                <div>
-                                        <div class="section-title">
-                                            <p><strong>Anniversaries this week - </strong></p>
-                                            <p>2010 - 2017</p>
-                                        </div>
-                                        <div class="missing-anniversary-grid">
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1280006c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1280006/1/screen" class="kid-name">ASHLEY BERNAL</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2016<br>
-                                                        Age Now: 14<br>
-                                                        Missing From: LOS ANGELES, CA
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1280006/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1276057c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1276057/1/screen" class="kid-name">ANGEL CARTER</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2016<br>
-                                                        Age Now: 16<br>
-                                                        Missing From: MEMPHIS, TN
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276057/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1237822c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1237822/1/screen" class="kid-name">EVELIN CORIA-CORONADO</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2014<br>
-                                                        Age Now: 5<br>
-                                                        Missing From: CANTON, MS
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1237822/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1156424c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1156424/1/screen" class="kid-name">LAURYN DICKENS</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2010<br>
-                                                        Age Now: 7<br>
-                                                        Missing From: MEMPHIS, TN
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1156424/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1276362c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1276362/1/screen" class="kid-name">BRIANNA EVANS</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2016<br>
-                                                        Age Now: 18<br>
-                                                        Missing From: NEW ORLEANS, LA
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276362/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1241540c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1241540/1/screen" class="kid-name">MIRIAM GUILLEN</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2014<br>
-                                                        Age Now: 19<br>
-                                                        Missing From: ARLETA, CA
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1241540/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMU1180176c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMU/1180176/1/screen" class="kid-name">JANE DOE 2011</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2011<br>
-                                                        Age Now: <br>
-                                                        Missing From: WINONA, MN
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMU/1180176/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1237822ac2.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1237822a/2/screen" class="kid-name">MENDY CORIA-CORONADO</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2014<br>
-                                                        Age Now: 4<br>
-                                                        Missing From: CANTON, MS
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1237822a/2/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1248323c2.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1248323/2/screen" class="kid-name">MOUSTAFA EISSA</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2013<br>
-                                                        Age Now: 8<br>
-                                                        Missing From: SEATTLE, WA
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1248323/2/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1248323c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1248323/1/screen" class="kid-name">FATMA EISSA</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2013<br>
-                                                        Age Now: 7<br>
-                                                        Missing From: SEATTLE, WA
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1248323/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1237822ac1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1237822a/1/screen" class="kid-name">KIMBERLY GOMEZ-CORONADO</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2014<br>
-                                                        Age Now: 9<br>
-                                                        Missing From: CANTON, MS
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1237822a/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1237822c2.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1237822/2/screen" class="kid-name">JACKELYN GOMEZ-CORONADO</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2014<br>
-                                                        Age Now: 8<br>
-                                                        Missing From: CANTON, MS
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1237822/2/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1276416c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1276416/1/screen" class="kid-name">JOSE HERNANDEZ GARCIA</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2016<br>
-                                                        Age Now: 17<br>
-                                                        Missing From: SEVIERVILLE, TN
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276416/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1237561c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1237561/1/screen" class="kid-name">JACOB HOGGLE</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2014<br>
-                                                        Age Now: 5<br>
-                                                        Missing From: GAITHERSBURG, MD
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1237561/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1237561c2.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1237561/2/screen" class="kid-name">SARAH HOGGLE</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2014<br>
-                                                        Age Now: 6<br>
-                                                        Missing From: GAITHERSBURG, MD
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1237561/2/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1276325c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1276325/1/screen" class="kid-name">ALEESHA JOHNSON</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2016<br>
-                                                        Age Now: 16<br>
-                                                        Missing From: BATAVIA, NY
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276325/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1276513c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1276513/1/screen" class="kid-name">SYDNEY LEWIS</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2016<br>
-                                                        Age Now: 18<br>
-                                                        Missing From: HOUSTON, TX
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276513/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1179358c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1179358/1/screen" class="kid-name">DORIS LOPEZ</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2011<br>
-                                                        Age Now: 22<br>
-                                                        Missing From: SOUTHBRIDGE, MA
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1179358/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1198505c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1198505/1/screen" class="kid-name">SHANNA PEOPLES</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2011<br>
-                                                        Age Now: 25<br>
-                                                        Missing From: EUNOLA, AL
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1198505/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1279023c2.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1279023/2/screen" class="kid-name">PAULA MEDRANO</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2016<br>
-                                                        Age Now: 16<br>
-                                                        Missing From: HOUSTON, TX
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1279023/2/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1279023c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1279023/1/screen" class="kid-name">JENNIFER MEDRANO</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2016<br>
-                                                        Age Now: 13<br>
-                                                        Missing From: HOUSTON, TX
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1279023/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1261782c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1261782/1/screen" class="kid-name">BRITTNEY ROBLEDO</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2015<br>
-                                                        Age Now: 18<br>
-                                                        Missing From: SAN ANTONIO, TX
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1261782/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1276882c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1276882/1/screen" class="kid-name">IRENE RODRIGUEZ</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2016<br>
-                                                        Age Now: 16<br>
-                                                        Missing From: LOS ANGELES, CA
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276882/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1279530c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1279530/1/screen" class="kid-name">ALLENA SMITH</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2016<br>
-                                                        Age Now: 17<br>
-                                                        Missing From: HOUSTON, TX
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1279530/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1276121c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen" class="kid-name">MARIA JOSE RODRIGUEZ ROMERO</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2016<br>
-                                                        Age Now: 18<br>
-                                                        Missing From: WINTER SPRINGS, FL
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1254261c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1254261/1/screen" class="kid-name">NIA SMITH</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2015<br>
-                                                        Age Now: 19<br>
-                                                        Missing From: CHICAGO, IL
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1254261/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1277380c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1277380/1/screen" class="kid-name">DYLAN VANCE</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2016<br>
-                                                        Age Now: 18<br>
-                                                        Missing From: ELLIJAY, GA
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1277380/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        <div class="section-title">
-                                            <p><strong>Anniversaries this week - </strong></p>
-                                            <p>2000 - 2009</p>
-                                        </div>
-                                        <div class=" missing-anniversary-grid">
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMU1184097c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMU/1184097/1/screen" class="kid-name">JOHN DOE 2004</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2004<br>
-                                                        Age Now: 16-20<br>
-                                                        Missing From: SASABE, AZ
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMU/1184097/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC992297c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/992297/1/screen" class="kid-name">LEON BELL</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2002<br>
-                                                        Age Now: 30<br>
-                                                        Missing From: GRAND PRAIRIE, TX
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/992297/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMU1197905c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMU/1197905/1/screen" class="kid-name">JANE DOE 2009</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2009<br>
-                                                        Age Now: 13-26<br>
-                                                        Missing From: IRVINE, CA
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMU/1197905/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1023185c2.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1023185/2/screen" class="kid-name">STEPHANIE GUERRERO</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2005<br>
-                                                        Age Now: 25<br>
-                                                        Missing From: TAMPA, FL
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1023185/2/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1023185c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1023185/1/screen" class="kid-name">ANTONIA GUERRERO</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2005<br>
-                                                        Age Now: 24<br>
-                                                        Missing From: TAMPA, FL
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1023185/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC997267c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/997267/1/screen" class="kid-name">EMILY JUAN</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2004<br>
-                                                        Age Now: 13<br>
-                                                        Missing From: FLUSHING, NY
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/997267/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1023185c3.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1023185/3/screen" class="kid-name">SANDRA LOPEZ</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2005<br>
-                                                        Age Now: 23<br>
-                                                        Missing From: TAMPA, FL
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1023185/3/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC919898c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/919898/1/screen" class="kid-name">JAQUILLA SCALES</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2001<br>
-                                                        Age Now: 20<br>
-                                                        Missing From: WICHITA, KS
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/919898/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
-                                            <div class="grid-item">
-                                                <img src="http://betamk.missingkids.org/photographs/NCMC1100737c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                                                <div class="image-desc">
-                                                    <p>
-                                                        <a href="http://betamk.missingkids.org/poster/NCMC/1100737/1/screen" class="kid-name">CATHRYN LUQUIN</a>
-                                                    </p>
-                                                    <p>
-                                                        Missing Since: 2000<br>
-                                                        Age Now: 18<br>
-                                                        Missing From: NORTH HOLLYWOOD, CA
-                                                    </p>
-                                                    <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1100737/1/screen">View Poster &gt;&gt;</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                </div>
-                    
-                    </div>
-                          <div class="ajax-loader" style="display: none;">
-                            <img src="/etc/clientlibs/ncmec/images/ajax-loader.gif" alt="">
+    </nav>
+  </header>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="#">Our Work</a></li>
+        <li><a href="#">Donate</a></li>
+        <li class="active">Ways to dontate</li>
+      </ol>
+    </div>
+  </div>
+  <article class="content-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-sm-3">
+          <div class="inner-wrapper"> <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h4>Heading</h4>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+          </div>
+        </div>
+        <div class="col-md-10 col-sm-8">
+          <div class="inner-wrapper">
+            <h2 class="main-title">Attempted abduction</h2>
+            <div class="missing-anniversary-container">
+              <p> <b>View anniversaries for:</b>&nbsp;
+                <input type="radio" name="timeframe" value="thisWeek" data-role="none" checked="true">
+                &nbsp;This Week&nbsp;
+                <input type="radio" name="timeframe" value="today" data-role="none">
+                &nbsp;This Day </p>
+              <div id="missing-anniversary-grid-wrapper">
+                <div id="missing-anniversary-grid">
+                    <p class="section-title"><strong>Anniversaries this week - </strong>2010 - 2017</p>
+                    <div class="missing-anniversary-grid">
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1280006c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1280006/1/screen" class="kid-name">ASHLEY BERNAL</a> </p>
+                            <p> Missing Since: 2016<br>
+                              Age Now: 14<br>
+                              Missing From: LOS ANGELES, CA </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1280006/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1276057c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1276057/1/screen" class="kid-name">ANGEL CARTER</a> </p>
+                            <p> Missing Since: 2016<br>
+                              Age Now: 16<br>
+                              Missing From: MEMPHIS, TN </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276057/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1237822c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1237822/1/screen" class="kid-name">EVELIN CORIA-CORONADO</a> </p>
+                            <p> Missing Since: 2014<br>
+                              Age Now: 5<br>
+                              Missing From: CANTON, MS </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1237822/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1156424c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1156424/1/screen" class="kid-name">LAURYN DICKENS</a> </p>
+                            <p> Missing Since: 2010<br>
+                              Age Now: 7<br>
+                              Missing From: MEMPHIS, TN </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1156424/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1276362c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1276362/1/screen" class="kid-name">BRIANNA EVANS</a> </p>
+                            <p> Missing Since: 2016<br>
+                              Age Now: 18<br>
+                              Missing From: NEW ORLEANS, LA </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276362/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1241540c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1241540/1/screen" class="kid-name">MIRIAM GUILLEN</a> </p>
+                            <p> Missing Since: 2014<br>
+                              Age Now: 19<br>
+                              Missing From: ARLETA, CA </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1241540/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMU1180176c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMU/1180176/1/screen" class="kid-name">JANE DOE 2011</a> </p>
+                            <p> Missing Since: 2011<br>
+                              Age Now: <br>
+                              Missing From: WINONA, MN </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMU/1180176/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1237822ac2.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1237822a/2/screen" class="kid-name">MENDY CORIA-CORONADO</a> </p>
+                            <p> Missing Since: 2014<br>
+                              Age Now: 4<br>
+                              Missing From: CANTON, MS </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1237822a/2/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1248323c2.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1248323/2/screen" class="kid-name">MOUSTAFA EISSA</a> </p>
+                            <p> Missing Since: 2013<br>
+                              Age Now: 8<br>
+                              Missing From: SEATTLE, WA </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1248323/2/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1248323c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1248323/1/screen" class="kid-name">FATMA EISSA</a> </p>
+                            <p> Missing Since: 2013<br>
+                              Age Now: 7<br>
+                              Missing From: SEATTLE, WA </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1248323/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1237822ac1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1237822a/1/screen" class="kid-name">KIMBERLY GOMEZ-CORONADO</a> </p>
+                            <p> Missing Since: 2014<br>
+                              Age Now: 9<br>
+                              Missing From: CANTON, MS </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1237822a/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1237822c2.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1237822/2/screen" class="kid-name">JACKELYN GOMEZ-CORONADO</a> </p>
+                            <p> Missing Since: 2014<br>
+                              Age Now: 8<br>
+                              Missing From: CANTON, MS </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1237822/2/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1276416c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1276416/1/screen" class="kid-name">JOSE HERNANDEZ GARCIA</a> </p>
+                            <p> Missing Since: 2016<br>
+                              Age Now: 17<br>
+                              Missing From: SEVIERVILLE, TN </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276416/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1237561c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1237561/1/screen" class="kid-name">JACOB HOGGLE</a> </p>
+                            <p> Missing Since: 2014<br>
+                              Age Now: 5<br>
+                              Missing From: GAITHERSBURG, MD </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1237561/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1237561c2.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1237561/2/screen" class="kid-name">SARAH HOGGLE</a> </p>
+                            <p> Missing Since: 2014<br>
+                              Age Now: 6<br>
+                              Missing From: GAITHERSBURG, MD </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1237561/2/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1276325c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1276325/1/screen" class="kid-name">ALEESHA JOHNSON</a> </p>
+                            <p> Missing Since: 2016<br>
+                              Age Now: 16<br>
+                              Missing From: BATAVIA, NY </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276325/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1276513c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1276513/1/screen" class="kid-name">SYDNEY LEWIS</a> </p>
+                            <p> Missing Since: 2016<br>
+                              Age Now: 18<br>
+                              Missing From: HOUSTON, TX </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276513/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1179358c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1179358/1/screen" class="kid-name">DORIS LOPEZ</a> </p>
+                            <p> Missing Since: 2011<br>
+                              Age Now: 22<br>
+                              Missing From: SOUTHBRIDGE, MA </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1179358/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1198505c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1198505/1/screen" class="kid-name">SHANNA PEOPLES</a> </p>
+                            <p> Missing Since: 2011<br>
+                              Age Now: 25<br>
+                              Missing From: EUNOLA, AL </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1198505/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1279023c2.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1279023/2/screen" class="kid-name">PAULA MEDRANO</a> </p>
+                            <p> Missing Since: 2016<br>
+                              Age Now: 16<br>
+                              Missing From: HOUSTON, TX </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1279023/2/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1279023c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1279023/1/screen" class="kid-name">JENNIFER MEDRANO</a> </p>
+                            <p> Missing Since: 2016<br>
+                              Age Now: 13<br>
+                              Missing From: HOUSTON, TX </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1279023/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1261782c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1261782/1/screen" class="kid-name">BRITTNEY ROBLEDO</a> </p>
+                            <p> Missing Since: 2015<br>
+                              Age Now: 18<br>
+                              Missing From: SAN ANTONIO, TX </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1261782/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1276882c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1276882/1/screen" class="kid-name">IRENE RODRIGUEZ</a> </p>
+                            <p> Missing Since: 2016<br>
+                              Age Now: 16<br>
+                              Missing From: LOS ANGELES, CA </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276882/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1279530c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1279530/1/screen" class="kid-name">ALLENA SMITH</a> </p>
+                            <p> Missing Since: 2016<br>
+                              Age Now: 17<br>
+                              Missing From: HOUSTON, TX </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1279530/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1276121c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen" class="kid-name">MARIA JOSE RODRIGUEZ ROMERO</a> </p>
+                            <p> Missing Since: 2016<br>
+                              Age Now: 18<br>
+                              Missing From: WINTER SPRINGS, FL </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1254261c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1254261/1/screen" class="kid-name">NIA SMITH</a> </p>
+                            <p> Missing Since: 2015<br>
+                              Age Now: 19<br>
+                              Missing From: CHICAGO, IL </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1254261/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1277380c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1277380/1/screen" class="kid-name">DYLAN VANCE</a> </p>
+                            <p> Missing Since: 2016<br>
+                              Age Now: 18<br>
+                              Missing From: ELLIJAY, GA </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1277380/1/screen">View Poster &gt;&gt;</a></div>
                           </div>
                         </div>
                       </div>
                     </div>
+
+                    <p class="section-title"><strong>Anniversaries this week - </strong>2000 - 2009</p>
+                    <div class=" missing-anniversary-grid">
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMU1184097c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMU/1184097/1/screen" class="kid-name">JOHN DOE 2004</a> </p>
+                            <p> Missing Since: 2004<br>
+                              Age Now: 16-20<br>
+                              Missing From: SASABE, AZ </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMU/1184097/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC992297c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/992297/1/screen" class="kid-name">LEON BELL</a> </p>
+                            <p> Missing Since: 2002<br>
+                              Age Now: 30<br>
+                              Missing From: GRAND PRAIRIE, TX </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/992297/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMU1197905c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMU/1197905/1/screen" class="kid-name">JANE DOE 2009</a> </p>
+                            <p> Missing Since: 2009<br>
+                              Age Now: 13-26<br>
+                              Missing From: IRVINE, CA </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMU/1197905/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1023185c2.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1023185/2/screen" class="kid-name">STEPHANIE GUERRERO</a> </p>
+                            <p> Missing Since: 2005<br>
+                              Age Now: 25<br>
+                              Missing From: TAMPA, FL </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1023185/2/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1023185c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1023185/1/screen" class="kid-name">ANTONIA GUERRERO</a> </p>
+                            <p> Missing Since: 2005<br>
+                              Age Now: 24<br>
+                              Missing From: TAMPA, FL </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1023185/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC997267c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/997267/1/screen" class="kid-name">EMILY JUAN</a> </p>
+                            <p> Missing Since: 2004<br>
+                              Age Now: 13<br>
+                              Missing From: FLUSHING, NY </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/997267/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1023185c3.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1023185/3/screen" class="kid-name">SANDRA LOPEZ</a> </p>
+                            <p> Missing Since: 2005<br>
+                              Age Now: 23<br>
+                              Missing From: TAMPA, FL </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1023185/3/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC919898c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/919898/1/screen" class="kid-name">JAQUILLA SCALES</a> </p>
+                            <p> Missing Since: 2001<br>
+                              Age Now: 20<br>
+                              Missing From: WICHITA, KS </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/919898/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-4 col-md-4 anniversaries-grid-element" >
+                        <div class="grid-item"> <img src="http://betamk.missingkids.org/photographs/NCMC1100737c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                          <div class="image-desc">
+                            <p> <a href="http://betamk.missingkids.org/poster/NCMC/1100737/1/screen" class="kid-name">CATHRYN LUQUIN</a> </p>
+                            <p> Missing Since: 2000<br>
+                              Age Now: 18<br>
+                              Missing From: NORTH HOLLYWOOD, CA </p>
+                            <div class="text-right link"><a href="http://betamk.missingkids.org/poster/NCMC/1100737/1/screen">View Poster &gt;&gt;</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="ajax-loader" style="display: none;"> <img src="/etc/clientlibs/ncmec/images/ajax-loader.gif" alt=""> </div>
               </div>
             </div>
-
+          </div>
         </div>
-      </article>
-
-      <footer class="footer-container">
-        <div class="container">
-
-              <div class="row">
-                Footer Starts Here
-              </div>
-
-        </div>
-      </footer>
-
+      </div>
     </div>
+  </article>
+  <footer class="footer-container">
+    <div class="container">
+      <div class="row"> Footer Starts Here </div>
+    </div>
+  </footer>
+</div>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="missingkids/js/plugin/jquery.min.js" type="text/javascript"></script>
-    <script src="missingkids/js/plugin/bootstrap.min.js" type="text/javascript"></script>
-    <script src="missingkids/js/plugin/handlebars-v4.0.10.js" type="text/javascript"></script>
-    <script src="missingkids/js/plugin/jquery.matchHeight.js" type="text/javascript"></script>
-    <script src="missingkids/js/application.js" type="text/javascript"></script>
-    <script src="missingkids/js/anniversaries-grid.js" type="text/javascript"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script type="text/javascript">
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="missingkids/js/plugin/jquery.min.js" type="text/javascript"></script> 
+<script src="missingkids/js/plugin/bootstrap.min.js" type="text/javascript"></script> 
+<script src="missingkids/js/plugin/handlebars-v4.0.10.js" type="text/javascript"></script> 
+<script src="missingkids/js/plugin/jquery.matchHeight.js" type="text/javascript"></script> 
+<script src="missingkids/js/application.js" type="text/javascript"></script> 
+<script src="missingkids/js/anniversaries-grid.js" type="text/javascript"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script type="text/javascript">
     $(function(){
-      $('.anniversaries-grid-element.col-xs-6.col-sm-4.col-md-4').matchHeight({});
+      $('.anniversaries-grid-element').matchHeight({});
     })
     </script>
-  </body>
+</body>
 </html>

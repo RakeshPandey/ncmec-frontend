@@ -1612,7 +1612,7 @@ address {
 .main-title {
   color: #006C8A;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
 }
 .title-4,
@@ -9253,7 +9253,7 @@ and open the template in the editor.
 .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element .grid-item a.kid-name {
   font-family: Futura;
 }
-.missing-anniversary-container .section-title > p {
+.missing-anniversary-container p.section-title {
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -9271,19 +9271,20 @@ and open the template in the editor.
   bottom: 0;
   right: 0;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .missing-anniversary-container .missing-anniversary-grid {
     padding: 0 6.5px;
   }
   .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-sm-4 {
-    width: 31.8%;
+    width: 31.5%;
     margin-right: 13px;
   }
   .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-sm-4:nth-child(3n+3) {
     margin-right: 0;
   }
 }
-@media (max-width: 480px) {
+/* Portrait */
+@media only screen and (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .missing-anniversary-container .missing-anniversary-grid {
     padding: 0 8px;
   }
@@ -9295,6 +9296,19 @@ and open the template in the editor.
     margin-right: 16px !important;
   }
   .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-xs-6:nth-child(even) {
+    margin-right: 0;
+  }
+}
+/* Landscape */
+@media only screen and (min-width: 320px) and (max-width: 760px) and (orientation: landscape) {
+  .missing-anniversary-container .missing-anniversary-grid {
+    padding: 0 8px;
+  }
+  .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-md-4 {
+    width: 31.0%;
+    margin-right: 16px;
+  }
+  .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element:nth-child(3n+3) {
     margin-right: 0;
   }
 }
