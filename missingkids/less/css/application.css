@@ -9023,27 +9023,56 @@ and open the template in the editor.
   padding-right: 8px;
 }
 .missing-anniversary-container .missing-anniversary-grid {
-  margin-left: -16px;
-  margin-right: -16px;
-  color: #fff;
+  padding: 0 8px;
 }
-.missing-anniversary-container .missing-anniversary-grid .grid-item {
-  margin-bottom: 16px;
+.missing-anniversary-container .missing-anniversary-grid:before,
+.missing-anniversary-container .missing-anniversary-grid:after {
+  content: " ";
+  display: table;
+}
+.missing-anniversary-container .missing-anniversary-grid:after {
+  clear: both;
+}
+.missing-anniversary-container .missing-anniversary-grid:before,
+.missing-anniversary-container .missing-anniversary-grid:after {
+  content: " ";
+  display: table;
+}
+.missing-anniversary-container .missing-anniversary-grid:after {
+  clear: both;
+}
+.missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element {
+  color: #fff;
   border-radius: 10px;
   background: #404041;
+  margin: 0 0 16px;
+  padding: 0;
+  position: relative;
 }
-.missing-anniversary-container .missing-anniversary-grid .grid-item img {
+.missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-md-4 {
+  width: 31.8%;
+  margin-right: 16px;
+}
+.missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element:nth-child(3n+3) {
+  margin-right: 0;
+}
+.missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element .grid-item img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
 }
-.missing-anniversary-container .missing-anniversary-grid .grid-item .image-desc {
+.missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element .grid-item .image-desc {
   padding: 16px;
 }
-.missing-anniversary-container .missing-anniversary-grid .grid-item a {
+.missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element .grid-item .image-desc .link {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+.missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element .grid-item a {
   color: #92D6E3;
 }
-.missing-anniversary-container .missing-anniversary-grid .grid-item a.kid-name {
+.missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element .grid-item a.kid-name {
   font-family: Futura;
 }
 .missing-anniversary-container .section-title > p {
@@ -9063,6 +9092,33 @@ and open the template in the editor.
   position: absolute;
   bottom: 0;
   right: 0;
+}
+@media (max-width: 767px) {
+  .missing-anniversary-container .missing-anniversary-grid {
+    padding: 0 6.5px;
+  }
+  .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-sm-4 {
+    width: 31.8%;
+    margin-right: 13px;
+  }
+  .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-sm-4:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .missing-anniversary-container .missing-anniversary-grid {
+    padding: 0 8px;
+  }
+  .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-xs-6 {
+    width: 47%;
+    margin-right: 16px;
+  }
+  .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-xs-6:nth-child(3n+3) {
+    margin-right: 16px !important;
+  }
+  .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-xs-6:nth-child(even) {
+    margin-right: 0;
+  }
 }
 .yearsandmore-container > p,
 .yearsandmore-container > h2 {
@@ -11151,5 +11207,3 @@ textarea.form-control {
 .add-padding {
   padding-left: 8px;
 }
-
-/*# sourceMappingURL=application.css.map */
