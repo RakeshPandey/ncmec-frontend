@@ -10527,6 +10527,10 @@ label.error {
   right: 8px;
   top: 8px;
 }
+.stickyBox li a {
+  text-decoration: none;
+  color: #626366;
+}
 .stickyBox li:first-child {
   margin-top: 0;
 }
@@ -11303,5 +11307,3 @@ textarea.form-control {
   display: -ms-flexbox;
   display: flex;
 }
-
-/*# sourceMappingURL=application.css.map */
