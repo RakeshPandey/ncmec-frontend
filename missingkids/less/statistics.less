@@ -1,7 +1,13 @@
 .statistics-wrapper {
   position: relative;
   overflow: hidden;
-  min-height: 170px;
+  min-height: 180px;
+  @media (min-width: @screen-sm) {
+    min-height: 195px;
+  }
+  @media (min-width: @screen-md) {
+    min-height: 245px;
+  }
   picture, img {
     max-width: none;
     position: absolute;
