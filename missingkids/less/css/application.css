@@ -9691,6 +9691,10 @@ and open the template in the editor.
 }
 .control-label {
   word-wrap: break-word;
+  color: #404041;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
 }
 .error {
   color: #b30303;
@@ -9699,8 +9703,20 @@ and open the template in the editor.
 label.error {
   color: #b30303;
 }
-.volunteer-app-wrapper {
-  padding: 25px 0;
+.volunteer-app-wrapper .inner-wrapper {
+  padding-top: 16px;
+}
+.volunteer-app-wrapper .btn-default {
+  padding: 5px 0;
+  font-size: 16px;
+  box-shadow: none;
+  color: #626366;
+  border: 1px solid #626366;
+}
+.volunteer-app-wrapper .btn-default:hover {
+  background: #008DB6;
+  border-color: #008DB6;
+  color: #fff;
 }
 .volunteer-app-wrapper .panel .panel-heading {
   pointer-events: none;
@@ -9714,6 +9730,18 @@ label.error {
 }
 .volunteer-app-wrapper .panel #background-form label.text-left.text-top {
   padding-bottom: 7px;
+}
+.volunteer-app-wrapper .instructions-wrapper {
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 16px;
+  overflow: hidden;
+}
+.volunteer-app-wrapper .instructions-wrapper .img-title {
+  padding: 16px 16px 0;
+}
+.volunteer-app-wrapper .instructions-wrapper .desc {
+  padding: 0 16px;
 }
 .volunteer-app-wrapper .img-title {
   font-style: italic;
