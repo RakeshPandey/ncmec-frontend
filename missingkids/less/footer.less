@@ -26,6 +26,7 @@
                   padding: 5px 10px;
                   .pull-left();
                   width: 200px;
+                  min-height: 28px;
                   outline: none;
               }
               .btn-subscribe {
@@ -34,6 +35,7 @@
                   border-radius: 0 5px 5px 0;
                   color: @gray-darkest;
                   padding: 5px 10px;
+                  min-height: 28px;
                   .pull-left();
                   &:hover{
                     background-color: #FFC107;
@@ -85,16 +87,20 @@
                   &:first-child {
                     margin-left: 0;
                     @media (min-width: @screen-sm){
-                      display: inline-flex;
-                      max-width: fit-content;
+                      @supports (max-width: fit-content) or (max-width: -webkit-fit-content) or (max-width: -moz-fit-content) {
+                        display: inline-flex;
+                        .fit-content(max-width);
+                      }
                     }
                   }
 
                   &:last-child {
                     margin-right: 0;
                     @media (min-width: @screen-sm){
-                      display: inline-flex;
-                      max-width: fit-content;
+                      @supports (max-width: fit-content) or (max-width: -webkit-fit-content) or (max-width: -moz-fit-content) {
+                        display: inline-flex;
+                        .fit-content(max-width);
+                      }
                     }
                   }
               }
