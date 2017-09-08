@@ -147,6 +147,8 @@
       color: #fff;
       font-family: 'Futura', 'Arial', sans-serif;
       height: 405px;
+      position: relative;
+      overflow: hidden;
       @media (min-width: @screen-sm) {
         height: 545px;
       }
@@ -157,56 +159,63 @@
         padding: 0;
         border: none;
         position: relative;
-        @media (min-width: @screen-sm) {
-          max-height: 312px;
-          overflow: hidden;
-        }
+        height: 50%;
+        overflow: hidden;
         img {
-          width: 100%;
+          min-width: 100%;
+          min-height: 100%;
+          max-width: none;
         }
       }
       .panel-body {
+        position: absolute;
+        min-height: 50%;
+        bottom: 0;
+        background: inherit;
+        width: 100%;
+        z-index: 1001;
         @media (min-width: @screen-sm) {
           padding: 16px 24px;
         }
         .title {
           color: #92D6E3;
           font-size: 24px;
-          line-height: 46px;
-          max-height: 92px;
+          line-height: 32px;
           overflow: hidden;
           margin-top: 0;
           @media (min-width: @screen-sm) {
             font-size: 34px;
+            line-height: 46px;
           }
         }
         .desc {
-          font-size: 24px;
-          line-height: 32px;
+          font-size: 16px;
+          line-height: 21px;
           font-family: inherit;
-          max-height: 96px;
-          overflow: hidden;
+          margin-bottom: 70px;
           @media (min-width: @screen-sm) {
-            max-height: 64px;
+            font-size: 24px;
+            line-height: 32px;
           }
         }
         .btn {
           position: absolute;
           &.btn-block {
-            bottom: 15px;
-            width: 90%;
-            left: 5%;
-            font-size: 24px;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            font-size: 16px;
             @media (min-width: @screen-sm) {
               bottom: 35px;
               width: 80%;
               left: 50%;
+              font-size: 24px;
               transform: translateX(-50%);
             }
             @media (max-width: @screen-sm) {
               padding: 8px 0;
               text-align: center;
-              border-radius: 0 0 10px 10px;
+              border-radius: 0;
             }
             &.link {
               border: none;
@@ -254,30 +263,6 @@
         }
       }
 
-      &.small-image {
-        .panel-heading {
-          max-height: 160px;
-          overflow: hidden;
-          @media (min-width: @screen-sm) {
-            max-height: 220px;
-          }
-        }
-        .panel-body {
-          @media (max-width: @screen-sm){
-            padding: 8px;
-          }
-          .title {
-            font-size: 24px;
-            line-height: 32px;
-          }
-          .desc {
-            font-size: 16px;
-            line-height: 21px;
-            max-height: 105px;
-          }
-        }
-      }
-
       &.big-teaser {
         .panel-heading {
           @media (max-width: 767px) {
@@ -293,7 +278,6 @@
         }
 
         .desc {
-          max-height: 96px;
           @media (max-width: 767px) {
             font-size: 16px;
             line-height: 24px;

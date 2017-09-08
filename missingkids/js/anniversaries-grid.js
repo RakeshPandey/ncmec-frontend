@@ -35,6 +35,7 @@
                 $.get('./missingkids/js/json/anniversaries-grid-results.json', {timeframe: _this.el.timeframeRadio.val()}, function (data) {
                     var html = _this.templates.searchItem(data);
                     _this.el.siteSearchResults.append(html);
+                    $('.anniversaries-grid-element').matchHeight({});
                     _this.el.siteSearchResultsWrapper.find('.ajax-loader').hide();
                 });
 
@@ -50,6 +51,6 @@
 })(jQuery, Handlebars);
 
  $(function() {
-    $('.box').matchHeight(false);
+    $('.anniversaries-grid-element').matchHeight({});
 });
                

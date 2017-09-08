@@ -26,6 +26,7 @@
                   padding: 5px 10px;
                   .pull-left();
                   width: 200px;
+                  min-height: 28px;
                   outline: none;
               }
               .btn-subscribe {
@@ -34,6 +35,7 @@
                   border-radius: 0 5px 5px 0;
                   color: @gray-darkest;
                   padding: 5px 10px;
+                  min-height: 28px;
                   .pull-left();
                   &:hover{
                     background-color: #FFC107;
@@ -64,15 +66,18 @@
               list-style: none;
               padding: 15px 0;
               margin: 0;
+              @media (min-width: @screen-sm){
+                display: flex;
+              }
+
               li {
-                  float: left;
-                  margin: 0 36px;
-                  @media (max-width: 768px) {
-                    margin: 0 35px;
+                  @media (min-width: @screen-sm){
+                    flex: 1;
                   }
                   @media (max-width: 767px) {
                     margin: 10px 0;
                     width: 33.3%;
+                    float: left;
                   }
                   a {
                       color: @gray-lighter;
@@ -81,10 +86,22 @@
 
                   &:first-child {
                     margin-left: 0;
+                    @media (min-width: @screen-sm){
+                      @supports (max-width: fit-content) or (max-width: -webkit-fit-content) or (max-width: -moz-fit-content) {
+                        display: inline-flex;
+                        .fit-content(max-width);
+                      }
+                    }
                   }
 
                   &:last-child {
                     margin-right: 0;
+                    @media (min-width: @screen-sm){
+                      @supports (max-width: fit-content) or (max-width: -webkit-fit-content) or (max-width: -moz-fit-content) {
+                        display: inline-flex;
+                        .fit-content(max-width);
+                      }
+                    }
                   }
               }
           }
@@ -98,7 +115,7 @@
         min-width: 300px;
         margin-right: -13px;
       }
-      .footer-social-links {
+      .social-icons {
         margin: 0;
         padding-left: 0;
         float: right;
@@ -116,7 +133,7 @@
           margin: 10px 5px;
           font-size: 20px;
           @media (min-width: 768px) {
-            margin: 5px;
+            margin: 3px 5px;
           }
           &:last-child {
           margin-right: 0;

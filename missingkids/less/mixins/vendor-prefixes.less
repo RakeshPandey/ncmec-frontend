@@ -225,3 +225,10 @@
       -ms-user-select: @select; // IE10+
           user-select: @select;
 }
+
+.fit-content(@prop) {
+  @{prop}: -webkit-fit-content;
+  @{prop}: -moz-fit-content;
+  @{prop}: -ms-fit-content;
+  @{prop}: fit-content;
+}

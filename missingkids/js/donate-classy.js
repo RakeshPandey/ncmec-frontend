@@ -6,7 +6,7 @@
             $(this).addClass('btn-primary').removeClass('btn-secondary');
             
             var amt = $(this).text();            
-            var num = (amt == 'Others')?'':parseInt(amt.match(/\d+/),10);
+            var num = (amt == 'Other')?'':parseInt(amt.match(/\d+/),10);
             $('#dollars').val(num);
         });
     });

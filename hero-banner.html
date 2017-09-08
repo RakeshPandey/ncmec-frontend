@@ -53,7 +53,7 @@
                 </picture>
 
 
-                <div class="hero-content-wrapper container">
+                <div class="hero-content-wrapper container right">
 
                   <div class="hero-content white">
                     <h3 class="title">2017 HEROS Breakfast</h3>
@@ -68,8 +68,8 @@
           <h3>Hero Banner Carousel</h3>
 
           <div class="hero-banner-wrapper owl-carousel owl-theme hero-carousel">
-
-            <div class="hero-banner image-content">
+            <!-- !!important if entire banner is clickable it shouldn't have <a> inside -->
+            <a class="hero-banner image-content" href="#">
               <picture>
                   <!-- tablet landscape -->
                   <source media="(min-width:769px) and (max-width: 1024px) and (orientation: landscape)" srcset="missingkids/images/hero-banner_TL.png">
@@ -82,15 +82,16 @@
               </picture>
 
 
-              <div class="hero-content-wrapper container">
+              <div class="hero-content-wrapper container center">
 
                 <div class="hero-content white">
                   <h3 class="title">2017 HEROS Breakfast</h3>
                   <p class="desc h4">Honoring Law Enforcement Who Go Above and Beyond To Help Our Children</p>
-                  <a class="btn btn-sm btn-link">Read more</a>
+                  <!-- !!important if entire banner is clickable it shouldn't have <a> inside -->
+                  <!-- <a class="btn btn-sm btn-danger">Read more</a> -->
                 </div>
               </div>
-            </div>
+            </a>
             <div class="hero-banner image-content">
               <picture>
                   <!-- tablet landscape -->
