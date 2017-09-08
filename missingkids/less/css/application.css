@@ -11603,5 +11603,9 @@ textarea.form-control {
 .add-padding {
   padding-left: 8px;
 }
+.twitter-para {
+  margin-bottom: 0px;
+  padding-left: 8px;
+}
 
 /*# sourceMappingURL=application.css.map */
