@@ -8431,6 +8431,8 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content .btn.center {
   float: none;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   position: absolute;
 }
@@ -8546,6 +8548,8 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper.center .hero-content {
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   text-align: center;
   min-width: 600px;
@@ -8695,11 +8699,17 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 @media (min-width: 767px) {
   .footer-container .footer-nav-wrapper .footer-nav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
 }
 @media (min-width: 767px) {
   .footer-container .footer-nav-wrapper .footer-nav ul li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
     flex: 1;
   }
 }
@@ -8718,8 +8728,11 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   margin-left: 0;
 }
 @media (min-width: 767px) {
-  @supports (max-width: fit-content) or (max-width: -webkit-fit-content) or (max-width: -moz-fit-content) {
+  @supports ((max-width: -webkit-fit-content) or (max-width: -moz-fit-content) or (max-width: fit-content)) or (max-width: -moz-fit-content) {
     .footer-container .footer-nav-wrapper .footer-nav ul li:first-child {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
       display: inline-flex;
       max-width: -webkit-fit-content;
       max-width: -moz-fit-content;
@@ -8732,8 +8745,11 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   margin-right: 0;
 }
 @media (min-width: 767px) {
-  @supports (max-width: fit-content) or (max-width: -webkit-fit-content) or (max-width: -moz-fit-content) {
+  @supports ((max-width: -webkit-fit-content) or (max-width: -moz-fit-content) or (max-width: fit-content)) or (max-width: -moz-fit-content) {
     .footer-container .footer-nav-wrapper .footer-nav ul li:last-child {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
       display: inline-flex;
       max-width: -webkit-fit-content;
       max-width: -moz-fit-content;
@@ -10772,7 +10788,6 @@ label.error {
   z-index: 1;
   position: fixed;
   width: 156px;
-  left: 10px;
   padding: 5px;
   bottom: 0;
   background: #c6c8ca;
