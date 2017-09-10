@@ -78,7 +78,17 @@ $(function () {
     if(!$(".header-container").hasClass('home')){
       $(window).scroll(onScroll);
       onScroll();
-    }
+    }    
+    
+  //Side slider Component
+  if($("#js-sideslider").length != 0) {  
+    $("#js-sideslider").load("side-slider.html");
+  }
+    
+  /* This section is used for common component Header & footer */
+  $("#js-header").load("common-header.html"); 
+  $("#js-footer").load("common-footer.html"); 
+    
 });
 
 function mobileViewUpdate() {
