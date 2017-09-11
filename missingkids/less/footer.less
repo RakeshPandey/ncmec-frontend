@@ -6,6 +6,9 @@
       p {
           color: @gray-lighter;
           font-size: 11px;
+          &:nth-child(n+1) {
+            margin-bottom: 0;
+          }
       }
     }
     .subscribe-form {
@@ -57,27 +60,27 @@
     }
 
     .footer-nav-wrapper {
+      > .row:first-child {
+        border-bottom: 1px solid #F1F1F2;
+      }
       .footer-nav {
           margin-bottom: 2px;
           text-align: center;
           font-family: 'Futura', 'Arial', sans-serif;
           ul {
-              border-top: 1px solid @gray-lighter;
               list-style: none;
               padding: 15px 0;
               margin: 0;
-              @media (min-width: @screen-sm){
-                display: flex;
-              }
-
+              display: inline-block;
               li {
+                  float: left;
                   @media (min-width: @screen-sm){
-                    flex: 1;
+                    padding-right: 36px;
+                    padding-left: 36px;
                   }
                   @media (max-width: 767px) {
                     margin: 10px 0;
                     width: 33.3%;
-                    float: left;
                   }
                   a {
                       color: @gray-lighter;
@@ -87,20 +90,14 @@
                   &:first-child {
                     margin-left: 0;
                     @media (min-width: @screen-sm){
-                      @supports (max-width: fit-content) or (max-width: -webkit-fit-content) or (max-width: -moz-fit-content) {
-                        display: inline-flex;
-                        .fit-content(max-width);
-                      }
+                      padding-left: 0;
                     }
                   }
 
                   &:last-child {
                     margin-right: 0;
                     @media (min-width: @screen-sm){
-                      @supports (max-width: fit-content) or (max-width: -webkit-fit-content) or (max-width: -moz-fit-content) {
-                        display: inline-flex;
-                        .fit-content(max-width);
-                      }
+                      padding-right: 0;
                     }
                   }
               }
