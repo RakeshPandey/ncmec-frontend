@@ -7,7 +7,21 @@ label.error{
 }
 
 .volunteer-app-wrapper {
-  padding: 25px 0;
+  .inner-wrapper {
+    padding-top: 16px;
+  }
+  .btn-default {
+    padding: 5px 0;
+    font-size: 16px;
+    box-shadow: none;
+    color: #626366;
+    border: 1px solid #626366;
+    &:hover {
+      background: #008DB6;
+      border-color: #008DB6;
+      color: #fff;
+    }
+  }
 
   .panel {
     .panel-heading {
@@ -30,6 +44,19 @@ label.error{
           }
         }
       }
+    }
+  }
+
+  .instructions-wrapper {
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 16px;
+    overflow: hidden;
+    .img-title {
+      padding: 16px 16px 0;
+    }
+    .desc {
+      padding: 0 16px;
     }
   }
 
