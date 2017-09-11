@@ -9,9 +9,16 @@ $(document).on("click", ".search-container .search-icon", function(){
   if(navbar){
     var viewport = window.innerWidth;
       if(viewport >= 768) {
+        var width = navbar.find('ul:first-child > li:first-child').width();
+        if(!navbar.data('actualLeft')) {
+          var actualLeft = navbar.css('left');
+          navbar.data('actualLeft', actualLeft);
+        }else {
+          var actualLeft = navbar.data('actualLeft');
+        }
         (searchContainer.hasClass('opened'))
-            ? navbar.css('left', '-60px')
-            : navbar.css('left', '104px');
+            ? navbar.css('left', -width/2)
+            : navbar.css('left', actualLeft);
       }
     }
 });
