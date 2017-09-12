@@ -649,7 +649,7 @@
                     $(this).addClass('active');
                     $(this).siblings('input').removeClass('active');
                     if (this.id == "child_id") {                        
-                        $('#js-personal-info-fname, #js-personal-info-mname, #js-personal-info-lname,').removeClass('hide');
+                        $(' #js-personal-info-fname, #js-personal-info-mname, #js-personal-info-lname').removeClass('hide');
                         $('#js-missing-date, #js-adv-search').removeClass('hide');
                         $('#js-missing-from').find('.panel-title > a > span').text('Missing From');
                     } 

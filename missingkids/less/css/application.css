@@ -9066,11 +9066,14 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .teaser .panel-body h5 {
   padding-top: 0;
 }
-.teaser .panel-body button,
-.teaser .panel-body a {
+.teaser .panel-body button {
   font-size: 16px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+.teaser .panel-body a {
+  font-size: 13px;
+  line-height: 16px;
 }
 .teaser .panel-heading {
   position: relative;
@@ -9118,7 +9121,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   padding-bottom: 10px;
 }
 .ncmec-irs-forms li a {
-  background: url("../../images/pdf-icon-small.png") no-repeat 0 9px;
+  background: url("../../images/pdf-icon-small.png") no-repeat 0 1px;
   padding-left: 20px;
 }
 .daf-direct > .daf-direct-logo {
@@ -9190,6 +9193,10 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .teaser-component .teaser .panel .panel-body small {
   color: #F1F1F2;
 }
+.teaser-component .teaser .panel .panel-body a {
+  font-size: 13px;
+  line-height: 16px;
+}
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -9211,9 +9218,10 @@ and open the template in the editor.
 .pdf-list a.pdfLink {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 32px;
   padding-bottom: 5px;
   padding-top: 5px;
+  color: #008db6;
 }
 .pdf-list a.pdfLink:before {
   background: url(../../images/pdf-light.png) no-repeat;

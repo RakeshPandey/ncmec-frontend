@@ -32,10 +32,14 @@
         h5 {
             padding-top: 0;
         }
-        button, a {
+        button {
             font-size: @font-size-small;
             padding-top: 5px;
             padding-bottom: 5px; 
+        }
+        a {
+            font-size: @font-size-base;
+            line-height: @font-size-small;
         }
     }
     .panel-heading {
@@ -85,7 +89,7 @@
     line-height: 16px;
     padding-bottom: 10px;
     a {
-        background: url("../../images/pdf-icon-small.png") no-repeat 0 9px;
+        background: url("../../images/pdf-icon-small.png") no-repeat 0 1px;
         padding-left: 20px;
     }
   }
@@ -150,6 +154,10 @@
                 }
                 p, span, small {
                     color: @gray-lighter;
+                }
+                a {
+                    font-size: @font-size-base;
+                    line-height: @font-size-small;
                 }
             }
         }
