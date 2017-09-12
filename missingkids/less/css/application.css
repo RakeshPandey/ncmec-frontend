@@ -7033,14 +7033,14 @@ label.error {
 .homepage-text {
   font-family: 'Futura', 'Arial', sans-serif;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: normal;
   color: #818181 ;
   line-height: 36px;
 }
 .homepage-customheading {
   font-family: 'Futura', 'Arial', sans-serif;
   font-size: 42px;
-  font-weight: 600;
+  font-weight: normal;
   color: #FDB813 ;
   line-height: 60px;
 }
