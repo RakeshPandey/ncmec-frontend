@@ -7762,7 +7762,7 @@ label.error {
 }
 .header-container .navbar .container .navbar-header .donate-btn-container .btn {
   font-family: 'Futura', 'Arial', sans-serif;
-  padding: 8px 20px;
+  padding: 12px 20px;
   font-size: 16px;
 }
 @media (min-width: 767px) {
@@ -7818,7 +7818,7 @@ label.error {
     height: 65px;
     position: absolute;
     left: 104px;
-    top: 10px;
+    top: 16px;
     z-index: 5;
   }
 }
@@ -7854,7 +7854,7 @@ label.error {
 }
 @media (min-width: 992px) {
   .header-container .navbar .container #navbar > ul > li {
-    padding: 20px 8px 10px;
+    padding: 16px 8px 16px;
   }
 }
 @media (max-width: 767px) {
@@ -7906,7 +7906,7 @@ label.error {
   position: absolute;
   top: 80px;
   border-radius: 0;
-  padding: 16px;
+  padding: 0 16px 16px 16px;
   border: 0;
   margin: 0;
   font-weight: bold;
@@ -7947,6 +7947,7 @@ label.error {
 }
 .header-container .navbar .container #navbar > ul > li:hover ul.dropdown-menu > li {
   margin-bottom: 0;
+  margin-top: 16px;
 }
 @media (max-width: 767px) {
   .header-container .navbar .container #navbar > ul > li:hover ul.dropdown-menu > li {
