@@ -6,6 +6,9 @@
       p {
           color: @gray-lighter;
           font-size: 11px;
+          &:nth-child(n+1) {
+            margin-bottom: 0;
+          }
       }
     }
     .subscribe-form {
@@ -57,27 +60,35 @@
     }
 
     .footer-nav-wrapper {
+      > .row:first-child {
+        border-bottom: 1px solid #F1F1F2;
+      }
       .footer-nav {
-          margin-bottom: 2px;
+          padding-bottom: 16px;
           text-align: center;
           font-family: 'Futura', 'Arial', sans-serif;
           ul {
-              border-top: 1px solid @gray-lighter;
               list-style: none;
-              padding: 15px 0;
+              padding: 16px 0 0;
               margin: 0;
-              @media (min-width: @screen-sm){
-                display: flex;
+              @media (max-width: @screen-sm) {
+                + ul {
+                  padding-top: 0;
+                }
               }
-
+              @media (min-width: @screen-sm){
+                display: inline-block;
+              }
               li {
-                  @media (min-width: @screen-sm){
-                    flex: 1;
+                  float: left;
+                  width: 119px;
+                  word-break: break-all;
+                  @media (min-width: @screen-sm) {
+                    width: 110px;
                   }
                   @media (max-width: 767px) {
                     margin: 10px 0;
                     width: 33.3%;
-                    float: left;
                   }
                   a {
                       color: @gray-lighter;
@@ -87,20 +98,16 @@
                   &:first-child {
                     margin-left: 0;
                     @media (min-width: @screen-sm){
-                      @supports (max-width: fit-content) or (max-width: -webkit-fit-content) or (max-width: -moz-fit-content) {
-                        display: inline-flex;
-                        .fit-content(max-width);
-                      }
+                      text-align: left;
+                      width: 75px;
                     }
                   }
 
                   &:last-child {
                     margin-right: 0;
                     @media (min-width: @screen-sm){
-                      @supports (max-width: fit-content) or (max-width: -webkit-fit-content) or (max-width: -moz-fit-content) {
-                        display: inline-flex;
-                        .fit-content(max-width);
-                      }
+                      text-align: right;
+                      width: 75px;
                     }
                   }
               }
