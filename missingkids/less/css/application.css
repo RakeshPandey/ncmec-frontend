@@ -7762,12 +7762,17 @@ label.error {
 }
 .header-container .navbar .container .navbar-header .donate-btn-container .btn {
   font-family: 'Futura', 'Arial', sans-serif;
-  padding: 12px 20px;
-  font-size: 16px;
+  padding: 5px 20px;
+  font-size: 24px;
+}
+@media (max-width: 992px) {
+  .header-container .navbar .container .navbar-header .donate-btn-container .btn {
+    padding: 5px 8px;
+  }
 }
 @media (min-width: 767px) {
   .header-container .navbar .container .navbar-header .donate-btn-container {
-    margin: 20px 13px;
+    margin: 16px 8px;
   }
 }
 @media (max-width: 768px) {
@@ -7849,7 +7854,7 @@ label.error {
 @media (max-width: 768px) {
   .header-container .navbar .container #navbar > ul > li {
     font-size: 11px;
-    padding: 20px 5px;
+    padding: 16px 5px;
   }
 }
 @media (min-width: 992px) {
@@ -7913,7 +7918,7 @@ label.error {
 }
 @media (min-width: 767px) {
   .header-container .navbar .container #navbar > ul > li:hover > ul {
-    top: 49px;
+    top: 45px;
     min-width: 480px;
   }
   .header-container .navbar .container #navbar > ul > li:hover > ul.one-column {
@@ -8048,7 +8053,7 @@ label.error {
   .header-container .navbar .container .secondary-header .site-functionalities .search-wrapper {
     position: relative;
     top: -45px;
-    right: -90px;
+    right: -70px;
   }
 }
 .header-container .navbar .container .secondary-header .site-functionalities .search-wrapper li {
@@ -8120,7 +8125,7 @@ label.error {
   .header-container .navbar .container .secondary-header .site-functionalities {
     position: absolute;
     top: 27px;
-    right: 120px;
+    right: 150px;
   }
 }
 .header-container .navbar .container .secondary-header .site-functionalities .switch {
@@ -8201,14 +8206,14 @@ label.error {
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .scroll-started .header-container .navbar .container .secondary-header .search-wrapper {
-    right: 150px;
+    right: 160px;
   }
 }
 @media (min-width: 767px) and (orientation: landscape) {
   .scroll-started .header-container .navbar .container .secondary-header .site-functionalities {
     position: absolute;
     top: 27px;
-    right: 155px;
+    right: 185px;
   }
   .scroll-started .header-container .navbar .container .secondary-header .site-functionalities .search-icon {
     position: static;

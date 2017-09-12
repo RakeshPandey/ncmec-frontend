@@ -90,11 +90,14 @@
                 margin: 8px;
                 .btn {
                     font-family: @font-family-serif;
-                    padding: 12px 20px;
-                    font-size: 16px;
+                    padding: 5px 20px;
+                    font-size: 24px;
+                    @media(max-width: @screen-md){
+                      padding: 5px 8px;
+                    }
                 }
                 @media(min-width: @screen-sm-min){
-                    margin:20px @tablet-spacing;
+                    margin:16px 8px;
                 }
 
                 @media(max-width: 768px){
@@ -174,11 +177,10 @@
 
                     @media(max-width: 768px){
                       font-size: 11px;
-                      padding: 20px 5px;
+                      padding: 16px 5px;
                     }
                     @media(min-width: @screen-md-min){
                         padding: 16px @mobile-spacing-a 16px;
-
                     }
 
                     @media(max-width: @screen-sm){
@@ -239,7 +241,7 @@
                             margin: 0;
                             font-weight: bold;
                             @media(min-width: @screen-sm-min){
-                                top: 49px;
+                                top: 45px;
                                 min-width: 480px;
                                 &.one-column{
                                   min-width: 90%;
@@ -372,7 +374,7 @@
                   @media (min-width: 480px) and (max-width: 768px){
                     position: relative;
                     top: -45px;
-                    right: -90px;
+                    right: -70px;
                   }
                   li {
                     display: inline-block;
@@ -452,7 +454,7 @@
                 @media(min-width: @screen-sm-min) and (orientation : landscape) {
                     position:absolute;
                     top: 27px;
-                    right: 120px;
+                    right: 150px;
                 }
 
 
@@ -551,7 +553,7 @@
 
                 @media (min-width: 480px) and (max-width: 768px){
                   .search-wrapper{
-                    right: 150px;
+                    right: 160px;
                   }
                 }
 
@@ -565,7 +567,7 @@
                         }
                         position:absolute;
                         top: 27px;
-                        right: 155px;
+                        right: 185px;
                     }
                 }
             }
