@@ -12,12 +12,13 @@
         text-align: center;
     }
     .currency-symb {
-        padding: 0 9px 0 18px;
+        padding: 0 8px 0 16px;
     }
     .currency-type {
-        padding: 0 17px 0 8px;
+        padding: 0 16px 0 8px;
     }
     .donate-row {
+        padding: 0 16px;
         .btn {
             font-size: 16px;
             margin: 0 8px;
@@ -25,7 +26,15 @@
             background-color: #008DB6;
             border: 1px solid #008DB6;
             width: 64px;
-            height: 32px;        
+            height: 32px;
+            display: block;
+            float: left;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
         }
         .btn-secondary{
             font-size: 16px;
@@ -46,33 +55,41 @@
         border: 0;
         text-align: center; 
         font-size:16px;
+        width: 144px;
+        height: 32px;
     }
     
     #dollars{
         width: 64px;
-        margin-top: 15px;
+        float: left;
     }
     .donation{
         margin: 10px 0;
         text-align: left;
+        line-height: 30px;
         label.donation-label,span{
-           padding-top: 16px;
+           padding-top: 0;
         }
         input[type="text"]{
             position: relative;
-            top: -10px;
+            float: left;
         }
         label {
             font-weight: normal;
             font-size: 13px;
+            float: left;
         }
         .radio {
             label {
-                padding-left: 10px;
-                padding-right: 10px;
-//                input [type="radio"] {
-//                    margin-right: 16px;
-//                }
+                padding-left: 16px;
+                padding-right: 16px;
+                &.gutterR0 {
+                    padding-right: 0;
+                }
+            }
+            input[type="radio"] {
+                float: left;
+                margin-top: 8px;
             }
         }
     }
@@ -84,28 +101,61 @@
     }
 }
 
-@media screen and (max-width: 767px) and (min-width: 320px){
-    .donate-classy {
+@media (min-width: 768px) and (max-width: @screen-md) {
+   .donate-classy { 
         .donate-row {
+            padding: 0 16px;
             .btn {
-                margin: 0px;
+                font-size: 16px;
+                margin: 0 6px;           
+                width: 52px;
+                height: 39px;
+                padding: 6px;
+                &:first-child {
+                    margin-left: 60px;
+                }
             }
         }
-        .donation input[type="text"]{
-            top: 0px;
-        }
-    }
+    }    
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px){
     .donate-classy {
-        text-align: center;
+        text-align: left;
         .donate-row {
             .btn{
                 margin: 0px 8px;
-                width: 52px;
-                height: 39px;
+                width: 64px;
+                height: 32px;
                 padding: 0px;
+                &:first-child {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px){
+    .donate-classy {
+        text-align: left;
+        .donate-row {
+            padding: 0 16px;
+            .btn {
+                margin-bottom: 8px;
+            }
+        }
+        .donation {
+            input[type="text"]{
+                top: 0px;
+            }
+            .radio {
+                input[type="radio"]{
+                    margin-left: 0;  
+                }                
+                label {
+                    padding-left:30px;
+                }
             }
         }
     }
