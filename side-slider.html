@@ -1,0 +1,64 @@
+<div class="stickyWrapper">
+    <span id="arrow" class="down"></span>
+    <div class="stickyBox">                    
+        <ul class="clearfix">
+            <li><a href="find-our-children-details.html">Search Missing</a>
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </li>
+            <li><a href="#">Cybertipline</a>
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </li>
+            <li><a href="#">Report</a>
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </li>
+            <li><a href="#">Amber Alert</a>
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </li> 
+            <li><a href="#">Amber Alert</a>
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </li>
+            <li><a href="#">Amber Alert</a>
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.stickyWrapper').click(function(){
+            $('.stickyBox').slideToggle('slow');
+            var currClass = $('#arrow').attr("class");
+            if(currClass=="down")
+                $('#arrow').removeClass('down').addClass('up');
+            else
+                $('#arrow').removeClass('up').addClass('down');
+        });
+        //$(".stickyWrapper").stick_in_parent();
+
+        $(window).on("scroll", function(){
+
+            if(visibleY(document.querySelector('.footer-container'))){
+                $(".stickyWrapper").addClass('absolute');
+            }else {
+                $(".stickyWrapper").removeClass('absolute');
+            }
+        });
+
+        var visibleY = function(el){
+            var rect = el.getBoundingClientRect(), top = rect.top, height = rect.height, 
+                el = el.parentNode;
+            do {
+                rect = el.getBoundingClientRect();
+                if (top <= rect.bottom === false) return false;
+                // Check if the element is out of view due to a container scrolling
+                if ((top + height) <= rect.top) return false
+                el = el.parentNode;
+            } while (el != document.body);
+            // Check its within the document viewport
+            return top <= document.documentElement.clientHeight;
+        };
+
+    });
+
+
+</script>
