@@ -8375,7 +8375,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 @media (min-width: 767px) {
   .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content {
-    left: 50px;
+    left: 0;
     top: 30px;
   }
 }
@@ -9374,6 +9374,27 @@ and open the template in the editor.
   display: block;
   background-size: 100%;
 }
+.pdf-list a.pdfLink-dark {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  padding-bottom: 0;
+  padding-top: 0;
+  color: #008DB6;
+  line-height: 28px;
+}
+.pdf-list a.pdfLink-dark:before {
+  background: url(../../images/pdf-dark.png) no-repeat;
+  content: " ";
+  width: 18px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 18px;
+  z-index: 999;
+  display: block;
+  background-size: 100%;
+}
 .missing-anniversary-container > p,
 .missing-anniversary-container > h2 {
   padding-left: 0;
@@ -9456,7 +9477,7 @@ and open the template in the editor.
     padding: 0 0px;
   }
   .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-sm-4 {
-    width: 31.5%;
+    width: 31%;
     margin-right: 13px;
   }
   .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-sm-4:nth-child(3n+3) {
@@ -11219,6 +11240,9 @@ hr {
 .three-column .video-image-component .col-md-10 {
   width: 100%;
 }
+.gen-info-list {
+  margin-bottom: 0;
+}
 .gen-info-list .list-group-item img {
   margin-left: 0;
   border-radius: 10px;
@@ -11761,4 +11785,7 @@ textarea.form-control {
 .img-left {
   float: left !important;
   margin-right: 16px;
+}
+.curverd-img {
+  border-radius: 10px;
 }
