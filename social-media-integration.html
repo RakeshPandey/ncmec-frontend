@@ -1,148 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
 
-    <title>Theme Template for Bootstrap</title>
+        <title>Theme Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="missingkids/less/css/application.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
+        <!-- Bootstrap core CSS -->
+        <link href="missingkids/less/css/application.css" rel="stylesheet">
+        <!-- Bootstrap theme -->
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
-    <!-- Custom styles for this template -->
+        <!-- Custom styles for this template -->
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    </head>
 
-  <body>
-     <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '1369516023116627',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.10'
-    });
-    FB.AppEvents.logPageView();
-  };
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-    <div class="wrapper">
+    <body>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId            : '1369516023116627',
+                    autoLogAppEvents : true,
+                    xfbml            : true,
+                    version          : 'v2.10'
+                });
+                FB.AppEvents.logPageView();
+            };
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <div class="wrapper">
 
-      <header class="header-container">
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img src="missingkids/images/logo.png" alt="NCMEC"></a>
+            <header class="header-container" id="js-header"></header>
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Our Work</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li class="active">Ways to dontate</li>
+                    </ol>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="#">GET HELP NOW</a></li>
-                    <li><a href="#">THE ISSUES</a></li>
-                    <li class="active"><a href="#">OUR WORK</a></li>
-                    <li><a href="#">EDUCATION</a></li>
-                    <li><a href="#">SUPPORT US</a></li>
-                </ul>
-                <div class="right-section pull-right"><button type="button" class="btn btn-lg btn-primary">Donate</button></div>
             </div>
-        </nav>
-      </header>
+            <div class="cybertipline-banner">
+                <article class="content-wrapper">
+                    <div class="container">
 
-      <div class="breadcrumbs">
-        <div class="container">
-            <ol class="breadcrumb">
-                <li><a href="#">Our Work</a></li>
-                <li><a href="#">Donate</a></li>
-                <li class="active">Ways to dontate</li>
-            </ol>
-        </div>
-      </div>
-        <div class="cybertipline-banner">
-      <article class="content-wrapper">
-        <div class="container">
+                        <div class="row">
 
-            <div class="row">
-              
-              <div class="col-md-10 col-sm-8 col-md-offset-2 col-sm-offset-3 main-content-area">
-                <div class="inner-wrapper">
-                     <div class="modal-body row">
-                         <div id="fb-root"></div>
-                        <div class="fb-share-button" 
-    data-href="http://www.google.com" 
-    data-layout="button">
-  </div> 
-      <script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
+                            <div class="col-md-10 col-sm-8 col-md-offset-2 col-sm-offset-3 main-content-area">
+                                <div class="inner-wrapper">
+                                    <div class="modal-body row">
+                                        <div id="fb-root"></div>
+                                        <div class="fb-share-button" 
+                                             data-href="http://www.google.com" 
+                                             data-layout="button">
+                                        </div> 
+                                        <script>window.twttr = (function(d, s, id) {
+                                                var js, fjs = d.getElementsByTagName(s)[0],
+                                                    t = window.twttr || {};
+                                                if (d.getElementById(id)) return t;
+                                                js = d.createElement(s);
+                                                js.id = id;
+                                                js.src = "https://platform.twitter.com/widgets.js";
+                                                fjs.parentNode.insertBefore(js, fjs);
 
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
+                                                t._e = [];
+                                                t.ready = function(f) {
+                                                    t._e.push(f);
+                                                };
 
-  return t;
-}(document, "script", "twitter-wjs"));</script>
+                                                return t;
+                                            }(document, "script", "twitter-wjs"));</script>
 
-        <a href="https://twitter.com/share?text=Hello%20Priyanka&&url=https%3A%2F%2Fgoogle.com&via=aritra" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                        <a href="https://twitter.com/share?text=Hello%20Priyanka&&url=https%3A%2F%2Fgoogle.com&via=aritra" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    
-</div>
-                </div>
-              </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
             </div>
 
-        </div>
-      </article>
-      </div>
-
-      <footer class="footer-container">
-        <div class="container">
-
-              <div class="row">
-                Footer Starts Here
-              </div>
+            <footer class="footer-container inner-page" id="js-footer"></footer>
 
         </div>
-      </footer>
-
-    </div>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="missingkids/js/plugin/jquery.min.js" type="text/javascript"></script>
-            <script src="missingkids/js/plugin/jquery.validate.min.js" type="text/javascript"></script>
+        <!-- Bootstrap core JavaScript
+================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="missingkids/js/plugin/jquery.min.js" type="text/javascript"></script>
+        <script src="missingkids/js/plugin/jquery.validate.min.js" type="text/javascript"></script>
 
         <script src="missingkids/js/plugin/bootstrap.min.js" type="text/javascript"></script>
         <script src="missingkids/js/application.js" type="text/javascript"></script>
         <script src="missingkids/js/validation.js" type="text/javascript"></script>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  </body>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    </body>
 </html>

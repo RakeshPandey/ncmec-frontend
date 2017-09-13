@@ -24,31 +24,15 @@
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
     </head>
 
     <body>
 
         <div class="wrapper">
-            <header class="header-container">
-                <nav class="navbar navbar-default">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="#"><img src="missingkids/images/logo.png" alt="NCMEC"></a>
-                        </div>
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">GET HELP NOW</a></li>
-                            <li><a href="#">THE ISSUES</a></li>
-                            <li class="active"><a href="#">OUR WORK</a></li>
-                            <li><a href="#">EDUCATION</a></li>
-                            <li><a href="#">SUPPORT US</a></li>
-                        </ul>
-                        <div class="right-section pull-right"><button type="button" class="btn btn-lg btn-primary">Donate</button></div>
-                    </div>
-                </nav>
-            </header>
+            <header class="header-container" id="js-header"></header>
             <div class="breadcrumbs">
                 <div class="container">
                     <ol class="breadcrumb">
@@ -81,72 +65,72 @@
                                         <div id="missing-anniversary-grid"></div>
                                         <div class="ajax-loader"><img src="missingkids/images/ajax-loader.gif" alt=""/></div>
                                         <div class="row">
-                                        <div class="col-xs-6 col-md-4 anniversaries-grid-element">
-                        <div class="grid-item">
-                            <img src="http://betamk.missingkids.org/photographs/NCMC1276121c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                            <div class="image-desc">
-                                <p>
-                                    <a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen" class="kid-name">MARIA JOSE RODRIGUEZ ROMERO</a>
-                                </p>
-                                <p>
-                                    Missing Since: 2016<br>
-                                    Age Now: 18<br>
-                                    Missing From: WINTER SPRINGS, FL aa a a a a a a a aa a a
-                                </p>
-                                <div class="text-right"><a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen" class="absolute-link">View Poster &gt;&gt;</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-4">
-                        <div class="grid-item">
-                            <img src="http://betamk.missingkids.org/photographs/NCMC1276121c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                            <div class="image-desc">
-                                <p>
-                                    <a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen" class="kid-name">MARIA JOSE RODRIGUEZ ROMERO</a>
-                                </p>
-                                <p>
-                                    Missing Since: 2016<br>
-                                    Age Now: 18<br>
-                                    Missing From: WINTER SPRINGS, FL
-                                </p>
-                                <div class="text-right"><a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen">View Poster &gt;&gt;</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-4">
-                        
-                        <div class="grid-item">
-                            <img src="http://betamk.missingkids.org/photographs/NCMC1276121c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                            <div class="image-desc">
-                                <p>
-                                    <a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen" class="kid-name">MARIA JOSE RODRIGUEZ ROMERO</a>
-                                </p>
-                                <p>
-                                    Missing Since: 2016<br>
-                                    Age Now: 18<br>
-                                    Missing From: WINTER SPRINGS, FL aa aa aa aa aa
-                                </p>
-                                <div class="text-right"><a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen">View Poster &gt;&gt;</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-4">
-                        <div class="grid-item">
-                            <img src="http://betamk.missingkids.org/photographs/NCMC1276121c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
-                            <div class="image-desc">
-                                <p>
-                                    <a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen" class="kid-name">MARIA JOSE RODRIGUEZ ROMERO</a>
-                                </p>
-                                <p>
-                                    Missing Since: 2016<br>
-                                    Age Now: 18<br>
-                                    Missing From: WINTER SPRINGS, FL
-                                </p>
-                                <div class="text-right"><a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen">View Poster &gt;&gt;</a></div>
-                            </div>
-                        </div>
-                    </div>
-                                    </div>
+                                            <div class="col-xs-6 col-md-4 anniversaries-grid-element">
+                                                <div class="grid-item">
+                                                    <img src="http://betamk.missingkids.org/photographs/NCMC1276121c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                                                    <div class="image-desc">
+                                                        <p>
+                                                            <a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen" class="kid-name">MARIA JOSE RODRIGUEZ ROMERO</a>
+                                                        </p>
+                                                        <p>
+                                                            Missing Since: 2016<br>
+                                                            Age Now: 18<br>
+                                                            Missing From: WINTER SPRINGS, FL aa a a a a a a a aa a a
+                                                        </p>
+                                                        <div class="text-right"><a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen" class="absolute-link">View Poster &gt;&gt;</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-md-4">
+                                                <div class="grid-item">
+                                                    <img src="http://betamk.missingkids.org/photographs/NCMC1276121c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                                                    <div class="image-desc">
+                                                        <p>
+                                                            <a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen" class="kid-name">MARIA JOSE RODRIGUEZ ROMERO</a>
+                                                        </p>
+                                                        <p>
+                                                            Missing Since: 2016<br>
+                                                            Age Now: 18<br>
+                                                            Missing From: WINTER SPRINGS, FL
+                                                        </p>
+                                                        <div class="text-right"><a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen">View Poster &gt;&gt;</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-md-4">
+
+                                                <div class="grid-item">
+                                                    <img src="http://betamk.missingkids.org/photographs/NCMC1276121c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                                                    <div class="image-desc">
+                                                        <p>
+                                                            <a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen" class="kid-name">MARIA JOSE RODRIGUEZ ROMERO</a>
+                                                        </p>
+                                                        <p>
+                                                            Missing Since: 2016<br>
+                                                            Age Now: 18<br>
+                                                            Missing From: WINTER SPRINGS, FL aa aa aa aa aa
+                                                        </p>
+                                                        <div class="text-right"><a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen">View Poster &gt;&gt;</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-md-4">
+                                                <div class="grid-item">
+                                                    <img src="http://betamk.missingkids.org/photographs/NCMC1276121c1.jpg" altsrc="http://via.placeholder.com/224x280" onerror="this.src = $(this).attr('altSrc')">
+                                                    <div class="image-desc">
+                                                        <p>
+                                                            <a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen" class="kid-name">MARIA JOSE RODRIGUEZ ROMERO</a>
+                                                        </p>
+                                                        <p>
+                                                            Missing Since: 2016<br>
+                                                            Age Now: 18<br>
+                                                            Missing From: WINTER SPRINGS, FL
+                                                        </p>
+                                                        <div class="text-right"><a href="http://betamk.missingkids.org/poster/NCMC/1276121/1/screen">View Poster &gt;&gt;</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -216,60 +200,52 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="scroll-slider">&nbsp;</div>
+                        <div class="scroll-slider" id="js-sideslider">&nbsp;</div>
                     </div>
 
                 </div>
             </article>
 
-            <footer class="footer-container">
-                <div class="container">
-
-                    <div class="row">
-                        Footer Starts Here
-                    </div>
-
-                </div>
-            </footer>
+            <footer class="footer-container inner-page" id="js-footer"></footer>
 
         </div>
 
         <script id="tmpl-anniversary-grid-item" type="text/x-handlebars-template">
-            
 
-            <div>
-            
-                {{#each sections}}
-                    <div class="section-title">
-                        <p><strong>{{section-title}} - </strong></p>
-                        <p>{{section-title-val}}</p>
-                    </div>
-                    <div class="row missing-anniversary-grid">
-                    {{#each results}}
-                    <div class="col-xs-6 col-md-4">
-                        <div class="grid-item">
-                            <img src="http://via.placeholder.com/224x280" />
-                            <div class="image-desc">
-                                <p>
-                                    <a href="#" class="kid-name">{{name}}</a>
-                                </p>
-                                <p>
-                                    Missing Since: {{missing-since}}<br/>
-                                    Age Now: {{age-now}}<br/>
-                                    Missing From: {{missing-from}}
-                                </p>
-                                <div class="text-right"><a href="#">View Poster >></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    {{/each}}
-                        </div>
-                {{/each}}    
-                
+
+<div>
+
+    {{#each sections}}
+    <div class="section-title">
+        <p><strong>{{section-title}} - </strong></p>
+        <p>{{section-title-val}}</p>
+            </div>
+    <div class="row missing-anniversary-grid">
+        {{#each results}}
+        <div class="col-xs-6 col-md-4">
+            <div class="grid-item">
+                <img src="http://via.placeholder.com/224x280" />
+                <div class="image-desc">
+                    <p>
+                        <a href="#" class="kid-name">{{name}}</a>
+            </p>
+                    <p>
+                        Missing Since: {{missing-since}}<br/>
+                        Age Now: {{age-now}}<br/>
+                        Missing From: {{missing-from}}
+            </p>
+                    <div class="text-right"><a href="#">View Poster >></a></div>
+            </div>
+            </div>
+            </div>
+        {{/each}}
+            </div>
+    {{/each}}    
+
             </div>
         </script>
         <!-- Bootstrap core JavaScript
-        ================================================== -->
+================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
 
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -279,7 +255,7 @@
         <script src="missingkids/js/plugin/jquery.matchHeight.js" type="text/javascript"></script>
         <script src="missingkids/js/application.js" type="text/javascript"></script>
         <script src="missingkids/js/anniversaries-grid.js" type="text/javascript"></script>
-           
+
 
     </body>
 </html>
