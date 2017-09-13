@@ -13,8 +13,8 @@
 
 // Creates a wrapper for a series of columns
 .make-row(@gutter: @grid-gutter-width) {
-  margin-left:  ceil((@gutter / -2));
-  margin-right: floor((@gutter / -2));
+  margin-left:  ceil(-(@gutter));
+  margin-right: floor(-(@gutter));
   &:extend(.clearfix all);
 }
 

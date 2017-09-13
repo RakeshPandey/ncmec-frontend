@@ -32,23 +32,7 @@
   <body>
 
     <div class="wrapper">
-      <header class="header-container">
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img src="missingkids/images/logo.png" alt="NCMEC"></a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="#">GET HELP NOW</a></li>
-                    <li><a href="#">THE ISSUES</a></li>
-                    <li class="active"><a href="#">OUR WORK</a></li>
-                    <li><a href="#">EDUCATION</a></li>
-                    <li><a href="#">SUPPORT US</a></li>
-                </ul>
-                <div class="right-section pull-right"><button type="button" class="btn btn-lg btn-primary">Donate</button></div>
-            </div>
-        </nav>
-      </header>
+      <header class="header-container" id="js-header"></header>
       <div class="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb">
@@ -63,7 +47,7 @@
 
             <div class="row">
               
-              <div class="col-md-6 col-sm-8 col-md-offset-2 col-sm-offset-3">
+              <div class="col-md-6 col-sm-8 col-md-offset-2 col-sm-offset-3 main-content-area">
                 <div class="inner-wrapper">
                     <h2 class="main-title">General Information</h2>
                     <p>The following publications provide general information about resources available at the National Center for Missing &amp; Exploited Children®, child safety and prevention, and issues concerning missing and sexually exploited children.</p>
@@ -152,7 +136,7 @@
                   </div>
                 </div>
               </div>
-              <div class="scroll-slider">&nbsp;</div>
+              <div class="scroll-slider" id="js-sideslider">&nbsp;</div>
             </div>
 
         </div>
@@ -174,7 +158,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
+    <script src="missingkids/js/plugin/jquery.min.js" type="text/javascript"></script>
+    <script src="missingkids/js/plugin/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="missingkids/js/plugin/bootstrap.min.js" type="text/javascript"></script>
+    <script src="missingkids/js/application.js" type="text/javascript"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   </body>
 </html>

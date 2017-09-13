@@ -33,23 +33,7 @@
 
     <div class="wrapper">
 
-      <header class="header-container">
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img src="missingkids/images/logo.png" alt="NCMEC"></a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="#">GET HELP NOW</a></li>
-                    <li><a href="#">THE ISSUES</a></li>
-                    <li class="active"><a href="#">OUR WORK</a></li>
-                    <li><a href="#">EDUCATION</a></li>
-                    <li><a href="#">SUPPORT US</a></li>
-                </ul>
-                <div class="right-section pull-right"><button type="button" class="btn btn-lg btn-primary">Donate</button></div>
-            </div>
-        </nav>
-      </header>
+      <header class="header-container" id="js-header"></header>
 
       <div class="breadcrumbs">
         <div class="container">
@@ -65,67 +49,46 @@
         <div class="container">
 
             <div class="row">
-              <div class="col-md-2 col-sm-3">
+              <div class="col-md-10 col-sm-8 col-md-offset-2 col-sm-offset-3">
                 <div class="inner-wrapper">
-                  <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                  <h4>Heading</h4>
-                  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                  <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-                </div>
-              </div>
-              <div class="col-md-10 col-sm-8">
-                <div class="inner-wrapper">
-<!--
-                  <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                  <h2>Heading</h2>
-                  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                  <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
--->
                     <h2 class="main-title">Donate Classy</h2>
-                                <div class="donate-classy ncmec-form row">
-                                    <h5 class="offsetT0">Select an amount</h5>
-                                    <form>                                    
-                                        <div class="donate-row clearfix">
-                                            <button type="button" class="btn btn-primary donate">$250</button>
-                                            <button type="button" class="btn btn-secondary donate">$125</button>
-                                            <button type="button" class="btn btn-secondary donate">$75</button>
-                                            <button type="button" class="btn btn-secondary donate">$50</button>
-                                            <button type="button" class="btn btn-secondary donate">Other</button>
-                                        </div>
-                                        <div class="form-inline donation">
-                                            <div class="form-group">
-                                                <label for="dollars" class="donation-label">Your Donation* </label>
-                                                <label class="currency-symb">$</label>
-                                                <input type="text" class="form-control" id="dollars" value="250">
-                                                <span class="currency-type">USD</span>
-                                                <div class="radio">                                                   
-                                                    <input type="radio" name="donation_frequency" id="one_time" value="Yes">
-                                                    <label for="one_time">One Time</label>
+                    <div class="donate-classy ncmec-form row">
+                        <h5 class="offsetT0">Select an amount</h5>
+                        <form>                                    
+                            <div class="donate-row clearfix">
+                                <button type="button" class="btn btn-primary donate">$250</button>
+                                <button type="button" class="btn btn-secondary donate">$125</button>
+                                <button type="button" class="btn btn-secondary donate">$75</button>
+                                <button type="button" class="btn btn-secondary donate">$50</button>
+                                <button type="button" class="btn btn-secondary donate">Other</button>
+                            </div>
+                            <div class="form-inline donation">
+                                <div class="form-group">
+                                    <label for="dollars" class="donation-label">Your Donation* </label>
+                                    <label class="currency-symb">$</label>
+                                    <input type="text" class="form-control" id="dollars" value="250">
+                                    <span class="currency-type">USD</span>
+                                    <div class="radio">                                                   
+                                        <input type="radio" name="donation_frequency" id="one_time" value="Yes">
+                                        <label for="one_time">One Time</label>
 
-                                                    <input type="radio" name="donation_frequency" id="monthly" value="No">
-                                                    <label for="monthly" class="gutterR0">One Time</label>
-                                                </div>
-                                            </div>                                         
-                                        </div>                                  
-                                        <button type="submit" class="btn btn-primary card-info">Enter Card Info</button>
-                                    </form> 
-                                </div>
+                                        <input type="radio" name="donation_frequency" id="monthly" value="No">
+                                        <label for="monthly" class="gutterR0">One Time</label>
+                                    </div>
+                                </div>                                         
+                            </div>                                  
+                            <button type="submit" class="btn btn-primary card-info">Enter Card Info</button>
+                        </form> 
+                    </div>
                 </div>
               </div>
+              <div class="scroll-slider" id="js-sideslider">&nbsp;</div>
             </div>
 
         </div>
       </article>
 
-      <footer class="footer-container">
-        <div class="container">
-
-              <div class="row">
-                Footer Starts Here
-              </div>
-
-        </div>
-      </footer>
+      <footer class="footer-container" id="js-footer"></footer>
 
     </div>
 

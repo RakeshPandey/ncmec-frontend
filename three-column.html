@@ -32,23 +32,7 @@
   <body>
 
     <div class="wrapper">
-      <header class="header-container">
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img src="missingkids/images/logo.png" alt="NCMEC"></a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="#">GET HELP NOW</a></li>
-                    <li><a href="#">THE ISSUES</a></li>
-                    <li class="active"><a href="#">OUR WORK</a></li>
-                    <li><a href="#">EDUCATION</a></li>
-                    <li><a href="#">SUPPORT US</a></li>
-                </ul>
-                <div class="right-section pull-right"><button type="button" class="btn btn-lg btn-primary">Donate</button></div>
-            </div>
-        </nav>
-      </header>
+      <header class="header-container" id="js-header"></header>
       <div class="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb">
@@ -62,19 +46,12 @@
         <div class="container">
 
             <div class="row">
-              <div class="col-md-2 col-sm-3">
-                <div class="inner-wrapper">
-                  <h4>Heading 1</h4>
-                  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                  <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-8 match-height">
+              <div class="col-md-6 col-sm-8 col-md-offset-2 col-sm-offset-3 main-content-area">
                 <div class="inner-wrapper">
                   <h2 class="main-title">Ways to Donate</h2>
-                  <div class="row video-image-component">
-                    <div class="col-md-10 offsetLR-md-1">
-                        <div class="row image-area">
+                  <div class="video-image-component">
+                    <div class="row">
+                        <div class="image-area">
                           <picture>
                               <!-- tablet portrait -->
                               <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/lost-kids-banner_TP.png">
@@ -84,15 +61,14 @@
                         </div>
                     </div>
                   </div>
-                  <div class="row video-image-component">
-                    <div class="col-md-10 offsetLR-md-1">
-                      <div class="hero-youtube row">
-                        <iframe class="" src="https://www.youtube.com/embed/TQl_Sv3LztQ"></iframe>
+                  <div class="video-image-component">
+                    <div class="row">
+                      <div class="hero-youtube">
+                        <iframe src="https://www.youtube.com/embed/TQl_Sv3LztQ" width="100%" height="354px"></iframe>
                       </div>
                       <p class="text-center"><a href="#" title="">Order a free copy of this video for educational purposes.</a></p>
                     </div>
                   </div>
-                  <div class="spacer"></div>
                   <p class="text-center"><button type="button" class="btn btn-lg btn-primary">Donate</button></p>
                   <h5>Combined Fedral Campaign</h5>
                   <p>NCMEC’s CFC number is 11822.</p>
@@ -187,21 +163,13 @@
                   </div>
                 </div>
               </div>
-              <div class="scroll-slider">&nbsp;</div>
+              <div class="scroll-slider" id="side-slider">&nbsp;</div>
             </div>
 
         </div>
       </article>
 
-      <footer class="footer-container">
-        <div class="container">
-
-              <div class="row">
-                Footer Starts Here
-              </div>
-
-        </div>
-      </footer>
+      <footer class="footer-container" id="js-footer"></footer>
 
     </div>
 

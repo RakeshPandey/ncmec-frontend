@@ -33,23 +33,7 @@
   <body>
     
     <div class="wrapper">
-      <header class="header-container">
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img src="missingkids/images/logo.png" alt="NCMEC"></a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="#">GET HELP NOW</a></li>
-                    <li><a href="#">THE ISSUES</a></li>
-                    <li class="active"><a href="#">OUR WORK</a></li>
-                    <li><a href="#">EDUCATION</a></li>
-                    <li><a href="#">SUPPORT US</a></li>
-                </ul>
-                <div class="right-section pull-right"><button type="button" class="btn btn-lg btn-primary">Donate</button></div>
-            </div>
-        </nav>
-      </header> 
+      <header class="header-container" id="js-header"></header> 
       <div class="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb">
@@ -64,12 +48,12 @@
 
             <div class="row">
               
-              <div class="col-md-6 col-sm-8 col-md-offset-2 col-sm-offset-3">
+              <div class="col-md-6 col-sm-8 col-md-offset-2 col-sm-offset-3 main-content-area">
                 <div class="inner-wrapper">
                   <h2 class="main-title">Our Partners</h2>
-                  <div class="row video-image-component">
-                    <div class="col-md-10 offsetLR-md-1">
-                        <div class="row image-area">
+                  <div class="video-image-component">
+                    <div class="row">
+                        <div class="image-area">
                           <picture>
                               <!-- tablet portrait -->
                               <source media="(min-width: 768px) and (max-width: 768px) and (orientation: portrait)" srcset="missingkids/images/lost-kids-banner_TP.png">
@@ -151,21 +135,13 @@
                   </div>
                 </div>
               </div>
-              <div class="scroll-slider">&nbsp;</div>
+              <div class="scroll-slider" id="js-sideslider">&nbsp;</div>
             </div>
 
         </div>
       </article> 
 
-      <footer class="footer-container">
-        <div class="container">
-
-              <div class="row">
-                Footer Starts Here
-              </div>
-
-        </div>
-      </footer>
+      <footer class="footer-container" id="js-footer"></footer>
 
     </div>
 
@@ -176,7 +152,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="missingkids/js/accordion.js"></script>
-
+    <script src="missingkids/js/application.js" type="text/javascript"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   </body>
 </html>

@@ -322,8 +322,11 @@ address {
 .title-5, .title-h5 {
   color: @blue-lighter;
   font-size: @font-size-small;
-  font-weight: bold;
+  font-weight: normal;
   margin-top: 0; 
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .para-1, .para-style1 {

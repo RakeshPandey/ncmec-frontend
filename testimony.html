@@ -33,130 +33,7 @@
 
     <div class="wrapper">
      
-      <header class="header-container">
-          <nav class="navbar navbar-fixed-top">
-              <div class="container">
-
-                <div class="navbar-header">
-
-
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="hamburger-icon"></span>
-                    </button>
-
-                    <a class="navbar-brand" href="#"><img src="missingkids/images/logo_desktop.svg" class="hidden-xs desktop-logo" alt="NCMEC">
-                        <img src="missingkids/images/logo-xs.svg" class="visible-xs hidden-sm mobile-logo" alt="NCMEC"></a>
-                    <div class="scroll-started-action"><span class="hamburger-icon"></span></div>
-                    <div class="donate-btn-container"><button type="button" class="btn btn-xs btn-primary">Donate</button></div>
-
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                      <ul class="">
-                          <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">GET HELP NOW</a>
-                            <ul class="dropdown-menu clearfix">
-                                <li>
-                                  <a href="#" class="seperator">Victim & Family Services</a>
-                                  <ul>
-                                    <li><a href="#">Reunification & FAON</a></li>
-                                    <li><a href="#">Team HOPE</a></li>
-                                    <li><a href="#">Hope Bags</a></li>
-                                    <li><a href="#">Legal Resources</a></li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <a href="#" class="seperator">Non-Investigative Case Services</a>
-                                  <ul>
-                                    <li><a href="#">Forensic Services Unit</a></li>
-                                    <li><a href="#">Project Alert</a></li>
-                                    <li><a href="#">Team Adam</a></li>
-                                    <li><a href="#">Team Fight</a></li>
-                                    <li><a href="#">CMFC</a></li>
-                                    <li><a href="#">LESP</a></li>
-                                  </ul>
-                                </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">THE ISSUES</a>
-                            <ul class="dropdown-menu one-column clearfix">
-                                <li>
-                                  <a href="#" class="seperator">Victim & Family Services</a>
-                                  <ul>
-                                    <li><a href="#">Reunification & FAON</a></li>
-                                    <li><a href="#">Team HOPE</a></li>
-                                    <li><a href="#">Hope Bags</a></li>
-                                    <li><a href="#">Legal Resources</a></li>
-                                  </ul>
-                                </li>
-                            </ul>
-                          </li>
-                          <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">OUR WORK</a>
-                              <ul class="dropdown-menu clearfix">
-                                  <li>
-                                    <a href="#" class="seperator">Victim & Family Services</a>
-                                    <ul>
-                                      <li><a href="#">Reunification & FAON</a></li>
-                                      <li><a href="#">Team HOPE</a></li>
-                                      <li><a href="#">Hope Bags</a></li>
-                                      <li><a href="#">Legal Resources</a></li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <a href="#" class="seperator">Non-Investigative Case Services</a>
-                                    <ul>
-                                      <li><a href="#">Forensic Services Unit</a></li>
-                                      <li><a href="#">Project Alert</a></li>
-                                      <li><a href="#">Team Adam</a></li>
-                                      <li><a href="#">Team Fight</a></li>
-                                      <li><a href="#">CMFC</a></li>
-                                      <li><a href="#">LESP</a></li>
-                                    </ul>
-                                  </li>
-                              </ul>
-
-                          </li>
-                          <li><a href="#">EDUCATION</a></li>
-                          <li><a href="#">SUPPORT US</a></li>
-                      </ul>
-                  </div>
-
-                <div class="secondary-header">
-                  <ul class="social-icons">
-                    <li><a href="#" title="facebook"><i class="icon-fb"></i></a></li>
-                    <li><a href="#" title="twitter"><i class="icon-twitter"></i></a></li>
-                    <li><a href="#" title="instagram"><i class="icon-fb"></i></a></li>
-                    <li><a href="#" title="youtube"><i class="icon-youtube"></i></a></li>
-                  </ul>
-                  <ul class="site-functionalities">
-                      <li class="search-wrapper">
-                        <div class="search-container">
-                          <form class="search-form clearfix">
-                            <input type="text" name="search" placeholder="Search" required>
-                            <button class="search-submit" type="submit"><i class="icon-search"></i></button>
-                          </form>
-                          <a class="search-icon">
-                            <i class="icon-search"></i>
-                            <i class="icon-close"></i>
-                          </a>
-                        </div>
-                      </li>
-                      <li class="language-selector">
-                          <label class="switch">
-                              <input type="checkbox">
-                              <span class="lang">
-                                  <span class="en">EN</span>
-                                  <span class="sp">SP</span>
-                              </span>
-
-                          </label>
-                      </li>
-                  </ul>
-              </div>
-            </div>
-          </nav>
-      </header>
+      <header class="header-container" id="js-header"></header>
       <div class="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb">
@@ -170,18 +47,11 @@
         <div class="container">
 
             <div class="row">
-              <div class="col-md-2 col-sm-3">
-                <div class="inner-wrapper">
-                  <h4>Heading 1</h4>
-                  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                  <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-8 match-height">
+              <div class="col-md-6 col-sm-8 col-md-offset-2 col-sm-offset-3 main-content-area">
                 <div class="inner-wrapper">
                   <h2 class="main-title">Ways to Donate</h2>
                   
-                  <p>The National Center for Missing & Exploited Children® is asked on occasion to provide testimony to the U.S. Congress on issues concerning missing and sexually exploited children. Read the Congressional testimonies below.</p>
+                  <p>The National Center for Missing &amp; Exploited Children® is asked on occasion to provide testimony to the U.S. Congress on issues concerning missing and sexually exploited children. Read the Congressional testimonies below.</p>
                   <h5><b>Nov 19, 2015</b></h5>
                   <p><a href="#">Testimony, Yiota Souras for the United States Senate, Permanent Subcommittee on Investigations Committee on Homeland Security and Governmental Affairs: "Human Trafficking Investigation Hearing"</a></p>
                   <h5><b>Mar 19, 2015</b></h5>
@@ -194,7 +64,7 @@
               
                 </div>
               </div>
-              <div class="col-md-4  match-height hidden-sm hidden-xs">
+              <div class="col-md-4 hidden-sm hidden-xs">
                 <div class="teaser">
                   <div class="panel panel-default">
                     <div class="panel-heading">
@@ -258,77 +128,13 @@
                   </div>
                 </div>
               </div>
-              <div class="scroll-slider">&nbsp;</div>
+              <div class="scroll-slider" id="js-sideslider">&nbsp;</div>
             </div>
 
         </div>
       </article>
 
-       <footer class="footer-container inner-page">
-         <div class="container row center-block">
-                <div class="footer-nav-wrapper col-sm-10 col-md-8 center-block">
-                  <div class="row">
-                    <div class="subscribe-form col-sm-6 col-md-6">
-                      <form class="form-horizontal">
-                        <div class="form-group">
-                          <label for="subscribe" class="hide">Subscribe</label>
-                          <input type="email" name="subscribe" id="subscribe" class="input-subscribe" placeholder="enter your email address" />
-                          <button class="btn-subscribe" id="js-subscribe">Subscribe</button>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="footer-links-wrapper clearfix">
-                      <ul class="footer-social-links">
-                        <li><a href="#" title="facebook"><i class="icon-fb"></i></a></li>
-                        <li><a href="#" title="twitter"><i class="icon-twitter"></i></a></li>
-                        <li><a href="#" title="instagram"><i class="icon-fb"></i></a></li>
-                        <li><a href="#" title="youtube"><i class="icon-youtube"></i></a></li>
-                      </ul>
-                      <ul class="search-wrapper">
-                        <li>
-                          <div class="search-container">
-                            <form class="search-form clearfix">
-                              <input type="text" name="search" placeholder="Search" required>
-                              <button class="search-submit" type="submit"><i class="icon-search"></i></button>
-                            </form>
-                            <a class="search-icon">
-                              <i class="icon-search"></i>
-                              <i class="icon-close"></i>
-                            </a>
-                          </div>
-                        </li>
-                        <li class="language-selector">
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="lang">
-                                    <span class="en">EN</span>
-                                    <span class="sp">SP</span>
-                                </span>
-                            </label>
-                        </li>
-                      </ul>
-
-                    </div>
-                  </div>
-                  <nav class="footer-nav row">
-                    <ul class="clearfix">
-                      <li><a href="#" title="Blog">Blog</a></li>
-                      <li><a href="#" title="Media">Media</a></li>
-                      <li><a href="#" title="About Us">About Us</a></li>
-                      <li><a href="#" title="Contact Us">Contact Us</a></li>
-                      <li><a href="#" title="Legal T&amp;C">Legal T&amp;C</a></li>
-                      <li><a href="#" title="Careers">Careers</a></li>
-                    </ul>
-                  </nav>
-                </div>
-                <div class="legal-container col-sm-12 col-md-10 center-block">
-                  <p>Copyright © 2017 National Center for Missing &amp; Exploited Children. All rights reserved.</p>
-                  <p>This Web site is funded, in part, through a grant from the Office of Juvenile Justice and Delinquency Prevention, Office of Justice Programs, U.S.
-                Department of Justice. Neither the U.S. Department of Justice nor any of its components operate, control, are responsible for, or necessarily
-endorse, this Web site (including, without limitation, its content, technical infrastructure, and policies, and any services or tools provided)</p>
-                </div>
-            </div>
-      </footer>
+       <footer class="footer-container" id="js-footer"></footer>
 
     </div>
 
@@ -339,8 +145,9 @@ endorse, this Web site (including, without limitation, its content, technical in
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="missingkids/js/plugin/jquery.matchHeight.js"></script>
-    <script type="text/javascript" src="missingkids/js/application.js"></script>
+    
 
     <script src="//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8"></script>
+    <script type="text/javascript" src="missingkids/js/application.js"></script>
   </body>
 </html>
