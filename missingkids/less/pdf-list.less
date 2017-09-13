@@ -20,4 +20,26 @@
             background-size: 100%;        
         }
     }
+
+    a.pdfLink-dark {    
+        display: block;
+        position: relative;
+        padding-left: 32px;
+        padding-bottom: 0;
+        padding-top: 0;
+        color: @blue-darker;
+        line-height: 28px;
+        &:before{
+            background: url(../../images/pdf-dark.png) no-repeat;
+            content: " ";
+            width: 18px;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            height: 18px;
+            z-index: 999;
+            display: block;
+            background-size: 100%;        
+        }
+    }
 }
