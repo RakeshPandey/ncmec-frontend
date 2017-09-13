@@ -11020,10 +11020,6 @@ hr {
     padding-left: 0;
     padding-right: 0;
   }
-  .video-image-component .offsetLR-md-1 {
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 @media (max-width: 480px) {
   [class*="col-"] {
@@ -11032,10 +11028,6 @@ hr {
   }
   .inner-wrapper {
     padding: 8px;
-  }
-  .video-image-component .offsetLR-md-1 {
-    margin-left: 0;
-    margin-right: 0;
   }
   .sponsored-links li {
     margin-bottom: 16px;
