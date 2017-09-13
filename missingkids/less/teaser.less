@@ -42,6 +42,15 @@
             font-size: @font-size-base;
             line-height: @font-size-small;
         }
+        .pdf-list {
+            .pdfLink {
+                color: @blue-lighter;
+                line-height: 18px;
+            }
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
     }
     .panel-heading {
         position: relative;
@@ -86,9 +95,13 @@
 .ncmec-irs-forms {
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
   li {
     line-height: 16px;
     padding-bottom: 10px;
+    &:last-child {
+        padding-bottom: 0;
+    }
     a {
         background: url("../../images/pdf-icon-small.png") no-repeat 0 1px;
         padding-left: 20px;
