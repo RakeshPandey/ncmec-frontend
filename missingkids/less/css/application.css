@@ -8375,7 +8375,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 @media (min-width: 767px) {
   .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content {
-    left: 50px;
+    left: 0;
     top: 30px;
   }
 }
@@ -9477,7 +9477,7 @@ and open the template in the editor.
     padding: 0 0px;
   }
   .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-sm-4 {
-    width: 31.5%;
+    width: 31%;
     margin-right: 13px;
   }
   .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-sm-4:nth-child(3n+3) {
@@ -10959,8 +10959,8 @@ label.error {
 }
 .stickyBox {
   color: #626366;
-  padding: 10px 0;
-  height: 205px;
+  padding: 10px 0 2px 0;
+  height: auto;
 }
 .stickyBox li {
   list-style: none;
@@ -11039,7 +11039,7 @@ label.error {
     margin: 0 auto;
   }
   .stickyBox {
-    height: 110px;
+    height: auto;
     padding: 0;
   }
   .stickyBox li {
@@ -11239,6 +11239,9 @@ hr {
 }
 .three-column .video-image-component .col-md-10 {
   width: 100%;
+}
+.gen-info-list {
+  margin-bottom: 0;
 }
 .gen-info-list .list-group-item img {
   margin-left: 0;
