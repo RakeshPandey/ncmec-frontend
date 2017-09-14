@@ -7349,7 +7349,7 @@ label.error {
   background: none;
 }
 #form-accordion .panel .panel-heading .panel-title a {
-  background: #626366;
+  background: #939597;
   border-radius: 10px;
   color: #fff;
   display: block;
@@ -9560,16 +9560,19 @@ and open the template in the editor.
 }
 .search-missing-children .radio-section {
   display: inline-block;
+  cursor: pointer;
 }
 .search-missing-children .radio-section-individual {
   display: block;
   float: left;
   overflow: hidden;
   max-height: 34px;
+  cursor: pointer;
 }
 .search-missing-children .radio-section-individual label {
   margin-bottom: 0px;
   padding: 8px 15px;
+  cursor: pointer;
 }
 .search-missing-children .form-horizontal-cover {
   padding: 16px;
@@ -9577,7 +9580,7 @@ and open the template in the editor.
   border: 1px solid #626366;
 }
 .search-missing-children .radio-section-individual {
-  border: 1px solid #626366;
+  border: 1px solid #939597;
 }
 .search-missing-children .radio-section-individual:not(:last-child) {
   border-right: none;
@@ -9599,7 +9602,7 @@ and open the template in the editor.
   display: none;
 }
 .search-missing-children .radio-section input[type="radio"]:checked + label {
-  background-color: #626366;
+  background-color: #939597;
   color: white;
 }
 .search-missing-children .form-header {
@@ -9628,7 +9631,7 @@ and open the template in the editor.
   padding: 8px;
 }
 .search-missing-children .teaser.teaser-form .search-form .panel-heading {
-  background: #626366;
+  background: #404041;
 }
 .search-missing-children .teaser.teaser-form .search-form .panel-heading h5 {
   margin: 0;
@@ -11084,6 +11087,10 @@ label.error {
 #pagination-demo .pagination > li.active > a.page-link {
   font-weight: bold;
   color: #fff;
+}
+ul.missing-person-lists img {
+  width: 64px;
+  height: 80px;
 }
 picture,
 img {
