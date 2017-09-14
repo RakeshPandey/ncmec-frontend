@@ -11092,6 +11092,9 @@ ul.missing-person-lists img {
   width: 64px;
   height: 80px;
 }
+#js-no-results-found {
+  display: none;
+}
 picture,
 img {
   max-width: 100%;
