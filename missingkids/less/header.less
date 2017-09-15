@@ -10,7 +10,7 @@
     }
 
     @media(max-width: @screen-sm){
-      min-height: 68px;
+      min-height: 64px;
     }
 
     .navbar{
@@ -21,11 +21,11 @@
           padding: 0;
         }
         &::before {
-          @media (min-width: @screen-sm) {
+          @media (min-width: @screen-md) {
             position: absolute;
-            left: -50%;
+            left: -42%;
             width: 50%;
-            height: 80px;
+            height: 60px;
             background: #404041;
             z-index: 10;
           }
@@ -54,10 +54,17 @@
                 background: #404041;
                 position: absolute;
                 z-index: 10;
+                left: 0px;
+
+                @media(min-width: @screen-md) {
+                  left: 16px;
+                  margin-left: 0;
+                }
 
                 @media(max-width: 1023px) {
                   width: 52px;
                 }
+
                 @media(max-width: 768px) {
                   position: absolute;
                   left: 0;
@@ -76,8 +83,9 @@
             .scroll-started-action {
                 display:none;
                 float:right;
-                margin: 25px 13px;
+                margin: 25px 0 13px 0;
                 cursor: pointer;
+                padding: 0 8px 0 8px;
                 .hamburger-icon{
                     height : 32px;
                     width: 8px;
@@ -87,21 +95,27 @@
             }
             .donate-btn-container{
                 float: right;
-                margin: 8px;
+                margin: 12px 0 0;
                 .btn {
                     font-family: @font-family-serif;
-                    padding: 5px 20px;
-                    font-size: 24px;
-                    @media(max-width: @screen-md){
-                      padding: 5px 8px;
+                    padding: 8px;
+                    font-size: 16px;
+
+                    @media(min-width: @screen-sm){
+                      padding: 4px 8px;
+                    }
+
+                    @media(min-width: @screen-md){
+                        font-size: 24px;
+                        line-height: 32px;
+                        padding: 8px 20px;
                     }
                 }
                 @media(min-width: @screen-sm-min){
-                    margin:16px 8px;
+                    margin:20px @tablet-spacing;
                 }
-
-                @media(max-width: 768px){
-                    margin: @tablet-spacing 0;
+                @media(min-width: @screen-sm){
+                    margin: 16px 16px 16px 0;
                 }
             }
             .navbar-toggle{
@@ -150,7 +164,7 @@
                 background: @header-bg;
                 height: 65px;
                 position: absolute;
-                left: 104px;
+                left: 124px;
                 top: 16px;
                 z-index: 5;
             }
@@ -168,23 +182,19 @@
                 margin:0;
                 >li {
                     display:inline-block;
-                    padding:20px @mobile-spacing-a;
-                    font-size: 16px;
-                    @media(max-width: 1023px){
-                        padding: 20px 10px;
-                        font-size: 13px;
+                    padding:8px;
+                    font-size: 11px;
+                    @media(min-width: @screen-sm){
+                      font-size: 13px;
+                      padding: 8px 5px;
                     }
 
-                    @media(max-width: 768px){
-                      font-size: 11px;
-                      padding: 16px 5px;
+                    @media(min-width: @screen-md){
+                        padding: 20px 10px;
+                        font-size: 16px;
                     }
                     @media(min-width: @screen-md-min){
                         padding: 16px @mobile-spacing-a 16px;
-                    }
-
-                    @media(max-width: @screen-sm){
-                        padding: 8px 5px;
                     }
                     a{
                         color:@white;
@@ -241,10 +251,10 @@
                             margin: 0;
                             font-weight: bold;
                             @media(min-width: @screen-sm-min){
-                                top: 45px;
+                                top: 49px;
                                 min-width: 480px;
                                 &.one-column{
-                                  min-width: 90%;
+                                  min-width: 240px;
                                 }
                             }
                             >li, a{
@@ -266,8 +276,10 @@
                           display: block;
                           @media(max-width: @screen-sm){
                             position: fixed;
-                            top: 98px;
+                            top: 94px;
                             width: 100%;
+                            max-height: ~"calc(100vh - 73px)";
+                            overflow: scroll;
                           }
                           > li {
                             margin-bottom: 0;
@@ -277,6 +289,8 @@
                             }
                             a{
                               opacity: 0.9;
+                              word-break: break-word;
+                              white-space: initial;
                               &:hover {
                                 background: none;
                                 opacity: 1;
@@ -286,12 +300,12 @@
                             @media(min-width: @screen-sm-min){
                               width: 50%;
                               float: left;
+                              padding-right: 8px;
                             }
                             >ul {
                               padding: 0;
                               margin: 0;
                               > li{
-                                padding-left: 10px;
                                 list-style: none;
                                 font-size: 14px;
                                 &:not(:last-child) {
@@ -301,7 +315,14 @@
                             }
                           }
 
+                          &.one-column {
+                            > li {
+                              width: auto;
+                            }
+                          }
+
                         }
+
                     }
                 }
             }
@@ -315,7 +336,7 @@
                 float: right;
                 flex-direction: row-reverse;
                 position: absolute;
-                right: 0;
+                right: 16px;
                 bottom: -31px;
             }
             ul{
@@ -342,14 +363,19 @@
 
                 &.social-icons {
                   font-size: 20px;
-                  padding-top: 0;
-                  @media (min-width: 1023px) {
+                  @media (min-width: @screen-sm) {
+                    right: 16px;
+                    bottom: -21px;
+                  }
+                  @media (min-width: @screen-md) {
                     position: absolute;
                     right: 0;
-                    bottom: -22px;
                   }
                   li {
-                    padding-right: 10px;
+                    padding-right: 13px;
+                    @media (min-width: @screen-sm) {
+                      padding-right: 13px;
+                    }
                     a{
                       &:hover {
                         color: #ccc;
@@ -374,7 +400,7 @@
                   @media (min-width: 480px) and (max-width: 768px){
                     position: relative;
                     top: -45px;
-                    right: -70px;
+                    right: -106px;
                   }
                   li {
                     display: inline-block;
@@ -399,7 +425,8 @@
                         top: -5px;
                         right: 10px;
                         input[type='text'] {
-                          min-width: 165px;
+                          min-width: 160px;
+                          height: 24px;
                           outline: none;
                           border-radius: 5px;
                           border-color: #fff;
@@ -413,10 +440,10 @@
                         }
                         .search-submit{
                           position: absolute;
-                          right: 5px;
-                          top: 1px;
-                          padding: 0;
-                          height: 18px;
+                          right: 8px;
+                          top: 0;
+                          padding: 4px 0;
+                          height: 24px;
                           background: #fff;
                           border: none;
                           font-size: 16px;
@@ -454,7 +481,10 @@
                 @media(min-width: @screen-sm-min) and (orientation : landscape) {
                     position:absolute;
                     top: 27px;
-                    right: 150px;
+                    right: 120px;
+                }
+                @media(min-width: @screen-md) {
+                    right: 154px;
                 }
 
 
@@ -543,6 +573,13 @@
     .header-container {
         .navbar{
           .container {
+            .navbar-header {
+              @media(min-width: @screen-sm){
+                .donate-btn-container {
+                  margin: 16px 8px 16px 0;
+                }
+              }
+            }
             .secondary-header {
                 @media(min-width: @screen-sm-min){
                     .language-selector, .social-icons{
@@ -553,7 +590,7 @@
 
                 @media (min-width: 480px) and (max-width: 768px){
                   .search-wrapper{
-                    right: 160px;
+                    right: 120px;
                   }
                 }
 
@@ -567,9 +604,10 @@
                         }
                         position:absolute;
                         top: 27px;
-                        right: 185px;
+                        right: 170px;
                     }
                 }
+
             }
             @media(min-width: @screen-sm-min){
                 .scroll-started-action{
@@ -579,7 +617,7 @@
 
             @media(max-width: 768px){
               .scroll-started-action{
-                margin: 20px 13px;
+                margin: 16px 8px 16px 0;
               }
             }
           }
@@ -594,7 +632,7 @@ body {
         .container {
           .secondary-header {
             .search-wrapper {
-              right: -58px;
+              right: -90px;
             }
             .language-selector {
               display: block !important;

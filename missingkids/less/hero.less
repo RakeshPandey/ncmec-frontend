@@ -29,9 +29,9 @@
         position: absolute;
         left: 10px;
         top: 10px;
-        @media (min-width: @screen-sm) {
+        @media (min-width: @screen-md) {
           left: 0;
-          top: 30px;
+          top: 20px;
         }
         .title {
           max-width: 200px;
@@ -55,7 +55,7 @@
           font-size: 16px;
           line-height: 24px;
           @media (max-width: @screen-sm) {
-            margin: 10px;
+            margin: 10px 0;
           }
           @media (min-width: @screen-sm) {
             font-size: 24px;
@@ -252,9 +252,16 @@
           max-height: 351px;
         }
         .hero-content-wrapper {
-          left: 10px;
+          padding: 0 10px;
           .hero-content{
             left: 0;
+          }
+          &.center {
+            left: auto;
+            .hero-content{
+              left: 0;
+              transform: none;
+            }
           }
         }
       }
@@ -280,6 +287,11 @@
           margin-bottom: 34px;
           @media (min-width: 1025px) {
             margin-bottom: 24px;
+          }
+        }
+        .panel-body {
+          a:not(.btn-link) {
+            color: #fff;
           }
         }
       }
