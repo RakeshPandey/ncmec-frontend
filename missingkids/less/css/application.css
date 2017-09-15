@@ -10990,6 +10990,7 @@ label.error {
   color: #626366;
   padding: 10px 25px;
   display: block;
+  font-family: 'Futura', 'Arial', sans-serif;
 }
 .stickyBox li:first-child {
   margin-top: 0;
