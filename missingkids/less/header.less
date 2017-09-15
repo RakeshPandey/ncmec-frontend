@@ -83,8 +83,9 @@
             .scroll-started-action {
                 display:none;
                 float:right;
-                margin: 25px 8px 13px 0;
+                margin: 25px 0 13px 0;
                 cursor: pointer;
+                padding: 0 8px 0 8px;
                 .hamburger-icon{
                     height : 32px;
                     width: 8px;
@@ -114,7 +115,7 @@
                     margin:20px @tablet-spacing;
                 }
                 @media(min-width: @screen-sm){
-                    margin: 16px;
+                    margin: 16px 16px 16px 0;
                 }
             }
             .navbar-toggle{
@@ -571,6 +572,13 @@
     .header-container {
         .navbar{
           .container {
+            .navbar-header {
+              @media(min-width: @screen-sm){
+                .donate-btn-container {
+                  margin: 16px 8px 16px 0;
+                }
+              }
+            }
             .secondary-header {
                 @media(min-width: @screen-sm-min){
                     .language-selector, .social-icons{
