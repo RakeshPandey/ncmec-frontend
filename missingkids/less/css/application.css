@@ -8655,7 +8655,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
     max-height: 468px;
   }
   .hero-banner-wrapper.with-teaser .hero-banner .hero-content-wrapper {
-    left: 10px;
+    padding: 0 10px;
   }
   .hero-banner-wrapper.with-teaser .hero-banner .hero-content-wrapper .hero-content {
     left: 0;
@@ -8707,6 +8707,9 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   .hero-banner-wrapper.with-teaser .teaser-container .teaser .para-1 {
     margin-bottom: 24px;
   }
+}
+.hero-banner-wrapper.with-teaser .teaser-container .teaser .panel-body a:not(.btn-link) {
+  color: #fff;
 }
 .owl-theme.hero-banner-wrapper .owl-dots {
   position: relative;
