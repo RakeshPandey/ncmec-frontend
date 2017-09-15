@@ -6399,6 +6399,22 @@ button.close {
     width: 900px;
   }
 }
+#error-popup.modal .modal-header .close {
+  margin-top: 8px;
+}
+#error-popup.modal .modal-body {
+  padding: 16px 32px;
+}
+#error-popup.modal .modal-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: decimal;
+}
+#error-popup.modal .modal-body ul li {
+  line-height: 32px;
+  font-size: 16px;
+  font-family: Futura;
+}
 .tooltip {
   position: absolute;
   z-index: 1070;
