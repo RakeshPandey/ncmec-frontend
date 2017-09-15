@@ -8,6 +8,7 @@ $(document).on("click", ".search-container .search-icon", function(){
   var navbar = $(this).parents().siblings('#navbar');
   if(navbar){
     var viewport = window.innerWidth;
+    var offset = 24;
       if(viewport >= 768) {
         var width = navbar.find('ul:first-child > li:first-child').width();
         if(!navbar.data('actualLeft')) {
@@ -17,7 +18,7 @@ $(document).on("click", ".search-container .search-icon", function(){
           var actualLeft = navbar.data('actualLeft');
         }
         (searchContainer.hasClass('opened'))
-            ? navbar.css('left', -width/2)
+            ? navbar.css('left', -width)
             : navbar.css('left', actualLeft);
       }
     }
@@ -41,6 +42,9 @@ $(document).on("click", ".search-container .search-icon", function(){
     $('.hero-carousel').owlCarousel({
         loop:true,
         nav:false,
+        autoplay: true,
+        autoplayTimeout: 10000,
+        autoplayHoverPause: true,
         responsive:{
             0:{
                 items:1
