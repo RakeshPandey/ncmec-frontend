@@ -9647,6 +9647,9 @@ and open the template in the editor.
   margin-left: 0;
   margin-right: 0;
 }
+.search-missing-children .teaser.teaser-form h5.search-wizard {
+  margin-top: 0;
+}
 .checkbox-search-wizard {
   margin-top: 16px;
 }
@@ -10973,8 +10976,6 @@ label.error {
   list-style: none;
   background: #fff;
   border-radius: 10px;
-  border: 1px solid #d5d6d8;
-  padding: 10px 25px;
   text-align: center;
   text-transform: uppercase;
   position: relative;
@@ -10982,6 +10983,7 @@ label.error {
   margin-left: -15px;
 }
 .stickyBox li i {
+  cursor: pointer;
   color: #C6C8CA;
   position: absolute;
   right: 8px;
@@ -10990,11 +10992,15 @@ label.error {
 .stickyBox li a {
   text-decoration: none;
   color: #626366;
+  padding: 10px 25px;
+  display: block;
+  font-family: 'Futura', 'Arial', sans-serif;
 }
 .stickyBox li:first-child {
   margin-top: 0;
 }
 #arrow {
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 45%;
