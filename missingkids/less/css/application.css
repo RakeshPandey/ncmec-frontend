@@ -7783,8 +7783,9 @@ label.error {
 .header-container .navbar .container .navbar-header .scroll-started-action {
   display: none;
   float: right;
-  margin: 25px 8px 13px 0;
+  margin: 25px 0 13px 0;
   cursor: pointer;
+  padding: 0 8px 0 8px;
 }
 .header-container .navbar .container .navbar-header .scroll-started-action .hamburger-icon {
   height: 32px;
@@ -7820,7 +7821,7 @@ label.error {
 }
 @media (min-width: 767px) {
   .header-container .navbar .container .navbar-header .donate-btn-container {
-    margin: 16px;
+    margin: 16px 16px 16px 0;
   }
 }
 .header-container .navbar .container .navbar-header .navbar-toggle {
@@ -8252,6 +8253,11 @@ label.error {
 @media (min-width: 992px) {
   .header-container.home .navbar .container .secondary-header .social-icons {
     display: none;
+  }
+}
+@media (min-width: 767px) {
+  .scroll-started .header-container .navbar .container .navbar-header .donate-btn-container {
+    margin: 16px 8px 16px 0;
   }
 }
 @media (min-width: 767px) {
