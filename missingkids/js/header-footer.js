@@ -28,10 +28,12 @@ $(document).on("click", ".search-container .search-icon", function(){
 // Statistics counter initiation
 //===============================
 (function(){
-  $('.statistics-content .counter').counterUp({
-      delay: 10,
-      time: 1000
-  });
+  if($.fn.counterUp){
+    $('.statistics-content .counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+  }
 })();
 
 //==================================
@@ -52,4 +54,12 @@ $(document).on("click", ".search-container .search-icon", function(){
         }
     });
   }
+})();
+
+//===============================
+// Error popup initiation
+//===============================
+(function(){
+  if($("#error-popup"))
+    $("#error-popup").modal('show');
 })();
