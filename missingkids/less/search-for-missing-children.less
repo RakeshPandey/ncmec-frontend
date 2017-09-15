@@ -1,16 +1,19 @@
 .search-missing-children {
     .radio-section {
         display: inline-block;
+        cursor: pointer;
     }
     .radio-section-individual {
         display: block;
         float: left;
         overflow: hidden;
         max-height: 34px;
+        cursor: pointer;
     }
     .radio-section-individual label{
         margin-bottom:0px;
         padding:8px 15px;
+        cursor: pointer;
     }
 
     .form-horizontal-cover {
@@ -20,7 +23,7 @@
     }
 
     .radio-section-individual{
-        border: 1px solid #626366;
+        border: 1px solid @gray-accordion;
     }
     .radio-section-individual:not(:last-child) {
         border-right:none;
@@ -47,7 +50,7 @@
     }
 
     .radio-section input[type="radio"]:checked + label{
-        background-color:#626366;
+        background-color:@gray-accordion;
         color:white;
     }
 
@@ -82,7 +85,7 @@
     .teaser.teaser-form {
         .search-form {
             .panel-heading {
-                background: @gray-darker;
+                background: #404041;
                 h5 {
                     margin: 0;
                 }
@@ -94,6 +97,9 @@
                     margin-right: 0;
                 }
             }
+        }
+        h5.search-wizard {
+            margin-top: 0;
         }
     }  
 

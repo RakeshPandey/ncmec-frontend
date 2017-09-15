@@ -41,7 +41,7 @@ $(function () {
     };
 
     $(document).on("click", ".scroll-started-action", function() {
-      if (window.matchMedia("(min-width: 768px)").matches) {
+      if (window.innerWidth >= 768) {
         $('body').toggleClass('fixed-breadcrump');
       }
     });
@@ -65,7 +65,8 @@ $(function () {
     function onScroll() {
         var $body = $('body');
         $body.removeClass('fixed-breadcrump');
-        if (document.body.scrollTop > 1) {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        if (scrollTop > 1) {
             if (!$body.hasClass('scroll-started')) {
                 $body.addClass('scroll-started');
             }
@@ -78,17 +79,17 @@ $(function () {
     if(!$(".header-container").hasClass('home')){
       $(window).scroll(onScroll);
       onScroll();
-    }    
-    
+    }
+
   //Side slider Component
-  if($("#js-sideslider").length != 0) {  
+  if($("#js-sideslider").length != 0) {
     $("#js-sideslider").load("side-slider.html");
   }
-    
+
   /* This section is used for common component Header & footer */
-  $("#js-header").load("common-header.html"); 
-  $("#js-footer").load("common-footer.html"); 
-    
+  $("#js-header").load("common-header.html");
+  $("#js-footer").load("common-footer.html");
+
 });
 
 function mobileViewUpdate() {
