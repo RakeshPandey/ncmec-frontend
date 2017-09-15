@@ -8572,6 +8572,9 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   .hero-banner-wrapper.with-teaser .hero-banner .hero-content-wrapper .hero-content {
     left: 0;
   }
+  .hero-banner-wrapper.with-teaser .hero-banner .hero-content-wrapper.center {
+    left: auto;
+  }
   .hero-banner-wrapper.with-teaser .hero-banner .hero-content-wrapper.center .hero-content {
     left: 0;
     transform: none;
