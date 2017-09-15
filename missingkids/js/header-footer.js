@@ -56,7 +56,10 @@ $(document).on("click", ".search-container .search-icon", function(){
   }
 })();
 
-
+//===============================
+// Error popup initiation
+//===============================
 (function(){
-  $("#error-popup").modal('show');
+  if($("#error-popup"))
+    $("#error-popup").modal('show');
 })();
