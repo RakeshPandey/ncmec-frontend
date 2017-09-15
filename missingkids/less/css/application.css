@@ -7075,6 +7075,9 @@ label.error {
 .ui-link {
   color: #008DB6;
 }
+.last-child {
+  margin-bottom: 0;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -7316,6 +7319,8 @@ label.error {
   color: #fff;
   font-size: 16px;
   margin-right: 16px;
+  height: 16px;
+  width: 16px;
 }
 #form-accordion .panel {
   margin-bottom: 0;
@@ -7348,6 +7353,12 @@ label.error {
   background: transparent;
   border: 1px solid #95989A;
   border-top: 0;
+}
+#form-accordion .panel .panel-collapse .panel-body :last-child {
+  margin-bottom: 0;
+}
+#form-accordion .panel .panel-collapse .panel-body .form-horizontal .control-label {
+  padding-top: 0;
 }
 #form-accordion .panel + .panel {
   margin-top: 16px;
@@ -9603,7 +9614,11 @@ and open the template in the editor.
   margin-top: 16px;
 }
 .checkbox-search-wizard label {
-  float: left;
+  float: left !important;
+  font-weight: normal;
+}
+.checkbox-search-wizard label input[type="checkbox"] {
+  vertical-align: text-bottom;
 }
 .full-width {
   width: 100%;
@@ -9717,7 +9732,7 @@ and open the template in the editor.
 }
 .control-label {
   word-wrap: break-word;
-  color: #404041;
+  color: #626366;
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
@@ -10862,12 +10877,14 @@ label.error {
   top: 20px;
   left: 0;
   z-index: 1;
+  font-weight: normal;
 }
 .full-width > b.right-range {
   position: absolute;
   top: 18px;
   right: 0;
   z-index: 1;
+  font-weight: normal;
 }
 .fb_iframe_widget {
   float: left;
@@ -11026,6 +11043,7 @@ label.error {
 ul.missing-person-lists img {
   width: 64px;
   height: 80px;
+  border-radius: 10px;
 }
 #js-no-results-found {
   display: none;
