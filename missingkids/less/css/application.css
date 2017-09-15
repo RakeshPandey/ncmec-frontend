@@ -8622,6 +8622,9 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
     margin-bottom: 24px;
   }
 }
+.hero-banner-wrapper.with-teaser .teaser-container .teaser .panel-body a:not(.btn-link) {
+  color: #fff;
+}
 .owl-theme.hero-banner-wrapper .owl-dots {
   position: relative;
   margin-top: -34px !important;
