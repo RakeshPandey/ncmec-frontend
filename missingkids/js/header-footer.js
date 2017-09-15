@@ -8,7 +8,7 @@ $(document).on("click", ".search-container .search-icon", function(){
   var navbar = $(this).parents().siblings('#navbar');
   if(navbar){
     var viewport = window.innerWidth;
-    var offset = 24;
+    var offset = 50;
       if(viewport >= 768) {
         var width = navbar.find('ul:first-child > li:first-child').width();
         if(!navbar.data('actualLeft')) {
@@ -18,7 +18,7 @@ $(document).on("click", ".search-container .search-icon", function(){
           var actualLeft = navbar.data('actualLeft');
         }
         (searchContainer.hasClass('opened'))
-            ? navbar.css('left', -width)
+            ? navbar.css('left', parseInt(actualLeft) - width - offset)
             : navbar.css('left', actualLeft);
       }
     }
