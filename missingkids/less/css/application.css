@@ -8573,7 +8573,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
     max-height: 468px;
   }
   .hero-banner-wrapper.with-teaser .hero-banner .hero-content-wrapper {
-    left: 10px;
+    padding: 0 10px;
   }
   .hero-banner-wrapper.with-teaser .hero-banner .hero-content-wrapper .hero-content {
     left: 0;
