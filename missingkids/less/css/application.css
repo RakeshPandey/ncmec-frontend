@@ -3413,7 +3413,6 @@ fieldset[disabled] .btn-default-dark.focus {
   border-color: #39C2D7;
   font-family: 'Futura', 'Arial', sans-serif;
   font-size: 24px;
-  text-transform: uppercase;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -3800,6 +3799,9 @@ input[type="button"].btn-block {
   font-size: 24px;
   padding: 0 10px 0 0;
   vertical-align: middle;
+}
+.donate-btn-container .btn {
+  text-transform: uppercase;
 }
 .fade {
   opacity: 0;
@@ -8371,6 +8373,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .hero-banner-wrapper .hero-banner .hero-content-wrapper {
   position: relative;
   min-height: calc(70%);
+  /* changes done by rakesh on 18/09 */
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content {
   position: absolute;
@@ -8595,6 +8598,9 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .hero-banner-wrapper .hero-banner .hero-content-wrapper.center .hero-content .title {
   display: inline-block;
 }
+.hero-banner-wrapper .hero-banner .hero-content-wrapper.left {
+  left: 20px;
+}
 @media (min-width: 992px) {
   .hero-banner-wrapper.with-teaser {
     display: flex;
@@ -8658,6 +8664,10 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .hero-banner-wrapper.with-teaser .teaser-container .teaser .panel-body a:not(.btn-link) {
   color: #fff;
+}
+.hero-banner-wrapper.with-teaser .teaser-container .teaser .panel-body .btn-default {
+  font-size: 16px;
+  line-height: 19px;
 }
 .owl-theme.hero-banner-wrapper .owl-dots {
   position: relative;
