@@ -1171,9 +1171,6 @@ body {
   color: #626366;
   background-color: #f1f1f1;
 }
-body.homepage {
-  background-color: #fff;
-}
 input,
 button,
 select,
@@ -2380,6 +2377,7 @@ caption {
 }
 th {
   text-align: left;
+  font-weight: normal;
 }
 .table {
   width: 100%;
@@ -2394,7 +2392,7 @@ th {
   padding: 8px;
   line-height: 1.23;
   vertical-align: top;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #939597;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -2411,7 +2409,7 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #939597;
 }
 .table .table {
   background-color: #f1f1f1;
@@ -2433,7 +2431,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #ddd;
+  border: 1px solid #939597;
   border-left: 0;
   border-right: 0;
 }
@@ -2454,7 +2452,7 @@ th {
   border-radius: 10px 0 0 0;
 }
 .table-bordered > tbody {
-  border: 1px solid #ddd;
+  border: 1px solid #939597;
   border-top: 0;
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
@@ -2589,7 +2587,7 @@ table th[class*="col-"] {
     margin-bottom: 11.25px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ddd;
+    border: 1px solid #939597;
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -3426,7 +3424,6 @@ fieldset[disabled] .btn-default-dark.focus {
   border-color: #39C2D7;
   font-family: 'Futura', 'Arial', sans-serif;
   font-size: 24px;
-  text-transform: uppercase;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -3814,6 +3811,9 @@ input[type="button"].btn-block {
   font-size: 24px;
   padding: 0 10px 0 0;
   vertical-align: middle;
+}
+.donate-btn-container .btn {
+  text-transform: uppercase;
 }
 .fade {
   opacity: 0;
@@ -6034,7 +6034,7 @@ button.list-group-item-danger.active:focus {
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
 .panel > .table-responsive + .panel-body {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #939597;
 }
 .panel > .table > tbody:first-child > tr:first-child th,
 .panel > .table > tbody:first-child > tr:first-child td {
@@ -7050,7 +7050,7 @@ button.close {
   padding: 5px 0 5px 30px !important;
 }
 .download-pdf-small {
-  background: url("../../images/pdf-icon-small.png") no-repeat 0 9px;
+  background: url("../../images/pdf-light.png") no-repeat 0 9px;
   padding: 8px 0 0 20px !important;
 }
 .download-excel {
@@ -8446,6 +8446,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .hero-banner-wrapper .hero-banner .hero-content-wrapper {
   position: relative;
   min-height: calc(70%);
+  /* changes done by rakesh on 18/09 */
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content {
   position: absolute;
@@ -8674,6 +8675,9 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .hero-banner-wrapper .hero-banner .hero-content-wrapper.center .hero-content .title {
   display: inline-block;
 }
+.hero-banner-wrapper .hero-banner .hero-content-wrapper.left {
+  left: 20px;
+}
 @media (min-width: 992px) {
   .hero-banner-wrapper.with-teaser {
     display: -webkit-box;
@@ -8744,6 +8748,10 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .hero-banner-wrapper.with-teaser .teaser-container .teaser .panel-body a:not(.btn-link) {
   color: #fff;
+}
+.hero-banner-wrapper.with-teaser .teaser-container .teaser .panel-body .btn-default {
+  font-size: 16px;
+  line-height: 19px;
 }
 .owl-theme.hero-banner-wrapper .owl-dots {
   position: relative;
