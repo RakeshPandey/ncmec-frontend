@@ -1167,6 +1167,9 @@ body {
   color: #626366;
   background-color: #f1f1f1;
 }
+body.homepage {
+  background-color: #fff;
+}
 input,
 button,
 select,
@@ -7021,7 +7024,7 @@ button.close {
   padding: 5px 0 5px 30px !important;
 }
 .download-pdf-small {
-  background: url("../../images/pdf-light.png") no-repeat 0 9px;
+  background: url("../../images/pdf-icon-small.png") no-repeat 0 9px;
   padding: 8px 0 0 20px !important;
 }
 .download-excel {
@@ -9569,7 +9572,7 @@ and open the template in the editor.
 }
 .search-missing-children .radio-section-individual label {
   margin-bottom: 0px;
-  padding: 8px 15px;
+  padding: 8px 10px;
   cursor: pointer;
 }
 .search-missing-children .form-horizontal-cover {
