@@ -7015,8 +7015,8 @@ button.close {
   min-height: 16px;
 }
 .download-pdf {
-  background: url("../../images/pdf-icon-big.png") no-repeat 0 0;
-  padding: 16px 0 32px 60px !important;
+  background: url("../../images/pdf-light.png") no-repeat 0 1px;
+  padding: 0 0 0 16px !important;
 }
 .download-pdf-medium {
   background: url("../../images/pdf-icon-medium.png") no-repeat 0 0;
