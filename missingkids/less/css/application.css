@@ -1169,6 +1169,7 @@ body {
 }
 body.homepage {
   background-color: #fff;
+  min-height: 120vh;
 }
 input,
 button,
