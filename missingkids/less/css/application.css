@@ -1167,9 +1167,6 @@ body {
   color: #626366;
   background-color: #f1f1f1;
 }
-body.homepage {
-  background-color: #fff;
-}
 input,
 button,
 select,
@@ -7024,7 +7021,7 @@ button.close {
   padding: 5px 0 5px 30px !important;
 }
 .download-pdf-small {
-  background: url("../../images/pdf-icon-small.png") no-repeat 0 9px;
+  background: url("../../images/pdf-light.png") no-repeat 0 9px;
   padding: 8px 0 0 20px !important;
 }
 .download-excel {
@@ -8113,7 +8110,7 @@ label.error {
 @media (min-width: 767px) {
   .header-container .navbar .container .secondary-header ul.social-icons {
     right: 16px;
-    bottom: -21px;
+    bottom: -17px;
   }
 }
 @media (min-width: 992px) {
