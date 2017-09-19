@@ -9242,6 +9242,9 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .teaser .panel-heading.no-pad {
   padding: 0;
 }
+.teaser .panel-heading.no-pad img {
+  border-radius: 10px 10px 0 0;
+}
 .teaser .panel-heading.no-pad-LR {
   padding: 16px 0;
 }
