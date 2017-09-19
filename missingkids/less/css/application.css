@@ -9201,15 +9201,18 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .teaser .panel-body h5 {
   padding-top: 0;
 }
-.teaser .panel-body button {
-  font-size: 16px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
 .teaser .panel-body a {
   color: #92D6E3;
   font-size: 13px;
   line-height: 16px;
+}
+.teaser .panel-body button,
+.teaser .panel-body a.btn-teaser {
+  color: #fff;
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 1.33;
 }
 .teaser .panel-body .link-heading {
   padding-bottom: 4px;
