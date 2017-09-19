@@ -1171,6 +1171,10 @@ body {
   color: #626366;
   background-color: #f1f1f1;
 }
+body.homepage {
+  background-color: #fff;
+  min-height: 120vh;
+}
 input,
 button,
 select,
@@ -7042,15 +7046,15 @@ button.close {
   min-height: 16px;
 }
 .download-pdf {
-  background: url("../../images/pdf-icon-big.png") no-repeat 0 0;
-  padding: 16px 0 32px 60px !important;
+  background: url("../../images/pdf-light.png") no-repeat 0 1px;
+  padding: 0 0 0 16px !important;
 }
 .download-pdf-medium {
   background: url("../../images/pdf-icon-medium.png") no-repeat 0 0;
   padding: 5px 0 5px 30px !important;
 }
 .download-pdf-small {
-  background: url("../../images/pdf-light.png") no-repeat 0 9px;
+  background: url("../../images/pdf-icon-small.png") no-repeat 0 9px;
   padding: 8px 0 0 20px !important;
 }
 .download-excel {
@@ -8164,7 +8168,7 @@ label.error {
 @media (min-width: 767px) {
   .header-container .navbar .container .secondary-header ul.social-icons {
     right: 16px;
-    bottom: -21px;
+    bottom: -17px;
   }
 }
 @media (min-width: 992px) {
@@ -9301,6 +9305,15 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   font-size: 13px;
   line-height: 16px;
 }
+.teaser .panel-body .link-heading {
+  padding-bottom: 4px;
+}
+.teaser .panel-body .link-heading a {
+  color: #92D6E3;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+}
 .teaser .panel-body .pdf-list .pdfLink {
   color: #92D6E3;
   line-height: 18px;
@@ -9375,6 +9388,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .missing-person-lists {
   list-style: none;
   padding: 0;
+  line-height: 18px;
 }
 .missing-person-lists li {
   color: #F1F1F2;
@@ -9670,7 +9684,7 @@ and open the template in the editor.
 }
 .search-missing-children .radio-section-individual label {
   margin-bottom: 0px;
-  padding: 8px 15px;
+  padding: 8px 10px;
   cursor: pointer;
 }
 .search-missing-children .form-horizontal-cover {
