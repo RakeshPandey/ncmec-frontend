@@ -13,10 +13,12 @@
       &:before {
         background: #AD1A1F;
         left: 0;
+        z-index: 1;
       }
       &:after {
         background: #fff;
         right: 0;
+        z-index: 1;
       }
     }
   .helpline-wrapper {
@@ -29,11 +31,13 @@
     }
     .helpline-content {
       padding: 0;
+      z-index: 2;
       @media (max-width: @screen-sm) {
         background: #AD1A1F;
       }
     }
     .report-content {
+      z-index: 2;
       @media (max-width: @screen-sm) {
         background: #fff;
       }
