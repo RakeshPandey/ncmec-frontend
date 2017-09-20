@@ -8383,6 +8383,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   position: absolute;
   left: 10px;
   top: 10px;
+  min-width: 55%;
 }
 @media (min-width: 992px) {
   .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content {
@@ -8678,6 +8679,15 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   margin-top: -34px !important;
 }
 .owl-theme.hero-banner-wrapper .owl-dots .owl-dot span {
+  width: 13px;
+  height: 13px;
+}
+.owl-theme.hero-teaser-wrapper .owl-dots {
+  position: relative;
+  margin-top: -20px !important;
+  top: -14px;
+}
+.owl-theme.hero-teaser-wrapper .owl-dots .owl-dot span {
   width: 13px;
   height: 13px;
 }
