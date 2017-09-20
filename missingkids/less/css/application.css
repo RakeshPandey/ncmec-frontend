@@ -11187,6 +11187,10 @@ img {
   line-height: inherit;
   margin: inherit;
 }
+.inner-wrapper.no-wrapper {
+  background: none;
+  padding: 0;
+}
 .base-template .inner-wrapper h1,
 .base-template .inner-wrapper h2,
 .base-template .inner-wrapper h3,
