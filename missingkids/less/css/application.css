@@ -8114,11 +8114,14 @@ label.error {
   font-size: 20px;
   padding-top: 2px;
   position: relative;
+  right: 0;
+  transition: right 0.1s ease-in;
 }
 @media (min-width: 767px) {
   .header-container .navbar .container .secondary-header ul.social-icons {
     right: 16px;
     bottom: -17px;
+    position: static;
   }
 }
 @media (min-width: 992px) {
@@ -8167,7 +8170,7 @@ label.error {
 .header-container .navbar .container .secondary-header .site-functionalities .search-wrapper .search-container.opened .search-form {
   position: relative;
   display: inline-block;
-  top: -5px;
+  top: -4px;
   right: 10px;
 }
 .header-container .navbar .container .secondary-header .site-functionalities .search-wrapper .search-container.opened .search-form input[type='text'] {
@@ -8830,6 +8833,8 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   padding-left: 0;
   float: left;
   position: absolute;
+  transition: all 0.1s ease-in;
+  left: 0;
 }
 @media (min-width: 767px) {
   .footer-container .footer-links-wrapper .social-icons {
