@@ -111,7 +111,7 @@
 .ncmec-irs-forms {
   list-style: none;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   li {
     line-height: 16px;
     padding-bottom: 10px;
@@ -123,6 +123,23 @@
         padding-left: 20px;
     }
   }
+}
+
+.internal-Link-block-list {
+    list-style: none;    
+    li {
+       color: @blue-lighter;
+       margin-bottom: 10px;
+       &:before {
+            content: "• ";
+            font-size: 28px;
+            line-height: 16px;
+            vertical-align: text-top;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .daf-direct {
