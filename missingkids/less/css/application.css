@@ -9306,7 +9306,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .ncmec-irs-forms {
   list-style: none;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 .ncmec-irs-forms li {
   line-height: 16px;
@@ -9318,6 +9318,22 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .ncmec-irs-forms li a {
   background: url("../../images/pdf-icon-small.png") no-repeat 0 1px;
   padding-left: 20px;
+}
+.internal-Link-block-list {
+  list-style: none;
+}
+.internal-Link-block-list li {
+  color: #92D6E3;
+  margin-bottom: 10px;
+}
+.internal-Link-block-list li:before {
+  content: "• ";
+  font-size: 28px;
+  line-height: 16px;
+  vertical-align: text-top;
+}
+.internal-Link-block-list li:last-child {
+  margin-bottom: 0;
 }
 .daf-direct > .daf-direct-logo {
   float: left !important;
