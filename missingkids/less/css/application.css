@@ -8112,15 +8112,21 @@ label.error {
 }
 .header-container .navbar .container .secondary-header ul.social-icons {
   font-size: 20px;
+  padding-top: 2px;
+  position: relative;
+  right: 0;
+  transition: right 0.1s ease-in;
 }
 @media (min-width: 767px) {
   .header-container .navbar .container .secondary-header ul.social-icons {
     right: 16px;
     bottom: -17px;
+    position: static;
   }
 }
 @media (min-width: 992px) {
   .header-container .navbar .container .secondary-header ul.social-icons {
+    padding-top: 5px;
     position: absolute;
     right: 0;
   }
@@ -8164,7 +8170,7 @@ label.error {
 .header-container .navbar .container .secondary-header .site-functionalities .search-wrapper .search-container.opened .search-form {
   position: relative;
   display: inline-block;
-  top: -5px;
+  top: -4px;
   right: 10px;
 }
 .header-container .navbar .container .secondary-header .site-functionalities .search-wrapper .search-container.opened .search-form input[type='text'] {
@@ -8383,6 +8389,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   position: absolute;
   left: 10px;
   top: 10px;
+  min-width: 55%;
 }
 @media (min-width: 992px) {
   .hero-banner-wrapper .hero-banner .hero-content-wrapper .hero-content {
@@ -8681,6 +8688,15 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   width: 13px;
   height: 13px;
 }
+.owl-theme.hero-teaser-wrapper .owl-dots {
+  position: relative;
+  margin-top: -20px !important;
+  top: -14px;
+}
+.owl-theme.hero-teaser-wrapper .owl-dots .owl-dot span {
+  width: 13px;
+  height: 13px;
+}
 .footer-container {
   background: #404041;
   text-align: center;
@@ -8802,22 +8818,28 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .footer-container .footer-links-wrapper {
   text-align: left;
+  padding: 0 8px;
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .footer-container .footer-links-wrapper {
     display: inline-block;
     min-width: 300px;
     margin-right: -13px;
+    padding: 0;
   }
 }
 .footer-container .footer-links-wrapper .social-icons {
   margin: 0;
   padding-left: 0;
-  float: right;
+  float: left;
+  position: absolute;
+  transition: all 0.1s ease-in;
+  left: 0;
 }
-@media (max-width: 768px) {
+@media (min-width: 767px) {
   .footer-container .footer-links-wrapper .social-icons {
-    float: left;
+    position: static;
+    float: right;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -8845,6 +8867,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   padding: 0;
   float: right;
   text-align: right;
+  height: 38px;
 }
 @media (min-width: 768px) {
   .footer-container .footer-links-wrapper .search-wrapper {
@@ -8874,31 +8897,20 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .footer-container .footer-links-wrapper .search-wrapper .search-container.opened .search-form input[type='text'] {
   min-width: 165px;
   outline: none;
+  height: 24px;
   border-radius: 5px;
   border-color: #fff;
   border-style: solid;
   padding-left: 3px;
 }
-@media (max-width: 400px) {
-  .footer-container .footer-links-wrapper .search-wrapper .search-container.opened .search-form input[type='text'] {
-    position: absolute;
-    top: -15px;
-    right: 0;
-  }
-}
 .footer-container .footer-links-wrapper .search-wrapper .search-container.opened .search-form .search-submit {
   position: absolute;
-  right: 2px;
-  top: 1px;
+  right: 5px;
+  top: 5px;
   height: 18px;
   background: #fff;
   border: none;
   font-size: 16px;
-}
-@media (max-width: 400px) {
-  .footer-container .footer-links-wrapper .search-wrapper .search-container.opened .search-form .search-submit {
-    top: -15px;
-  }
 }
 .footer-container .footer-links-wrapper .search-wrapper .search-container.opened .search-form .search-submit .icon-search:before {
   color: #95989A;
@@ -11174,6 +11186,10 @@ img {
   font-weight: inherit;
   line-height: inherit;
   margin: inherit;
+}
+.inner-wrapper.no-wrapper {
+  background: none;
+  padding: 0;
 }
 .base-template .inner-wrapper h1,
 .base-template .inner-wrapper h2,
