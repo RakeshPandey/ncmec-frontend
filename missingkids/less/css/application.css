@@ -7431,8 +7431,7 @@ label.error {
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_photo {
   float: left;
   margin: 0 16px 0 0;
-  display: inline-block;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
 }
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_name_link {
   font-family: 'Futura', 'Arial', sans-serif;
@@ -9241,7 +9240,6 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .teaser .panel-body button,
 .teaser .panel-body a.btn-teaser {
-  color: #fff;
   font-size: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
