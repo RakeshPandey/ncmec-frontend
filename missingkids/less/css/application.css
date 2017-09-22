@@ -1375,7 +1375,7 @@ p {
   margin: 0 0 16px;
   font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 19.5px;
 }
 .lead {
   margin-bottom: 15px;
@@ -3175,6 +3175,8 @@ select[multiple].input-lg {
   box-shadow: none;
   color: #626366;
   border: 1px solid #626366;
+  width: 144px;
+  height: 32px;
 }
 .ncmec-form hr {
   margin: 16px -16px;
@@ -3720,6 +3722,8 @@ fieldset[disabled] .btn-danger.focus {
   font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
   font-weight: normal;
   border-radius: 0;
+  white-space: normal;
+  text-align: left;
 }
 .btn-link,
 .btn-link:active,
@@ -7431,8 +7435,7 @@ label.error {
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_photo {
   float: left;
   margin: 0 16px 0 0;
-  display: inline-block;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
 }
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_name_link {
   font-family: 'Futura', 'Arial', sans-serif;
@@ -8591,13 +8594,8 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper.right .hero-content {
   left: auto;
-  right: 10px;
+  right: 8px;
   text-align: right;
-}
-@media (min-width: 767px) {
-  .hero-banner-wrapper .hero-banner .hero-content-wrapper.right .hero-content {
-    right: 40px;
-  }
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper.right .hero-content .title {
   display: inline-block;
@@ -9241,7 +9239,6 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .teaser .panel-body button,
 .teaser .panel-body a.btn-teaser {
-  color: #fff;
   font-size: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
