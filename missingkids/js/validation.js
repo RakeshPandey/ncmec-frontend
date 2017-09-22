@@ -1,8 +1,16 @@
 $.validator.setDefaults({
     submitHandler: function () {
-        alert("submitted!");
+        $("#div-main").hide();    // where div-main is the ID of the <div> enclosing the form
+        $(".thank-you-message").removeClass("hide").show();
+        
+        // JQuery code to scroll down to div
+        $('html, body').animate({
+            scrollTop: $(".thank-you-message").offset().top
+        }, 2000);
+        return false;
     }
 });
+
 $.validator.addMethod("regex", function (value, element, regexpr) {
     return regexpr.test(value);
 }, "Please enter a valid value");
