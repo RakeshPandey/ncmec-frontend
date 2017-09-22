@@ -113,7 +113,7 @@ hr {
 .pub-content {
     img {
         float: left;
-        margin: 0 16px 0 0;
+        margin: 0 16px 16px 0;
         border-radius: 10px;
     }
     p {
@@ -437,7 +437,10 @@ a.mk-partnerBlock .imgBlock div.imagewrap img {
     max-height: 120px;
 }
 .partnerLevel {
-    margin: 10px 0;
+    margin: 0 0 16px;
+    > p {
+        margin: 16px 16px 0;
+    }
 }
 .partnerLevel > ul {
     *zoom: 1;
@@ -496,7 +499,7 @@ a.mk-partnerBlock .imgBlock div.imagewrap img {
     text-align: center;
 }
 .partnerLevel > .blocks {
-    margin: 5px 0 0;
+    margin: 0;
 }
 .partnerLevel p.programHeader {
     color: white;
@@ -532,6 +535,11 @@ iframe {
     .col-sm-5ths {
         width: 20%;
         float: left;
+    }
+    .partnerLevel {
+        > p {
+            padding: 0 13px;
+        }
     }
 }
 

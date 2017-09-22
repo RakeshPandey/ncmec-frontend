@@ -86,3 +86,15 @@ $(document).on("click", ".search-container .search-icon", function(){
   if($("#error-popup"))
     $("#error-popup").modal('show');
 })();
+
+//=======================================================
+// Prevent body scroll on nav contetnt scroll in mobile
+//=======================================================
+(function(){
+  $(document).on("touchstart", "#navbar .dropdown-menu", function(e){
+    $('body').css({overflow: 'hidden'});
+  });
+  $(document).on("touchend", "#navbar .dropdown-menu", function(e){
+    $('body').css({overflow: 'auto'});
+  });
+})();
