@@ -8682,13 +8682,8 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper.right .hero-content {
   left: auto;
-  right: 10px;
+  right: 8px;
   text-align: right;
-}
-@media (min-width: 767px) {
-  .hero-banner-wrapper .hero-banner .hero-content-wrapper.right .hero-content {
-    right: 40px;
-  }
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper.right .hero-content .title {
   display: inline-block;
