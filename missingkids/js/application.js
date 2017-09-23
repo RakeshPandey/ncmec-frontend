@@ -52,7 +52,7 @@ $(function () {
 
 
             if (sideContentHeight > mainContentHeight){
-                $(".content-wrapper > .container > .row > div:first .inner-wrapper:not(.dont-set-height)").height(sideContentHeight);
+                $(".content-wrapper > .container > .row > div:first .inner-wrapper:not(.dont-set-height)").css('minHeight', sideContentHeight);
             }
     }
     window.onload = function(){
