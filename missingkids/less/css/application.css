@@ -8403,6 +8403,8 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .hero-banner-wrapper .hero-banner iframe {
   position: absolute;
+  left: 0;
+  top: 0;
 }
 .hero-banner-wrapper .hero-banner .hero-content-wrapper {
   position: relative;
