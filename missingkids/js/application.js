@@ -65,7 +65,8 @@ $(function () {
     function onScroll() {
         var $body = $('body');
         $body.removeClass('fixed-breadcrump');
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+
         if (scrollTop > 1) {
             if (!$body.hasClass('scroll-started')) {
                 $body.addClass('scroll-started');
