@@ -6,7 +6,7 @@ $(document).on("click", ".search-container .search-icon", function(){
   // header logics
   //================
   var navbar = $(this).parents().siblings('#navbar');
-  if(navbar){
+  if(navbar.length){
     var viewport = window.innerWidth;
     var offset = 50;
     var pOffset = 8;
@@ -21,27 +21,28 @@ $(document).on("click", ".search-container .search-icon", function(){
         (searchContainer.hasClass('opened'))
             ? navbar.css('left', parseInt(actualLeft) - width - offset)
             : navbar.css('left', actualLeft);
-      }else {
-        if(searchContainer.parents('.secondary-header').length) {
-            if(searchContainer.hasClass('opened')) {
-                var sRight = document.querySelector(".secondary-header .social-icons").getBoundingClientRect().right;
-                var searchLeft = document.querySelector(".site-functionalities .search-wrapper input[name='search']").getBoundingClientRect().left;
-                if(sRight > searchLeft){
-                  $(".secondary-header .social-icons").css('right', sRight - searchLeft);
-                }
-            }else{
-                $(".secondary-header .social-icons").css('right', 0);
-            }
-        }else if(searchContainer.parents('.footer-links-wrapper').length){
+      }
+    }
+    if(viewport < 768) {
+      if(searchContainer.parents('.secondary-header').length) {
           if(searchContainer.hasClass('opened')) {
-              var sRight = document.querySelector(".footer-links-wrapper .social-icons").getBoundingClientRect().right;
-              var searchLeft = document.querySelector(".footer-links-wrapper .search-wrapper input[name='search']").getBoundingClientRect().left;
+              var sRight = document.querySelector(".secondary-header .social-icons").getBoundingClientRect().right;
+              var searchLeft = document.querySelector(".site-functionalities .search-wrapper input[name='search']").getBoundingClientRect().left;
               if(sRight > searchLeft){
-                $(".footer-links-wrapper .social-icons").css('left', searchLeft - sRight - pOffset);
+                $(".secondary-header .social-icons").css('right', sRight - searchLeft);
               }
           }else{
-              $(".footer-links-wrapper .social-icons").css('left', 0);
+              $(".secondary-header .social-icons").css('right', 0);
           }
+      }else if(searchContainer.parents('.footer-links-wrapper').length){
+        if(searchContainer.hasClass('opened')) {
+            var sRight = document.querySelector(".footer-links-wrapper .social-icons").getBoundingClientRect().right;
+            var searchLeft = document.querySelector(".footer-links-wrapper .search-wrapper input[name='search']").getBoundingClientRect().left;
+            if(sRight > searchLeft){
+              $(".footer-links-wrapper .social-icons").css('left', searchLeft - sRight - pOffset);
+            }
+        }else{
+            $(".footer-links-wrapper .social-icons").css('left', 0);
         }
       }
     }
