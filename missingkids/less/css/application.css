@@ -9237,6 +9237,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   color: #92D6E3;
   font-size: 13px;
   line-height: 16px;
+  cursor: pointer;
 }
 .teaser .panel-body button,
 .teaser .panel-body a.btn-teaser {
@@ -11755,6 +11756,9 @@ textarea.form-control {
     display: inline-block;
     float: none;
   }*/
+.missing-help-bring-me-home .js-ncmec-form-container {
+  background: #fff;
+}
 .missing-help-bring-me-home .panel-heading {
   padding-left: 0;
   padding-right: 0;
