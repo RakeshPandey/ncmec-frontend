@@ -11187,7 +11187,7 @@ img {
   padding: 0 16px 16px;
   /*    @media (min-width: @screen-md) {
              padding: 0 16px 15px;
-            
+
         }*/
 }
 .inner-wrapper:before,
@@ -11778,8 +11778,7 @@ textarea.form-control {
   margin-bottom: 13px;
 }
 .missing-help-bring-me-home .child-list > li img {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-radius: 8px;
 }
 .missing-help-bring-me-home .child-list .child-thumb {
   width: 64px;
