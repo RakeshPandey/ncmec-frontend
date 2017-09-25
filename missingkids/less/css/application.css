@@ -7922,7 +7922,6 @@ label.error {
   display: none;
 }
 .header-container .navbar .container #navbar > ul {
-  white-space: nowrap;
   padding: 0;
   margin: 0;
 }
