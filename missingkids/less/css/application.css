@@ -8840,6 +8840,11 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   margin-left: 0;
   margin-right: 0;
 }
+@media (max-width: 767px) {
+  .footer-container .subscribe-form form .form-group {
+    margin-bottom: 0;
+  }
+}
 .footer-container .subscribe-form form .form-group .input-subscribe {
   border: 1px solid #fdb814;
   border-radius: 5px 0 0 5px;

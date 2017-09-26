@@ -6,10 +6,10 @@ $(document).on("click", ".search-container .search-icon", function(){
   // header logics
   //================
   var navbar = $(this).parents().siblings('#navbar');
+  var viewport = window.innerWidth;
+  var offset = 50;
+  var pOffset = 8;
   if(navbar.length){
-    var viewport = window.innerWidth;
-    var offset = 50;
-    var pOffset = 8;
       if(viewport >= 768) {
         var width = navbar.find('ul:first-child > li:first-child').width();
         if(!navbar.data('actualLeft')) {
