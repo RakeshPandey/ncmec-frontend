@@ -25,6 +25,21 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function(){
+        
+        var body = document.body,
+            html = document.documentElement;
+
+        var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                               html.clientHeight, html.scrollHeight, html.offsetHeight );
+        
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;        
+        
+        if(height<800 & windowWidth>480) {            
+            $(".stickyWrapper").addClass('absolute');
+        }
+        
+        
         $('#arrow').click(function(){
             $('.stickyBox').slideToggle('slow');
             var currClass = $('#arrow').attr("class");
