@@ -1505,11 +1505,32 @@ ol {
   margin-top: 0;
   margin-bottom: 7.5px;
 }
+ul li,
+ol li {
+  padding-bottom: 10px;
+}
+ul li:last-child,
+ol li:last-child {
+  padding-bottom: 0;
+}
 ul ul,
 ol ul,
 ul ol,
 ol ol {
-  margin-bottom: 0;
+  margin: 1px 0 0 16px;
+  margin-left: 16px;
+}
+ul ul li,
+ol ul li,
+ul ol li,
+ol ol li {
+  padding-bottom: 10px;
+}
+ul ul li:last-child,
+ol ul li:last-child,
+ul ol li:last-child,
+ol ol li:last-child {
+  padding-bottom: 0;
 }
 .list-unstyled {
   padding-left: 0;
