@@ -1,4 +1,9 @@
 .home-teaser-wrapper {
+  @media (min-width: @screen-md) {
+    &:last-child {
+      padding-bottom: 32px;
+    }
+  }
   @media (max-width: @screen-sm) {
     picture, img {
       height: 100%;
@@ -45,8 +50,10 @@
     }
   }
   .small-teasers{
-    margin-top: 16px;
     padding: 0;
+      .home-teaser {
+        margin-top: 16px;
+      }
   }
   .home-teaser {
     border-radius: 10px;
@@ -149,6 +156,7 @@
       height: 405px;
       position: relative;
       overflow: hidden;
+      margin-bottom: 0;
       @media (min-width: @screen-sm) {
         height: 545px;
       }
@@ -184,7 +192,7 @@
           overflow: hidden;
           margin-top: 0;
           @media (min-width: @screen-sm) {
-            font-size: 34px;
+            font-size: 35px;
             line-height: 46px;
           }
         }
