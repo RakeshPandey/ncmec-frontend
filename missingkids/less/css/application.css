@@ -11403,6 +11403,9 @@ hr {
 .table-ncmec table tbody tr td {
   padding: 10px 10px 10px 20px;
 }
+.table-ncmec h5 {
+  padding: 0 16px;
+}
 #accordion .table-ncmec {
   margin-left: 0;
   margin-right: 0;
@@ -11887,4 +11890,8 @@ textarea.form-control {
 .teaser h4 {
   margin-top: 0;
   margin-bottom: 0;
+}
+.close-form i {
+  cursor: pointer;
+  font-size: 16px;
 }
