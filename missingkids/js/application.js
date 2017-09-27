@@ -61,27 +61,6 @@ $(function () {
 
     }
 
-
-    function onScroll() {
-        var $body = $('body');
-        $body.removeClass('fixed-breadcrump');
-        var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-
-        if (scrollTop > 1) {
-            if (!$body.hasClass('scroll-started')) {
-                $body.addClass('scroll-started');
-            }
-        } else {
-            if ($body.hasClass('scroll-started')) {
-                $body.removeClass('scroll-started');
-            }
-        }
-    }
-    if(!$(".header-container").hasClass('home')){
-      $(window).scroll(onScroll);
-      onScroll();
-    }
-
   //Side slider Component
   if($("#js-sideslider").length != 0) {
     $("#js-sideslider").load("side-slider.html");
@@ -92,6 +71,28 @@ $(function () {
   $("#js-footer").load("common-footer.html");
 
 });
+
+(function(){
+  function onScroll() {
+      var $body = $('body');
+      $body.removeClass('fixed-breadcrump');
+      var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+
+      if (scrollTop > 1) {
+          if (!$body.hasClass('scroll-started')) {
+              $body.addClass('scroll-started');
+          }
+      } else {
+          if ($body.hasClass('scroll-started')) {
+              $body.removeClass('scroll-started');
+          }
+      }
+  }
+  if(!$(".header-container").hasClass('home')){
+    $(window).scroll(onScroll);
+    onScroll();
+  }
+})();
 
 function mobileViewUpdate() {
     var viewportWidth = $(window).width();
