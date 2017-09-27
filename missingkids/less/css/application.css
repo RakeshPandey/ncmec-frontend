@@ -11891,13 +11891,6 @@ textarea.form-control {
   margin-top: 0;
   margin-bottom: 0;
 }
-.close-form {
-  text-align: right;
-}
-.close-form i {
-  cursor: pointer;
-  font-size: 16px;
-}
 .col-md-4.col-sm-4.col-xs-12.col-centered {
   text-align: center;
 }
