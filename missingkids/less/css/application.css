@@ -11891,6 +11891,9 @@ textarea.form-control {
   margin-top: 0;
   margin-bottom: 0;
 }
+.close-form {
+  text-align: right;
+}
 .close-form i {
   cursor: pointer;
   font-size: 16px;
