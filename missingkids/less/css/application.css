@@ -11355,6 +11355,9 @@ hr {
 .three-column .video-image-component .col-md-10 {
   width: 100%;
 }
+.three-column .video-image-component p {
+  padding: 0 16px;
+}
 .gen-info-list {
   margin-bottom: 0;
 }
@@ -11399,6 +11402,9 @@ hr {
 }
 .table-ncmec table tbody tr td {
   padding: 10px 10px 10px 20px;
+}
+.table-ncmec h5 {
+  padding: 0 16px;
 }
 #accordion .table-ncmec {
   margin-left: 0;
@@ -11884,4 +11890,7 @@ textarea.form-control {
 .teaser h4 {
   margin-top: 0;
   margin-bottom: 0;
+}
+.col-md-4.col-sm-4.col-xs-12.col-centered {
+  text-align: center;
 }
