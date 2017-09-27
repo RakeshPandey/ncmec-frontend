@@ -7925,7 +7925,6 @@ label.error {
   height: 30px;
   position: absolute;
   z-index: 99;
-  overflow-x: scroll;
   width: 100%;
   margin: 0;
   transition: all 0.2s ease-in;
@@ -7949,10 +7948,19 @@ label.error {
 .header-container .navbar .container #navbar .open > .dropdown-menu {
   display: none;
 }
+.header-container .navbar .container #navbar.navbar-collapse.in {
+  overflow-y: visible;
+}
 .header-container .navbar .container #navbar > ul {
   white-space: nowrap;
   padding: 0;
   margin: 0;
+  overflow-x: auto;
+}
+@media (min-width: 767px) {
+  .header-container .navbar .container #navbar > ul {
+    overflow-x: initial;
+  }
 }
 .header-container .navbar .container #navbar > ul > li {
   display: inline-block;
@@ -8015,20 +8023,20 @@ label.error {
     transform: translateX(-30%);
   }
   .header-container .navbar .container #navbar > ul > li:hover:last-child > ul {
-    transform: translateX(-50%);
+    transform: translateX(-45%);
   }
   .header-container .navbar .container #navbar > ul > li:hover:last-child > ul:after {
-    transform: translateX(-50%);
+    transform: translateX(-45%);
   }
 }
 @media (min-width: 992px) {
   .header-container .navbar .container #navbar > ul > li:hover:not(:first-child) > ul {
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-45%);
   }
   .header-container .navbar .container #navbar > ul > li:hover:not(:first-child) > ul:after {
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-45%);
   }
 }
 .header-container .navbar .container #navbar > ul > li:hover > ul {
@@ -8076,7 +8084,7 @@ label.error {
 @media (max-width: 767px) {
   .header-container .navbar .container #navbar > ul > li:hover ul.dropdown-menu {
     position: fixed;
-    top: 94px;
+    top: 93px;
     width: 100%;
     max-height: calc(100vh - 73px);
     overflow: scroll;
