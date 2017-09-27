@@ -8752,13 +8752,14 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 }
 .footer-container .subscribe-form form .form-group .input-subscribe {
   border: 1px solid #fdb814;
+  border-right: none;
   border-radius: 5px 0 0 5px;
   background: transparent;
   color: #F1F1F2;
   padding: 5px 10px;
   float: left !important;
   width: 200px;
-  min-height: 28px;
+  height: 28px;
   outline: none;
 }
 .footer-container .subscribe-form form .form-group .btn-subscribe {
@@ -8767,7 +8768,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   border-radius: 0 5px 5px 0;
   color: #404041;
   padding: 5px 10px;
-  min-height: 28px;
+  height: 28px;
   float: left !important;
 }
 .footer-container .subscribe-form form .form-group .btn-subscribe:hover {
