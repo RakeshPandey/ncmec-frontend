@@ -11355,6 +11355,9 @@ hr {
 .three-column .video-image-component .col-md-10 {
   width: 100%;
 }
+.three-column .video-image-component p {
+  padding: 0 16px;
+}
 .gen-info-list {
   margin-bottom: 0;
 }
