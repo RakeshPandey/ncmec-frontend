@@ -7793,7 +7793,7 @@ label.error {
     position: absolute;
     left: -42%;
     width: 50%;
-    height: 60px;
+    height: 80px;
     background: #404041;
     z-index: 10;
   }

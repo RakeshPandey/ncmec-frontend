@@ -118,7 +118,7 @@ $(document).on("click", ".search-container .search-icon", function(){
   });
 
   function alignDropdownMenu(dropDown) {
-    var offset = (window.innerWidth == 768) ? 20 : 5;
+    var offset = 5;
     var dropDownBound  = dropDown.getBoundingClientRect();
     var navBarBound = document.querySelector(".navbar-brand").getBoundingClientRect();
     if(dropDownBound.left <= navBarBound.right) {
