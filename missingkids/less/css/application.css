@@ -5074,7 +5074,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 @media (min-width: 992px) {
   .breadcrumbs .breadcrumb {
-    padding: 8px 16px 8px 16px;
+    padding: 8px 16px 0 16px;
   }
 }
 .breadcrumbs .breadcrumb > li {
