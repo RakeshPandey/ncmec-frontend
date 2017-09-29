@@ -1,7 +1,7 @@
 $(function(){
     $('.expandable').readmore({
         speed: 500,
-        collapsedHeight: 100,
+        collapsedHeight: 117,
         lessLink: '<p class="text-right"><a href="#" title="readmore">...close <i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></p>',
         moreLink: '<p class="text-right"><a href="#" title="close">...readmore <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></p>'
     });
