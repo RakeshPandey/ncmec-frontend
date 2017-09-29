@@ -9212,7 +9212,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   }
 }
 .alert-text-image-component {
-  padding: 16px 0;
+  padding: 0;
 }
 .alert-text-image-component:before,
 .alert-text-image-component:after {
