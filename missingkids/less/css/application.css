@@ -7988,27 +7988,17 @@ label.error {
 @media (min-width: 767px) {
   .header-container .navbar .container #navbar > ul > li:hover:not(:first-child) > ul {
     left: 50%;
-    transform: translateX(-30%);
+    transform: translateX(-50%);
   }
   .header-container .navbar .container #navbar > ul > li:hover:not(:first-child) > ul:after {
     left: 50%;
-    transform: translateX(-30%);
+    transform: translateX(-50%);
   }
   .header-container .navbar .container #navbar > ul > li:hover:last-child > ul {
-    transform: translateX(-45%);
+    transform: translateX(50%);
   }
   .header-container .navbar .container #navbar > ul > li:hover:last-child > ul:after {
-    transform: translateX(-45%);
-  }
-}
-@media (min-width: 992px) {
-  .header-container .navbar .container #navbar > ul > li:hover:not(:first-child) > ul {
-    left: 50%;
-    transform: translateX(-45%);
-  }
-  .header-container .navbar .container #navbar > ul > li:hover:not(:first-child) > ul:after {
-    left: 50%;
-    transform: translateX(-45%);
+    transform: translateX(50%);
   }
 }
 .header-container .navbar .container #navbar > ul > li:hover > ul {
