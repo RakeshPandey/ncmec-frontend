@@ -3253,8 +3253,11 @@ select[multiple].input-lg {
   padding: 5px 0;
   font-size: 16px;
   box-shadow: none;
-  color: #626366;
+  color: #626366 !important;
   border: 1px solid #626366;
+}
+.missing-kids-form .btn-default:hover {
+  color: #fff !important;
 }
 #js-search-results {
   display: none;
@@ -11104,6 +11107,7 @@ label.error {
   list-style: none;
   background: #fff;
   border-radius: 10px;
+  padding-bottom: 0;
   text-align: center;
   text-transform: uppercase;
   position: relative;
