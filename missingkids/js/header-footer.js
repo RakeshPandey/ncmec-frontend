@@ -7,7 +7,7 @@ $(document).on("click", ".search-container .search-icon", function(){
   //================
   var navbar = $(this).parents().siblings('#navbar');
   var viewport = window.innerWidth;
-  var offset = 50;
+  var offset = 58;
   var pOffset = 8;
   if(navbar.length){
       if(viewport >= 768) {
@@ -97,5 +97,39 @@ $(document).on("click", ".search-container .search-icon", function(){
   });
   $(document).on("touchend", "#navbar .dropdown-menu", function(e){
     $('body').css({overflow: 'auto'});
+  });
+})();
+
+//=======================================================
+// Header dropdown navigation fixes
+//=======================================================
+(function(){
+  $(document).on("mouseover", "#navbar >ul > li", function(e){
+    var viewport = window.innerWidth;
+    if(viewport >= 768) {
+      var dropDown = this.querySelector(".dropdown-menu");
+      if(dropDown) {
+        alignDropdownMenu(dropDown)
+      }
+    }
+  }).on("mouseout", "#navbar >ul > li", function(e){
+    var dropDown = this.querySelector(".dropdown-menu");
+    $(dropDown).removeAttr("style");
+  });
+
+  function alignDropdownMenu(dropDown) {
+    var offset = 5;
+    var dropDownBound  = dropDown.getBoundingClientRect();
+    var navBarBound = document.querySelector(".navbar-brand").getBoundingClientRect();
+    if(dropDownBound.left <= navBarBound.right) {
+      $(dropDown).css({left: "+="+( navBarBound.right - dropDownBound.left + offset)});
+    }
+  }
+
+  window.addEventListener("resize", function(){
+    var dropDown = document.querySelector("#navbar >ul > li.open > .dropdown-menu");
+    if(dropDown) {
+      alignDropdownMenu(dropDown);
+    }
   });
 })();
