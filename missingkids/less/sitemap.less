@@ -1,0 +1,16 @@
+.sitemap-list {
+    list-style: none;
+    li {
+       color: none;
+       margin-bottom: 10px;
+       &:before {
+            content: "• ";
+            font-size: 28px;
+            line-height: 16px;
+            vertical-align: text-top;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
