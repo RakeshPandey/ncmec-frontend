@@ -1504,7 +1504,7 @@ ol {
 }
 ul li,
 ol li {
-  padding-bottom: 10px;
+  padding-bottom: 16px;
 }
 ul li:last-child,
 ol li:last-child {
@@ -1514,14 +1514,13 @@ ul ul,
 ol ul,
 ul ol,
 ol ol {
-  margin: 1px 0 0 16px;
-  margin-left: 16px;
+  margin: 16px 0 0 16px;
 }
 ul ul li,
 ol ul li,
 ul ol li,
 ol ol li {
-  padding-bottom: 10px;
+  padding-bottom: 16px;
 }
 ul ul li:last-child,
 ol ul li:last-child,
@@ -10266,7 +10265,7 @@ label.error {
 }
 @media (min-width: 992px) {
   .home-teaser-wrapper:last-child {
-    padding-bottom: 32px;
+    padding-bottom: 16px;
   }
 }
 @media (max-width: 767px) {
