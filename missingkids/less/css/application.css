@@ -10266,7 +10266,7 @@ label.error {
 }
 @media (min-width: 992px) {
   .home-teaser-wrapper:last-child {
-    padding-bottom: 32px;
+    padding-bottom: 16px;
   }
 }
 @media (max-width: 767px) {
