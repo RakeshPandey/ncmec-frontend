@@ -1,52 +1,55 @@
-$(document).on("click", ".search-container .search-icon", function(){
-  var searchContainer = $(this).parents(".search-container");
-  searchContainer.toggleClass("opened");
-  (searchContainer.hasClass('opened')) ? searchContainer.find('input').focus() : "";
-  //================
-  // header logics
-  //================
-  var navbar = $(this).parents().siblings('#navbar');
-  var viewport = window.innerWidth;
-  var offset = 58;
-  var pOffset = 8;
-  if(navbar.length){
-      if(viewport >= 768) {
-        var width = navbar.find('ul:first-child > li:first-child').width();
-        if(!navbar.data('actualLeft')) {
-          var actualLeft = navbar.css('left');
-          navbar.data('actualLeft', actualLeft);
-        }else {
-          var actualLeft = navbar.data('actualLeft');
+$(document).ready(function(){
+  $(".search-container .search-icon").on("click", function(){
+    var searchContainer = $(this).parents(".search-container");
+    searchContainer.toggleClass("opened");
+    (searchContainer.hasClass('opened')) ? searchContainer.find('input').focus() : "";
+    //================
+    // header logics
+    //================
+    var navbar = $(this).parents().siblings('#navbar');
+    var viewport = window.innerWidth;
+    var offset = 58;
+    var pOffset = 8;
+    if(navbar.length){
+        if(viewport >= 768) {
+          var width = navbar.find('ul:first-child > li:first-child').width();
+          if(!navbar.data('actualLeft')) {
+            var actualLeft = navbar.css('left');
+            navbar.data('actualLeft', actualLeft);
+          }else {
+            var actualLeft = navbar.data('actualLeft');
+          }
+          (searchContainer.hasClass('opened'))
+              ? navbar.css('left', parseInt(actualLeft) - width - offset)
+              : navbar.css('left', actualLeft);
         }
-        (searchContainer.hasClass('opened'))
-            ? navbar.css('left', parseInt(actualLeft) - width - offset)
-            : navbar.css('left', actualLeft);
       }
-    }
-    if(viewport < 768) {
-      if(searchContainer.parents('.secondary-header').length) {
+      if(viewport < 768) {
+        if(searchContainer.parents('.secondary-header').length) {
+            if(searchContainer.hasClass('opened')) {
+                var sRight = document.querySelector(".secondary-header .social-icons").getBoundingClientRect().right;
+                var searchLeft = document.querySelector(".site-functionalities .search-wrapper input[name='search']").getBoundingClientRect().left;
+                if(sRight > searchLeft){
+                  $(".secondary-header .social-icons").css('right', sRight - searchLeft);
+                }
+            }else{
+                $(".secondary-header .social-icons").css('right', 0);
+            }
+        }else if(searchContainer.parents('.footer-links-wrapper').length){
           if(searchContainer.hasClass('opened')) {
-              var sRight = document.querySelector(".secondary-header .social-icons").getBoundingClientRect().right;
-              var searchLeft = document.querySelector(".site-functionalities .search-wrapper input[name='search']").getBoundingClientRect().left;
+              var sRight = document.querySelector(".footer-links-wrapper .social-icons").getBoundingClientRect().right;
+              var searchLeft = document.querySelector(".footer-links-wrapper .search-wrapper input[name='search']").getBoundingClientRect().left;
               if(sRight > searchLeft){
-                $(".secondary-header .social-icons").css('right', sRight - searchLeft);
+                $(".footer-links-wrapper .social-icons").css('left', searchLeft - sRight - pOffset);
               }
           }else{
-              $(".secondary-header .social-icons").css('right', 0);
+              $(".footer-links-wrapper .social-icons").css('left', 0);
           }
-      }else if(searchContainer.parents('.footer-links-wrapper').length){
-        if(searchContainer.hasClass('opened')) {
-            var sRight = document.querySelector(".footer-links-wrapper .social-icons").getBoundingClientRect().right;
-            var searchLeft = document.querySelector(".footer-links-wrapper .search-wrapper input[name='search']").getBoundingClientRect().left;
-            if(sRight > searchLeft){
-              $(".footer-links-wrapper .social-icons").css('left', searchLeft - sRight - pOffset);
-            }
-        }else{
-            $(".footer-links-wrapper .social-icons").css('left', 0);
         }
       }
-    }
+  });
 });
+
 
 //===============================
 // Statistics counter initiation

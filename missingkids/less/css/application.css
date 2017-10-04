@@ -7964,6 +7964,7 @@ label.error {
   padding: 0;
   margin: 0;
   overflow-x: auto;
+  -webkit-overflow-scrolling: auto;
 }
 @media (min-width: 767px) {
   .header-container .navbar .container #navbar > ul {
@@ -10264,8 +10265,8 @@ label.error {
   }
 }
 @media (min-width: 992px) {
-  .home-teaser-wrapper:last-child {
-    padding-bottom: 16px;
+  .home-teaser-wrapper .home-page-wrapper {
+    padding-bottom: 32px;
   }
 }
 @media (max-width: 767px) {
