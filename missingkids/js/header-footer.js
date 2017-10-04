@@ -127,7 +127,6 @@ $(document).ready(function(){
     if(dropDownBound.left <= navBarBound.right) {
       $(dropDown).css({left: "+="+( navBarBound.right - dropDownBound.left + offset)});
     }
-    $(dropDown).css("opacity", 1);
   }
 
   window.addEventListener("resize", function(){
