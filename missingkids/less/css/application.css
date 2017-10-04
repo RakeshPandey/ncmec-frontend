@@ -7466,7 +7466,7 @@ label.error {
   vertical-align: top;
   background: #404041;
   padding: 16px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px;
 }
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_photo {
   float: left;
