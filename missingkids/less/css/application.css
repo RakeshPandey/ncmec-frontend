@@ -7362,6 +7362,7 @@ label.error {
 #accordion .panel-title {
   font-size: 16px;
   font-weight: bold;
+  line-height: 22px;
 }
 #accordion .panel-title > a {
   background-color: #939597;
