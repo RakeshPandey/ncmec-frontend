@@ -1167,9 +1167,6 @@ body {
   color: #626366;
   background-color: #f1f1f1;
 }
-body {
-  min-height: 120vh;
-}
 body .homepage {
   background-color: #fff;
 }
@@ -1507,7 +1504,7 @@ ol {
 }
 ul li,
 ol li {
-  padding-bottom: 10px;
+  padding-bottom: 16px;
 }
 ul li:last-child,
 ol li:last-child {
@@ -1517,14 +1514,13 @@ ul ul,
 ol ul,
 ul ol,
 ol ol {
-  margin: 1px 0 0 16px;
-  margin-left: 16px;
+  margin: 16px 0 0 16px;
 }
 ul ul li,
 ol ul li,
 ul ol li,
 ol ol li {
-  padding-bottom: 10px;
+  padding-bottom: 16px;
 }
 ul ul li:last-child,
 ol ul li:last-child,
@@ -7366,6 +7362,7 @@ label.error {
 #accordion .panel-title {
   font-size: 16px;
   font-weight: bold;
+  line-height: 22px;
 }
 #accordion .panel-title > a {
   background-color: #939597;
@@ -7948,7 +7945,7 @@ label.error {
     position: absolute;
     left: 124px;
     top: 16px;
-    z-index: 5;
+    z-index: 11;
   }
 }
 @media (max-width: 767px) {
@@ -7971,7 +7968,7 @@ label.error {
 }
 @media (min-width: 767px) {
   .header-container .navbar .container #navbar > ul {
-    overflow-x: visible;
+    overflow-x: initial;
   }
 }
 .header-container .navbar .container #navbar > ul > li {
@@ -8034,6 +8031,12 @@ label.error {
     left: 50%;
     transform: translateX(-50%);
   }
+  .header-container .navbar .container #navbar > ul > li:hover:last-child > ul {
+    transform: translateX(50%);
+  }
+  .header-container .navbar .container #navbar > ul > li:hover:last-child > ul:after {
+    transform: translateX(50%);
+  }
 }
 .header-container .navbar .container #navbar > ul > li:hover > ul {
   left: 0;
@@ -8084,12 +8087,6 @@ label.error {
     width: 100%;
     max-height: calc(100vh - 73px);
     overflow: scroll;
-  }
-}
-@media (min-width: 767px) {
-  .header-container .navbar .container #navbar > ul > li:hover ul.dropdown-menu {
-    opacity: 0;
-    transition: opacity 0.2s ease-in;
   }
 }
 .header-container .navbar .container #navbar > ul > li:hover ul.dropdown-menu > li {
@@ -9279,7 +9276,6 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   padding-top: 0;
 }
 .teaser .panel-body a {
-  color: #92D6E3;
   font-size: 13px;
   line-height: 16px;
   cursor: pointer;
@@ -11241,6 +11237,7 @@ img {
 .inner-wrapper {
   background: #fff;
   padding: 0 16px 16px;
+  min-height: 400px;
   /*    @media (min-width: @screen-md) {
              padding: 0 16px 15px;
 
