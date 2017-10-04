@@ -8032,10 +8032,10 @@ label.error {
     transform: translateX(-50%);
   }
   .header-container .navbar .container #navbar > ul > li:hover:last-child > ul {
-    transform: translateX(50%);
+    transform: translateX(-50%);
   }
   .header-container .navbar .container #navbar > ul > li:hover:last-child > ul:after {
-    transform: translateX(50%);
+    transform: translateX(-50%);
   }
 }
 .header-container .navbar .container #navbar > ul > li:hover > ul {
