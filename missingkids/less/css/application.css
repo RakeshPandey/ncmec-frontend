@@ -7959,6 +7959,7 @@ label.error {
   padding: 0;
   margin: 0;
   overflow-x: auto;
+  -webkit-overflow-scrolling: auto;
 }
 @media (min-width: 767px) {
   .header-container .navbar .container #navbar > ul {
