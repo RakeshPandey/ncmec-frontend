@@ -10269,7 +10269,7 @@ label.error {
   }
 }
 @media (min-width: 992px) {
-  .home-teaser-wrapper:last-child {
+  .home-teaser-wrapper .home-page-wrapper {
     padding-bottom: 32px;
   }
 }
