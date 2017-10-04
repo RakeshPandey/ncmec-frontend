@@ -135,4 +135,9 @@ $(document).ready(function(){
       alignDropdownMenu(dropDown);
     }
   });
+
+
+  $("#navbar a.dropdown-toggle").on("click", function(e){
+    e.stopPropagation();
+  });
 })();
