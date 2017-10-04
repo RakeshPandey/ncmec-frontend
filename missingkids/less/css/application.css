@@ -10225,7 +10225,7 @@ label.error {
 }
 @media (max-width: 380px) {
   .statistics-wrapper .statistics-content .counter {
-    font-size: 104px;
+    font-size: 70px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
