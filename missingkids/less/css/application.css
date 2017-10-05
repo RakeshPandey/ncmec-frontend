@@ -3200,6 +3200,7 @@ select[multiple].input-lg {
 .ncmec-form .refreshButton {
   width: auto;
   padding: 5px 12px;
+  height: 30px;
 }
 .ncmec-form hr {
   margin: 16px -16px;
