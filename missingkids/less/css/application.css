@@ -11355,10 +11355,10 @@ hr {
   float: left;
   margin: 0 16px 16px 0;
   border-radius: 10px;
+  border: 1px solid #939597;
 }
 .pub-content p {
   display: block;
-  margin-bottom: 0;
 }
 .pub-content p a {
   padding: 0;
