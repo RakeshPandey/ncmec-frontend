@@ -1304,8 +1304,8 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 h1 small,
 .h1 small,
@@ -1327,8 +1327,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 h4 small,
 .h4 small,
@@ -11959,4 +11959,23 @@ textarea.form-control {
 #report-form-missingkids .form-group label {
   padding-left: 0;
   padding-right: 0;
+}
+.sitemap h4 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.sitemap h5 {
+  color: #626366;
+  margin-top: 0;
+}
+.sitemap ul {
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+.sitemap ul li {
+  list-style: circle;
+}
+.sitemap ul:last-child {
+  padding-bottom: 32px;
 }
