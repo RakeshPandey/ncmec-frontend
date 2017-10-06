@@ -12118,6 +12118,10 @@ textarea.form-control {
 [class*="col-"].col-centered a.btn {
   white-space: unset;
 }
+[class*="col-"].col-centered #dafdirectdiv form img {
+  width: auto;
+  height: auto;
+}
 @media (min-width: 767px) {
   #report-form-missingkids .form-horizontal .control-label {
     padding-left: 0;
