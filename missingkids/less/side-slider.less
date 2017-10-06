@@ -108,28 +108,40 @@
         left: 48%;
     }
     .stickyBox li:first-child{
-        margin-top: 10px;
+            margin-top: 16px;
     }
+        .stickyBox li{
+            margin-top: 16px;
+        }
+          .stickyBox li:nth-of-type(even) i{
+    left:10px;
+    right:initial
+  }
     .stickyWrapper {
         position: fixed;
-        width: 350px;
-        left: 0;
-        right: 0;
-        padding: 5px 0 0;
-        margin: 0 auto;
+    width: calc(100% - 50px);
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     }
     .stickyBox{
         height: auto;
         padding: 0;
     }
     .stickyBox li {    
-        width: 48%;   
+        width: 50%;   
         margin-left: -0;     
     }
     .stickyBox li:nth-child(odd){
         float: left;
+    margin-left: -8px;
     }
     .stickyBox li:nth-child(even){
         float: right;
+        margin-right: -8px;
     }
 }
