@@ -11170,6 +11170,12 @@ label.error {
         right: 8px;
         top: 8px;
     } */
+@media (max-width: 768px) {
+  .stickyWrapper {
+    width: 182px;
+    padding: 5px 16px;
+  }
+}
 @media (max-width: 480px) {
   #arrow {
     left: 48%;
