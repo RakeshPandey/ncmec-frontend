@@ -1,4 +1,9 @@
 .executive-team{
+  &:only-of-type{
+    .list-group-item{
+      border-top:none;
+    }
+  }
   h2 {
     color: #006C8A;
     font-weight: normal;
@@ -15,6 +20,7 @@
     @media (min-width: @screen-lg-min) { 
       padding: 16px ;
     }
+
 
     img {
       border: 0;
