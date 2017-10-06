@@ -7848,7 +7848,7 @@ label.error {
     position: absolute;
     left: 0;
     padding: 5px 25px;
-    width: 90px;
+    width: 85px;
     height: 65px;
   }
   .header-container .navbar .container .navbar-header .navbar-brand img {
@@ -7947,7 +7947,7 @@ label.error {
     position: absolute;
     left: 124px;
     top: 16px;
-    z-index: 11;
+    z-index: 5;
   }
 }
 @media (max-width: 767px) {
@@ -7970,7 +7970,7 @@ label.error {
 }
 @media (min-width: 767px) {
   .header-container .navbar .container #navbar > ul {
-    overflow-x: initial;
+    overflow-x: visible;
   }
 }
 .header-container .navbar .container #navbar > ul > li {
@@ -8024,22 +8024,6 @@ label.error {
 .header-container .navbar .container #navbar > ul > li:hover > a:after {
   display: none;
 }
-@media (min-width: 767px) {
-  .header-container .navbar .container #navbar > ul > li:hover:not(:first-child) > ul {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .header-container .navbar .container #navbar > ul > li:hover:not(:first-child) > ul:after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .header-container .navbar .container #navbar > ul > li:hover:last-child > ul {
-    transform: translateX(-50%);
-  }
-  .header-container .navbar .container #navbar > ul > li:hover:last-child > ul:after {
-    transform: translateX(-50%);
-  }
-}
 .header-container .navbar .container #navbar > ul > li:hover > ul {
   left: 0;
   position: absolute;
@@ -8052,7 +8036,7 @@ label.error {
 }
 @media (min-width: 767px) {
   .header-container .navbar .container #navbar > ul > li:hover > ul {
-    top: 31px;
+    top: 30px;
     min-width: 480px;
   }
   .header-container .navbar .container #navbar > ul > li:hover > ul.one-column {
@@ -10279,7 +10263,7 @@ label.error {
   }
 }
 @media (min-width: 992px) {
-  .home-teaser-wrapper .home-page-wrapper {
+  .home-teaser-wrapper.homepage-teasers {
     padding-bottom: 32px;
   }
 }
