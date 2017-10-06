@@ -1500,7 +1500,7 @@ a.bg-danger:focus {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 7.5px;
+  margin-bottom: 16px;
 }
 ul li,
 ol li {
@@ -11978,4 +11978,7 @@ textarea.form-control {
 }
 .sitemap ul:last-child {
   padding-bottom: 32px;
+}
+.cq-dd-image {
+  padding-bottom: 16px;
 }
