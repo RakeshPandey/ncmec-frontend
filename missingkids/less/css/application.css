@@ -7141,6 +7141,9 @@ label.error {
 .last-child {
   margin-bottom: 0;
 }
+.seperator {
+  border-bottom-color: #626366;
+}
 @-ms-viewport {
   width: device-width;
 }
