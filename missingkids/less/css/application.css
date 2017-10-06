@@ -7819,7 +7819,7 @@ label.error {
 }
 @media (max-width: 767px) {
   .header-container {
-    min-height: 64px;
+    min-height: 62px;
   }
 }
 .header-container .navbar {
