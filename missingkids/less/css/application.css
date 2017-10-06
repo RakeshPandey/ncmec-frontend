@@ -11320,7 +11320,7 @@ hr {
 }
 @media (max-width: 480px) {
   .inner-wrapper {
-    padding: 8px;
+    padding: 7px 8px;
   }
   .sponsored-links li {
     margin-bottom: 16px;
