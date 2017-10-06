@@ -8851,6 +8851,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   float: left;
   width: 119px;
   word-break: break-all;
+  padding-bottom: 0;
 }
 @media (min-width: 767px) {
   .footer-container .footer-nav-wrapper .footer-nav ul li {
