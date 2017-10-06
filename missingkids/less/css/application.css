@@ -8066,6 +8066,24 @@ label.error {
   color: #006C8A;
   font-weight: bold;
 }
+.header-container .navbar .container #navbar > ul > li:hover > ul > li.primary-link {
+  width: 100% !important;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .header-container .navbar .container #navbar > ul > li:hover > ul > li.primary-link {
+    display: none;
+  }
+}
+.header-container .navbar .container #navbar > ul > li:hover > ul > li.primary-link > a {
+  margin-bottom: 0;
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .header-container .navbar .container #navbar > ul > li:hover:nth-child(n+4) ul.dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 .header-container .navbar .container #navbar > ul > li:hover ul.dropdown-menu {
   display: block;
 }
