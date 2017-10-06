@@ -268,6 +268,28 @@
                                     font-weight: bold;
                                 }
                             }
+
+                            >li {
+                              &.primary-link {
+                                @media(min-width: 1025px){
+                                   display: none;
+                                }
+                                width: 100% !important;
+                                text-align: center;
+                                > a{
+                                  margin-bottom: 0;
+                                }
+                              }
+                            }
+                        }
+
+                        @media(min-width: @screen-sm) and (max-width: @screen-md ){
+                          &:nth-child(n+4) {
+                            ul.dropdown-menu {
+                              left: 50%;
+                              transform: translateX(-50%);
+                            }
+                          }
                         }
 
                         ul.dropdown-menu {
