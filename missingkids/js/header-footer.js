@@ -107,35 +107,6 @@ $(document).ready(function(){
 // Header dropdown navigation fixes
 //=======================================================
 (function(){
-  $(document).on("mouseover", "#navbar >ul > li", function(e){
-    var viewport = window.innerWidth;
-    if(viewport >= 768) {
-      var dropDown = this.querySelector(".dropdown-menu");
-      if(dropDown) {
-        alignDropdownMenu(dropDown)
-      }
-    }
-  }).on("mouseout", "#navbar >ul > li", function(e){
-    var dropDown = this.querySelector(".dropdown-menu");
-    $(dropDown).removeAttr("style");
-  });
-
-  function alignDropdownMenu(dropDown) {
-    var offset = 5;
-    var dropDownBound  = dropDown.getBoundingClientRect();
-    var navBarBound = document.querySelector(".navbar-brand").getBoundingClientRect();
-    if(dropDownBound.left <= navBarBound.right) {
-      $(dropDown).css({left: "+="+( navBarBound.right - dropDownBound.left + offset)});
-    }
-  }
-
-  window.addEventListener("resize", function(){
-    var dropDown = document.querySelector("#navbar >ul > li.open > .dropdown-menu");
-    if(dropDown) {
-      alignDropdownMenu(dropDown);
-    }
-  });
-
 
   $("#navbar a.dropdown-toggle").on("click", function(e){
     e.stopPropagation();
