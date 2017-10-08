@@ -1,6 +1,5 @@
 picture, img{
     max-width: 100%;
-    height: auto;
 }
 
 .inner-wrapper {
@@ -594,6 +593,10 @@ textarea.form-control {
 
 .textColorLightBlue{
     color: @blue-lighter;
+    &:hover, &:focus, &:visited, &:active {
+        color: @blue-lighter;
+        text-decoration: underline; 
+    }
 }
 
 .textarea{
@@ -638,6 +641,7 @@ textarea.form-control {
         .select-state{
            // margin-top: 12px;
            // margin-bottom: 3px;
+           padding:0px;
             font-weight: normal;
             select{
                 background-color: transparent;

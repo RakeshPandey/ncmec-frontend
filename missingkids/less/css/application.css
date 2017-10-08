@@ -9382,7 +9382,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   content: "• ";
   font-size: 28px;
   line-height: 16px;
-  vertical-align: text-top;
+  vertical-align: bottom;
 }
 .internal-Link-block-list li:last-child {
   margin-bottom: 0;
@@ -9884,7 +9884,7 @@ and open the template in the editor.
   text-decoration: none;
 }
 .cybertipline-banner .header-top2 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: #92D6E3;
 }
 .cybertipline-banner .header-top1 img {
@@ -11275,7 +11275,6 @@ ul.missing-person-lists img {
 picture,
 img {
   max-width: 100%;
-  height: auto;
 }
 .inner-wrapper {
   background: #fff;
@@ -11830,6 +11829,13 @@ textarea.form-control {
 .textColorLightBlue {
   color: #92D6E3;
 }
+.textColorLightBlue:hover,
+.textColorLightBlue:focus,
+.textColorLightBlue:visited,
+.textColorLightBlue:active {
+  color: #92D6E3;
+  text-decoration: underline;
+}
 .textarea {
   width: 100%;
   height: 300px;
@@ -11863,6 +11869,7 @@ textarea.form-control {
   padding-right: 0;
 }
 .missing-help-bring-me-home .panel-heading .select-state {
+  padding: 0px;
   font-weight: normal;
 }
 .missing-help-bring-me-home .panel-heading .select-state select {

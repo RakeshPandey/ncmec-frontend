@@ -60,7 +60,10 @@ $(function () {
         appChangeContent();
 
     }
-
+    $(window).resize(function(){
+        matchHeight();
+        appChangeContent();
+    })
   //Side slider Component
   if($("#js-sideslider").length != 0) {
     $("#js-sideslider").load("side-slider.html");
