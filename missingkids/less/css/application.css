@@ -9342,6 +9342,10 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   line-height: 19px;
   font-weight: normal;
 }
+.teaser .panel-heading > h5.simple-heading {
+  position: static;
+  margin: 0;
+}
 .teaser .panel-heading > h5.search-wizard {
   position: static;
   text-align: left;
