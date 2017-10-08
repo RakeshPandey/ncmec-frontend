@@ -7853,7 +7853,7 @@ label.error {
   .header-container .navbar .container .navbar-header .navbar-brand {
     position: absolute;
     left: 0;
-    padding: 5px 25px;
+    padding: 5px 25px 5px 20px;
     width: 85px;
     height: 65px;
   }
