@@ -113,3 +113,19 @@ $(document).ready(function(){
     });
   }
 })();
+
+//=======================================================
+// Header navbar collapse event handler
+//=======================================================
+
+(function(){
+  $('.navbar-collapse').on('shown.bs.collapse', function() {
+   console.log( "shown");
+   var $body = $('body');
+   (!$body.find('.breadcrumbs').length) ? $body.toggleClass('secondary-nav-open') : '';
+ }).on('hidden.bs.collapse', function() {
+   var $body = $('body');
+   (!$body.find('.breadcrumbs').length) ? $body.toggleClass('secondary-nav-open') : '';
+  console.log( " hidden");
+})
+})();

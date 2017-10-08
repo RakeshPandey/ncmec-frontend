@@ -7815,6 +7815,7 @@ label.error {
 .header-container .navbar .container .navbar-header {
   padding-left: 8px;
   background: #404041;
+  min-height: 68px;
 }
 @media (min-width: 767px) {
   .header-container .navbar .container .navbar-header {
@@ -7861,6 +7862,8 @@ label.error {
 @media (max-width: 767px) {
   .header-container .navbar .container .navbar-header .navbar-brand {
     padding: 0;
+    height: auto;
+    margin: 10px;
   }
 }
 .header-container .navbar .container .navbar-header .scroll-started-action {
@@ -8418,6 +8421,9 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .la
 }
 body.fixed-breadcrump .header-container .navbar .container .secondary-header .social-icons {
   display: block !important;
+}
+body.secondary-nav-open .wrapper {
+  padding-top: 30px;
 }
 .hero-banner-wrapper .hero-banner {
   position: relative;
@@ -11570,6 +11576,9 @@ hr {
   outline: none;
   margin-right: auto;
   margin-left: auto;
+}
+.siteSearch .icon img {
+  height: 15px;
 }
 #dafdirectdiv {
   width: 100% !important;
