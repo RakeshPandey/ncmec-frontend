@@ -1,12 +1,16 @@
 .home-teaser-wrapper {
-  @media (min-width: @screen-md) {
-    &.homepage-teasers{
-      :last-child {
+  &.homepage-teasers {
+    &:last-child {
+      padding-bottom: 16px;
+      @media (min-width: @screen-sm) {
+        padding-bottom: 24px;
+      }
+      @media (min-width: @screen-md) {
         padding-bottom: 32px;
       }
-      .col-centered {
-        margin-bottom: 0;
-      }
+    }
+    .col-centered {
+      margin-bottom: 0;
     }
   }
   @media (max-width: @screen-sm) {
