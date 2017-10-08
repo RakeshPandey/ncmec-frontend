@@ -107,8 +107,9 @@ $(document).ready(function(){
 // Header dropdown navigation fixes
 //=======================================================
 (function(){
-
-  $("#navbar a.dropdown-toggle").on("click", function(e){
-    e.stopPropagation();
-  });
+  if(window.innerWidth > 1024){
+    $("#navbar a.dropdown-toggle").on("click", function(e){
+      e.stopPropagation();
+    });
+  }
 })();
