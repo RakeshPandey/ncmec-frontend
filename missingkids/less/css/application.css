@@ -10306,8 +10306,11 @@ label.error {
   }
 }
 @media (min-width: 992px) {
-  .home-teaser-wrapper.homepage-teasers {
+  .home-teaser-wrapper.homepage-teasers :last-child {
     padding-bottom: 32px;
+  }
+  .home-teaser-wrapper.homepage-teasers .col-centered {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {

@@ -1,7 +1,12 @@
 .home-teaser-wrapper {
   @media (min-width: @screen-md) {
     &.homepage-teasers{
-      padding-bottom: 32px;
+      :last-child {
+        padding-bottom: 32px;
+      }
+      .col-centered {
+        margin-bottom: 0;
+      }
     }
   }
   @media (max-width: @screen-sm) {
