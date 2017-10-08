@@ -9883,7 +9883,7 @@ and open the template in the editor.
   text-decoration: none;
 }
 .cybertipline-banner .header-top2 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: #92D6E3;
 }
 .cybertipline-banner .header-top1 img {
@@ -11827,6 +11827,13 @@ textarea.form-control {
 }
 .textColorLightBlue {
   color: #92D6E3;
+}
+.textColorLightBlue:hover,
+.textColorLightBlue:focus,
+.textColorLightBlue:visited,
+.textColorLightBlue:active {
+  color: #92D6E3;
+  text-decoration: underline;
 }
 .textarea {
   width: 100%;
