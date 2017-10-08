@@ -8247,6 +8247,7 @@ label.error {
   border-color: #fff;
   border-style: solid;
   padding-left: 3px;
+  -webkit-appearance: none;
 }
 @media (max-width: 400px) {
   .header-container .navbar .container .secondary-header .site-functionalities .search-wrapper .search-container.opened .search-form input[type='text'] {
@@ -8821,6 +8822,11 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   left: 50%;
   transform: translateX(-50%);
 }
+@media (max-width: 767px) {
+  .footer-container.inner-page .subscribe-form .form-group {
+    margin-bottom: 16px;
+  }
+}
 .footer-container.inner-page .footer-links-wrapper {
   display: none;
 }
@@ -8889,6 +8895,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
 .footer-container .footer-links-wrapper {
   text-align: left;
   padding: 0 8px;
+  margin-bottom: 5px;
 }
 @media (min-width: 767px) {
   .footer-container .footer-links-wrapper {
@@ -8896,6 +8903,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
     min-width: 300px;
     margin-right: -13px;
     padding: 0;
+    margin-bottom: 0;
   }
 }
 .footer-container .footer-links-wrapper .social-icons {
@@ -8922,7 +8930,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 10px 5px;
+  margin: 8px 3px;
   font-size: 20px;
 }
 @media (min-width: 768px) {
@@ -8938,6 +8946,7 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   float: right;
   text-align: right;
   height: 38px;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .footer-container .footer-links-wrapper .search-wrapper {
@@ -8965,13 +8974,14 @@ body.fixed-breadcrump .header-container .navbar .container .secondary-header .so
   }
 }
 .footer-container .footer-links-wrapper .search-wrapper .search-container.opened .search-form input[type='text'] {
-  min-width: 165px;
+  min-width: 224px;
   outline: none;
   height: 24px;
   border-radius: 5px;
   border-color: #fff;
   border-style: solid;
   padding-left: 3px;
+  -webkit-appearance: none;
 }
 .footer-container .footer-links-wrapper .search-wrapper .search-container.opened .search-form .search-submit {
   position: absolute;
