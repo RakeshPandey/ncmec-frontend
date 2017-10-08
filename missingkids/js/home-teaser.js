@@ -34,4 +34,7 @@
 
 $(document).ready(function(){
   $("#home-teaser-video").bmdIframe();
+  // initiate pollyfill for image object fit
+  var elements = document.querySelectorAll('.home-teaser-wrapper img');
+  objectFitPolyfill(elements);
 });

@@ -1,237 +1,5 @@
-/*! npm.im/object-fit-images 3.2.3 */
-var objectFitImages = (function () {
-'use strict';
-
-var OFI = 'bfred-it:object-fit-images';
-var propRegex = /(object-fit|object-position)\s*:\s*([-\w\s%]+)/g;
-var testImg = typeof Image === 'undefined' ? {style: {'object-position': 1}} : new Image();
-var supportsObjectFit = 'object-fit' in testImg.style;
-var supportsObjectPosition = 'object-position' in testImg.style;
-var supportsOFI = 'background-size' in testImg.style;
-var supportsCurrentSrc = typeof testImg.currentSrc === 'string';
-var nativeGetAttribute = testImg.getAttribute;
-var nativeSetAttribute = testImg.setAttribute;
-var autoModeEnabled = false;
-
-function createPlaceholder(w, h) {
-	return ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='" + w + "' height='" + h + "'%3E%3C/svg%3E");
-}
-
-function polyfillCurrentSrc(el) {
-	if (el.srcset && !supportsCurrentSrc && window.picturefill) {
-		var pf = window.picturefill._;
-		// parse srcset with picturefill where currentSrc isn't available
-		if (!el[pf.ns] || !el[pf.ns].evaled) {
-			// force synchronous srcset parsing
-			pf.fillImg(el, {reselect: true});
-		}
-
-		if (!el[pf.ns].curSrc) {
-			// force picturefill to parse srcset
-			el[pf.ns].supported = false;
-			pf.fillImg(el, {reselect: true});
-		}
-
-		// retrieve parsed currentSrc, if any
-		el.currentSrc = el[pf.ns].curSrc || el.src;
-	}
-}
-
-function getStyle(el) {
-	var style = getComputedStyle(el).fontFamily;
-	var parsed;
-	var props = {};
-	while ((parsed = propRegex.exec(style)) !== null) {
-		props[parsed[1]] = parsed[2];
-	}
-	return props;
-}
-
-function setPlaceholder(img, width, height) {
-	// Default: fill width, no height
-	var placeholder = createPlaceholder(width || 1, height || 0);
-
-	// Only set placeholder if it's different
-	if (nativeGetAttribute.call(img, 'src') !== placeholder) {
-		nativeSetAttribute.call(img, 'src', placeholder);
-	}
-}
-
-function onImageReady(img, callback) {
-	// naturalWidth is only available when the image headers are loaded,
-	// this loop will poll it every 100ms.
-	if (img.naturalWidth) {
-		callback(img);
-	} else {
-		setTimeout(onImageReady, 100, img, callback);
-	}
-}
-
-function fixOne(el) {
-	var style = getStyle(el);
-	var ofi = el[OFI];
-	style['object-fit'] = style['object-fit'] || 'fill'; // default value
-
-	// Avoid running where unnecessary, unless OFI had already done its deed
-	if (!ofi.img) {
-		// fill is the default behavior so no action is necessary
-		if (style['object-fit'] === 'fill') {
-			return;
-		}
-
-		// Where object-fit is supported and object-position isn't (Safari < 10)
-		if (
-			!ofi.skipTest && // unless user wants to apply regardless of browser support
-			supportsObjectFit && // if browser already supports object-fit
-			!style['object-position'] // unless object-position is used
-		) {
-			return;
-		}
-	}
-
-	// keep a clone in memory while resetting the original to a blank
-	if (!ofi.img) {
-		ofi.img = new Image(el.width, el.height);
-		ofi.img.srcset = nativeGetAttribute.call(el, "data-ofi-srcset") || el.srcset;
-		ofi.img.src = nativeGetAttribute.call(el, "data-ofi-src") || el.src;
-
-		// preserve for any future cloneNode calls
-		// https://github.com/bfred-it/object-fit-images/issues/53
-		nativeSetAttribute.call(el, "data-ofi-src", el.src);
-		if (el.srcset) {
-			nativeSetAttribute.call(el, "data-ofi-srcset", el.srcset);
-		}
-
-		setPlaceholder(el, el.naturalWidth || el.width, el.naturalHeight || el.height);
-
-		// remove srcset because it overrides src
-		if (el.srcset) {
-			el.srcset = '';
-		}
-		try {
-			keepSrcUsable(el);
-		} catch (err) {
-			if (window.console) {
-				console.warn('https://bit.ly/ofi-old-browser');
-			}
-		}
-	}
-
-	polyfillCurrentSrc(ofi.img);
-
-	el.style.backgroundImage = "url(\"" + ((ofi.img.currentSrc || ofi.img.src).replace(/"/g, '\\"')) + "\")";
-	el.style.backgroundPosition = style['object-position'] || 'center';
-	el.style.backgroundRepeat = 'no-repeat';
-	el.style.backgroundOrigin = 'content-box';
-
-	if (/scale-down/.test(style['object-fit'])) {
-		onImageReady(ofi.img, function () {
-			if (ofi.img.naturalWidth > el.width || ofi.img.naturalHeight > el.height) {
-				el.style.backgroundSize = 'contain';
-			} else {
-				el.style.backgroundSize = 'auto';
-			}
-		});
-	} else {
-		el.style.backgroundSize = style['object-fit'].replace('none', 'auto').replace('fill', '100% 100%');
-	}
-
-	onImageReady(ofi.img, function (img) {
-		setPlaceholder(el, img.naturalWidth, img.naturalHeight);
-	});
-}
-
-function keepSrcUsable(el) {
-	var descriptors = {
-		get: function get(prop) {
-			return el[OFI].img[prop ? prop : 'src'];
-		},
-		set: function set(value, prop) {
-			el[OFI].img[prop ? prop : 'src'] = value;
-			nativeSetAttribute.call(el, ("data-ofi-" + prop), value); // preserve for any future cloneNode
-			fixOne(el);
-			return value;
-		}
-	};
-	Object.defineProperty(el, 'src', descriptors);
-	Object.defineProperty(el, 'currentSrc', {
-		get: function () { return descriptors.get('currentSrc'); }
-	});
-	Object.defineProperty(el, 'srcset', {
-		get: function () { return descriptors.get('srcset'); },
-		set: function (ss) { return descriptors.set(ss, 'srcset'); }
-	});
-}
-
-function hijackAttributes() {
-	function getOfiImageMaybe(el, name) {
-		return el[OFI] && el[OFI].img && (name === 'src' || name === 'srcset') ? el[OFI].img : el;
-	}
-	if (!supportsObjectPosition) {
-		HTMLImageElement.prototype.getAttribute = function (name) {
-			return nativeGetAttribute.call(getOfiImageMaybe(this, name), name);
-		};
-
-		HTMLImageElement.prototype.setAttribute = function (name, value) {
-			return nativeSetAttribute.call(getOfiImageMaybe(this, name), name, String(value));
-		};
-	}
-}
-
-function fix(imgs, opts) {
-	var startAutoMode = !autoModeEnabled && !imgs;
-	opts = opts || {};
-	imgs = imgs || 'img';
-
-	if ((supportsObjectPosition && !opts.skipTest) || !supportsOFI) {
-		return false;
-	}
-
-	// use imgs as a selector or just select all images
-	if (imgs === 'img') {
-		imgs = document.getElementsByTagName('img');
-	} else if (typeof imgs === 'string') {
-		imgs = document.querySelectorAll(imgs);
-	} else if (!('length' in imgs)) {
-		imgs = [imgs];
-	}
-
-	// apply fix to all
-	for (var i = 0; i < imgs.length; i++) {
-		imgs[i][OFI] = imgs[i][OFI] || {
-			skipTest: opts.skipTest
-		};
-		fixOne(imgs[i]);
-	}
-
-	if (startAutoMode) {
-		document.body.addEventListener('load', function (e) {
-			if (e.target.tagName === 'IMG') {
-				fix(e.target, {
-					skipTest: opts.skipTest
-				});
-			}
-		}, true);
-		autoModeEnabled = true;
-		imgs = 'img'; // reset to a generic selector for watchMQ
-	}
-
-	// if requested, watch media queries for object-fit change
-	if (opts.watchMQ) {
-		window.addEventListener('resize', fix.bind(null, imgs, {
-			skipTest: opts.skipTest
-		}));
-	}
-}
-
-fix.supportsObjectFit = supportsObjectFit;
-fix.supportsObjectPosition = supportsObjectPosition;
-
-hijackAttributes();
-
-return fix;
-
-}());
+// Object fill polyfill 
+!function(){"use strict";if("undefined"!=typeof window){if("objectFit"in document.documentElement.style!=!1)return void(window.objectFitPolyfill=function(){return!1});var t=function(t){var e=window.getComputedStyle(t,null),i=e.getPropertyValue("position"),o=e.getPropertyValue("overflow"),n=e.getPropertyValue("display");i&&"static"!==i||(t.style.position="relative"),"hidden"!==o&&(t.style.overflow="hidden"),n&&"inline"!==n||(t.style.display="block"),0===t.clientHeight&&(t.style.height="100%"),-1===t.className.indexOf("object-fit-polyfill")&&(t.className=t.className+" object-fit-polyfill")},e=function(t){var e=window.getComputedStyle(t,null),i={"max-width":"none","max-height":"none","min-width":"0px","min-height":"0px",top:"auto",right:"auto",bottom:"auto",left:"auto","margin-top":"0px","margin-right":"0px","margin-bottom":"0px","margin-left":"0px"};for(var o in i){e.getPropertyValue(o)!==i[o]&&(t.style[o]=i[o])}},i=function(t,e,i){var o,n,l,a,d;if(i=i.split(" "),i.length<2&&(i[1]=i[0]),"x"===t)o=i[0],n=i[1],l="left",a="right",d=e.clientWidth;else{if("y"!==t)return;o=i[1],n=i[0],l="top",a="bottom",d=e.clientHeight}return o===l||n===l?void(e.style[l]="0"):o===a||n===a?void(e.style[a]="0"):"center"===o||"50%"===o?(e.style[l]="50%",void(e.style["margin-"+l]=d/-2+"px")):o.indexOf("%")>=0?(o=parseInt(o),void(o<50?(e.style[l]=o+"%",e.style["margin-"+l]=d*(o/-100)+"px"):(o=100-o,e.style[a]=o+"%",e.style["margin-"+a]=d*(o/-100)+"px"))):void(e.style[l]=o)},o=function(o){var n=o.dataset?o.dataset.objectFit:o.getAttribute("data-object-fit"),l=o.dataset?o.dataset.objectPosition:o.getAttribute("data-object-position");n=n||"cover",l=l||"50% 50%";var a=o.parentNode;t(a),e(o),o.style.position="absolute",o.style.height="100%",o.style.width="auto","scale-down"===n&&(o.style.height="auto",o.clientWidth<a.clientWidth&&o.clientHeight<a.clientHeight?(i("x",o,l),i("y",o,l)):(n="contain",o.style.height="100%")),"none"===n?(o.style.width="auto",o.style.height="auto",i("x",o,l),i("y",o,l)):"cover"===n&&o.clientWidth>a.clientWidth||"contain"===n&&o.clientWidth<a.clientWidth?(o.style.top="0",o.style.marginTop="0",i("x",o,l)):"scale-down"!==n&&(o.style.width="100%",o.style.height="auto",o.style.left="0",o.style.marginLeft="0",i("y",o,l))},n=function(t){if(void 0===t)t=document.querySelectorAll("[data-object-fit]");else if(t&&t.nodeName)t=[t];else{if("object"!=typeof t||!t.length||!t[0].nodeName)return!1;t=t}for(var e=0;e<t.length;e++)if(t[e].nodeName){var i=t[e].nodeName.toLowerCase();"img"===i?t[e].complete?o(t[e]):t[e].addEventListener("load",function(){o(this)}):"video"===i&&(t[e].readyState>0?o(t[e]):t[e].addEventListener("loadedmetadata",function(){o(this)}))}return!0};document.addEventListener("DOMContentLoaded",function(){n()}),window.addEventListener("resize",function(){n()}),window.objectFitPolyfill=n}}();
 // Object fill polyfill ends
 
 
@@ -292,6 +60,10 @@ $(document).ready(function(){
 // Statistics counter initiation
 //===============================
 (function(){
+  // initiate pollyfill for image object fit
+  var elements = document.querySelectorAll('.statistics-content img');
+  objectFitPolyfill(elements);
+
   if($.fn.counterUp){
     $('.statistics-content .counter').counterUp({
         delay: 10,
@@ -304,6 +76,10 @@ $(document).ready(function(){
 // Hero banner carousel initiation
 //===================================
 (function(){
+  // initiate pollyfill for image object fit
+  var elements = document.querySelectorAll('.hero-banner-wrapper img');
+  objectFitPolyfill(elements);
+
   if($('.hero-carousel').length) {
     $('.hero-carousel').owlCarousel({
         loop:true,
