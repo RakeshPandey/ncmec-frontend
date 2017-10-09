@@ -7478,6 +7478,9 @@ label.error {
   margin: 0 16px 0 0;
   border-radius: 10px;
 }
+.ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_name {
+  margin-bottom: 5px;
+}
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_name_link {
   font-family: 'Futura', 'Arial', sans-serif;
   font-size: 16px;
@@ -7488,14 +7491,14 @@ label.error {
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_info {
   font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
   font-size: 11px;
-  line-height: 13px;
+  line-height: 18px;
   color: #fff;
   margin: 0 0 5px;
   text-decoration: none;
 }
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_child_info strong {
   font-size: 13px;
-  line-height: 16px;
+  line-height: 20px;
   font-weight: normal;
 }
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_click_photo {
@@ -7546,14 +7549,14 @@ label.error {
 .ncmec-banner-vertical #ncmec_container .banner-body #ncmec_child_info {
   font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
   font-size: 11px;
-  line-height: 13px;
+  line-height: 18px;
   color: #fff;
   margin: 0 0 5px;
   text-decoration: none;
 }
 .ncmec-banner-vertical #ncmec_container .banner-body #ncmec_child_info strong {
   font-size: 13px;
-  line-height: 16px;
+  line-height: 20px;
   font-weight: normal;
 }
 .ncmec-banner-vertical #ncmec_container .banner-body #ncmec_click_photo_text {
