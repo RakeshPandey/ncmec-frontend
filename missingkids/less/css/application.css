@@ -1102,18 +1102,6 @@ th {
   font-style: oblique;
   font-weight: 500;
 }
-/* Webfont: NECMEC ITC Avant Garde Std  - Webfont */
-@font-face {
-  font-family: 'ITCAvantGardeStd-Bk';
-  src: url('../../fonts/ITCAvantGardeStd/ITCAvantGardeStd-Bk.eot');
-  src: url('../../fonts/ITCAvantGardeStd/ITCAvantGardeStd-Bk.eot?#iefix') format('embedded-opentype'), url('../../fonts/ITCAvantGardeStd/ITCAvantGardeStd-Bk.woff') format('woff'), url('../../fonts/ITCAvantGardeStd/ITCAvantGardeStd-Bk.otf') format('opentype');
-}
-/* Webfont: NECMEC Beautiful Every Time  - Webfont */
-@font-face {
-  font-family: 'BeautifulEveryTime';
-  src: url('../../fonts/BeautifulEveryTime/BeautifulEveryTime.eot');
-  src: url('../../fonts/BeautifulEveryTime/BeautifulEveryTime.eot?#iefix') format('embedded-opentype'), url('../../fonts/BeautifulEveryTime/BeautifulEveryTime.woff') format('woff'), url('../../fonts/BeautifulEveryTime/BeautifulEveryTime.otf') format('opentype');
-}
 /* Webfont: NECMEC Futura  - Webfont */
 @font-face {
   font-family: 'Futura';
