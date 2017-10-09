@@ -12111,7 +12111,6 @@ textarea.form-control {
 }
 [class*="col-"].col-centered img {
   width: 100%;
-  height: 100px;
 }
 [class*="col-"].col-centered a.btn {
   white-space: unset;
