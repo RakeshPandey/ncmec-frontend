@@ -7,7 +7,7 @@
       }
     .stickyWrapper{
         z-index: 1;
-        position: fixed;
+        position: absolute; //fixed issue:215  Ipad Portrait : After scrolling the page, the siteslider goes up, but the space on the page below the footer stays as is
         width: 151px;        
         padding: 5px;
         bottom: 0;
@@ -101,8 +101,12 @@
 
 @media (max-width: 768px) {
     .stickyWrapper {
-        width: 192px;
+        width: 170px;
         padding: 5px 16px;
+        left: 13px;
+    }
+    .stickyBox li{
+        margin-left: -29px;
     }
 }
 
