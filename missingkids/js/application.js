@@ -91,10 +91,10 @@ $(function () {
           }
       }
   }
-  if(!$(".header-container").hasClass('home')){
+  //if(!$(".header-container").hasClass('home')){
     $(window).scroll(onScroll);
     onScroll();
-  }
+  //}
 })();
 
 function mobileViewUpdate() {
