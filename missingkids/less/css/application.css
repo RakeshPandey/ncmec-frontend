@@ -11531,6 +11531,11 @@ hr {
   border-radius: 10px;
   border: 1px solid #939597;
 }
+@media (max-width: 480px) {
+  .pub-content img {
+    width: 160px;
+  }
+}
 .pub-content p {
   display: block;
 }
@@ -11587,8 +11592,8 @@ hr {
   margin-bottom: 16px;
 }
 .table-ncmec {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   border: 1px solid #626366;
   margin-left: 0;
   margin-right: 0;
@@ -11600,6 +11605,7 @@ hr {
   font-size: 13px;
 }
 .table-ncmec table thead {
+  background: #626366;
   color: #fff;
 }
 .table-ncmec table thead tr {
@@ -11610,12 +11616,13 @@ hr {
   background: #626366;
 }
 .table-ncmec table thead tr th:first-child {
-  border-top-left-radius: 0;
+  border-top-left-radius: 10px;
 }
 .table-ncmec table thead tr th:last-child {
-  border-top-right-radius: 0;
+  border-top-right-radius: 10px;
 }
 .table-ncmec table tbody tr {
+  background: #fff;
   border-bottom: 0;
 }
 .table-ncmec table tbody tr td {
@@ -12128,6 +12135,11 @@ h5.textColorLightBlue:hover {
 }
 .picture-component .caption {
   margin: 16px 16px 0;
+}
+@media (max-width: 480px) {
+  .picture-component {
+    margin: 16px 8px 0;
+  }
 }
 .teaser h4 {
   margin-top: 0;
