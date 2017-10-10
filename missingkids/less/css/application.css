@@ -8194,7 +8194,7 @@ label.error {
 }
 .header-container .navbar .container .secondary-header ul.social-icons {
   font-size: 20px;
-  padding-top: 2px;
+  padding-top: 1px;
   position: relative;
   right: 0;
   transition: right 0.1s ease-in;
@@ -8208,7 +8208,7 @@ label.error {
 }
 @media (min-width: 992px) {
   .header-container .navbar .container .secondary-header ul.social-icons {
-    padding-top: 5px;
+    padding-top: 4px;
     position: absolute;
     right: 0;
   }
