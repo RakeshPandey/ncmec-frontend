@@ -10233,6 +10233,7 @@ label.error {
 @media (min-width: 426px) {
   .executive-team:only-of-type .list-group-item {
     padding-left: 16px;
+    border-top: none;
   }
 }
 .rss-container h2 {
