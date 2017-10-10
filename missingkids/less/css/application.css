@@ -9380,6 +9380,7 @@ body.secondary-nav-open .wrapper {
   color: #006C8A;
   position: static;
   margin: 0;
+  font-weight: bold;
 }
 .teaser .panel-heading > h5.search-wizard {
   position: static;
