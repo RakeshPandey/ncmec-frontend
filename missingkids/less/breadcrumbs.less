@@ -3,6 +3,10 @@
 // --------------------------------------------------
 .breadcrumbs {
   background-color: @breadcrumb-bg;
+  position: absolute;
+  @media (min-width: @screen-sm) {
+    position: static;
+  }
   .breadcrumb {
     padding: @breadcrumb-padding-vertical 16px 0 0;
     @media (min-width: @screen-md) {
