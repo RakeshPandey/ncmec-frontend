@@ -12148,7 +12148,7 @@ h5.textColorLightBlue:hover {
   margin: 16px 16px 0;
 }
 @media (max-width: 480px) {
-  .picture-component {
+  .picture-component .caption {
     margin: 16px 8px 0;
   }
 }
