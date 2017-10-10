@@ -76,6 +76,28 @@ $(function () {
 });
 
 (function(){
+  function debounce(func, wait, immediate) {
+    var timeout;
+
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (! immediate) {
+          func.apply(context, args);
+        }
+      };
+      var callNow = immediate && !timeout;
+
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+
+      if (callNow) {
+        func.apply(context, args);
+      }
+    };
+  }
+
   function onScroll() {
       var $body = $('body');
       $body.removeClass('fixed-breadcrump');
@@ -91,10 +113,10 @@ $(function () {
           }
       }
   }
-  if(!$(".header-container").hasClass('home')){
-    $(window).scroll(onScroll);
-    onScroll();
-  }
+
+  $(window).scroll(debounce(onScroll, 10));
+  onScroll();
+
 })();
 
 function mobileViewUpdate() {

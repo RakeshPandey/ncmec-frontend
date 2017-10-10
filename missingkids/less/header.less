@@ -14,8 +14,9 @@
     }
 
     .navbar{
-      background: #404041;
       position: relative;
+      background: #404041;
+      transition: position 0.3s ease-in;
       .container{
         position: relative;
         @media (max-width: @screen-sm) {
@@ -617,8 +618,12 @@
 }
 .scroll-started {
     .header-container {
+      .navbar {
+        position: fixed;
+      }
+    }
+    .header-container:not(.home) {
         .navbar{
-          position: fixed;
           .container {
             .navbar-header {
               @media(min-width: @screen-sm){
