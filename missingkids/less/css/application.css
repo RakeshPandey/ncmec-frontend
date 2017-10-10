@@ -11983,6 +11983,9 @@ textarea.form-control {
   color: #92D6E3;
   text-decoration: underline;
 }
+h5.textColorLightBlue:hover {
+  text-decoration: none;
+}
 .textarea {
   width: 100%;
   height: 300px;
@@ -12103,6 +12106,9 @@ textarea.form-control {
 }
 .listBullets li {
   padding: 0 0 16px;
+}
+.listBullets li .textarea {
+  margin-bottom: 0;
 }
 .image-area {
   margin-bottom: 16px;
