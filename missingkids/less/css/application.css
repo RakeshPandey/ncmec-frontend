@@ -11296,7 +11296,7 @@ label.error {
 }
 .stickyWrapper {
   z-index: 1;
-  position: fixed;
+  position: absolute;
   width: 151px;
   padding: 5px;
   bottom: 0;
