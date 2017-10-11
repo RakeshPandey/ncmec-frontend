@@ -1,16 +1,28 @@
 .home-teaser-wrapper {
+  &:first-child {
+    padding-left: 0;
+    padding-right: 0;
+  }
   &.homepage-teasers {
+    padding-left: 0;
+    padding-right: 0;
     &:last-child {
       padding-bottom: 16px;
       @media (min-width: @screen-sm) {
         padding-bottom: 24px;
+        padding-left: 8px;
+        padding-right: 8px;
       }
       @media (min-width: @screen-md) {
         padding-bottom: 32px;
+        padding-left: 8px;
+        padding-right: 8px;
       }
     }
     .col-centered {
       margin-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
   @media (max-width: @screen-sm) {
@@ -62,7 +74,7 @@
   .small-teasers{
     padding: 0;
       .home-teaser {
-        margin-top: 16px;
+        margin-top: 8px;
       }
   }
   .home-teaser {
