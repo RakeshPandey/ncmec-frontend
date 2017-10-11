@@ -5661,7 +5661,7 @@ a.thumbnail.active {
 }
 .media-left picture,
 .media-left img {
-  max-width: auto;
+  max-width: auto important;
 }
 .list-group {
   margin-bottom: 20px;
