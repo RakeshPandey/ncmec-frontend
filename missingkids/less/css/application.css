@@ -5661,7 +5661,7 @@ a.thumbnail.active {
 }
 .media-left picture,
 .media-left img {
-  max-width: auto;
+  max-width: none;
 }
 .list-group {
   margin-bottom: 20px;
@@ -10426,6 +10426,16 @@ label.error {
 .home-teaser-wrapper .small-teasers .home-teaser {
   margin-top: 8px;
 }
+@media (min-width: 767px) {
+  .home-teaser-wrapper .small-teasers .home-teaser {
+    margin-top: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .home-teaser-wrapper .small-teasers .home-teaser {
+    margin-top: 16px;
+  }
+}
 .home-teaser-wrapper .home-teaser {
   border-radius: 10px;
   border: 1px solid transparent;
@@ -11539,7 +11549,7 @@ hr {
 }
 @media (max-width: 480px) {
   .inner-wrapper {
-    padding: 7px 8px;
+    padding: 0 8px;
   }
   .main-content-area {
     padding-left: 0;
