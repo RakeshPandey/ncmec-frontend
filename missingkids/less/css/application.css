@@ -12429,3 +12429,6 @@ h5.textColorLightBlue:hover {
   list-style-position: outside !important;
   margin-left: 16px;
 }
+.custom-rte ~ div:last-of-type .media {
+  border: none;
+}
