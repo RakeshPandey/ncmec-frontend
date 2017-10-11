@@ -5128,7 +5128,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   }
 }
 body.fixed-breadcrump {
-  padding-top: 31px;
+  padding-top: 30px;
 }
 body.fixed-breadcrump .breadcrumbs {
   position: fixed;
@@ -7755,7 +7755,7 @@ label.error {
   .sponsored-block .footer .title {
     font-size: 16px;
     line-height: 16px;
-    width: 146px;
+    width: 144px;
     padding: 8px 16px 8px;
   }
   .sponsored-block .footer .right-block .ratings {
@@ -8180,6 +8180,7 @@ label.error {
 .header-container .navbar .container #navbar > ul > li:hover ul.dropdown-menu > li a:hover {
   background: none;
   opacity: 1;
+  font-weight: bold;
 }
 @media (min-width: 767px) {
   .header-container .navbar .container #navbar > ul > li:hover ul.dropdown-menu > li {
@@ -11042,7 +11043,7 @@ label.error {
   height: 20px;
 }
 .slider.slider-horizontal .slider-track {
-  height: 10px;
+  height: 5px;
   width: 100%;
   margin-top: -5px;
   top: 50%;
@@ -11237,8 +11238,8 @@ label.error {
 .slider-handle {
   position: absolute;
   top: 0;
-  width: 20px;
-  height: 20px;
+  width: 13px;
+  height: 13px;
   background-color: #006C8A;
   background-image: -webkit-linear-gradient(top, #006C8A 0%, #006C8A 100%);
   background-image: -o-linear-gradient(top, #006C8A 0%, #006C8A 100%);
