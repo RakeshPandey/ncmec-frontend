@@ -32,15 +32,25 @@
         border-top: 0;
         border-radius: 0 0 10px 10px;
     }
+    @media(max-width: @screen-xs){
+        .panel-body{
+            border:none;
+        }
+       
+    }
+
 }
 
 .more-less {
     float: right;
     color: @white;
     font-size: 16px;
-    margin-right: 16px;
+    margin-left: 16px;
     height: 16px;
     width: 16px;
+    position: absolute;
+    top: 40%;
+    right: 32px;
 }
 
 #form-accordion {
