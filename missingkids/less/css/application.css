@@ -5653,8 +5653,15 @@ a.thumbnail.active {
   display: inline;
   float: left;
 }
+.section-listing-item .media-left picture {
+  max-width: auto;
+}
 .section-listing-item .media-left picture img {
   border-radius: 10px 0 0 10px;
+}
+.media-left picture,
+.media-left img {
+  max-width: auto;
 }
 .list-group {
   margin-bottom: 20px;
@@ -7135,6 +7142,9 @@ label.error {
 }
 .seperator {
   border-bottom-color: #626366;
+}
+.offset {
+  padding: 16px;
 }
 @-ms-viewport {
   width: device-width;
