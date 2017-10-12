@@ -10815,15 +10815,21 @@ label.error {
   float: left;
 }
 .donate-classy .donation .radio label {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: -5px 0 0;
 }
 .donate-classy .donation .radio label.gutterR0 {
   padding-right: 0;
+  padding-left: 16px;
+}
+.donate-classy .donation .radio label:before {
+  margin-right: 8px;
 }
 .donate-classy .donation .radio input[type="radio"] {
   float: left;
   margin-top: 8px;
+  position: absolute;
 }
 .donate-classy .form-control,
 .donate-classy .radio,
@@ -11433,7 +11439,8 @@ td.active:hover {
 .custom-radio-checkbox input[type=radio] + label {
   display: inline-block;
   vertical-align: middle;
-  margin: 5px;
+  margin: 5px 0;
+  padding-left: 0;
   cursor: pointer;
   position: relative;
 }
@@ -11450,6 +11457,11 @@ td.active:hover {
   border-radius: 50%;
   margin-right: 15px;
 }
+@media (max-width: 480px) {
+  .custom-radio-checkbox input[type=radio] + label {
+    margin: 5px 10px;
+  }
+}
 .custom-radio-checkbox input[type=radio]:checked + label:before {
   background: #939597;
   border: 2px solid #939597;
@@ -11465,9 +11477,15 @@ td.active:hover {
 .custom-radio-checkbox input[type=checkbox] + label {
   display: inline-block;
   vertical-align: middle;
-  margin: 5px;
+  margin: 5px 0;
+  padding-left: 0;
   cursor: pointer;
   position: relative;
+}
+@media (max-width: 480px) {
+  .custom-radio-checkbox input[type=checkbox] + label {
+    margin: 5px 10px;
+  }
 }
 .custom-radio-checkbox input[type=checkbox] + label:before {
   content: '';
@@ -11487,6 +11505,13 @@ td.active:hover {
   position: absolute;
   left: 22px;
   top: -6px;
+}
+.custom-radio-checkbox .inline-radio input[type=radio] + label {
+  padding-right: 16px;
+}
+.custom-radio-checkbox .inline-radio input[type=radio] + label:before {
+  margin-right: 8px;
+  margin-top: -2px;
 }
 picture,
 img {
