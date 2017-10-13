@@ -81,6 +81,14 @@
         @media (min-width: @screen-md) {
           margin-top: 16px;
         }
+        &[class*="col-"] {
+          &:first-child {
+            padding-right: 4px; 
+          }
+          &:nth-child(even) {
+            padding-left: 4px;
+          }
+        }
       }
   }
   .home-teaser {
@@ -176,7 +184,6 @@
         }
       }
     }
-
     .panel {
       background: #404041;
       color: #fff;
