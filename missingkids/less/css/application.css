@@ -8332,7 +8332,7 @@ label.error {
   background-repeat: no-repeat;
 }
 .header-container .navbar .container .secondary-header ul.social-icons li a span.social-facebook-icon {
-  background-position: -20px 5px;
+  background-position: -20px 6px;
 }
 .header-container .navbar .container .secondary-header ul.social-icons li a span.social-twitter-icon {
   background-position: -65px 6px;
@@ -9122,6 +9122,26 @@ body.secondary-nav-open .wrapper {
 }
 .footer-container .footer-links-wrapper .social-icons li:last-child {
   margin-right: 0;
+}
+.footer-container .footer-links-wrapper .social-icons li span {
+  width: 25px;
+  height: 45px;
+  background-image: url('../../../missingkids/images/icons/sprite.png');
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-container .footer-links-wrapper .social-icons li span.social-facebook-icon {
+  background-position: -20px 6px;
+}
+.footer-container .footer-links-wrapper .social-icons li span.social-twitter-icon {
+  background-position: -65px 6px;
+}
+.footer-container .footer-links-wrapper .social-icons li span.social-instagram-icon {
+  background-position: -43px 6px;
+}
+.footer-container .footer-links-wrapper .social-icons li span.social-youtube-icon {
+  background-position: 2px 6px;
 }
 .footer-container .footer-links-wrapper .search-wrapper {
   padding: 0;
