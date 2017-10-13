@@ -7684,13 +7684,13 @@ label.error {
   color: #fff;
   width: 145px;
   line-height: 19px;
-  padding: 14px 0;
+  padding: 14px 8px 15px;
   text-align: center;
   float: left !important;
 }
 .sponsored-block .footer .right-block .contribution-amt-gt-400 {
-  font-size: 24px;
-  line-height: 31px;
+  font-size: 16px;
+  line-height: 21px;
   padding: 18px 0;
 }
 @media (max-width: 768px) {
@@ -7728,7 +7728,7 @@ label.error {
 }
 @media (max-width: 480px) {
   .sponsored-block .footer {
-    height: 66px;
+    height: 80px;
   }
   .sponsored-block .footer .title {
     font-size: 16px;
@@ -7750,14 +7750,20 @@ label.error {
     width: 104px;
     line-height: 19px;
     font-size: 16px;
-    padding: 14px 8px 15px;
+    padding: 21px 8px 22px;
     text-align: left;
   }
   .sponsored-block .footer .right-block .contribution-amt-gt-400 {
     width: 93px;
     line-height: 19px;
     font-size: 16px;
-    padding: 24px 7px 23px;
+    padding: 31px 7px 31px;
+  }
+}
+@media (max-width: 370px) {
+  .sponsored-block .footer .right-block .contribution-amt {
+    width: 90px;
+    padding: 23px 8px 24px;
   }
 }
 .col-xs-5ths,
@@ -9606,7 +9612,7 @@ and open the template in the editor.
   padding-right: 0;
 }
 .missing-anniversary-container .missing-anniversary-grid {
-  padding: 0 8px;
+  padding: 0;
 }
 .missing-anniversary-container .missing-anniversary-grid:before,
 .missing-anniversary-container .missing-anniversary-grid:after {
@@ -9677,30 +9683,27 @@ and open the template in the editor.
   bottom: 0;
   right: 0;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .missing-anniversary-container .missing-anniversary-grid {
     padding: 0 0px;
   }
   .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-sm-4 {
-    width: 31%;
+    width: 47.3%;
     margin-right: 13px;
   }
-  .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-sm-4:nth-child(3n+3) {
+  .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-sm-4:nth-child(even) {
     margin-right: 0;
   }
 }
 /* Portrait */
 @media only screen and (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
   .missing-anniversary-container .missing-anniversary-grid {
-    padding: 0 8px;
+    padding: 0;
   }
   .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-xs-6 {
-    width: 44%;
+    width: 46.93%;
     margin-right: 16px;
     height: 400px;
-  }
-  .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-xs-6:nth-child(3n+3) {
-    margin-right: 16px !important;
   }
   .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element.col-xs-6:nth-child(even) {
     margin-right: 0;
@@ -9715,7 +9718,7 @@ and open the template in the editor.
     width: 31.0%;
     margin-right: 16px;
   }
-  .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element:nth-child(3n+3) {
+  .missing-anniversary-container .missing-anniversary-grid .anniversaries-grid-element::nth-child(even) {
     margin-right: 0;
   }
 }
@@ -11510,7 +11513,7 @@ td.active:hover {
   color: #939597;
   font-size: 19px;
   position: absolute;
-  left: 22px;
+  left: 2px;
   top: -6px;
 }
 .custom-radio-checkbox .inline-radio input[type=radio] + label {
@@ -11528,10 +11531,11 @@ img {
   background: #fff;
   padding: 0 16px 16px;
   min-height: 400px;
-  /*    @media (min-width: @screen-md) {
-             padding: 0 16px 15px;
-
-        }*/
+}
+@media (min-width: 767px) {
+  .inner-wrapper {
+    min-height: 710px;
+  }
 }
 .inner-wrapper:before,
 .inner-wrapper:after {
