@@ -57,13 +57,13 @@
                 color: @white;
                 width: 145px;
                 line-height: 19px;
-                padding: 14px 0;
+                padding: 14px 8px 15px;
                 text-align: center;
                 .pull-left();
             }
             .contribution-amt-gt-400 {
-                font-size: 24px;
-                line-height: 31px;
+                font-size: 16px;
+                line-height: 21px;
                 padding: 18px 0;
             }
         }
@@ -111,7 +111,7 @@
 @media (max-width: @screen-xs) {
     .sponsored-block {
         .footer {
-            height: 66px;
+            height: 80px;
             .title {
                 font-size: @font-size-small;
                 line-height: 16px;
@@ -133,20 +133,34 @@
                     width: 104px;
                     line-height: 19px;
                     font-size: 16px;
-                    padding: 14px 8px 15px;
+                    padding: 21px 8px 22px;
                     text-align: left;
                 }
                 .contribution-amt-gt-400 {
                     width: 93px;
                     line-height: 19px;
                     font-size: 16px;
-                    padding: 24px 7px 23px;
+                    padding: 31px 7px 31px;
                 }
             }
         }
     }
 }
 
+@media (max-width: 370px) {
+    .sponsored-block {
+        .footer {
+            .right-block {
+                .contribution-amt {
+                    width: 90px;
+                    padding: 23px 8px 24px;
+                }
+            }
+        }
+    }
+
+
+}
 
 // Custom Column 5 Row
 .col-xs-5ths,
