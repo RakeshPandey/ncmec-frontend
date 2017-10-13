@@ -12257,9 +12257,6 @@ h5.textColorLightBlue:hover {
   text-align: center;
   margin-bottom: 16px;
 }
-[class*="col-"].col-centered img {
-  width: 100%;
-}
 [class*="col-"].col-centered a.btn {
   white-space: unset;
 }
