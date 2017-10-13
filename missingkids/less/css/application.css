@@ -7532,6 +7532,11 @@ label.error {
 .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_controls img {
   margin-right: 20px;
 }
+@media (max-width: 370px) {
+  .ncmec-banner-horizontal #ncmec_container table #ncmec_td_two #ncmec_controls img {
+    margin-right: 5px !important;
+  }
+}
 .ncmec-banner-vertical #ncmec_container {
   width: 100%;
   max-width: 300px;
