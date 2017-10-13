@@ -10263,6 +10263,7 @@ label.error {
 }
 .helpline-container .helpline-wrapper .report-content h4 {
   margin-top: 5px;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .helpline-container .helpline-wrapper .report-content h4 {
@@ -10469,6 +10470,12 @@ label.error {
   .home-teaser-wrapper .small-teasers .home-teaser {
     margin-top: 16px;
   }
+}
+.home-teaser-wrapper .small-teasers .home-teaser[class*="col-"]:first-child {
+  padding-right: 4px;
+}
+.home-teaser-wrapper .small-teasers .home-teaser[class*="col-"]:nth-child(even) {
+  padding-left: 4px;
 }
 .home-teaser-wrapper .home-teaser {
   border-radius: 10px;
