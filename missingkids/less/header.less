@@ -176,7 +176,6 @@
              
             @media(max-width: @screen-sm){
               left: 0 !important;
-              position: static;
             }
             .open {
               &>.dropdown-menu {
@@ -421,15 +420,40 @@
                     right: 0;
                   }
                   li {
-                    padding-right: 13px;
+                      padding-right: 0;
+                      overflow: hidden;
+                      height: 30px;
+                      margin-right: -1px;
                     @media (min-width: @screen-sm) {
-                      padding-right: 13px;
+                      padding-right: 0px;
                     }
                     a{
+                      display: inline-block;  
                       &:hover {
                         color: #ccc;
                         text-decoration: none;
                       }
+                      span{
+                    width: 25px;
+                    height: 45px;
+                    background-image: url('../../../missingkids/images/icons/sprite.png');
+                        display: inline-block;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+               
+                      &.social-facebook-icon{
+                               background-position: -20px 6px;
+                      }
+                      &.social-twitter-icon{
+                          background-position: -65px 6px;
+                      }
+                      &.social-instagram-icon{
+                          background-position: -43px 6px;
+                      }
+                      &.social-youtube-icon{
+                          background-position: 2px 6px;
+                      }
+                         }
                     }
                   }
                 }
@@ -612,9 +636,13 @@
                 @media (min-width: @screen-md) {
                   display: none;
                 }
+                
               }
             }
           }
+        }
+        #navbar{
+          position: static;
         }
       }
 
