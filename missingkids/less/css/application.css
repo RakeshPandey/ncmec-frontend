@@ -8290,6 +8290,9 @@ label.error {
 .header-container .navbar .container .secondary-header ul.social-icons li a span.social-youtube-icon {
   background-position: 2px 6px;
 }
+.header-container .navbar .container .secondary-header ul.social-icons li a span.social-pinterest-icon {
+  background-position: -88px 6px;
+}
 .header-container .navbar .container .secondary-header .site-functionalities {
   display: flex;
   flex-direction: row;
@@ -8300,7 +8303,7 @@ label.error {
   .header-container .navbar .container .secondary-header .site-functionalities .search-wrapper {
     position: relative;
     top: -49px;
-    right: -106px;
+    right: -80px;
   }
 }
 .header-container .navbar .container .secondary-header .site-functionalities .search-wrapper li {
@@ -9051,6 +9054,9 @@ body.secondary-nav-open .wrapper {
 }
 .footer-container .footer-links-wrapper .social-icons li span.social-youtube-icon {
   background-position: 2px 6px;
+}
+.footer-container .footer-links-wrapper .social-icons li span.social-pinterest-icon {
+  background-position: -88px 6px;
 }
 .footer-container .footer-links-wrapper .search-wrapper {
   padding: 0;
