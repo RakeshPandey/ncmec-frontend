@@ -10309,7 +10309,6 @@ label.error {
 }
 .helpline-container .helpline-wrapper .report-content h4 {
   margin-top: 5px;
-  font-weight: bold;
 }
 @media (max-width: 768px) {
   .helpline-container .helpline-wrapper .report-content h4 {
