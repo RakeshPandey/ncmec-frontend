@@ -9472,6 +9472,9 @@ body.secondary-nav-open .wrapper {
 .internal-Link-block-list li:last-child {
   margin-bottom: 0;
 }
+.internal-Link-block-list li a {
+  padding-left: 10px;
+}
 .daf-direct > .daf-direct-logo {
   float: left !important;
   padding-right: 16px;
@@ -10558,6 +10561,7 @@ label.error {
 @media (max-width: 480px) {
   .home-teaser-wrapper .home-teaser.full-teaser .teaser-content-wrapper .teaser-content .title {
     font-size: 24px;
+    line-height: 26px;
   }
 }
 .home-teaser-wrapper .home-teaser.full-teaser .teaser-content-wrapper .teaser-content .desc {
@@ -10567,6 +10571,7 @@ label.error {
 @media (max-width: 480px) {
   .home-teaser-wrapper .home-teaser.full-teaser .teaser-content-wrapper .teaser-content .desc {
     font-size: 16px;
+    line-height: 18px;
   }
 }
 .home-teaser-wrapper .home-teaser.full-teaser .teaser-content-wrapper .teaser-content .link {
