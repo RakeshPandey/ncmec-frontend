@@ -2673,6 +2673,8 @@ input[type="checkbox"] {
 }
 input[type="file"] {
   display: block;
+  border: 0;
+  box-shadow: none;
 }
 input[type="range"] {
   display: block;
@@ -8233,6 +8235,7 @@ label.error {
   padding-top: 1px;
   position: relative;
   right: 0;
+  min-width: 150px;
   transition: right 0.1s ease-in;
 }
 @media (min-width: 767px) {
