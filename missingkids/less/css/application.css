@@ -11858,12 +11858,6 @@ hr {
   background-size: 100%;
   font-size: 35px;
 }
-#siteSearchResults > p {
-  margin-left: 8px;
-}
-#siteSearchResults dl {
-  padding: 0 8px;
-}
 #siteSearchResults dd {
   padding: 10px 0;
 }
