@@ -11488,10 +11488,10 @@ label.error {
   display: block;
   font-family: 'Futura', 'Arial', sans-serif;
 }
-.stickyBox li:hover {
-  background-color: #008DB6;
-}
-.stickyBox li:hover a {
+.stickyBox li a:hover {
+  background: #008db6;
+  border-color: #008db6;
+  border-radius: 8px;
   color: #fff;
 }
 .stickyBox li:first-child {
