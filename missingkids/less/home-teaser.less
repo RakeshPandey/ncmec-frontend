@@ -73,14 +73,15 @@
   }
   .small-teasers{
     padding: 0;
-      .home-teaser {
-        margin-top: 8px;
-        @media (min-width: @screen-sm) {
-          margin-top: 16px;
-        }
-        @media (min-width: @screen-md) {
-          margin-top: 16px;
-        }
+    .home-teaser {
+      margin-top: 8px;
+      @media (min-width: @screen-sm) {
+        margin-top: 16px;
+      }
+      @media (min-width: @screen-md) {
+        margin-top: 16px;
+      }
+      @media (max-width: @screen-xs) {
         &[class*="col-"] {
           &:first-child {
             padding-right: 4px; 
@@ -90,6 +91,7 @@
           }
         }
       }
+    }
   }
   .home-teaser {
     border-radius: 10px;
