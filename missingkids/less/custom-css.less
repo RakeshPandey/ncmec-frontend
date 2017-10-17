@@ -836,25 +836,46 @@ h5.textColorLightBlue {
 }
 
 .sitemap {
-    h4 {
+    margin-left: -8px;
+    h5 {
         font-weight: bold;
         margin-top: 0;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
+        color:#404041;
     }
-    h5 {
-        color: @gray-darker;
+     h6 {
+       color: #626366;
         margin-top: 0;
-    }
+     }
     ul {
         margin-left: 16px;
         margin-bottom: 16px;
+        margin-top:-6px;
         li {
+            color: #626366 ;
             list-style: circle;
+            padding-bottom:4px;
         }
         &:last-child {
             padding-bottom: 32px;
         }
+        
     }
+    ul.sitemap-list-subcategory {
+    padding: 0px;
+    margin-top: -8px;
+    margin-left: 8px;
+    font-size: 11px;
+    li{
+        list-style: disc !important;
+        padding-bottom: 0px; 
+        color: #626366 ;
+        &:first-child {
+            padding-top: 16px;
+        }
+    }
+    
+}
 }
 
 .cq-dd-image {
@@ -876,4 +897,8 @@ h5.textColorLightBlue {
   button#donate_submit {
     margin-top: -35px;
 }
+}
+
+.row[data-example-id="bordered-table"] {
+    overflow-y: auto;
 }

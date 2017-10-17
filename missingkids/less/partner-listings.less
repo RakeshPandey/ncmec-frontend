@@ -23,23 +23,30 @@
         background: @headings-color;
         border-radius: 10px 10px 0 0;
         height: 66px;
+      //  display:table;
+       // width:100%;
         .title {
             .pull-left();
+            display:table-cell;
             font-family: @font-family-sans-serif;
             font-size: @font-size-small;
             color: @brand-primary;
             font-weight: bold;
             line-height: 19px;
-            padding: 23px 16px 24px;
+           padding: 23px 16px 24px;
+          // padding: 0 16px;
+           
         }
         .right-block {
             .pull-right();
+            display:table-cell;
             .ratings {
                 margin: 0;
                 padding: 23px 16px;
                 list-style: none;
                 background: transparent;
-                .pull-left();
+               // display:inline-block;
+               .pull-left();
                 li {
                     padding-bottom: 0;
                     .pull-left();
