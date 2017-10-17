@@ -10525,11 +10525,13 @@ label.error {
     margin-top: 16px;
   }
 }
-.home-teaser-wrapper .small-teasers .home-teaser[class*="col-"]:first-child {
-  padding-right: 4px;
-}
-.home-teaser-wrapper .small-teasers .home-teaser[class*="col-"]:nth-child(even) {
-  padding-left: 4px;
+@media (max-width: 480px) {
+  .home-teaser-wrapper .small-teasers .home-teaser[class*="col-"]:first-child {
+    padding-right: 4px;
+  }
+  .home-teaser-wrapper .small-teasers .home-teaser[class*="col-"]:nth-child(even) {
+    padding-left: 4px;
+  }
 }
 .home-teaser-wrapper .home-teaser {
   border-radius: 10px;
