@@ -9366,6 +9366,11 @@ body.secondary-nav-open .wrapper {
   margin-right: 16px;
   margin-bottom: 16px;
 }
+@media (max-width: 480px) {
+  .alert-text-image-component img {
+    width: 150px;
+  }
+}
 .alert-text-image-component p {
   display: block;
 }
@@ -11852,12 +11857,6 @@ hr {
   display: block;
   background-size: 100%;
   font-size: 35px;
-}
-#siteSearchResults > p {
-  margin-left: 8px;
-}
-#siteSearchResults dl {
-  padding: 0 8px;
 }
 #siteSearchResults dd {
   padding: 10px 0;
