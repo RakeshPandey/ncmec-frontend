@@ -7683,26 +7683,28 @@ label.error {
 .sponsored-block .footer {
   background: #404041;
   border-radius: 10px 10px 0 0;
-  height: 66px;
+  /*height: 66px;*/
+  display: table;
+  width: 100%;
 }
 .sponsored-block .footer .title {
-  float: left !important;
+  display: table-cell;
   font-family: 'AvenirLTStd-Black', 'Arial', sans-serif;
   font-size: 16px;
   color: #92d6e3;
   font-weight: bold;
   line-height: 19px;
-  padding: 23px 16px 24px;
+  padding: 0 16px;
 }
 .sponsored-block .footer .right-block {
-  float: right !important;
+  display: table-cell;
 }
 .sponsored-block .footer .right-block .ratings {
   margin: 0;
   padding: 23px 16px;
   list-style: none;
   background: transparent;
-  float: left !important;
+  display: inline-block;
 }
 .sponsored-block .footer .right-block .ratings li {
   padding-bottom: 0;
@@ -8294,6 +8296,7 @@ label.error {
   -webkit-transition: right 0.1s ease-in;
   -o-transition: right 0.1s ease-in;
   transition: right 0.1s ease-in;
+  margin-top: -2px;
 }
 @media (min-width: 767px) {
   .header-container .navbar .container .secondary-header ul.social-icons {
@@ -11739,6 +11742,17 @@ td.active:hover {
   margin-right: 8px;
   margin-top: -2px;
 }
+ul.sitemap-list-subcategory {
+  padding: 0px;
+  margin-top: -8px;
+  margin-left: 8px;
+  font-size: 11px;
+}
+ul.sitemap-list-subcategory li {
+  list-style: disc !important;
+  padding-bottom: 0px;
+  color: #626366 ;
+}
 picture,
 img {
   max-width: 100%;
@@ -12522,24 +12536,45 @@ h5.textColorLightBlue:hover {
   padding-left: 0;
   padding-right: 0;
 }
-.sitemap h4 {
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 32px;
+.sitemap {
+  margin-left: -8px;
 }
 .sitemap h5 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #404041;
+}
+.sitemap h6 {
   color: #626366;
   margin-top: 0;
 }
 .sitemap ul {
   margin-left: 16px;
   margin-bottom: 16px;
+  margin-top: -6px;
 }
 .sitemap ul li {
+  color: #626366 ;
   list-style: circle;
+  padding-bottom: 4px;
 }
 .sitemap ul:last-child {
   padding-bottom: 32px;
+}
+.sitemap ul.sitemap-list-subcategory {
+  padding: 0px;
+  margin-top: -8px;
+  margin-left: 8px;
+  font-size: 11px;
+}
+.sitemap ul.sitemap-list-subcategory li {
+  list-style: disc !important;
+  padding-bottom: 0px;
+  color: #626366 ;
+}
+.sitemap ul.sitemap-list-subcategory li:first-child {
+  padding-top: 16px;
 }
 .cq-dd-image {
   padding-bottom: 16px;
@@ -12556,4 +12591,7 @@ h5.textColorLightBlue:hover {
   button#donate_submit {
     margin-top: -35px;
   }
+}
+.row[data-example-id="bordered-table"] {
+  overflow-y: auto;
 }
