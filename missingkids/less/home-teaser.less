@@ -83,7 +83,7 @@
       }
       @media (max-width: @screen-xs) {
         &[class*="col-"] {
-          &:first-child {
+          &:first-child, &:nth-child(odd) {
             padding-right: 4px; 
           }
           &:nth-child(even) {

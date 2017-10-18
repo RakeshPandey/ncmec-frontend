@@ -71,7 +71,7 @@
             .contribution-amt-gt-400 {
                 font-size: 16px;
                 line-height: 21px;
-                padding: 18px 0;
+                padding: 22px 0 23px;
             }
         }
     }    
@@ -123,7 +123,7 @@
                 font-size: @font-size-small;
                 line-height: 16px;
                 width: 144px;
-                padding: 8px 16px 8px;
+                padding: 8px;
             }
             .right-block {
                 .ratings {
@@ -157,16 +157,20 @@
 @media (max-width: 370px) {
     .sponsored-block {
         .footer {
+            .title {
+                width: 105px;
+            }
             .right-block {
                 .contribution-amt {
                     width: 90px;
-                    padding: 23px 8px 24px;
+                    padding: 12px 8px;
+                    &.contribution-amt-gt-400 {
+                        padding: 31px 8px 31px;
+                    }
                 }
             }
         }
     }
-
-
 }
 
 // Custom Column 5 Row
