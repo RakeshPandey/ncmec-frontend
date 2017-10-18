@@ -7690,7 +7690,7 @@ label.error {
 .sponsored-block .footer .right-block .contribution-amt-gt-400 {
   font-size: 16px;
   line-height: 21px;
-  padding: 18px 0;
+  padding: 22px 0 23px;
 }
 @media (max-width: 768px) {
   .sponsored-block .footer {
@@ -7733,7 +7733,7 @@ label.error {
     font-size: 16px;
     line-height: 16px;
     width: 144px;
-    padding: 8px 16px 8px;
+    padding: 8px;
   }
   .sponsored-block .footer .right-block .ratings {
     padding: 25px 5px;
@@ -7760,9 +7760,15 @@ label.error {
   }
 }
 @media (max-width: 370px) {
+  .sponsored-block .footer .title {
+    width: 105px;
+  }
   .sponsored-block .footer .right-block .contribution-amt {
     width: 90px;
-    padding: 23px 8px 24px;
+    padding: 12px 8px;
+  }
+  .sponsored-block .footer .right-block .contribution-amt.contribution-amt-gt-400 {
+    padding: 31px 8px 31px;
   }
 }
 .col-xs-5ths,
