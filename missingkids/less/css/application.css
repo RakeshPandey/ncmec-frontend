@@ -12541,9 +12541,15 @@ h5.textColorLightBlue:hover {
   margin-bottom: 16px;
   color: #404041;
 }
+.sitemap h5 a {
+  color: #404041;
+}
 .sitemap h6 {
   color: #626366;
   margin-top: 0;
+}
+.sitemap h6 a {
+  color: #626366;
 }
 .sitemap ul {
   margin-left: 16px;
@@ -12554,6 +12560,9 @@ h5.textColorLightBlue:hover {
   color: #626366 ;
   list-style: circle;
   padding-bottom: 4px;
+}
+.sitemap ul li a {
+  color: #626366 ;
 }
 .sitemap ul:last-child {
   padding-bottom: 32px;
@@ -12567,6 +12576,9 @@ h5.textColorLightBlue:hover {
 .sitemap ul.sitemap-list-subcategory li {
   list-style: disc !important;
   padding-bottom: 0px;
+  color: #626366 ;
+}
+.sitemap ul.sitemap-list-subcategory li a {
   color: #626366 ;
 }
 .sitemap ul.sitemap-list-subcategory li:first-child {
