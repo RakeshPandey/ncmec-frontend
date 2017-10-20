@@ -10915,6 +10915,7 @@ label.error {
 }
 .donate-classy .donation .radio label:before {
   margin-right: 8px;
+  position: static;
 }
 .donate-classy .donation .radio input[type="radio"] {
   float: left;
