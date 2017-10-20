@@ -48,8 +48,15 @@
                         <span class="hamburger-icon"></span>
                     </button>
 
-                    <a class="navbar-brand" href="#"><img src="missingkids/images/logo_desktop.svg" class="hidden-xs desktop-logo" alt="NCMEC">
-                        <img src="missingkids/images/logo-xs.svg" class="visible-xs hidden-sm mobile-logo" alt="NCMEC"></a>
+                    <a class="navbar-brand" href="#">
+                      <picture>
+                     <!--   <img src="missingkids/images/logo_desktop.svg" class="hidden-xs desktop-logo" alt="NCMEC">
+                        <img src="missingkids/images/logo-xs.svg" class="visible-xs hidden-sm mobile-logo" alt="NCMEC"> -->
+                        
+                        <source media="(max-width:767px)" srcset="missingkids/images/logo-xs.svg">
+                        <img src="missingkids/images/logo_desktop.svg"  class="mobile-logo" alt="NCMEC">
+                      </picture>
+                    </a>
                     <div class="scroll-started-action"><span class="hamburger-icon"></span></div>
                     <div class="donate-btn-container"><button type="button" class="btn btn-xs btn-primary">Donate</button></div>
 
