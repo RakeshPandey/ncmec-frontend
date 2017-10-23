@@ -7890,7 +7890,7 @@ label.error {
     position: absolute;
     left: -42%;
     width: 50%;
-    height: 80px;
+    height: 65px;
     background: #404041;
     z-index: 10;
   }
@@ -8355,7 +8355,7 @@ label.error {
   background-position: -43px 6px;
 }
 .header-container .navbar .container .secondary-header ul.social-icons li a span.social-youtube-icon {
-  background-position: 2px 6px;
+  background-position: 3px 6px;
 }
 .header-container .navbar .container .secondary-header ul.social-icons li a span.social-pinterest-icon {
   background-position: -88px 6px;
@@ -8449,7 +8449,7 @@ label.error {
 .header-container .navbar .container .secondary-header .site-functionalities .search-wrapper .search-container .search-icon .icon-close {
   display: none;
 }
-@media (min-width: 767px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .header-container .navbar .container .secondary-header .site-functionalities {
     position: absolute;
     top: 27px;
@@ -9158,7 +9158,7 @@ body.secondary-nav-open .wrapper {
   background-position: -43px 6px;
 }
 .footer-container .footer-links-wrapper .social-icons li span.social-youtube-icon {
-  background-position: 2px 6px;
+  background-position: 3px 6px;
 }
 .footer-container .footer-links-wrapper .social-icons li span.social-pinterest-icon {
   background-position: -88px 6px;
