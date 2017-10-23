@@ -7443,7 +7443,7 @@ label.error {
   height: 16px;
   width: 16px;
   position: absolute;
-  top: calc(50% - 7px);
+  top: calc(43%);
   right: 15px;
 }
 #form-accordion .panel {
@@ -7803,8 +7803,9 @@ label.error {
     width: 105px;
   }
   .sponsored-block .footer .right-block .contribution-amt {
+    font-size: 13px;
     width: 90px;
-    padding: 12px 8px;
+    padding: 22px 8px;
   }
   .sponsored-block .footer .right-block .contribution-amt.contribution-amt-gt-400 {
     padding: 31px 8px 31px;
@@ -7889,7 +7890,7 @@ label.error {
     position: absolute;
     left: -42%;
     width: 50%;
-    height: 80px;
+    height: 65px;
     background: #404041;
     z-index: 10;
   }
@@ -8339,7 +8340,7 @@ label.error {
 .header-container .navbar .container .secondary-header ul.social-icons li a span {
   width: 25px;
   height: 45px;
-  background-image: url('../../../ncmec/images/icons/sprite.png');
+  background-image: url('../../images/icons/sprite.png');
   display: inline-block;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8354,7 +8355,7 @@ label.error {
   background-position: -43px 6px;
 }
 .header-container .navbar .container .secondary-header ul.social-icons li a span.social-youtube-icon {
-  background-position: 2px 6px;
+  background-position: 3px 6px;
 }
 .header-container .navbar .container .secondary-header ul.social-icons li a span.social-pinterest-icon {
   background-position: -88px 6px;
@@ -8448,7 +8449,7 @@ label.error {
 .header-container .navbar .container .secondary-header .site-functionalities .search-wrapper .search-container .search-icon .icon-close {
   display: none;
 }
-@media (min-width: 767px) and (orientation: landscape) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .header-container .navbar .container .secondary-header .site-functionalities {
     position: absolute;
     top: 27px;
@@ -9142,7 +9143,7 @@ body.secondary-nav-open .wrapper {
 .footer-container .footer-links-wrapper .social-icons li span {
   width: 25px;
   height: 45px;
-  background-image: url('../../../ncmec/images/icons/sprite.png');
+  background-image: url('../../images/icons/sprite.png');
   display: inline-block;
   background-size: cover;
   background-repeat: no-repeat;
@@ -9157,7 +9158,7 @@ body.secondary-nav-open .wrapper {
   background-position: -43px 6px;
 }
 .footer-container .footer-links-wrapper .social-icons li span.social-youtube-icon {
-  background-position: 2px 6px;
+  background-position: 3px 6px;
 }
 .footer-container .footer-links-wrapper .social-icons li span.social-pinterest-icon {
   background-position: -88px 6px;
@@ -11041,6 +11042,7 @@ label.error {
 }
 .donate-classy .donation .radio label:before {
   margin-right: 8px;
+  position: static;
 }
 .donate-classy .donation .radio input[type="radio"] {
   float: left;
