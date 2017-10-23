@@ -8449,7 +8449,7 @@ label.error {
 .header-container .navbar .container .secondary-header .site-functionalities .search-wrapper .search-container .search-icon .icon-close {
   display: none;
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 767px) and (orientation: landscape) {
   .header-container .navbar .container .secondary-header .site-functionalities {
     position: absolute;
     top: 27px;
@@ -8458,7 +8458,9 @@ label.error {
 }
 @media (min-width: 992px) {
   .header-container .navbar .container .secondary-header .site-functionalities {
-    right: 154px;
+    right: 165px !important;
+    position: absolute;
+    top: 27px;
   }
 }
 .header-container .navbar .container .secondary-header .site-functionalities .switch {
